@@ -1,0 +1,245 @@
+{"id": "u0005", "intent": "time.current", "stage": "exact", "confidence": 1.0, "slots": {"location": "tokyo"}}
+{"id": "u0007", "intent": "timer.set", "stage": "classifier", "confidence": 0.8854, "top3": ["timer.set", "timer.status", "__decline__"], "slots": {"duration": "ten minutes"}}
+{"id": "u0009", "intent": "timer.status", "stage": "classifier", "confidence": 0.9986, "top3": ["timer.status", "timer.set", "time.current"], "slots": {}}
+{"id": "u0013", "intent": "volume.set", "stage": "classifier", "confidence": 0.9966, "top3": ["volume.set", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0014", "intent": "volume.set", "stage": "classifier", "confidence": 0.9765, "top3": ["volume.set", "system.shutdown", "__decline__"], "slots": {}}
+{"id": "u0016", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "kitchen lights"}}
+{"id": "u0021", "intent": null, "stage": "llm", "confidence": 0.4336, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "slots": {"request": "lock the front door"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1012.3000000000001}
+{"id": "u0023", "intent": "device.status", "stage": "llm", "confidence": 0.4895, "top3": ["__decline__", "device.status", "weather.current"], "slots": {"entity": "front door"}, "llm_tool": "homeassistant__sensor", "p_addressed": 1.0, "llm_ms": 905.8000000000001}
+{"id": "u0025", "intent": "device.status", "stage": "llm", "confidence": 0.2193, "top3": ["__decline__", "web.browse", "easter_egg"], "slots": {"entity": "garage door"}, "llm_tool": "homeassistant__sensor", "p_addressed": 1.0, "llm_ms": 1009.8000000000001}
+{"id": "u0026", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "some jazz"}}
+{"id": "u0027", "intent": "media.pause", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0028", "intent": "media.resume", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0032", "intent": null, "stage": "llm", "confidence": 0.2647, "top3": ["__decline__", "meal.add", "alerts.list"], "slots": {"request": "add milk to the shopping list"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1044.9}
+{"id": "u0034", "intent": "stop", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0036", "intent": "weather.current", "stage": "classifier", "confidence": 0.7888, "top3": ["weather.current", "weather.forecast", "time.current"], "slots": {}}
+{"id": "u0040", "intent": "time.current", "stage": "classifier", "confidence": 0.8226, "top3": ["time.current", "timer.set", "timer.status"], "slots": {}}
+{"id": "u0043", "intent": "timer.cancel", "stage": "classifier", "confidence": 0.7162, "top3": ["timer.cancel", "alerts.list", "timer.set"], "slots": {}}
+{"id": "u0047", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "tomorrow's alarm"}}
+{"id": "u0048", "intent": null, "stage": "llm", "confidence": 0.176, "top3": ["__decline__", "knowledge.ask", "weather.forecast"], "slots": {"request": "louder"}, "llm_tool": "unsupported", "p_addressed": 0.9999, "llm_ms": 990.9}
+{"id": "u0050", "intent": "settings.change", "stage": "classifier", "confidence": 0.6397, "top3": ["settings.change", "__decline__", "web.browse"], "slots": {}}
+{"id": "u0051", "intent": "volume.set", "stage": "llm", "confidence": 0.4282, "top3": ["__decline__", "system.shutdown", "stop"], "slots": {"level": "down a bit"}, "llm_tool": "musicassistant__volume", "p_addressed": 1.0, "llm_ms": 983.8}
+{"id": "u0052", "intent": "assistant.about", "stage": "classifier", "confidence": 0.8429, "top3": ["assistant.about", "volume.set", "__decline__"], "slots": {}}
+{"id": "u0054", "intent": "device.status", "stage": "llm", "confidence": 0.2682, "top3": ["app.launch", "media.play", "media.previous"], "slots": {"entity": "lamp in the bedroom"}, "llm_tool": "homeassistant__sensor", "p_addressed": 1.0, "llm_ms": 998.3000000000001}
+{"id": "u0058", "intent": "lights.brightness", "stage": "exact", "confidence": 1.0, "slots": {"entity": "bedroom"}}
+{"id": "u0059", "intent": null, "stage": "llm", "confidence": 0.3448, "top3": ["__decline__", "weather.current", "system.shutdown"], "slots": {"request": "cool the house down to 70"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1177.6000000000001}
+{"id": "u0060", "intent": null, "stage": "llm", "confidence": 0.2201, "top3": ["knowledge.ask", "settings.change", "__decline__"], "slots": {"request": "lock up"}, "llm_tool": "unsupported", "p_addressed": 0.9999, "llm_ms": 816.6}
+{"id": "u0062", "intent": null, "stage": "llm", "confidence": 0.1689, "top3": ["__decline__", "easter_egg", "weather.current"], "slots": {"request": "let me in the side door"}, "llm_tool": "unsupported", "p_addressed": 0.9999, "llm_ms": 1119.5}
+{"id": "u0066", "intent": "media.pause", "stage": "classifier", "confidence": 0.8628, "top3": ["media.pause", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0074", "intent": "joke.tell", "stage": "classifier", "confidence": 0.9349, "top3": ["joke.tell", "__decline__", "alerts.list"], "slots": {}}
+{"id": "u0077", "intent": "stop", "stage": "llm", "confidence": 0.2084, "top3": ["weather.current", "__decline__", "knowledge.ask"], "slots": {}, "llm_tool": "stop", "p_addressed": 0.9715, "llm_ms": 868.1999999999999}
+{"id": "u0078", "intent": "system.shutdown", "stage": "classifier", "confidence": 0.9319, "top3": ["system.shutdown", "knowledge.ask", "settings.change"], "slots": {}}
+{"id": "u0081", "intent": "device.on", "stage": "llm", "confidence": 0.225, "top3": ["device.on", "device.stop", "weather.current"], "slots": {"entity": "heat"}, "llm_tool": "homeassistant__turn_on", "p_addressed": 1.0, "llm_ms": 998.1}
+{"id": "u0082", "intent": "weather.current", "stage": "classifier", "confidence": 0.7481, "top3": ["weather.current", "__decline__", "weather.forecast"], "slots": {}}
+{"id": "u0085", "intent": "volume.set", "stage": "llm", "confidence": 0.1986, "top3": ["device.on", "media.resume", "stop"], "slots": {"level": "up"}, "llm_tool": "musicassistant__volume", "p_addressed": 1.0, "llm_ms": 841.0}
+{"id": "u0086", "intent": "timer.set", "stage": "classifier", "confidence": 0.6867, "top3": ["timer.set", "alerts.list", "settings.change"], "slots": {"duration": "n egg"}}
+{"id": "u0087", "intent": "weather.current", "stage": "classifier", "confidence": 0.9445, "top3": ["weather.current", "weather.forecast", "__decline__"], "slots": {"location": "dallas tomorrow"}}
+{"id": "u0088", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "a pasta timer for 11 minutes"}}
+{"id": "u0090", "intent": "timer.status", "stage": "classifier", "confidence": 0.9923, "top3": ["timer.status", "timer.set", "__decline__"], "slots": {"timer_name": "pasta"}}
+{"id": "u0096", "intent": "lights.color", "stage": "llm", "confidence": 0.6367, "top3": ["__decline__", "knowledge.ask", "settings.change"], "slots": {"color": "68", "entity": "upstairs"}, "llm_tool": "homeassistant__lights_set_color", "p_addressed": 1.0, "llm_ms": 1008.3000000000001}
+{"id": "u0098", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "the new radiohead album"}}
+{"id": "u0100", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "lo-fi in the office"}}
+{"id": "u0101", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.5178, "top3": ["__decline__", "alerts.list", "knowledge.ask"], "slots": {"question": "put eggs and coffee on the grocery list"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1073.5}
+{"id": "u0103", "intent": "reminder.set", "stage": "classifier", "confidence": 0.5375, "top3": ["reminder.set", "timer.status", "__decline__"], "slots": {"duration": "20 minutes", "task": "check the oven"}}
+{"id": "u0104", "intent": "device.off", "stage": "llm", "confidence": 0.1704, "top3": ["system.shutdown", "stop", "__decline__"], "slots": {"entity": "bedroom lights"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1816.0}
+{"id": "u0106", "intent": null, "stage": "llm", "confidence": 0.6649, "top3": ["__decline__", "easter_egg", "timer.cancel"], "slots": {"request": "do not unlock the door"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 978.1}
+{"id": "u0109", "intent": "app.launch", "stage": "classifier", "confidence": 0.5931, "top3": ["app.launch", "web.browse", "easter_egg"], "slots": {"app": "the garage"}}
+{"id": "u0110", "intent": "weather.forecast", "stage": "llm", "confidence": 0.4756, "top3": ["weather.forecast", "weather.current", "__decline__"], "slots": {}, "llm_tool": "weather__do_i_need_an_umbrella", "p_addressed": 1.0, "llm_ms": 973.6}
+{"id": "u0111", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "lights but not in the nursery"}}
+{"id": "u0119", "intent": null, "stage": "llm_gate", "confidence": 0.2938, "top3": ["alerts.list", "__decline__", "date.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.7661, "llm_ms": 762.6}
+{"id": "u0120", "intent": null, "stage": "llm", "confidence": 0.4437, "top3": ["date.current", "device.on", "device.stop"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9991, "llm_ms": 834.2}
+{"id": "u0121", "intent": null, "stage": "llm_gate", "confidence": 0.6858, "top3": ["__decline__", "joke.tell", "date.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.7879, "llm_ms": 967.0}
+{"id": "u0123", "intent": null, "stage": "llm", "confidence": 0.3103, "top3": ["__decline__", "timer.status", "timer.set"], "slots": {"request": "my timer app is broken"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1159.8999999999999}
+{"id": "u0126", "intent": null, "stage": "llm_gate", "confidence": 0.7173, "top3": ["__decline__", "device.status", "weather.forecast"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0268, "llm_ms": 849.1999999999999}
+{"id": "u0128", "intent": null, "stage": "llm_gate", "confidence": 0.2051, "top3": ["time.current", "timer.set", "__decline__"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0667, "llm_ms": 738.4}
+{"id": "u0129", "intent": null, "stage": "llm", "confidence": 0.3423, "top3": ["weather.current", "__decline__", "weather.forecast"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9399, "llm_ms": 869.9}
+{"id": "u0130", "intent": null, "stage": "llm", "confidence": 0.1551, "top3": ["__decline__", "app.launch", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9019, "llm_ms": 836.4}
+{"id": "u0132", "intent": null, "stage": "llm_gate", "confidence": 0.1529, "top3": ["__decline__", "knowledge.ask", "web.browse"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0, "llm_ms": 810.7}
+{"id": "u0134", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.9008, "top3": ["knowledge.ask", "__decline__", "web.browse"], "slots": {}}
+{"id": "u0141", "intent": "__unmapped__:skill-communication.neongeckocom:call", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0145", "intent": "weather.current", "stage": "classifier", "confidence": 0.8124, "top3": ["weather.current", "alerts.list", "weather.forecast"], "slots": {}}
+{"id": "u0147", "intent": null, "stage": "llm", "confidence": 0.4111, "top3": ["__decline__", "easter_egg", "weather.current"], "slots": {"request": "lock the frond door"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 768.4000000000001}
+{"id": "u0152", "intent": "weather.current", "stage": "classifier", "confidence": 0.7069, "top3": ["weather.current", "date.current", "time.current"], "slots": {}}
+{"id": "u0153", "intent": "lights.brightness", "stage": "llm", "confidence": 0.7208, "top3": ["__decline__", "easter_egg", "timer.cancel"], "slots": {"entity": "dining room"}, "llm_tool": "homeassistant__lights_decrease_brightness", "p_addressed": 0.9836, "llm_ms": 1144.1000000000001}
+{"id": "u0154", "intent": "weather.forecast", "stage": "llm", "confidence": 0.3527, "top3": ["date.current", "weather.current", "knowledge.ask"], "slots": {}, "llm_tool": "weather__HandleWeekendForecast", "p_addressed": 1.0, "llm_ms": 882.0999999999999}
+{"id": "u0159", "intent": "settings.query", "stage": "classifier", "confidence": 0.8652, "top3": ["settings.query", "settings.change", "assistant.about"], "slots": {}}
+{"id": "u0160", "intent": "spelling.spell", "stage": "llm", "confidence": 0.4577, "top3": ["spelling.spell", "__decline__", "web.browse"], "slots": {}, "llm_tool": "spelling__SpellIntent", "p_addressed": 1.0, "llm_ms": 811.1}
+{"id": "u0162", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "the news"}}
+{"id": "u0163", "intent": "assistant.about", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0165", "intent": null, "stage": "llm", "confidence": 0.2481, "top3": ["__decline__", "timer.status", "settings.change"], "slots": {"request": "check for updates"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 928.4}
+{"id": "u0166", "intent": "system.restart", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0171", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "a", "faces": "20"}}
+{"id": "u0173", "intent": "settings.change", "stage": "classifier", "confidence": 0.6768, "top3": ["settings.change", "time.current", "timer.set"], "slots": {}}
+{"id": "u0174", "intent": "settings.change", "stage": "classifier", "confidence": 0.8441, "top3": ["settings.change", "knowledge.ask", "__decline__"], "slots": {}}
+{"id": "u0177", "intent": "settings.query", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0178", "intent": "spelling.spell", "stage": "classifier", "confidence": 0.875, "top3": ["spelling.spell", "knowledge.ask", "__decline__"], "slots": {"word": "rhythm"}}
+{"id": "u0179", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "i am the walrus"}}
+{"id": "u0180", "intent": "news.play", "stage": "classifier", "confidence": 0.9915, "top3": ["news.play", "weather.current", "date.current"], "slots": {}}
+{"id": "u0182", "intent": "assistant.about", "stage": "classifier", "confidence": 0.932, "top3": ["assistant.about", "__decline__", "settings.query"], "slots": {}}
+{"id": "u0184", "intent": "system.restart", "stage": "classifier", "confidence": 0.5201, "top3": ["system.restart", "assistant.about", "system.shutdown"], "slots": {}}
+{"id": "u0187", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9316, "top3": ["easter_egg", "weather.current", "date.current"], "slots": {}}
+{"id": "u0188", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9688, "top3": ["easter_egg", "__decline__", "speak.repeat"], "slots": {}}
+{"id": "u0189", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0193", "intent": "random.number", "stage": "classifier", "confidence": 0.558, "top3": ["random.number", "__decline__", "easter_egg"], "slots": {}}
+{"id": "u0194", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "2", "faces": "6 plus 3"}}
+{"id": "u0196", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "four", "faces": "6 drop the lowest"}}
+{"id": "u0199", "intent": "settings.change", "stage": "classifier", "confidence": 0.5578, "top3": ["settings.change", "__decline__", "settings.query"], "slots": {}}
+{"id": "u0200", "intent": "random.dice", "stage": "classifier", "confidence": 0.9719, "top3": ["random.dice", "__decline__", "weather.current"], "slots": {}}
+{"id": "u0202", "intent": null, "stage": "llm", "confidence": 0.0889, "top3": ["device.status", "__decline__", "weather.current"], "slots": {"request": "toss me the remote"}, "llm_tool": "unsupported", "p_addressed": 0.9976, "llm_ms": 919.1}
+{"id": "u0204", "intent": "spelling.spell", "stage": "classifier", "confidence": 0.7549, "top3": ["spelling.spell", "assistant.about", "__decline__"], "slots": {"word": "it out for me, are you serious"}}
+{"id": "u0205", "intent": "system.shutdown", "stage": "classifier", "confidence": 0.8114, "top3": ["system.shutdown", "__decline__", "easter_egg"], "slots": {}}
+{"id": "u0212", "intent": "monster.scan", "stage": "classifier", "confidence": 0.9953, "top3": ["monster.scan", "alerts.list", "weather.forecast"], "slots": {}}
+{"id": "u0213", "intent": "web.browse", "stage": "classifier", "confidence": 0.9339, "top3": ["web.browse", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0215", "intent": "stop", "stage": "llm", "confidence": 0.1246, "top3": ["__decline__", "easter_egg", "settings.change"], "slots": {}, "llm_tool": "stop", "p_addressed": 0.9928, "llm_ms": 824.6}
+{"id": "u0219", "intent": "monster.scan", "stage": "classifier", "confidence": 0.9938, "top3": ["monster.scan", "device.status", "__decline__"], "slots": {}}
+{"id": "u0221", "intent": "app.launch", "stage": "classifier", "confidence": 0.8024, "top3": ["app.launch", "settings.change", "__decline__"], "slots": {}}
+{"id": "u0223", "intent": "media.previous", "stage": "classifier", "confidence": 0.956, "top3": ["media.previous", "media.resume", "easter_egg"], "slots": {}}
+{"id": "u0224", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"player": "kitchen speaker"}}
+{"id": "u0226", "intent": "media.pause", "stage": "classifier", "confidence": 0.6239, "top3": ["media.pause", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0227", "intent": null, "stage": "llm_gate", "confidence": 0.5101, "top3": ["__decline__", "meal.suggest", "meal.add"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0385, "llm_ms": 734.8000000000001}
+{"id": "u0228", "intent": "monster.scan", "stage": "classifier", "confidence": 0.5891, "top3": ["monster.scan", "__decline__", "date.current"], "slots": {}}
+{"id": "u0229", "intent": null, "stage": "llm", "confidence": 0.402, "top3": ["__unmapped__:skill-communication.neongeckocom:call", "__decline__", "media.previous"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9865, "llm_ms": 848.3}
+{"id": "u0232", "intent": null, "stage": "llm", "confidence": 0.4237, "top3": ["__unmapped__:skill-communication.neongeckocom:call", "__decline__", "stop"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9989, "llm_ms": 764.9}
+{"id": "u0233", "intent": null, "stage": "llm", "confidence": 0.2377, "top3": ["__decline__", "stop", "settings.change"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9983, "llm_ms": 791.9000000000001}
+{"id": "u0237", "intent": "random.fortune", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0242", "intent": "alerts.list", "stage": "classifier", "confidence": 0.974, "top3": ["alerts.list", "timer.set", "__decline__"], "slots": {}}
+{"id": "u0245", "intent": "ha.assist", "stage": "exact", "confidence": 1.0, "slots": {"command": "start the dishwasher"}}
+{"id": "u0247", "intent": "random.fortune", "stage": "llm", "confidence": 0.4238, "top3": ["random.fortune", "__decline__", "weather.current"], "slots": {}, "llm_tool": "randomness__fortune_teller", "p_addressed": 0.9999, "llm_ms": 960.8}
+{"id": "u0249", "intent": "alerts.list", "stage": "classifier", "confidence": 0.818, "top3": ["alerts.list", "alarm.set", "timer.cancel"], "slots": {}}
+{"id": "u0251", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "grandma mode"}}
+{"id": "u0256", "intent": "volume.set", "stage": "exact", "confidence": 1.0, "slots": {"level": "30"}}
+{"id": "u0261", "intent": "timer.set", "stage": "classifier", "confidence": 0.6099, "top3": ["timer.set", "timer.cancel", "timer.status"], "slots": {}}
+{"id": "u0263", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8721, "top3": ["easter_egg", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0267", "intent": "alarm.set", "stage": "classifier", "confidence": 0.8224, "top3": ["alarm.set", "timer.cancel", "settings.change"], "slots": {}}
+{"id": "u0268", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "hi to john"}}
+{"id": "u0269", "intent": "weather.current", "stage": "llm", "confidence": 0.357, "top3": ["weather.current", "time.current", "timer.set"], "slots": {}, "llm_tool": "weather__HandleSunriseSunset", "p_addressed": 1.0, "llm_ms": 923.6}
+{"id": "u0271", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "groove salad on soma fm"}}
+{"id": "u0273", "intent": "media.pause", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0274", "intent": "timer.set", "stage": "classifier", "confidence": 0.9134, "top3": ["timer.set", "timer.status", "__decline__"], "slots": {"duration": "2 minutes"}}
+{"id": "u0276", "intent": "weather.current", "stage": "classifier", "confidence": 0.9937, "top3": ["weather.current", "weather.forecast", "alerts.list"], "slots": {}}
+{"id": "u0277", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9568, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "6:30 am"}}
+{"id": "u0278", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9561, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "9:45 pm"}}
+{"id": "u0279", "intent": "date.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0282", "intent": "assistant.about", "stage": "classifier", "confidence": 0.5079, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0284", "intent": "easter_egg", "stage": "classifier", "confidence": 0.6851, "top3": ["easter_egg", "translate.phrase", "__decline__"], "slots": {}}
+{"id": "u0285", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.8251, "top3": ["knowledge.ask", "__decline__", "assistant.about"], "slots": {}}
+{"id": "u0286", "intent": "timer.cancel", "stage": "classifier", "confidence": 0.9671, "top3": ["timer.cancel", "alarm.set", "stop"], "slots": {}}
+{"id": "u0287", "intent": "weather.current", "stage": "classifier", "confidence": 0.9959, "top3": ["weather.current", "weather.forecast", "alerts.list"], "slots": {}}
+{"id": "u0288", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.4862, "top3": ["__decline__", "weather.current", "knowledge.ask"], "slots": {"question": "how many teaspoons in a tablespoon"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1068.1}
+{"id": "u0290", "intent": "timer.set", "stage": "classifier", "confidence": 0.8757, "top3": ["timer.set", "timer.status", "__decline__"], "slots": {"duration": "45 seconds"}}
+{"id": "u0291", "intent": "time.current", "stage": "classifier", "confidence": 0.9893, "top3": ["time.current", "timer.set", "weather.current"], "slots": {}}
+{"id": "u0294", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "master closet light"}}
+{"id": "u0295", "intent": "easter_egg", "stage": "classifier", "confidence": 0.893, "top3": ["easter_egg", "device.status", "weather.current"], "slots": {}}
+{"id": "u0297", "intent": "media.play", "stage": "llm", "confidence": 0.278, "top3": ["__decline__", "alarm.set", "knowledge.ask"], "slots": {"query": "my morning jams"}, "llm_tool": "ocp__play", "p_addressed": 1.0, "llm_ms": 1022.3}
+{"id": "u0298", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9758, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "7 am"}}
+{"id": "u0299", "intent": "date.current", "stage": "classifier", "confidence": 0.9805, "top3": ["date.current", "weather.current", "easter_egg"], "slots": {}}
+{"id": "u0302", "intent": "alerts.list", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0307", "intent": "speak.repeat", "stage": "classifier", "confidence": 0.6241, "top3": ["speak.repeat", "easter_egg", "__decline__"], "slots": {}}
+{"id": "u0310", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk lamp"}}
+{"id": "u0313", "intent": "time.current", "stage": "classifier", "confidence": 0.971, "top3": ["time.current", "assistant.about", "easter_egg"], "slots": {}}
+{"id": "u0315", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8921, "top3": ["easter_egg", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0316", "intent": "settings.query", "stage": "classifier", "confidence": 0.7209, "top3": ["settings.query", "easter_egg", "speak.repeat"], "slots": {}}
+{"id": "u0317", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8524, "top3": ["easter_egg", "speak.repeat", "__decline__"], "slots": {}}
+{"id": "u0322", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "ram a limiting dong"}}
+{"id": "u0325", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7541, "top3": ["easter_egg", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0326", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8924, "top3": ["easter_egg", "__decline__", "speak.repeat"], "slots": {}}
+{"id": "u0329", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7604, "top3": ["easter_egg", "alerts.list", "weather.current"], "slots": {}}
+{"id": "u0330", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9421, "top3": ["easter_egg", "__decline__", "assistant.about"], "slots": {}}
+{"id": "u0331", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "something like glados"}}
+{"id": "u0333", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9416, "top3": ["easter_egg", "__decline__", "assistant.about"], "slots": {}}
+{"id": "u0334", "intent": "easter_egg", "stage": "classifier", "confidence": 0.5354, "top3": ["easter_egg", "settings.query", "assistant.about"], "slots": {}}
+{"id": "u0335", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9623, "top3": ["easter_egg", "__decline__", "speak.repeat"], "slots": {}}
+{"id": "u0337", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8704, "top3": ["easter_egg", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0339", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9245, "top3": ["easter_egg", "alerts.list", "settings.change"], "slots": {}}
+{"id": "u0340", "intent": "easter_egg", "stage": "classifier", "confidence": 0.6665, "top3": ["easter_egg", "__decline__", "settings.change"], "slots": {}}
+{"id": "u0341", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2275, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {"question": "who is elvis presley ?"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 972.3}
+{"id": "u0343", "intent": "timer.set", "stage": "classifier", "confidence": 0.9333, "top3": ["timer.set", "timer.status", "__decline__"], "slots": {"duration": "60 seconds"}}
+{"id": "u0349", "intent": "reminder.set", "stage": "classifier", "confidence": 0.9639, "top3": ["reminder.set", "__decline__", "settings.change"], "slots": {"task": "stretch", "time": "11 pm"}}
+{"id": "u0351", "intent": "reminder.set", "stage": "classifier", "confidence": 0.7234, "top3": ["reminder.set", "time.current", "settings.change"], "slots": {"duration": "2 hours", "task": "stretch"}}
+{"id": "u0352", "intent": "timer.status", "stage": "classifier", "confidence": 0.9988, "top3": ["timer.status", "timer.set", "time.current"], "slots": {}}
+{"id": "u0353", "intent": "weather.forecast", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0354", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "npr news"}}
+{"id": "u0356", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "grooved salad on some fm"}}
+{"id": "u0357", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "moonlight sonata on youtube"}}
+{"id": "u0358", "intent": "media.next", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0359", "intent": "stop", "stage": "classifier", "confidence": 0.5727, "top3": ["stop", "device.stop", "settings.change"], "slots": {}}
+{"id": "u0361", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.3365, "top3": ["knowledge.ask", "__decline__", "assistant.about"], "slots": {"question": "who was michael jackson"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1008.9000000000001}
+{"id": "u0365", "intent": "alarm.set", "stage": "llm", "confidence": 0.4585, "top3": ["alarm.set", "__decline__", "alerts.list"], "slots": {}, "llm_tool": "alerts__CreateAlarm", "p_addressed": 1.0, "llm_ms": 902.8}
+{"id": "u0375", "intent": "alarm.set", "stage": "classifier", "confidence": 0.936, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "12:15 p.m"}}
+{"id": "u0377", "intent": null, "stage": "llm_gate", "confidence": 0.4589, "top3": ["__decline__", "settings.change", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.7393, "llm_ms": 779.5}
+{"id": "u0380", "intent": "alarm.set", "stage": "classifier", "confidence": 0.944, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "10:27 am"}}
+{"id": "u0381", "intent": "system.ip", "stage": "classifier", "confidence": 0.9938, "top3": ["system.ip", "settings.query", "__decline__"], "slots": {}}
+{"id": "u0383", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2736, "top3": ["__decline__", "knowledge.ask", "web.browse"], "slots": {"question": "how to boil an egg"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1065.1}
+{"id": "u0384", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9719, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "10:41 am"}}
+{"id": "u0385", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9729, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "10:51 am"}}
+{"id": "u0386", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9567, "top3": ["alarm.set", "alerts.list", "__decline__"], "slots": {"time": "11:14 am"}}
+{"id": "u0389", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "kitchen light"}}
+{"id": "u0394", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "murder"}}
+{"id": "u0395", "intent": null, "stage": "llm", "confidence": 0.4412, "top3": ["__decline__", "meal.suggest", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9955, "llm_ms": 777.7}
+{"id": "u0396", "intent": "assistant.about", "stage": "llm", "confidence": 0.4038, "top3": ["assistant.about", "__decline__", "easter_egg"], "slots": {}, "llm_tool": "personal__WhoMadeYou", "p_addressed": 0.9999, "llm_ms": 859.3}
+{"id": "u0397", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.5828, "top3": ["__decline__", "__unmapped__:skill-communication.neongeckocom:call", "weather.forecast"], "slots": {"question": "did elvis phone home is he in space now"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9999, "llm_ms": 1040.1}
+{"id": "u0400", "intent": null, "stage": "llm_gate", "confidence": 0.7801, "top3": ["__decline__", "settings.change", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0045, "llm_ms": 786.6}
+{"id": "u0401", "intent": null, "stage": "llm_gate", "confidence": 0.3525, "top3": ["alerts.list", "assistant.about", "meal.suggest"], "slots": {}, "llm_tool": "unsupported", "p_addressed": 0.1063, "llm_ms": 825.8000000000001}
+{"id": "u0402", "intent": null, "stage": "llm_gate", "confidence": 0.4442, "top3": ["__decline__", "timer.cancel", "settings.change"], "slots": {}, "llm_tool": "unsupported", "p_addressed": 0.0, "llm_ms": 900.0}
+{"id": "u0404", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "kitchen light"}}
+{"id": "u0409", "intent": null, "stage": "llm", "confidence": 0.3664, "top3": ["easter_egg", "timer.cancel", "system.shutdown"], "slots": {}, "llm_tool": "ignore", "p_addressed": 1.0, "llm_ms": 885.9}
+{"id": "u0410", "intent": null, "stage": "llm_gate", "confidence": 0.9446, "top3": ["__decline__", "web.browse", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.152, "llm_ms": 944.1999999999999}
+{"id": "u0411", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "master bedroom light"}}
+{"id": "u0412", "intent": null, "stage": "llm_gate", "confidence": 0.1903, "top3": ["__decline__", "settings.change", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.2751, "llm_ms": 844.3000000000001}
+{"id": "u0413", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the camera"}}
+{"id": "u0414", "intent": "weather.current", "stage": "classifier", "confidence": 0.8578, "top3": ["weather.current", "weather.forecast", "__decline__"], "slots": {}}
+{"id": "u0417", "intent": "media.pause", "stage": "llm", "confidence": 0.4764, "top3": ["media.resume", "media.pause", "__decline__"], "slots": {"player": "office"}, "llm_tool": "musicassistant__pause", "p_addressed": 0.9999, "llm_ms": 1151.0}
+{"id": "u0418", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "right printer"}}
+{"id": "u0421", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the reminders app"}}
+{"id": "u0422", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk planan"}}
+{"id": "u0423", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk lam"}}
+{"id": "u0424", "intent": null, "stage": "llm_gate", "confidence": 0.1223, "top3": ["__decline__", "settings.change", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0009, "llm_ms": 818.4}
+{"id": "u0425", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "entry highl light"}}
+{"id": "u0426", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "disk lamp"}}
+{"id": "u0427", "intent": "device.off", "stage": "llm", "confidence": 0.1592, "top3": ["device.stop", "system.shutdown", "device.off"], "slots": {"entity": "jake bedroom light"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1025.2}
+{"id": "u0431", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "jake bedroom light"}}
+{"id": "u0435", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.3763, "top3": ["__decline__", "easter_egg", "assistant.about"], "slots": {"question": "testing testing can you hear me"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 965.1}
+{"id": "u0436", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.4982, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {"question": "whats the mean airspeed velocity of an unladen swallow"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1037.2}
+{"id": "u0437", "intent": "device.status", "stage": "llm", "confidence": 0.3036, "top3": ["timer.status", "device.status", "__decline__"], "slots": {"entity": "office light"}, "llm_tool": "homeassistant__sensor", "p_addressed": 1.0, "llm_ms": 1085.2}
+{"id": "u0441", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "my reminders"}}
+{"id": "u0442", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "reminders app"}}
+{"id": "u0443", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "timer app"}}
+{"id": "u0444", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "stopwatch app"}}
+{"id": "u0445", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the clock app"}}
+{"id": "u0446", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "clock app"}}
+{"id": "u0447", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the mail app"}}
+{"id": "u0448", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the messages app"}}
+{"id": "u0449", "intent": "alerts.list", "stage": "llm", "confidence": 0.3284, "top3": ["__decline__", "reminder.set", "timer.cancel"], "slots": {}, "llm_tool": "alerts__ListAllAlerts", "p_addressed": 0.9855, "llm_ms": 816.7}
+{"id": "u0452", "intent": null, "stage": "llm_gate", "confidence": 0.8098, "top3": ["__decline__", "knowledge.ask", "web.browse"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.1442, "llm_ms": 818.7}
+{"id": "u0454", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "camera on"}}
+{"id": "u0456", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "reminder app"}}
+{"id": "u0457", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "mail"}}
+{"id": "u0458", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "mail"}}
+{"id": "u0459", "intent": null, "stage": "llm_gate", "confidence": 0.1571, "top3": ["__decline__", "knowledge.ask", "web.browse"], "slots": {}, "llm_tool": "ask_knowledge", "p_addressed": 0.1731, "llm_ms": 1011.3000000000001}
+{"id": "u0460", "intent": "assistant.about", "stage": "classifier", "confidence": 0.7554, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0461", "intent": "assistant.about", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0462", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2448, "top3": ["__decline__", "device.status", "knowledge.ask"], "slots": {"question": "what is the mean velocity of an airon laden swallow"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9992, "llm_ms": 1077.6000000000001}
+{"id": "u0465", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "three d printer"}}
+{"id": "u0466", "intent": null, "stage": "echo"}
+{"id": "u0467", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.5915, "top3": ["knowledge.ask", "__decline__", "web.browse"], "slots": {}}
+{"id": "u0470", "intent": null, "stage": "llm_gate", "confidence": 0.3768, "top3": ["__decline__", "media.previous", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0701, "llm_ms": 845.6}
+{"id": "u0474", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.9644, "top3": ["weather.forecast", "weather.current", "alerts.list"], "slots": {}}
+{"id": "u0475", "intent": "assistant.about", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0477", "intent": null, "stage": "llm_gate", "confidence": 0.6352, "top3": ["__decline__", "knowledge.ask", "settings.change"], "slots": {}, "llm_tool": "ask_knowledge", "p_addressed": 0.6545, "llm_ms": 980.8000000000001}
+{"id": "u0481", "intent": null, "stage": "llm_gate", "confidence": 0.2862, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.2925, "llm_ms": 814.3}
+{"id": "u0484", "intent": null, "stage": "llm_gate", "confidence": 0.127, "top3": ["__decline__", "settings.change", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0002, "llm_ms": 891.2}
+{"id": "u0487", "intent": "time.current", "stage": "classifier", "confidence": 0.7912, "top3": ["time.current", "weather.current", "alerts.list"], "slots": {}}
+{"id": "u0494", "intent": "app.launch", "stage": "exact", "confidence": 1.0, "slots": {"app": "the mail app"}}
+{"id": "u0500", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.542, "top3": ["weather.forecast", "alerts.list", "weather.current"], "slots": {}}
+{"id": "u0505", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "deskland"}}
+{"id": "u0506", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "office light"}}
+{"id": "u0507", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "office light"}}
+{"id": "u0508", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "descalam"}}
+{"id": "u0509", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk limp"}}
+{"id": "u0510", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2494, "top3": ["__decline__", "knowledge.ask", "timer.set"], "slots": {"question": "is jolato good for workout recovery"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1035.8}
+{"id": "u0511", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.7685, "top3": ["__decline__", "knowledge.ask", "weather.forecast"], "slots": {"question": "is it a good idea to recover from a workout with gelato"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1202.3}
+{"id": "u0512", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "3d printer"}}
+{"id": "u0515", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "master bedroom light"}}
+{"id": "u0518", "intent": "joke.tell", "stage": "classifier", "confidence": 0.8829, "top3": ["joke.tell", "settings.change", "reminder.set"], "slots": {}}
+{"id": "u0519", "intent": null, "stage": "llm", "confidence": 0.094, "top3": ["joke.tell", "settings.change", "reminder.set"], "slots": {"request": "make me love"}, "llm_tool": "unsupported", "p_addressed": 0.9731, "llm_ms": 1005.5}
+{"id": "u0521", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "3 d printer"}}

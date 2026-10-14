@@ -1,0 +1,517 @@
+{"id": "u0000", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 73.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0001", "intent": "weather.current", "slots": {"location": "austin"}, "confidence": null, "latency_ms": 66.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0002", "intent": "weather.forecast", "slots": {}, "confidence": null, "latency_ms": 8.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0003", "intent": "timer.status", "slots": {"timerkind": "forecast for the weekend"}, "confidence": null, "latency_ms": 31.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0004", "intent": "time.current", "slots": {}, "confidence": null, "latency_ms": 4.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0005", "intent": "time.current", "slots": {"location": "tokyo"}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0006", "intent": "alerts.list", "slots": {"alertkind": "'s today's date"}, "confidence": null, "latency_ms": 25.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0007", "intent": "timer.set", "slots": {"duration": "ten minutes"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0008", "intent": "timer.cancel", "slots": {"alertkind": "timer"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0009", "intent": "timer.status", "slots": {"timerkind": "timer"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0010", "intent": "alarm.set", "slots": {"time": "7 am tomorrow"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0011", "intent": "timer.cancel", "slots": {"alertkind": "alarm"}, "confidence": null, "latency_ms": 2.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0012", "intent": "volume.set", "slots": {"level": "to five"}, "confidence": null, "latency_ms": 22.4, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0013", "intent": "volume.up", "slots": {}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0014", "intent": "volume.down", "slots": {}, "confidence": null, "latency_ms": 2.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0015", "intent": "volume.mute", "slots": {}, "confidence": null, "latency_ms": 1.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0016", "intent": "device.on", "slots": {"entity": "kitchen lights"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0017", "intent": "device.off", "slots": {"entity": "living room lights"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0018", "intent": "lights.brightness", "slots": {"entity": "lights in the den to 30 percent"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0019", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 32.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0020", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "slots": {"schedkind": "thermostat", "mediaform": "72"}, "confidence": null, "latency_ms": 26.4, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0021", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 24.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0022", "intent": "time.current", "slots": {}, "confidence": 0.9892578125, "latency_ms": 14.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0023", "intent": "device.status", "slots": {"entity": "front door locked"}, "confidence": null, "latency_ms": 24.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0024", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0025", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0026", "intent": "media.play", "slots": {"query": "some jazz"}, "confidence": 1.0, "latency_ms": 8.5, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0027", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0028", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0029", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0030", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0031", "intent": "joke.tell", "slots": {}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0032", "intent": "shopping.add", "slots": {"item": "milk", "list": "shopping"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0033", "intent": "reminder.set", "slots": {"task": "call mom", "time": "5"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0034", "intent": "stop", "slots": {}, "confidence": null, "latency_ms": 1.8, "stage": "ovos-stop-pipeline-plugin-high"}
+{"id": "u0035", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0036", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0037", "intent": "alerts.list", "slots": {"alertkind": "'s it like outside in denver right now"}, "confidence": null, "latency_ms": 31.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0038", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0039", "intent": null, "slots": {}, "confidence": null, "latency_ms": 31.1, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0040", "intent": "time.current", "slots": {}, "confidence": 0.9990234375, "latency_ms": 12.9, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0041", "intent": "date.current", "slots": {}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0042", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:what_time_will_it_be", "slots": {"offset": "count down 90"}, "confidence": null, "latency_ms": 13.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0043", "intent": "timer.cancel", "slots": {}, "confidence": 0.78173828125, "latency_ms": 13.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0044", "intent": "timer.status", "slots": {}, "confidence": 0.970703125, "latency_ms": 15.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0045", "intent": "alarm.set", "slots": {"time": "6:30"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0046", "intent": "volume.up", "slots": {}, "confidence": 0.74365234375, "latency_ms": 18.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0047", "intent": "device.off", "slots": {"entity": "tomorrow's alarm"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0048", "intent": "volume.up", "slots": {}, "confidence": null, "latency_ms": 1.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0049", "intent": "__unmapped__:ovos-skill-parrot.openvoiceos:did_you_hear_me", "slots": {}, "confidence": 0.9716796875, "latency_ms": 17.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0050", "intent": "volume.down", "slots": {}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0051", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0052", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0053", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 26.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0054", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 30.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0055", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0056", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 18.5, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0057", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 24.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0058", "intent": "lights.brightness", "slots": {"entity": "bedroom"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0059", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 26.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0060", "intent": "timer.status", "slots": {"timerkind": "lock"}, "confidence": null, "latency_ms": 12.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0061", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0062", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0063", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0064", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0065", "intent": "media.play", "slots": {"query": "i want to listen to classical music"}, "confidence": 0.6, "latency_ms": 28.8, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0066", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0067", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0068", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0069", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "slots": {"date": "the moon"}, "confidence": null, "latency_ms": 32.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0070", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 30.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0071", "intent": "alerts.list", "slots": {"alertkind": "tablespoons in a cup"}, "confidence": null, "latency_ms": 24.3, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0072", "intent": "time.current", "slots": {}, "confidence": 0.78515625, "latency_ms": 17.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0073", "intent": "joke.tell", "slots": {}, "confidence": null, "latency_ms": 2.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0074", "intent": "joke.tell", "slots": {}, "confidence": 0.9990234375, "latency_ms": 12.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0075", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 12.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0076", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0077", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0078", "intent": "timer.status", "slots": {"timerkind": "shut"}, "confidence": null, "latency_ms": 12.4, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0079", "intent": "weather.current", "slots": {}, "confidence": 0.79638671875, "latency_ms": 16.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0080", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "slots": {"schedkind": "brighter in here"}, "confidence": null, "latency_ms": 19.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0081", "intent": "volume.up", "slots": {}, "confidence": 0.9580078125, "latency_ms": 14.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0082", "intent": "weather.current", "slots": {"location": "here"}, "confidence": null, "latency_ms": 22.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0083", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0084", "intent": "volume.down", "slots": {}, "confidence": 0.8662109375, "latency_ms": 8.8, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0085", "intent": "volume.up", "slots": {}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0086", "intent": "timer.set", "slots": {}, "confidence": 0.9072265625, "latency_ms": 12.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0087", "intent": "weather.current", "slots": {"location": "dallas tomorrow"}, "confidence": null, "latency_ms": 31.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0088", "intent": "timer.set", "slots": {}, "confidence": 0.9951171875, "latency_ms": 19.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0089", "intent": "device.stop", "slots": {"entity": "pasta timer"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0090", "intent": "timer.status", "slots": {"timer_name": "pasta"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0091", "intent": "alarm.set", "slots": {"time": "5:45 on weekdays"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0092", "intent": "timer.cancel", "slots": {"alertkind": "6 : 30 alarm"}, "confidence": null, "latency_ms": 23.3, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0093", "intent": "volume.set", "slots": {"level": "40"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0094", "intent": "lights.brightness", "slots": {"entity": "office", "level": "half"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0095", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "slots": {"schedkind": "office light", "mediaform": "warm white"}, "confidence": null, "latency_ms": 28.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0096", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0097", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 31.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0098", "intent": "media.play", "slots": {"query": "the new radiohead album"}, "confidence": 1.0, "latency_ms": 6.7, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0099", "intent": "media.play", "slots": {"query": "put on a podcast about history"}, "confidence": 0.6, "latency_ms": 25.5, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0100", "intent": "media.play", "slots": {"query": "lo-fi in the office"}, "confidence": 1.0, "latency_ms": 5.6, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0101", "intent": "shopping.add", "slots": {}, "confidence": 0.84130859375, "latency_ms": 23.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0102", "intent": "reminder.set", "slots": {"task": "take out the trash"}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0103", "intent": "reminder.set", "slots": {"duration": "20 minutes", "task": "check the oven"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0104", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0105", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 31.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0106", "intent": "time.current", "slots": {}, "confidence": 0.8291015625, "latency_ms": 17.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0107", "intent": "time.current", "slots": {}, "confidence": 0.90869140625, "latency_ms": 17.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0108", "intent": null, "slots": {}, "confidence": null, "latency_ms": 28.0, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0109", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0110", "intent": null, "slots": {}, "confidence": null, "latency_ms": 39.4, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0111", "intent": "device.off", "slots": {"entity": "lights but not in the nursery"}, "confidence": null, "latency_ms": 4.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0112", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 33.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0113", "intent": "device.off", "slots": {"entity": "lights and lock the front door"}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0114", "intent": "timer.set", "slots": {"duration": "10 minutes and play some music"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0115", "intent": "time.current", "slots": {}, "confidence": 0.794921875, "latency_ms": 25.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0116", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 32.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0117", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0118", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0119", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 29.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0120", "intent": "alarm.set", "slots": {"time": "the weekend"}, "confidence": null, "latency_ms": 22.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0121", "intent": "joke.tell", "slots": {}, "confidence": 0.95263671875, "latency_ms": 14.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0122", "intent": "media.play", "slots": {"query": "the lights in that movie were amazing"}, "confidence": 0.3, "latency_ms": 39.5, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0123", "intent": null, "slots": {}, "confidence": null, "latency_ms": 27.1, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0124", "intent": "media.play", "slots": {"query": "it by ear"}, "confidence": 1.0, "latency_ms": 4.8, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0125", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0126", "intent": "timer.status", "slots": {"timerkind": "garage is a mess"}, "confidence": null, "latency_ms": 23.7, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0127", "intent": "date.current", "slots": {}, "confidence": 0.97900390625, "latency_ms": 13.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0128", "intent": "time.current", "slots": {}, "confidence": 0.97607421875, "latency_ms": 11.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0129", "intent": "timer.status", "slots": {"timerkind": "weather channel is useless"}, "confidence": null, "latency_ms": 33.1, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0130", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 33.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0131", "intent": "weather.current", "slots": {}, "confidence": 0.7705078125, "latency_ms": 8.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0132", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 15.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0133", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0134", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:thank_you_intent", "slots": {}, "confidence": null, "latency_ms": 1.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0135", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0136", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0137", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0138", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0139", "intent": "timer.status", "slots": {"timerkind": "quick brown fox jumps over the lazy dog"}, "confidence": null, "latency_ms": 36.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0140", "intent": "joke.tell", "slots": {}, "confidence": 0.994140625, "latency_ms": 12.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0141", "intent": null, "slots": {}, "confidence": null, "latency_ms": 21.5, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0142", "intent": "media.play", "slots": {"query": "book a flight to denver"}, "confidence": 0.4, "latency_ms": 23.2, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0143", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0144", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:what_time_will_it_be", "slots": {"offset": "set a time for ten"}, "confidence": null, "latency_ms": 16.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0145", "intent": "timer.status", "slots": {"timerkind": "whether tomorrow"}, "confidence": null, "latency_ms": 24.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0146", "intent": "media.play", "slots": {"query": "some jas"}, "confidence": 1.0, "latency_ms": 4.8, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0147", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0148", "intent": "device.on", "slots": {"entity": "lie its in the office"}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0149", "intent": "media.play", "slots": {"query": "paws the music"}, "confidence": 0.6, "latency_ms": 17.1, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0150", "intent": "reminder.set", "slots": {"task": "by milk"}, "confidence": null, "latency_ms": 21.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0151", "intent": "alarm.set", "slots": {"time": "six thirty a m"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0152", "intent": "alerts.list", "slots": {"alertkind": "thyme is it"}, "confidence": null, "latency_ms": 19.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0153", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0154", "intent": "alerts.list", "slots": {"alertkind": "about saturday"}, "confidence": null, "latency_ms": 18.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0155", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0156", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0157", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0158", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "slots": {"schedkind": "units", "mediaform": "metric"}, "confidence": null, "latency_ms": 24.3, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0159", "intent": "assistant.about", "slots": {}, "confidence": 0.94921875, "latency_ms": 16.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0160", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0161", "intent": "speak.repeat", "slots": {"text": "hello world"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0162", "intent": "media.play", "slots": {"query": "the news"}, "confidence": 1.0, "latency_ms": 5.1, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0163", "intent": "assistant.about", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0164", "intent": "system.ip", "slots": {}, "confidence": 0.9990234375, "latency_ms": 20.4, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0165", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0166", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0167", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0168", "intent": "timer.cancel", "slots": {"alertkind": "transcriptions"}, "confidence": null, "latency_ms": 18.3, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0169", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0170", "intent": "random.coin", "slots": {}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0171", "intent": "random.dice", "slots": {"number": "a", "faces": "20"}, "confidence": null, "latency_ms": 11.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0172", "intent": "random.number", "slots": {"lower": "1", "upper": "100"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0173", "intent": "time.current", "slots": {}, "confidence": 0.9970703125, "latency_ms": 11.9, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0174", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0175", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "slots": {"schedkind": "location", "mediaform": "seattle"}, "confidence": null, "latency_ms": 23.1, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0176", "intent": "speak.repeat", "slots": {"text": "to me in spanish"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0177", "intent": "settings.query", "slots": {}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0178", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0179", "intent": "speak.repeat", "slots": {"text": "i am the walrus"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0180", "intent": "news.play", "slots": {}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0181", "intent": "assistant.about", "slots": {}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0182", "intent": "assistant.about", "slots": {}, "confidence": 0.99609375, "latency_ms": 15.8, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0183", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 14.3, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0184", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0185", "intent": "__unmapped__:ovos-skill-boot-finished.openvoiceos:disable_ready_notification", "slots": {}, "confidence": 0.7724609375, "latency_ms": 9.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0186", "intent": "__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "slots": {}, "confidence": 0.9951171875, "latency_ms": 13.8, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0187", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 4.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0188", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0189", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0190", "intent": "settings.query", "slots": {}, "confidence": 0.86279296875, "latency_ms": 12.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0191", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "slots": {"schedkind": "toss a coin"}, "confidence": null, "latency_ms": 20.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0192", "intent": "random.dice", "slots": {}, "confidence": null, "latency_ms": 2.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0193", "intent": "__unmapped__:ovos-skill-count.openvoiceos:count_to_n", "slots": {}, "confidence": 0.9677734375, "latency_ms": 22.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0194", "intent": "random.dice", "slots": {"number": "2", "faces": "6 plus 3"}, "confidence": null, "latency_ms": 15.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0195", "intent": "random.dice", "slots": {"number": "a", "faces": "20 with advantage"}, "confidence": null, "latency_ms": 16.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0196", "intent": "random.dice", "slots": {"number": "four", "faces": "6 drop the lowest"}, "confidence": null, "latency_ms": 25.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0197", "intent": "random.dice", "slots": {"number": "eight", "faces": "6 fire damage"}, "confidence": null, "latency_ms": 16.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0198", "intent": "media.play", "slots": {"query": "the office on plex"}, "confidence": 1.0, "latency_ms": 5.9, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0199", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "slots": {"schedkind": "preferred name", "mediaform": "dan"}, "confidence": null, "latency_ms": 25.3, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0200", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0201", "intent": "timer.status", "slots": {"timerkind": "dice are on the table"}, "confidence": null, "latency_ms": 31.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0202", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0203", "intent": "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_tts", "slots": {}, "confidence": 0.79736328125, "latency_ms": 19.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0204", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 31.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0205", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 26.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0206", "intent": "media.play", "slots": {"query": "restart the movie from the beginning"}, "confidence": 0.6, "latency_ms": 27.8, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0207", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0208", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 20.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0209", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0210", "intent": "random.dice", "slots": {"number": "to", "faces": "six"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0211", "intent": "alerts.list", "slots": {"alertkind": "should i make for dinner"}, "confidence": null, "latency_ms": 24.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0212", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 24.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0213", "intent": "time.current", "slots": {}, "confidence": 0.79541015625, "latency_ms": 14.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0214", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 13.5, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0215", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 15.9, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0216", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0217", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0218", "intent": "alerts.list", "slots": {"alertkind": "'s for dinner"}, "confidence": null, "latency_ms": 22.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0219", "intent": "device.status", "slots": {"entity": "boogeyman under the bed"}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0220", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0221", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0222", "intent": "media.play", "slots": {"query": "tune into kexp"}, "confidence": 0.4, "latency_ms": 17.6, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0223", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 20.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0224", "intent": "media.play", "slots": {"query": "the album random access memories by daft punk on the kitchen speaker"}, "confidence": 1.0, "latency_ms": 11.9, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0225", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0226", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0227", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0228", "intent": "timer.status", "slots": {"timerkind": "kids are monsters today"}, "confidence": null, "latency_ms": 28.7, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0229", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "slots": {"schedkind": "i' ll call you"}, "confidence": null, "latency_ms": 22.4, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0230", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 14.9, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0231", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0232", "intent": null, "slots": {}, "confidence": null, "latency_ms": 23.7, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0233", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 26.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0234", "intent": "random.dice", "slots": {"faces": "20"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0235", "intent": "random.dice", "slots": {"number": "3", "faces": "6"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0236", "intent": "random.choice", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0237", "intent": "random.fortune", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0238", "intent": "timer.status", "slots": {"timerkind": "volume"}, "confidence": null, "latency_ms": 21.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0239", "intent": "volume.unmute", "slots": {}, "confidence": null, "latency_ms": 1.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0240", "intent": "shopping.add", "slots": {}, "confidence": 0.8583984375, "latency_ms": 11.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0241", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0242", "intent": "alerts.list", "slots": {"alertkind": "timers"}, "confidence": null, "latency_ms": 3.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0243", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 30.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0244", "intent": "device.status", "slots": {"entity": "living room"}, "confidence": null, "latency_ms": 30.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0245", "intent": "ha.assist", "slots": {"command": "start the dishwasher"}, "confidence": null, "latency_ms": 5.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0246", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 30.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0247", "intent": "alerts.list", "slots": {"alertkind": "does the future hold"}, "confidence": null, "latency_ms": 22.6, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0248", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:greetings", "slots": {}, "confidence": 0.75439453125, "latency_ms": 17.9, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0249", "intent": "alerts.list", "slots": {}, "confidence": 0.88525390625, "latency_ms": 13.4, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0250", "intent": "device.status", "slots": {"entity": "garage light"}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0251", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0252", "intent": "device.stop", "slots": {"entity": "vacuum"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0253", "intent": "device.stop", "slots": {"entity": "music"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0254", "intent": "joke.tell", "slots": {"topic": "dragons"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0255", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {}, "confidence": 0.998046875, "latency_ms": 15.6, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0256", "intent": "media.play", "slots": {"query": "set the music volume to 30"}, "confidence": 0.6, "latency_ms": 26.5, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0257", "intent": "volume.set", "slots": {"level": "30"}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0258", "intent": "ha.assist", "slots": {"command": "unlock the front door"}, "confidence": null, "latency_ms": 4.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0259", "intent": "timer.status", "slots": {"timerkind": "mean airspeed velocity of an unladen swallow"}, "confidence": null, "latency_ms": 33.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0260", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 3.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0261", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "slots": {"schedkind": "dismiss"}, "confidence": null, "latency_ms": 19.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0262", "intent": "speak.repeat", "slots": {"text": "rale and ding dong"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0263", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0264", "intent": "media.play", "slots": {"query": "something like glados"}, "confidence": 1.0, "latency_ms": 6.0, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0265", "intent": "weather.current", "slots": {}, "confidence": 0.9921875, "latency_ms": 13.4, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0266", "intent": "device.on", "slots": {"entity": "bedtime"}, "confidence": null, "latency_ms": 4.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0267", "intent": "timer.cancel", "slots": {}, "confidence": 0.82470703125, "latency_ms": 11.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0268", "intent": "speak.repeat", "slots": {"text": "hi to john"}, "confidence": null, "latency_ms": 4.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0269", "intent": "weather.current", "slots": {}, "confidence": 0.9892578125, "latency_ms": 18.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0270", "intent": "alerts.list", "slots": {"alertkind": "was the weather last night"}, "confidence": null, "latency_ms": 26.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0271", "intent": "media.play", "slots": {"query": "groove salad on soma fm"}, "confidence": 1.0, "latency_ms": 6.8, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0272", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 4.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0273", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0274", "intent": "timer.set", "slots": {"duration": "2 minutes"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0275", "intent": "alerts.list", "slots": {}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0276", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0277", "intent": "alarm.set", "slots": {"time": "6:30 am"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0278", "intent": "alarm.set", "slots": {"time": "9:45 pm"}, "confidence": null, "latency_ms": 2.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0279", "intent": "date.current", "slots": {}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0280", "intent": "timer.cancel", "slots": {}, "confidence": null, "latency_ms": 2.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0281", "intent": "timer.set", "slots": {"duration": "1 minute"}, "confidence": null, "latency_ms": 2.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0282", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "albert einstein"}, "confidence": null, "latency_ms": 20.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0283", "intent": "alarm.set", "slots": {"time": "7:15 pm"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0284", "intent": "alerts.list", "slots": {"alertkind": "does arnold say"}, "confidence": null, "latency_ms": 20.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0285", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:thank_you_intent", "slots": {}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0286", "intent": "timer.cancel", "slots": {}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0287", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 4.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0288", "intent": "alerts.list", "slots": {"alertkind": "teaspoons in a tablespoon"}, "confidence": null, "latency_ms": 23.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0289", "intent": "timer.set", "slots": {"duration": "20 seconds"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0290", "intent": "timer.set", "slots": {"duration": "45 seconds"}, "confidence": null, "latency_ms": 2.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0291", "intent": "time.current", "slots": {}, "confidence": 1.0, "latency_ms": 11.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0292", "intent": "media.play", "slots": {"query": "tom sawyer by rush"}, "confidence": 1.0, "latency_ms": 6.6, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0293", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0294", "intent": "device.off", "slots": {"entity": "master closet light"}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0295", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0296", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "elvis presley"}, "confidence": null, "latency_ms": 19.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0297", "intent": null, "slots": {}, "confidence": null, "latency_ms": 53.1, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0298", "intent": "alarm.set", "slots": {"time": "7 am"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0299", "intent": "timer.status", "slots": {"timerkind": "date"}, "confidence": null, "latency_ms": 20.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0300", "intent": "timer.set", "slots": {"duration": "40 seconds"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0301", "intent": "timer.set", "slots": {"duration": "10 second"}, "confidence": null, "latency_ms": 2.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0302", "intent": "alerts.list", "slots": {}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0303", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "slots": {"date": "the moon from earth"}, "confidence": null, "latency_ms": 25.0, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0304", "intent": "speak.repeat", "slots": {"text": "thank you"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0305", "intent": "speak.repeat", "slots": {"text": "see you next time"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0306", "intent": "random.number", "slots": {"lower": "one", "upper": "six thousand"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0307", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0308", "intent": "alerts.list", "slots": {"alertkind": "does malibu stacy say"}, "confidence": null, "latency_ms": 22.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0309", "intent": "timer.status", "slots": {"timerkind": "third law of robotics"}, "confidence": null, "latency_ms": 24.1, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0310", "intent": "device.off", "slots": {"entity": "desk lamp"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0311", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 26.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0312", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 24.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0313", "intent": "time.current", "slots": {}, "confidence": 1.0, "latency_ms": 23.8, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0314", "intent": "timer.status", "slots": {"timerkind": "volume sitting at"}, "confidence": null, "latency_ms": 24.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0315", "intent": "alerts.list", "slots": {"alertkind": "does arnold schwarzenegger say"}, "confidence": null, "latency_ms": 22.8, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0316", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0317", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0318", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0319", "intent": "device.on", "slots": {"entity": "master closet light"}, "confidence": null, "latency_ms": 5.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0320", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0321", "intent": "speak.repeat", "slots": {"text": "good night graie"}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0322", "intent": "speak.repeat", "slots": {"text": "ram a limiting dong"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0323", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0324", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0325", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0326", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0327", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0328", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0329", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0330", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0331", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0332", "intent": "speak.repeat", "slots": {"text": "something like lados"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0333", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0334", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 4.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0335", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0336", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 31.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0337", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 28.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0338", "intent": null, "slots": {}, "confidence": null, "latency_ms": 230.4, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0339", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0340", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0341", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "elvis presley"}, "confidence": null, "latency_ms": 19.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0342", "intent": "timer.set", "slots": {"duration": "90 seconds"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0343", "intent": "timer.set", "slots": {"duration": "60 seconds"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0344", "intent": "timer.cancel", "slots": {"alertkind": "timers"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0345", "intent": "timer.cancel", "slots": {"alertkind": "timers"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0346", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 4.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0347", "intent": "timer.set", "slots": {}, "confidence": 0.9462890625, "latency_ms": 21.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0348", "intent": "timer.set", "slots": {"duration": "3 minutes"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0349", "intent": "reminder.set", "slots": {"time": "11 pm", "task": "stretch"}, "confidence": null, "latency_ms": 18.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0350", "intent": "reminder.set", "slots": {"time": "11 pm", "task": "stretch"}, "confidence": null, "latency_ms": 20.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0351", "intent": "reminder.set", "slots": {"duration": "2 hours to stretch"}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0352", "intent": "timer.status", "slots": {"timerkind": "timer"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0353", "intent": "weather.forecast", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0354", "intent": "media.play", "slots": {"query": "npr news"}, "confidence": 1.0, "latency_ms": 6.0, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0355", "intent": "media.play", "slots": {"query": "moonlight sonata"}, "confidence": 1.0, "latency_ms": 6.7, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0356", "intent": "media.play", "slots": {"query": "grooved salad on some fm"}, "confidence": 1.0, "latency_ms": 8.2, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0357", "intent": "media.play", "slots": {"query": "moonlight sonata on youtube"}, "confidence": 1.0, "latency_ms": 6.5, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0358", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 15.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0359", "intent": "stop", "slots": {}, "confidence": 0.7646484375, "latency_ms": 10.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0360", "intent": "random.dice", "slots": {}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0361", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "michael jackson"}, "confidence": null, "latency_ms": 23.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0362", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "michael jackson"}, "confidence": null, "latency_ms": 22.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0363", "intent": "media.play", "slots": {"query": "samoa fm"}, "confidence": 1.0, "latency_ms": 5.0, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0364", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 4.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0365", "intent": "alarm.set", "slots": {"time": "30 seconds from now"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0366", "intent": "date.current", "slots": {}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0367", "intent": "easter_egg", "slots": {}, "confidence": null, "latency_ms": 3.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0368", "intent": "media.play", "slots": {"query": "groove salad"}, "confidence": 1.0, "latency_ms": 5.7, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0369", "intent": "joke.tell", "slots": {}, "confidence": 0.87158203125, "latency_ms": 20.4, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0370", "intent": "speak.repeat", "slots": {"text": "good night , gracie"}, "confidence": null, "latency_ms": 4.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0371", "intent": "timer.set", "slots": {"duration": "30 second"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0372", "intent": "timer.cancel", "slots": {}, "confidence": 0.82666015625, "latency_ms": 11.8, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0373", "intent": "weather.current", "slots": {}, "confidence": null, "latency_ms": 5.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0374", "intent": "alarm.set", "slots": {"time": "7am"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0375", "intent": "alarm.set", "slots": {"time": "12:15 p.m"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0376", "intent": "alarm.set", "slots": {"time": "10am"}, "confidence": null, "latency_ms": 2.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0377", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0378", "intent": "random.dice", "slots": {"faces": "six"}, "confidence": null, "latency_ms": 3.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0379", "intent": "timer.cancel", "slots": {"alertkind": "alarms"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0380", "intent": "alarm.set", "slots": {"time": "10:27 am"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0381", "intent": "system.ip", "slots": {}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0382", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0383", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:greetings", "slots": {}, "confidence": 0.9453125, "latency_ms": 15.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0384", "intent": "alarm.set", "slots": {"time": "10:41 am"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0385", "intent": "alarm.set", "slots": {"time": "10:51 am"}, "confidence": null, "latency_ms": 2.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0386", "intent": "alarm.set", "slots": {"time": "11:14 am"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0387", "intent": "device.off", "slots": {"entity": "kitchen light"}, "confidence": null, "latency_ms": 2.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0388", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "your daddy and what does he do"}, "confidence": null, "latency_ms": 28.7, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0389", "intent": "device.on", "slots": {"entity": "kitchen light"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0390", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 19.9, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0391", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0392", "intent": "device.off", "slots": {"entity": "gas clamp"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0393", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:greetings", "slots": {}, "confidence": 0.8173828125, "latency_ms": 17.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0394", "intent": "device.on", "slots": {"entity": "murder"}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0395", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0396", "intent": "assistant.about", "slots": {}, "confidence": 0.845703125, "latency_ms": 12.4, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0397", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 31.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0400", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0401", "intent": "alerts.list", "slots": {"alertkind": "shicken"}, "confidence": null, "latency_ms": 16.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0402", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0403", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:how_are_you", "slots": {}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0404", "intent": "device.on", "slots": {"entity": "kitchen light thanks"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0405", "intent": "device.on", "slots": {"entity": "desk lamp"}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0406", "intent": "device.off", "slots": {"entity": "living room fan"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0407", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 11.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0408", "intent": "device.off", "slots": {"entity": "desk land"}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0409", "intent": "__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "slots": {}, "confidence": 0.81005859375, "latency_ms": 6.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0410", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 12.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0411", "intent": "device.off", "slots": {"entity": "master bedroom light"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0412", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 12.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0413", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0414", "intent": "timer.status", "slots": {"timerkind": "weather right now"}, "confidence": null, "latency_ms": 22.6, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0415", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 20.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0416", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 11.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0417", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 20.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0418", "intent": "device.on", "slots": {"entity": "right printer"}, "confidence": null, "latency_ms": 3.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0419", "intent": "device.on", "slots": {"entity": "3d printer"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0420", "intent": "device.off", "slots": {"entity": "living room light"}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0421", "intent": "alerts.list", "slots": {}, "confidence": 0.8671875, "latency_ms": 13.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0422", "intent": "device.off", "slots": {"entity": "desk planan"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0423", "intent": "device.off", "slots": {"entity": "desk lam"}, "confidence": null, "latency_ms": 2.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0424", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:missed_alerts", "slots": {}, "confidence": 0.9970703125, "latency_ms": 6.7, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0425", "intent": "device.on", "slots": {"entity": "entry highl light"}, "confidence": null, "latency_ms": 4.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0426", "intent": "device.off", "slots": {"entity": "disk lamp"}, "confidence": null, "latency_ms": 3.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0427", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 32.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0428", "intent": "device.off", "slots": {"entity": "jake bedroom light"}, "confidence": null, "latency_ms": 3.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0429", "intent": "device.off", "slots": {"entity": "guest bedroom light"}, "confidence": null, "latency_ms": 3.4, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0430", "intent": "device.off", "slots": {"entity": "john bedroom light"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0431", "intent": "device.off", "slots": {"entity": "jake bedroom light"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0432", "intent": "device.off", "slots": {"entity": "desk lamps"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0433", "intent": "device.off", "slots": {"entity": "desk glamour"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0434", "intent": "lights.brightness", "slots": {"level": "60", "entity": "master bedroom light"}, "confidence": null, "latency_ms": 20.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0435", "intent": "media.play", "slots": {"query": "testing testing can you hear me"}, "confidence": 0.4, "latency_ms": 27.6, "stage": "ovos-ocp-pipeline-plugin-medium"}
+{"id": "u0436", "intent": "timer.status", "slots": {"timerkind": "mean airspeed velocity of an unladen swallow"}, "confidence": null, "latency_ms": 30.9, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0437", "intent": "timer.status", "slots": {"timerkind": "status of office light"}, "confidence": null, "latency_ms": 25.6, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0438", "intent": "media.play", "slots": {"query": "the artist carbon leaf on office speaker"}, "confidence": 1.0, "latency_ms": 8.5, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0439", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0440", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0441", "intent": "alerts.list", "slots": {}, "confidence": 0.9970703125, "latency_ms": 12.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0442", "intent": "alerts.list", "slots": {}, "confidence": 0.82568359375, "latency_ms": 11.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0443", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 16.0, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0444", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 17.1, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0445", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 19.0, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0446", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.3, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0447", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 20.1, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0448", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 19.8, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0449", "intent": "alerts.list", "slots": {}, "confidence": 0.9892578125, "latency_ms": 16.2, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0450", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 22.0, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0451", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0452", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 12.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0453", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 29.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0454", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0455", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 18.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0456", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 16.5, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0457", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.5, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0458", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 12.9, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0459", "intent": "media.play", "slots": {}, "confidence": 0.98828125, "latency_ms": 6.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0460", "intent": "__unmapped__:ovos-skill-diagnostics.openvoiceos:query_ovos_location", "slots": {}, "confidence": 0.9091796875, "latency_ms": 11.9, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0461", "intent": "__unmapped__:ovos-skill-personal.openvoiceos:where_were_you_born", "slots": {}, "confidence": null, "latency_ms": 3.3, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0462", "intent": "timer.status", "slots": {"timerkind": "mean velocity of an airon laden swallow"}, "confidence": null, "latency_ms": 33.1, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0463", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0464", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 11.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0465", "intent": "device.off", "slots": {"entity": "three d printer"}, "confidence": null, "latency_ms": 4.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0466", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 36.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0467", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:thank_you_intent", "slots": {}, "confidence": 0.787109375, "latency_ms": 10.0, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0468", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 36.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0469", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 71.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0470", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0471", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0472", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 51.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0473", "intent": "media.play", "slots": {"query": "white noise"}, "confidence": 1.0, "latency_ms": 5.4, "stage": "ovos-ocp-pipeline-plugin-high"}
+{"id": "u0474", "intent": "weather.forecast", "slots": {}, "confidence": null, "latency_ms": 3.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0475", "intent": "assistant.about", "slots": {}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0476", "intent": "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_tts", "slots": {}, "confidence": 0.740234375, "latency_ms": 14.5, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0477", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0478", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "brendan sanderson"}, "confidence": null, "latency_ms": 22.4, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0479", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "slots": {"query": "brandon sanderson"}, "confidence": null, "latency_ms": 20.2, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0480", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 13.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0481", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.8, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0483", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 22.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0484", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 12.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0485", "intent": "alerts.list", "slots": {"alertkind": "is neon gecko dot com"}, "confidence": null, "latency_ms": 24.5, "stage": "ovos-padatious-pipeline-plugin-medium"}
+{"id": "u0487", "intent": "time.current", "slots": {}, "confidence": 1.0, "latency_ms": 16.1, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0488", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 17.2, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0489", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0490", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 14.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0491", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0492", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 11.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0493", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 21.1, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0494", "intent": "app.launch", "slots": {}, "confidence": null, "latency_ms": 19.7, "stage": "ovos-fallback-pipeline-plugin-high"}
+{"id": "u0495", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 27.6, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0496", "intent": "speak.repeat", "slots": {"text": "hey neon"}, "confidence": null, "latency_ms": 3.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0497", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.9, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0498", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0499", "intent": null, "slots": {}, "confidence": null, "latency_ms": 23.0, "stage": "ovos-fallback-pipeline-plugin-low"}
+{"id": "u0500", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 16.0, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0502", "intent": "device.on", "slots": {"entity": "kitchen light"}, "confidence": null, "latency_ms": 4.0, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0503", "intent": "device.off", "slots": {"entity": "garage light"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0504", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 23.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0505", "intent": "device.on", "slots": {"entity": "deskland"}, "confidence": null, "latency_ms": 3.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0506", "intent": "device.off", "slots": {"entity": "office light"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0507", "intent": "device.on", "slots": {"entity": "office light"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0508", "intent": "device.on", "slots": {"entity": "descalam"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0509", "intent": "device.on", "slots": {"entity": "desk limp"}, "confidence": null, "latency_ms": 2.6, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0510", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 25.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0511", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 38.7, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0512", "intent": "device.off", "slots": {"entity": "3d printer"}, "confidence": null, "latency_ms": 3.2, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0513", "intent": "device.on", "slots": {"entity": "desk liam"}, "confidence": null, "latency_ms": 2.9, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0514", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 57.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0515", "intent": "device.on", "slots": {"entity": "master bedroom light"}, "confidence": null, "latency_ms": 3.7, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0516", "intent": "lights.brightness", "slots": {"level": "100", "entity": "master bedroom light"}, "confidence": null, "latency_ms": 20.8, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0517", "intent": "device.off", "slots": {"entity": "living room fans"}, "confidence": null, "latency_ms": 3.5, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0518", "intent": "joke.tell", "slots": {}, "confidence": 0.9873046875, "latency_ms": 17.3, "stage": "ovos-m2v-pipeline-high"}
+{"id": "u0519", "intent": "knowledge.ask", "slots": {}, "confidence": null, "latency_ms": 19.4, "stage": "ovos-fallback-pipeline-plugin-medium"}
+{"id": "u0520", "intent": "device.status", "slots": {"entity": "office light"}, "confidence": null, "latency_ms": 4.1, "stage": "ovos-padatious-pipeline-plugin-high"}
+{"id": "u0521", "intent": "device.off", "slots": {"entity": "3 d printer"}, "confidence": null, "latency_ms": 3.0, "stage": "ovos-padatious-pipeline-plugin-high"}

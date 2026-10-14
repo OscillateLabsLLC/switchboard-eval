@@ -1,0 +1,2693 @@
+{
+ "tools": [
+  {
+   "type": "function",
+   "function": {
+    "name": "kiwix_mcp__search_kiwix",
+    "description": "Search kiwix (kiwix mcp skill). Example requests: \"kiwix <query>\"; \"search the offline library for <query>\"; \"look up <query> offline\"; \"what does kiwix say about <query>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "query": {
+       "type": "string",
+       "description": "query"
+      }
+     },
+     "required": [
+      "query"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "kiwix_mcp__tell_more",
+    "description": "Tell more (kiwix mcp skill). Example requests: \"go on\"; \"continue\"; \"what else\"; \"tell me more\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "icanhazdadjokes__search_joke",
+    "description": "Search joke (icanhazdadjokes skill). Example requests: \"joke about <query>\"; \"do you know any <query> jokes\"; \"tell me a <query> joke\"; \"can you tell jokes about <query>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "query": {
+       "type": "string",
+       "description": "query"
+      }
+     },
+     "required": [
+      "query"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "icanhazdadjokes__joke",
+    "description": "Joke (icanhazdadjokes skill). Example requests: \"say a joke\"; \"make me laugh\"; \"can you tell jokes\"; \"do you know any jokes\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "white_noise_andlo__set_noise",
+    "description": "Set noise (white noise andlo skill). Example requests: \"play <noise> noise\"; \"start <noise> noise\"; \"play some <noise> noise\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "noise": {
+       "type": "string",
+       "description": "noise"
+      }
+     },
+     "required": [
+      "noise"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "white_noise_andlo__start_noise",
+    "description": "Start noise (white noise andlo skill). Example requests: \"play some noise\"; \"start some background noise\"; \"play ambient noise\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "white_noise_andlo__stop_noise",
+    "description": "Stop noise (white noise andlo skill). Example requests: \"stop the noise\"; \"stop the ambient sound\"; \"stop the background noise\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "about__LicenseIntent",
+    "description": "License (about skill). Triggered by keywords such as: \"tell me my license\"; \"tell me your license\"; \"tell me the license\"; \"list my license\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "about__ListSkillsIntent",
+    "description": "List skills (about skill). Triggered by keywords such as: \"skills\"; \"what you can do\"; \"what can you do\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__list_alerts",
+    "description": "List alerts (alerts skill). Example requests: \"list alarms\"; \"tell me alerts\"; \"what are events\"; \"do i have any timers\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__quiet_hours_start",
+    "description": "Quiet hours start (alerts skill). Example requests: \"nap time\"; \"go to sleep\"; \"do not disturb me\"; \"enter quiet hours\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "end_condition": {
+       "type": "string",
+       "description": "end condition"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__quiet_hours_end",
+    "description": "Quiet hours end (alerts skill). Example requests: \"wake up\"; \"miss anything\"; \"end quiet hours\"; \"what have i missed\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CancelAlert",
+    "description": "Cancel alert (alerts skill). Triggered by keywords such as: \"cancel alarm\"; \"cancel alarms\"; \"cancel wake me up\"; \"cancel timer\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CreateAlarm",
+    "description": "Create alarm (alerts skill). Triggered by keywords such as: \"set alarm\"; \"set alarms\"; \"set wake me up\"; \"create alarm\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CreateEvent",
+    "description": "Create event (alerts skill). Triggered by keywords such as: \"set appointment\"; \"set event\"; \"set events\"; \"set appointments\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CreateReminder",
+    "description": "Create reminder (alerts skill). Triggered by keywords such as: \"set reminder\"; \"set reminders\"; \"create reminder\"; \"create reminders\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CreateReminderAlt",
+    "description": "Create reminder alt (alerts skill). Triggered by keywords such as: \"remind me\"; \"tell me to\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__CreateTimer",
+    "description": "Create timer (alerts skill). Triggered by keywords such as: \"set timer\"; \"set timers\"; \"set time\"; \"create timer\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__ListAllAlerts",
+    "description": "List all alerts (alerts skill). Triggered by keywords such as: \"what all alarm\"; \"what all alarms\"; \"what all wake me up\"; \"what all timer\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__NextAlert",
+    "description": "Next alert (alerts skill). Triggered by keywords such as: \"what next alarm\"; \"what next alarms\"; \"what next wake me up\"; \"what next timer\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "alerts__TimerStatus",
+    "description": "Timer status (alerts skill). Triggered by keywords such as: \"how much time is left\"; \"timer status\"; \"how long\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "audio_recording__start_recording",
+    "description": "Start recording (audio recording skill). Example requests: \"record audio\"; \"new recording\"; \"commence audio recording with the name <name>\"; \"start recording right away\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "name": {
+       "type": "string",
+       "description": "name"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "camera__TakePicIntent",
+    "description": "Take pic (camera skill). Example requests: \"take photo\"; \"camera capture\"; \"take my user picture\"; \"webcam capture\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "camera__TakeVidIntent",
+    "description": "Take vid (camera skill). Example requests: \"take a video\"; \"record for <duration>\"; \"neon take my user <duration> recording\"; \"video <duration>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "duration": {
+       "type": "string",
+       "description": "duration"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "camera__ShowLastIntent",
+    "description": "Show last (camera skill). Example requests: \"show latest pic\"; \"display last photo\"; \"show me my the last video\"; \"display my latest picture\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "communication__call",
+    "description": "Call (communication skill). Example requests: \"Call <contact>\"; \"Neon phone <contact>\"; \"Neon place a call to <contact>\"; \"Phone <contact>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "contact": {
+       "type": "string",
+       "description": "contact"
+      }
+     },
+     "required": [
+      "contact"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "communication__SendMessageIntent",
+    "description": "Send message (communication skill). Triggered by keywords such as: \"send message\"; \"send shout\"; \"send text\"; \"draft message\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "data_controls__clear_data",
+    "description": "Clear data (data controls skill). Example requests: \"clear my <dataset>\"; \"i want you to erase all of the <dataset>\"; \"reset all <dataset>\"; \"erase the <dataset>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "dataset": {
+       "type": "string",
+       "description": "dataset"
+      }
+     },
+     "required": [
+      "dataset"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "date_time__what_dow_is_it",
+    "description": "What dow is it (date time skill). Example requests: \"what day of the week is it\"; \"i need to know the day of the week at <location>\"; \"tell me the day of the week in <location>\"; \"i want to know the day of the week\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "date_time__what_day_is_it",
+    "description": "What day is it (date time skill). Example requests: \"what day is it\"; \"tell me the date\"; \"i need to know the date at <location>\"; \"do you have the date in <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "date_time__what_time_is_it",
+    "description": "What time is it (date time skill). Example requests: \"what time is it\"; \"i need to know the current time at <location>\"; \"can you tell me the time\"; \"do you have the time in <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "demo__show_demo",
+    "description": "Show demo (demo skill). Example requests: \"show me the demo\"; \":0 i want to see the demo\"; \":0 show me the demo\"; \"i want to see the demo\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__exit",
+    "description": "Exit (device controls skill). Example requests: \"exit\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__restart",
+    "description": "Restart (device controls skill). Example requests: \"reboot\"; \"restart\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__shutdown",
+    "description": "Shutdown (device controls skill). Example requests: \"shutdown\"; \"turn off\"; \"shut down\"; \"power off\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__ChangeWakeWordIntent",
+    "description": "Change wake word (device controls skill). Triggered by keywords such as: \"change wake word\"; \"change wake words\"; \"change awake words\"; \"change weight words\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__ConfirmListeningIntent",
+    "description": "Confirm listening (device controls skill). Triggered by keywords such as: \"listening confirmation enable\"; \"listening confirmation turn on\"; \"listening confirmation disable\"; \"listening confirmation turn off\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__ExitShutdownIntent",
+    "description": "Exit shutdown (device controls skill). Triggered by keywords such as: \"i want you to exit\"; \"i want you to shutdown\"; \"i want you to shut down\"; \"i want you to restart\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__ShowDebugIntent",
+    "description": "Show debug (device controls skill). Triggered by keywords such as: \"neon brain enable\"; \"neon brain turn on\"; \"neon brain disable\"; \"neon brain turn off\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__SkipWWIntent",
+    "description": "Skip wwintent (device controls skill). Triggered by keywords such as: \"wake word skip\"; \"wake word begin skipping\"; \"wake word allow skipping\"; \"wake word start skipping\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__SoloModeIntent",
+    "description": "Solo mode (device controls skill). Triggered by keywords such as: \"solo mode start\"; \"solo mode begin\"; \"solo mode allow\"; \"solo mode enable\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__StopSoloModeIntent",
+    "description": "Stop solo mode (device controls skill). Triggered by keywords such as: \"solo mode stop\"; \"solo mode end\"; \"solo mode quit\"; \"solo mode disable\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "device_controls__UseWWIntent",
+    "description": "Use wwintent (device controls skill). Triggered by keywords such as: \"wake word stop skipping\"; \"wake word quit skipping\"; \"wake word deny skipping\"; \"wake word end skipping\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__law_of_robotics",
+    "description": "Law of robotics (easter eggs skill). Example requests: \"speak the laws of robotic\"; \"tell me <ordinal> law of robotics\"; \"what is <ordinal> law of robotic\"; \"what are the laws of robotics\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "ordinal": {
+       "type": "string",
+       "description": "ordinal"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__adult_mode_intent",
+    "description": "Adult mode (easter eggs skill). Triggered by keywords such as: \"hurt me plenty\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__arnold_intent",
+    "description": "Arnold (easter eggs skill). Triggered by keywords such as: \"arnold say\"; \"terminator say\"; \"schwarzenegger say\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__bender_intent",
+    "description": "Bender (easter eggs skill). Triggered by keywords such as: \"bender say\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__bill_and_ted_intent",
+    "description": "Bill and ted (easter eggs skill). Triggered by keywords such as: \"stallion\"; \"stallions\"; \"wild stallions\"; \"wild stallion\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__conan_intent",
+    "description": "Conan (easter eggs skill). Triggered by keywords such as: \"what is best in life\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__duke_nukem_intent",
+    "description": "Duke nukem (easter eggs skill). Triggered by keywords such as: \"duke nukem say\"; \"duke newcom say\"; \"duke newum say\"; \"duke newham say\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__glados_intent",
+    "description": "Glados (easter eggs skill). Triggered by keywords such as: \"glados say\"; \"gladis say\"; \"gladdos say\"; \"gladys say\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__grandma_mode_intent",
+    "description": "Grandma mode (easter eggs skill). Triggered by keywords such as: \"too young to die\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__hal_intent",
+    "description": "Hal (easter eggs skill). Triggered by keywords such as: \"HAL say\"; \"HAL 9000 say\"; \"all say\"; \"all 9000 say\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__languages_you_speak_intent",
+    "description": "Languages you speak (easter eggs skill). Triggered by keywords such as: \"languages do you speak\"; \"languages can you speak\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__malibu_stacey_intent",
+    "description": "Malibu stacey (easter eggs skill). Triggered by keywords such as: \"malibu stacy\"; \"malley boo stay see\"; \"malla boo stay see\"; \"what would malibu stacy do\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__pod_bay_doors_intent",
+    "description": "Pod bay doors (easter eggs skill). Triggered by keywords such as: \"open the pod bay doors\"; \"open pod bay doors\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__portal_intent",
+    "description": "Portal (easter eggs skill). Triggered by keywords such as: \"sing portal\"; \"sing glados\"; \"glados sing\"; \"portal sing\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__rock_paper_scissors_lizard_spock_intent",
+    "description": "Rock paper scissors lizard spock (easter eggs skill). Triggered by keywords such as: \"rock paper scissors lizard spock\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__sing_intent",
+    "description": "Sing (easter eggs skill). Triggered by keywords such as: \"sing\"; \"sing me a song\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "easter_eggs__stardate_intent",
+    "description": "Stardate (easter eggs skill). Triggered by keywords such as: \"stardate\"; \"star date\"; \"startdate\"; \"start date\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_llm__chat_with_llm",
+    "description": "Chat with llm (fallback llm skill). Example requests: \"i want to chat to bard\"; \"i want to talk to jack chi pt\"; \"i want to talk to chat g p t\"; \"i want to chat with a language model\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_llm__email_chat_history",
+    "description": "Email chat history (fallback llm skill). Example requests: \"send me my chat\"; \"send me a copy of our conversation history\"; \"send me the conversation\"; \"send me a transcript of the chat\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_llm__ask_llm",
+    "description": "Ask llm (fallback llm skill). Example requests: \"ask bard <question>\"; \"task chat g p t <question>\"; \"tell jack chi pt <question>\"; \"tell a language model <question>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "question": {
+       "type": "string",
+       "description": "question"
+      }
+     },
+     "required": [
+      "question"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_llm__disable_fallback",
+    "description": "Disable fallback (fallback llm skill). Example requests: \"disable llm fallback\"; \"disable chat g p t fall back skill\"; \"disable jack chi pt fall back\"; \"disable chat gbt fallback skill\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_llm__enable_fallback",
+    "description": "Enable fallback (fallback llm skill). Example requests: \"enable llm fallback\"; \"enable chat g p t fall back skill\"; \"enable jack chi pt fall back\"; \"enable chat gbt fallback skill\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_wolfram_alpha__AskWolfram",
+    "description": "Ask wolfram (fallback wolfram alpha skill). Triggered by keywords such as: \"ask wolfram\"; \"ask wolfram alpha\"; \"wolfram alpha\"; \"wolframalpha\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "fallback_wolfram_alpha__WolframSource",
+    "description": "Wolfram source (fallback wolfram alpha skill). Triggered by keywords such as: \"tell source\"; \"tell sources\"; \"tell detail\"; \"tell details\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_set_color",
+    "description": "Lights set color (homeassistant skill). Example requests: \"make my light <entity> <color>\"; \"change the <entity> color to <color>\"; \"adjust the light <entity> to <color>\"; \"make the <entity> color <color>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "color": {
+       "type": "string",
+       "description": "color"
+      },
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "color",
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__disable",
+    "description": "Disable (homeassistant skill). Example requests: \"Disable Home Assistant\"; \"I don't use Home Assistant\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_get_brightness",
+    "description": "Lights get brightness (homeassistant skill). Example requests: \"what is the brightness of <entity>\"; \"what's the current brightness of my <entity>\"; \"get the current brightness of <entity>\"; \"query the current brightness of <entity>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__sensor",
+    "description": "Sensor (homeassistant skill). Example requests: \"is <entity> on\"; \"give me the state of <entity>\"; \"has my <entity> detected a problem\"; \"what is the value of my <entity>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__assist",
+    "description": "Assist (homeassistant skill). Example requests: \"tell home assistant <command>\"; \"tell home assistant to <command>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "command": {
+       "type": "string",
+       "description": "command"
+      }
+     },
+     "required": [
+      "command"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__enable",
+    "description": "Enable (homeassistant skill). Example requests: \"Enable Home Assistant\"; \"I want to use Home Assistant\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_decrease_brightness",
+    "description": "Lights decrease brightness (homeassistant skill). Example requests: \"dim <entity>\"; \"decrease the brightness of my <entity>\"; \"make <entity> dimmer\"; \"dim down the <entity>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__turn_on",
+    "description": "Turn on (homeassistant skill). Example requests: \"turn <entity> on\"; \"I would like the <entity> on\"; \"I'd like to turn on my <entity>\"; \"can you turn on the <entity> please\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__stop",
+    "description": "Stop (homeassistant skill). Example requests: \"stop <entity>\"; \"I would like the <entity> stopped\"; \"I'd like to stop the <entity>\"; \"can you stop the <entity> please\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__turn_off",
+    "description": "Turn off (homeassistant skill). Example requests: \"turn <entity> off\"; \"I would like the <entity> off\"; \"I'd like to turn off my <entity>\"; \"can you turn off the <entity> please\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_get_color",
+    "description": "Lights get color (homeassistant skill). Example requests: \"what is the color of <entity>\"; \"what's the current color of my <entity>\"; \"get the current color of <entity>\"; \"query the current color of <entity>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_set_brightness",
+    "description": "Lights set brightness (homeassistant skill). Example requests: \"set <entity> brightness to <brightness>\"; \"change the brightness of <entity> to <brightness>\"; \"set the brightness of my <entity> to <brightness> percent\"; \"set the brightness of <entity> to <brightness>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "brightness": {
+       "type": "string",
+       "description": "brightness"
+      },
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "brightness",
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__lights_increase_brightness",
+    "description": "Lights increase brightness (homeassistant skill). Example requests: \"make <entity> brighter\"; \"bump up the brightness of <entity>\"; \"increase the brightness of my <entity>\"; \"make my <entity> brighter\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "entity": {
+       "type": "string",
+       "description": "entity"
+      }
+     },
+     "required": [
+      "entity"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "homeassistant__get_all_devices",
+    "description": "Get all devices (homeassistant skill). Example requests: \"rebuild device list\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ip_address__IPIntent",
+    "description": "Ipintent (ip address skill). Triggered by keywords such as: \"how IP address\"; \"how IP\"; \"how i.p.\"; \"how i p\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "launcher__launch_program",
+    "description": "Launch program (launcher skill). Example requests: \"open <program>\"; \"lunch <program>\"; \"launch <program>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "program": {
+       "type": "string",
+       "description": "program"
+      }
+     },
+     "required": [
+      "program"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "launcher__BrowseWebsiteIntent",
+    "description": "Browse website (launcher skill). Triggered by keywords such as: \"go to website\"; \"navigate to website\"; \"browse to website\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "meal_plan__plan_meal",
+    "description": "Plan meal (meal plan skill). Example requests: \"i'm hungry\"; \"what should i eat?\"; \"what's for dinner?\"; \"what should i eat for dinner?\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "meal_plan__list_meal",
+    "description": "List meal (meal plan skill). Example requests: \"list meals\"; \"what are all my meals?\"; \"tell me all my meals\"; \"what are my food options?\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "meal_plan__remove_meal",
+    "description": "Remove meal (meal plan skill). Example requests: \"delete meal\"; \"get rid of a meal\"; \"remove meal\"; \"delete a meal\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "meal_plan__add_meal",
+    "description": "Add meal (meal plan skill). Example requests: \"add meal\"; \"new dinner\"; \"save a meal\"; \"save meal\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "messaging__DraftEmailIntent",
+    "description": "Draft email (messaging skill). Triggered by keywords such as: \"send email\"; \"draft email\"; \"start email\"; \"create email\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "monster_scanner__MonsterScannerIntent",
+    "description": "Monster scanner (monster scanner skill). Triggered by keywords such as: \"monsters bed\"; \"boogeyman bed\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__play_track",
+    "description": "Play track (musicassistant skill). Example requests: \"play song <track>\"; \"listen to the track <track> by band <artist> in <location>\"; \"play track <track> on <location>\"; \"listen to song <track> using <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "artist": {
+       "type": "string",
+       "description": "artist"
+      },
+      "location": {
+       "type": "string",
+       "description": "location"
+      },
+      "track": {
+       "type": "string",
+       "description": "track"
+      }
+     },
+     "required": [
+      "track"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__pause",
+    "description": "Pause (musicassistant skill). Example requests: \"pause\"; \"resume audio\"; \"unpause music\"; \"continue playing player\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__play_playlist",
+    "description": "Play playlist (musicassistant skill). Example requests: \"play playlist <playlist>\"; \"listen to playlist <playlist> in the <location>\"; \"shuffle playlist <playlist> on <location>\"; \"shuffle the playlist <playlist>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      },
+      "playlist": {
+       "type": "string",
+       "description": "playlist"
+      }
+     },
+     "required": [
+      "playlist"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__play_radio",
+    "description": "Play radio (musicassistant skill). Example requests: \"tune to <radio_station>\"; \"play radio station <radio_station> in the <location>\"; \"tune into <radio_station> on the <location>\"; \"listen to <radio_station> radio using <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      },
+      "radio_station": {
+       "type": "string",
+       "description": "radio station"
+      }
+     },
+     "required": [
+      "radio_station"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__volume",
+    "description": "Volume (musicassistant skill). Example requests: \"mute\"; \"unmute\"; \"music volume to <volume_level>\"; \"mute music in the <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      },
+      "volume_level": {
+       "type": "string",
+       "description": "volume level"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__previous",
+    "description": "Previous (musicassistant skill). Example requests: \"back\"; \"rewind\"; \"previous\"; \"last song\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__play_album",
+    "description": "Play album (musicassistant skill). Example requests: \"play ep <album>\"; \"listen to the album <album> by artist <artist> in <location> with radio mode\"; \"shuffle record <album> on <location>\"; \"listen to single <album>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "album": {
+       "type": "string",
+       "description": "album"
+      },
+      "artist": {
+       "type": "string",
+       "description": "artist"
+      },
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": [
+      "album"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__play_artist",
+    "description": "Play artist (musicassistant skill). Example requests: \"play band <artist>\"; \"listen to group <artist> in the <location>\"; \"shuffle music by <artist>\"; \"shuffle artist <artist> on <location>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "artist": {
+       "type": "string",
+       "description": "artist"
+      },
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": [
+      "artist"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "musicassistant__next",
+    "description": "Next (musicassistant skill). Example requests: \"next\"; \"skip\"; \"nextthis song\"; \"skipthis title\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "location": {
+       "type": "string",
+       "description": "location"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ddg__search_duck",
+    "description": "Search duck (ddg skill). Example requests: \"search the duck for <keyword>\"; \"what does duck duck go say about <keyword>\"; \"ask the duck duck about <keyword>\"; \"search duck duck go for <keyword>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "keyword": {
+       "type": "string",
+       "description": "keyword"
+      }
+     },
+     "required": [
+      "keyword"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ddg__DuckMore",
+    "description": "Duck more (ddg skill). Triggered by keywords such as: \"continue DuckKnows\"; \"know more DuckKnows\"; \"tell me more DuckKnows\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__roll_multiple_dice",
+    "description": "Roll multiple dice (randomness skill). Example requests: \"roll <number> die\"; \"roll <number> <faces> sided dice\"; \"roll <number> d <faces>\"; \"roll <number> dice\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "faces": {
+       "type": "string",
+       "description": "faces"
+      },
+      "number": {
+       "type": "string",
+       "description": "number"
+      }
+     },
+     "required": [
+      "number"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__roll_single_die",
+    "description": "Roll single die (randomness skill). Example requests: \"roll die\"; \"roll a <faces> sided dice\"; \"roll a dice\"; \"roll a die\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "faces": {
+       "type": "string",
+       "description": "faces"
+      }
+     },
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__flip_a_coin",
+    "description": "Flip a coin (randomness skill). Example requests: \"flip a coin\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__pick_a_number",
+    "description": "Pick a number (randomness skill). Example requests: \"pick a number between <lower> and <upper>\"; \"choose a number between <lower> and <upper>\"; \"select a number between <lower> and <upper>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "lower": {
+       "type": "string",
+       "description": "lower"
+      },
+      "upper": {
+       "type": "string",
+       "description": "upper"
+      }
+     },
+     "required": [
+      "lower",
+      "upper"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__make_a_choice",
+    "description": "Make a choice (randomness skill). Example requests: \"help me make a choice\"; \"help me decide something\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "randomness__fortune_teller",
+    "description": "Fortune teller (randomness skill). Example requests: \"Tell me future\"; \"Tell me a fortune\"; \"Tell me my fortune\"; \"Tell me the fortune\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhereAreYou",
+    "description": "Where are you (personal skill). Example requests: \"where are you\"; \"what is your location\"; \"where is your location\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhenWereYouBorn",
+    "description": "When were you born (personal skill). Example requests: \"when were you born\"; \"tell me your birthday\"; \"i want to know your birth day\"; \"what is your birth date\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhoMadeYou",
+    "description": "Who made you (personal skill). Example requests: \"who made you\"; \"who is your maker\"; \"who created you\"; \"who is your creator\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhereWereYouBorn",
+    "description": "Where were you born (personal skill). Example requests: \"where were you born\"; \"what is your birthplace\"; \"where is your birth place\"; \"where is your birthplace\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhoAreYou",
+    "description": "Who are you (personal skill). Example requests: \"who are you\"; \"i want to know who you are\"; \"tell me who you are\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhatIsYourEmail",
+    "description": "What is your email (personal skill). Example requests: \"tell me your email\"; \"i want to know what your email address is\"; \"what is your email\"; \"tell me what your email address is\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhatAreYou",
+    "description": "What are you (personal skill). Example requests: \"what are you\"; \"i want to know what you are\"; \"tell me what you are\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__HowAreYou",
+    "description": "How are you (personal skill). Triggered by keywords such as: \"how are you\"; \"how are your\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "personal__WhatIsYourName",
+    "description": "What is your name (personal skill). Triggered by keywords such as: \"what you first name\"; \"what you last name\"; \"what you surname\"; \"what you name\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "speak__speak",
+    "description": "Speak (speak skill). Example requests: \"say <phrase>\"; \"repeat <phrase>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "phrase": {
+       "type": "string",
+       "description": "phrase"
+      }
+     },
+     "required": [
+      "phrase"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "speed_test__run_speed_test",
+    "description": "Run speed test (speed test skill). Example requests: \"speed test\"; \"how fast is my internet\"; \"check your internet speed\"; \"how slow is your connection\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "spelling__SpellIntent",
+    "description": "Spell (spelling skill). Triggered by keywords such as: \"spell Word\"; \"spell word Word\"; \"spelling of Word\"; \"spelling of word Word\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "support_helper__contact_support",
+    "description": "Contact support (support helper skill). Example requests: \"report a bug\"; \"email support\"; \"create problem ticket\"; \"troubleshoot my device\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "translation__translate_phrase",
+    "description": "Translate phrase (translation skill). Example requests: \"translate <phrase> to <language>\"; \"how do i say <phrase> in <language>\"; \"translate <phrase> into <language>\"; \"how do you say <phrase> in <language>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "language": {
+       "type": "string",
+       "description": "language"
+      },
+      "phrase": {
+       "type": "string",
+       "description": "phrase"
+      }
+     },
+     "required": [
+      "language",
+      "phrase"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__when_is_my_birthday",
+    "description": "When is my birthday (user settings skill). Example requests: \"when is my birthday\"; \"do you know when my birthday is\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__where_am_i",
+    "description": "Where am i (user settings skill). Example requests: \"where am I\"; \"what is my location\"; \"do you know where I am\"; \"tell me where I am\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__language_settings",
+    "description": "Language settings (user settings skill). Example requests: \"what is my language\"; \"what are my language settings\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__language_tts",
+    "description": "Language tts (user settings skill). Example requests: \"talk to me in <request_language>\"; \"speak to me in <request_language>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "request_language": {
+       "type": "string",
+       "description": "request language"
+      }
+     },
+     "required": [
+      "request_language"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__who_am_i",
+    "description": "Who am i (user settings skill). Example requests: \"who am i\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__language_stt",
+    "description": "Language stt (user settings skill). Example requests: \"i speak <request_language>\"; \"i will speak to you in <request_language>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "request_language": {
+       "type": "string",
+       "description": "request language"
+      }
+     },
+     "required": [
+      "request_language"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__ChangeDate",
+    "description": "Change date (user settings skill). Triggered by keywords such as: \"change date month day year\"; \"change date day month year\"; \"change date year month day\"; \"switch date month day year\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__ChangeDialog",
+    "description": "Change dialog (user settings skill). Triggered by keywords such as: \"dialog mode change random\"; \"dialog mode change normal\"; \"dialog mode change default\"; \"dialog mode change limited\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__ChangeLocationTimezone",
+    "description": "Change location timezone (user settings skill). Triggered by keywords such as: \"change rx place timezone\"; \"change rx place time zone\"; \"change rx place location\"; \"switch rx place timezone\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__ChangeTime",
+    "description": "Change time (user settings skill). Triggered by keywords such as: \"change time 12\"; \"change time twelve\"; \"change time half\"; \"change time 24\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__ChangeUnits",
+    "description": "Change units (user settings skill). Triggered by keywords such as: \"change units imperial\"; \"change units SAE\"; \"change units american\"; \"change units metric\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__MyNameIs",
+    "description": "My name is (user settings skill). Triggered by keywords such as: \"my name is rx name\"; \"my user name is rx name\"; \"my username is rx name\"; \"call me rx name\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__NoSecondaryLanguage",
+    "description": "No secondary language (user settings skill). Triggered by keywords such as: \"no secondary language\"; \"speak to me in one language\"; \"only in my primary language\"; \"primary language only\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SayMyBirthday",
+    "description": "Say my birthday (user settings skill). Triggered by keywords such as: \"tell me my birthday\"; \"tell me my birth day\"; \"tell me my date of birth\"; \"tell me my born on\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SayMyEmail",
+    "description": "Say my email (user settings skill). Triggered by keywords such as: \"tell me my email address\"; \"tell me my e-mail address\"; \"tell me my e mail address\"; \"tell me my email\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SayMyLanguageSettings",
+    "description": "Say my language settings (user settings skill). Triggered by keywords such as: \"tell me my language settings\"; \"tell me my tts settings\"; \"tell me my text to speech settings\"; \"what is my language settings\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SayMyLocation",
+    "description": "Say my location (user settings skill). Triggered by keywords such as: \"tell me my location\"; \"what is my location\"; \"do you know my location\"; \"read back location\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SayMyName",
+    "description": "Say my name (user settings skill). Triggered by keywords such as: \"tell me my name\"; \"tell me my username\"; \"what is my name\"; \"what is my username\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetHesitation",
+    "description": "Set hesitation (user settings skill). Triggered by keywords such as: \"hesitation permit\"; \"hesitation allow\"; \"hesitation start\"; \"hesitation deny\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetMyBirthday",
+    "description": "Set my birthday (user settings skill). Triggered by keywords such as: \"my birthday\"; \"my birth day\"; \"my date of birth\"; \"my born on\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetMyEmail",
+    "description": "Set my email (user settings skill). Triggered by keywords such as: \"my email address rx setting\"; \"my e-mail address rx setting\"; \"my e mail address rx setting\"; \"my email rx setting\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetMyLanguage",
+    "description": "Set my language (user settings skill). Triggered by keywords such as: \"my language\"; \"i language\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetMyName",
+    "description": "Set my name (user settings skill). Triggered by keywords such as: \"my name rx setting\"; \"my username rx setting\"; \"i name rx setting\"; \"i username rx setting\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetSTTLanguage",
+    "description": "Set sttlanguage (user settings skill). Triggered by keywords such as: \"change stt language rx language\"; \"change speech to text language rx language\"; \"change input language rx language\"; \"change spoken language rx language\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SetTTSLanguage",
+    "description": "Set ttslanguage (user settings skill). Triggered by keywords such as: \"change tts language rx language\"; \"change text to speech language rx language\"; \"change response language rx language\"; \"change responses language rx language\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__SpeakSpeed",
+    "description": "Speak speed (user settings skill). Triggered by keywords such as: \"talk to me faster\"; \"talk to me fast\"; \"talk to me quickly\"; \"talk to me slower\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "user_settings__Transcription",
+    "description": "Transcription (user settings skill). Triggered by keywords such as: \"retention permit\"; \"retention allow\"; \"retention start\"; \"retention deny\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__do_i_need_an_umbrella",
+    "description": "Do i need an umbrella (weather skill). Example requests: \"do I need an umbrella\"; \"should I bring a rain coat\"; \"do I need a rain jacket\"; \"should I bring an umbrella\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleCurrentTemperature",
+    "description": "Current temperature (weather skill). Triggered by keywords such as: \"temperature\"; \"temp\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleCurrentWeather",
+    "description": "Current weather (weather skill). Triggered by keywords such as: \"weather\"; \"forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleDailyTemperature",
+    "description": "Daily temperature (weather skill). Triggered by keywords such as: \"temperature tomorrow\"; \"temperature tomorrow's\"; \"temperature yesterday\"; \"temperature yesterday's\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleHighTemperature",
+    "description": "High temperature (weather skill). Triggered by keywords such as: \"high\"; \"highest\"; \"max\"; \"maximum\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleHourlyTemperature",
+    "description": "Hourly temperature (weather skill). Triggered by keywords such as: \"temperature morning\"; \"temperature afternoon\"; \"temperature evening\"; \"temperature night\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleHowHotCold",
+    "description": "How hot cold (weather skill). Triggered by keywords such as: \"is it warm\"; \"is it hot\"; \"is it cold\"; \"is it chilly\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleHowWindy",
+    "description": "How windy (weather skill). Triggered by keywords such as: \"how wind\"; \"how windy\"; \"how winds\"; \"how wind speed\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleHumidity",
+    "description": "Humidity (weather skill). Triggered by keywords such as: \"how humid\"; \"how humidity\"; \"how steamy\"; \"what is humid\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleIsItHot",
+    "description": "Is it hot (weather skill). Triggered by keywords such as: \"is it warm\"; \"is it hot\"; \"is it cold\"; \"is it chilly\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleIsItWindy",
+    "description": "Is it windy (weather skill). Triggered by keywords such as: \"is it wind\"; \"is it windy\"; \"is it winds\"; \"is it wind speed\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleLikeOutside",
+    "description": "Like outside (weather skill). Triggered by keywords such as: \"how like outside\"; \"how like out\"; \"what is like outside\"; \"what is like out\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleLowTemperature",
+    "description": "Low temperature (weather skill). Triggered by keywords such as: \"low\"; \"lowest\"; \"min\"; \"minimum\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleNextPrecipitation",
+    "description": "Next precipitation (weather skill). Triggered by keywords such as: \"when rain\"; \"when snow\"; \"when precipitation\"; \"when rainy\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleNumberDaysForecast",
+    "description": "Number days forecast (weather skill). Triggered by keywords such as: \"2-day weather\"; \"2-day forecast\"; \"two-day weather\"; \"two-day forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleOneDayForecast",
+    "description": "One day forecast (weather skill). Triggered by keywords such as: \"tomorrow weather\"; \"tomorrow forecast\"; \"tomorrow's weather\"; \"tomorrow's forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleQueryCondition",
+    "description": "Query condition (weather skill). Triggered by keywords such as: \"is it snow\"; \"is it snowing\"; \"is it sleet\"; \"is it clear\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleSunriseSunset",
+    "description": "Sunrise sunset (weather skill). Triggered by keywords such as: \"how sunrise\"; \"how sun rise\"; \"how dawn\"; \"how sunset\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleWeatherAtTime",
+    "description": "Weather at time (weather skill). Triggered by keywords such as: \"morning weather\"; \"morning forecast\"; \"afternoon weather\"; \"afternoon forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleWeatherLater",
+    "description": "Weather later (weather skill). Triggered by keywords such as: \"how weather next hour\"; \"how weather next hours\"; \"how weather few hours\"; \"how weather next few hours\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleWeekWeather",
+    "description": "Week weather (weather skill). Triggered by keywords such as: \"week weather\"; \"week forecast\"; \"weekly weather\"; \"weekly forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "weather__HandleWeekendForecast",
+    "description": "Weekend forecast (weather skill). Triggered by keywords such as: \"how weekend weather\"; \"how weekend forecast\"; \"what is weekend weather\"; \"what is weekend forecast\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ocp__play",
+    "description": "Play (ocp skill). Example requests: \"play <query>\"; \"search <query> in open voice os media\"; \"search <query> on O C P\"; \"search ocp for <query>\"",
+    "parameters": {
+     "type": "object",
+     "properties": {
+      "query": {
+       "type": "string",
+       "description": "query"
+      }
+     },
+     "required": [
+      "query"
+     ]
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ocp__pause",
+    "description": "Pause (ocp skill). Example requests: \"pause\"; \"pause song\"; \"pause media\"; \"pause music\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ocp__next",
+    "description": "Next (ocp skill). Example requests: \"next\"; \"skip\"; \"go to next song\"; \"play next media\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ocp__prev",
+    "description": "Prev (ocp skill). Example requests: \"go back\"; \"previous\"; \"play previous song\"; \"previous tune\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ocp__resume",
+    "description": "Resume (ocp skill). Example requests: \"play\"; \"resume\"; \"unpause\"; \"restart song\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ovos_common_play__stop",
+    "description": "Stop (ovos common play skill). Example requests: \"stop\"; \"stop media playback\"; \"stop movie\"; \"stop music\"",
+    "parameters": {
+     "type": "object",
+     "properties": {},
+     "required": []
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ask_knowledge",
+    "description": "A question or conversational request directed at the assistant that no other tool handles: facts, explanations, advice, chit-chat, quotes.",
+    "parameters": {
+     "type": "object",
+     "required": [
+      "question"
+     ],
+     "properties": {
+      "question": {
+       "type": "string",
+       "description": "the request, as spoken"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "stop",
+    "description": "Stop whatever the assistant is currently doing: speaking, playing media, an active timer or alarm sound.",
+    "parameters": {
+     "type": "object",
+     "required": [],
+     "properties": {}
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "unsupported",
+    "description": "A command clearly directed at the assistant that none of the other tools can perform. The assistant will say it can't do that.",
+    "parameters": {
+     "type": "object",
+     "required": [
+      "request"
+     ],
+     "properties": {
+      "request": {
+       "type": "string",
+       "description": "the request, as spoken"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "function",
+   "function": {
+    "name": "ignore",
+    "description": "The speech was NOT directed at the assistant: background conversation, TV or radio, the assistant hearing its own voice, or noise. The assistant stays silent.",
+    "parameters": {
+     "type": "object",
+     "required": [],
+     "properties": {}
+    }
+   }
+  }
+ ],
+ "labels": {
+  "kiwix_mcp__search_kiwix": "kiwix-mcp.oscillatelabsllc:search_kiwix",
+  "kiwix_mcp__tell_more": "kiwix-mcp.oscillatelabsllc:tell_more",
+  "icanhazdadjokes__search_joke": "ovos-skill-icanhazdadjokes.openvoiceos:search_joke",
+  "icanhazdadjokes__joke": "ovos-skill-icanhazdadjokes.openvoiceos:joke",
+  "white_noise_andlo__set_noise": "ovos-skill-white-noise.andlo:set_noise",
+  "white_noise_andlo__start_noise": "ovos-skill-white-noise.andlo:start_noise",
+  "white_noise_andlo__stop_noise": "ovos-skill-white-noise.andlo:stop_noise",
+  "about__LicenseIntent": "skill-about.neongeckocom:LicenseIntent",
+  "about__ListSkillsIntent": "skill-about.neongeckocom:ListSkillsIntent",
+  "alerts__list_alerts": "skill-alerts.neongeckocom:list_alerts",
+  "alerts__quiet_hours_start": "skill-alerts.neongeckocom:quiet_hours_start",
+  "alerts__quiet_hours_end": "skill-alerts.neongeckocom:quiet_hours_end",
+  "alerts__CancelAlert": "skill-alerts.neongeckocom:CancelAlert",
+  "alerts__CreateAlarm": "skill-alerts.neongeckocom:CreateAlarm",
+  "alerts__CreateEvent": "skill-alerts.neongeckocom:CreateEvent",
+  "alerts__CreateReminder": "skill-alerts.neongeckocom:CreateReminder",
+  "alerts__CreateReminderAlt": "skill-alerts.neongeckocom:CreateReminderAlt",
+  "alerts__CreateTimer": "skill-alerts.neongeckocom:CreateTimer",
+  "alerts__ListAllAlerts": "skill-alerts.neongeckocom:ListAllAlerts",
+  "alerts__NextAlert": "skill-alerts.neongeckocom:NextAlert",
+  "alerts__TimerStatus": "skill-alerts.neongeckocom:TimerStatus",
+  "audio_recording__start_recording": "skill-audio-recording.neongeckocom:start_recording",
+  "camera__TakePicIntent": "skill-camera.neongeckocom:TakePicIntent",
+  "camera__TakeVidIntent": "skill-camera.neongeckocom:TakeVidIntent",
+  "camera__ShowLastIntent": "skill-camera.neongeckocom:ShowLastIntent",
+  "communication__call": "skill-communication.neongeckocom:call",
+  "communication__SendMessageIntent": "skill-communication.neongeckocom:SendMessageIntent",
+  "data_controls__clear_data": "skill-data_controls.neongeckocom:clear_data",
+  "date_time__what_dow_is_it": "skill-date_time.neongeckocom:what.dow.is.it",
+  "date_time__what_day_is_it": "skill-date_time.neongeckocom:what.day.is.it",
+  "date_time__what_time_is_it": "skill-date_time.neongeckocom:what.time.is.it",
+  "demo__show_demo": "skill-demo.neongeckocom:show_demo",
+  "device_controls__exit": "skill-device_controls.neongeckocom:exit",
+  "device_controls__restart": "skill-device_controls.neongeckocom:restart",
+  "device_controls__shutdown": "skill-device_controls.neongeckocom:shutdown",
+  "device_controls__ChangeWakeWordIntent": "skill-device_controls.neongeckocom:ChangeWakeWordIntent",
+  "device_controls__ConfirmListeningIntent": "skill-device_controls.neongeckocom:ConfirmListeningIntent",
+  "device_controls__ExitShutdownIntent": "skill-device_controls.neongeckocom:ExitShutdownIntent",
+  "device_controls__ShowDebugIntent": "skill-device_controls.neongeckocom:ShowDebugIntent",
+  "device_controls__SkipWWIntent": "skill-device_controls.neongeckocom:SkipWWIntent",
+  "device_controls__SoloModeIntent": "skill-device_controls.neongeckocom:SoloModeIntent",
+  "device_controls__StopSoloModeIntent": "skill-device_controls.neongeckocom:StopSoloModeIntent",
+  "device_controls__UseWWIntent": "skill-device_controls.neongeckocom:UseWWIntent",
+  "easter_eggs__law_of_robotics": "skill-easter-eggs.openvoiceos:law_of_robotics",
+  "easter_eggs__adult_mode_intent": "skill-easter-eggs.openvoiceos:adult_mode_intent",
+  "easter_eggs__arnold_intent": "skill-easter-eggs.openvoiceos:arnold_intent",
+  "easter_eggs__bender_intent": "skill-easter-eggs.openvoiceos:bender_intent",
+  "easter_eggs__bill_and_ted_intent": "skill-easter-eggs.openvoiceos:bill_and_ted_intent",
+  "easter_eggs__conan_intent": "skill-easter-eggs.openvoiceos:conan_intent",
+  "easter_eggs__duke_nukem_intent": "skill-easter-eggs.openvoiceos:duke_nukem_intent",
+  "easter_eggs__glados_intent": "skill-easter-eggs.openvoiceos:glados_intent",
+  "easter_eggs__grandma_mode_intent": "skill-easter-eggs.openvoiceos:grandma_mode_intent",
+  "easter_eggs__hal_intent": "skill-easter-eggs.openvoiceos:hal_intent",
+  "easter_eggs__languages_you_speak_intent": "skill-easter-eggs.openvoiceos:languages_you_speak_intent",
+  "easter_eggs__malibu_stacey_intent": "skill-easter-eggs.openvoiceos:malibu_stacey_intent",
+  "easter_eggs__pod_bay_doors_intent": "skill-easter-eggs.openvoiceos:pod_bay_doors_intent",
+  "easter_eggs__portal_intent": "skill-easter-eggs.openvoiceos:portal_intent",
+  "easter_eggs__rock_paper_scissors_lizard_spock_intent": "skill-easter-eggs.openvoiceos:rock_paper_scissors_lizard_spock_intent",
+  "easter_eggs__sing_intent": "skill-easter-eggs.openvoiceos:sing_intent",
+  "easter_eggs__stardate_intent": "skill-easter-eggs.openvoiceos:stardate_intent",
+  "fallback_llm__chat_with_llm": "skill-fallback_llm.neongeckocom:chat_with_llm",
+  "fallback_llm__email_chat_history": "skill-fallback_llm.neongeckocom:email_chat_history",
+  "fallback_llm__ask_llm": "skill-fallback_llm.neongeckocom:ask_llm",
+  "fallback_llm__disable_fallback": "skill-fallback_llm.neongeckocom:disable_fallback",
+  "fallback_llm__enable_fallback": "skill-fallback_llm.neongeckocom:enable_fallback",
+  "fallback_wolfram_alpha__AskWolfram": "skill-fallback_wolfram_alpha.neongeckocom:AskWolfram",
+  "fallback_wolfram_alpha__WolframSource": "skill-fallback_wolfram_alpha.neongeckocom:WolframSource",
+  "homeassistant__lights_set_color": "skill-homeassistant.oscillatelabsllc:lights.set.color",
+  "homeassistant__disable": "skill-homeassistant.oscillatelabsllc:disable",
+  "homeassistant__lights_get_brightness": "skill-homeassistant.oscillatelabsllc:lights.get.brightness",
+  "homeassistant__sensor": "skill-homeassistant.oscillatelabsllc:sensor",
+  "homeassistant__assist": "skill-homeassistant.oscillatelabsllc:assist",
+  "homeassistant__enable": "skill-homeassistant.oscillatelabsllc:enable",
+  "homeassistant__lights_decrease_brightness": "skill-homeassistant.oscillatelabsllc:lights.decrease.brightness",
+  "homeassistant__turn_on": "skill-homeassistant.oscillatelabsllc:turn.on",
+  "homeassistant__stop": "skill-homeassistant.oscillatelabsllc:stop",
+  "homeassistant__turn_off": "skill-homeassistant.oscillatelabsllc:turn.off",
+  "homeassistant__lights_get_color": "skill-homeassistant.oscillatelabsllc:lights.get.color",
+  "homeassistant__lights_set_brightness": "skill-homeassistant.oscillatelabsllc:lights.set.brightness",
+  "homeassistant__lights_increase_brightness": "skill-homeassistant.oscillatelabsllc:lights.increase.brightness",
+  "homeassistant__get_all_devices": "skill-homeassistant.oscillatelabsllc:get.all.devices",
+  "ip_address__IPIntent": "skill-ip_address.neongeckocom:IPIntent",
+  "launcher__launch_program": "skill-launcher.neongeckocom:launch_program",
+  "launcher__BrowseWebsiteIntent": "skill-launcher.neongeckocom:BrowseWebsiteIntent",
+  "meal_plan__plan_meal": "skill-meal-plan.oscillatelabsllc:plan.meal",
+  "meal_plan__list_meal": "skill-meal-plan.oscillatelabsllc:list.meal",
+  "meal_plan__remove_meal": "skill-meal-plan.oscillatelabsllc:remove.meal",
+  "meal_plan__add_meal": "skill-meal-plan.oscillatelabsllc:add.meal",
+  "messaging__DraftEmailIntent": "skill-messaging.neongeckocom:DraftEmailIntent",
+  "monster_scanner__MonsterScannerIntent": "skill-monster-scanner.oscillatelabsllc:MonsterScannerIntent",
+  "musicassistant__play_track": "skill-musicassistant.oscillatelabsllc:play_track",
+  "musicassistant__pause": "skill-musicassistant.oscillatelabsllc:pause",
+  "musicassistant__play_playlist": "skill-musicassistant.oscillatelabsllc:play_playlist",
+  "musicassistant__play_radio": "skill-musicassistant.oscillatelabsllc:play_radio",
+  "musicassistant__volume": "skill-musicassistant.oscillatelabsllc:volume",
+  "musicassistant__previous": "skill-musicassistant.oscillatelabsllc:previous",
+  "musicassistant__play_album": "skill-musicassistant.oscillatelabsllc:play_album",
+  "musicassistant__play_artist": "skill-musicassistant.oscillatelabsllc:play_artist",
+  "musicassistant__next": "skill-musicassistant.oscillatelabsllc:next",
+  "ddg__search_duck": "skill-ovos-ddg.openvoiceos:search_duck",
+  "ddg__DuckMore": "skill-ovos-ddg.openvoiceos:DuckMore",
+  "randomness__roll_multiple_dice": "skill-ovos-randomness.openvoiceos:roll-multiple-dice",
+  "randomness__roll_single_die": "skill-ovos-randomness.openvoiceos:roll-single-die",
+  "randomness__flip_a_coin": "skill-ovos-randomness.openvoiceos:flip-a-coin",
+  "randomness__pick_a_number": "skill-ovos-randomness.openvoiceos:pick-a-number",
+  "randomness__make_a_choice": "skill-ovos-randomness.openvoiceos:make-a-choice",
+  "randomness__fortune_teller": "skill-ovos-randomness.openvoiceos:fortune-teller",
+  "personal__WhereAreYou": "skill-personal.neongeckocom:WhereAreYou",
+  "personal__WhenWereYouBorn": "skill-personal.neongeckocom:WhenWereYouBorn",
+  "personal__WhoMadeYou": "skill-personal.neongeckocom:WhoMadeYou",
+  "personal__WhereWereYouBorn": "skill-personal.neongeckocom:WhereWereYouBorn",
+  "personal__WhoAreYou": "skill-personal.neongeckocom:WhoAreYou",
+  "personal__WhatIsYourEmail": "skill-personal.neongeckocom:WhatIsYourEmail",
+  "personal__WhatAreYou": "skill-personal.neongeckocom:WhatAreYou",
+  "personal__HowAreYou": "skill-personal.neongeckocom:HowAreYou",
+  "personal__WhatIsYourName": "skill-personal.neongeckocom:WhatIsYourName",
+  "speak__speak": "skill-speak.neongeckocom:speak",
+  "speed_test__run_speed_test": "skill-speed_test.neongeckocom:run_speed_test",
+  "spelling__SpellIntent": "skill-spelling.neongeckocom:SpellIntent",
+  "support_helper__contact_support": "skill-support_helper.neongeckocom:contact_support",
+  "translation__translate_phrase": "skill-translation.neongeckocom:translate_phrase",
+  "user_settings__when_is_my_birthday": "skill-user_settings.neongeckocom:when_is_my_birthday",
+  "user_settings__where_am_i": "skill-user_settings.neongeckocom:where_am_i",
+  "user_settings__language_settings": "skill-user_settings.neongeckocom:language_settings",
+  "user_settings__language_tts": "skill-user_settings.neongeckocom:language_tts",
+  "user_settings__who_am_i": "skill-user_settings.neongeckocom:who_am_i",
+  "user_settings__language_stt": "skill-user_settings.neongeckocom:language_stt",
+  "user_settings__ChangeDate": "skill-user_settings.neongeckocom:ChangeDate",
+  "user_settings__ChangeDialog": "skill-user_settings.neongeckocom:ChangeDialog",
+  "user_settings__ChangeLocationTimezone": "skill-user_settings.neongeckocom:ChangeLocationTimezone",
+  "user_settings__ChangeTime": "skill-user_settings.neongeckocom:ChangeTime",
+  "user_settings__ChangeUnits": "skill-user_settings.neongeckocom:ChangeUnits",
+  "user_settings__MyNameIs": "skill-user_settings.neongeckocom:MyNameIs",
+  "user_settings__NoSecondaryLanguage": "skill-user_settings.neongeckocom:NoSecondaryLanguage",
+  "user_settings__SayMyBirthday": "skill-user_settings.neongeckocom:SayMyBirthday",
+  "user_settings__SayMyEmail": "skill-user_settings.neongeckocom:SayMyEmail",
+  "user_settings__SayMyLanguageSettings": "skill-user_settings.neongeckocom:SayMyLanguageSettings",
+  "user_settings__SayMyLocation": "skill-user_settings.neongeckocom:SayMyLocation",
+  "user_settings__SayMyName": "skill-user_settings.neongeckocom:SayMyName",
+  "user_settings__SetHesitation": "skill-user_settings.neongeckocom:SetHesitation",
+  "user_settings__SetMyBirthday": "skill-user_settings.neongeckocom:SetMyBirthday",
+  "user_settings__SetMyEmail": "skill-user_settings.neongeckocom:SetMyEmail",
+  "user_settings__SetMyLanguage": "skill-user_settings.neongeckocom:SetMyLanguage",
+  "user_settings__SetMyName": "skill-user_settings.neongeckocom:SetMyName",
+  "user_settings__SetSTTLanguage": "skill-user_settings.neongeckocom:SetSTTLanguage",
+  "user_settings__SetTTSLanguage": "skill-user_settings.neongeckocom:SetTTSLanguage",
+  "user_settings__SpeakSpeed": "skill-user_settings.neongeckocom:SpeakSpeed",
+  "user_settings__Transcription": "skill-user_settings.neongeckocom:Transcription",
+  "weather__do_i_need_an_umbrella": "skill-weather.neongeckocom:do-i-need-an-umbrella",
+  "weather__HandleCurrentTemperature": "skill-weather.neongeckocom:HandleCurrentTemperature",
+  "weather__HandleCurrentWeather": "skill-weather.neongeckocom:HandleCurrentWeather",
+  "weather__HandleDailyTemperature": "skill-weather.neongeckocom:HandleDailyTemperature",
+  "weather__HandleHighTemperature": "skill-weather.neongeckocom:HandleHighTemperature",
+  "weather__HandleHourlyTemperature": "skill-weather.neongeckocom:HandleHourlyTemperature",
+  "weather__HandleHowHotCold": "skill-weather.neongeckocom:HandleHowHotCold",
+  "weather__HandleHowWindy": "skill-weather.neongeckocom:HandleHowWindy",
+  "weather__HandleHumidity": "skill-weather.neongeckocom:HandleHumidity",
+  "weather__HandleIsItHot": "skill-weather.neongeckocom:HandleIsItHot",
+  "weather__HandleIsItWindy": "skill-weather.neongeckocom:HandleIsItWindy",
+  "weather__HandleLikeOutside": "skill-weather.neongeckocom:HandleLikeOutside",
+  "weather__HandleLowTemperature": "skill-weather.neongeckocom:HandleLowTemperature",
+  "weather__HandleNextPrecipitation": "skill-weather.neongeckocom:HandleNextPrecipitation",
+  "weather__HandleNumberDaysForecast": "skill-weather.neongeckocom:HandleNumberDaysForecast",
+  "weather__HandleOneDayForecast": "skill-weather.neongeckocom:HandleOneDayForecast",
+  "weather__HandleQueryCondition": "skill-weather.neongeckocom:HandleQueryCondition",
+  "weather__HandleSunriseSunset": "skill-weather.neongeckocom:HandleSunriseSunset",
+  "weather__HandleWeatherAtTime": "skill-weather.neongeckocom:HandleWeatherAtTime",
+  "weather__HandleWeatherLater": "skill-weather.neongeckocom:HandleWeatherLater",
+  "weather__HandleWeekWeather": "skill-weather.neongeckocom:HandleWeekWeather",
+  "weather__HandleWeekendForecast": "skill-weather.neongeckocom:HandleWeekendForecast",
+  "ocp__play": "ocp:play",
+  "ocp__pause": "ocp:pause",
+  "ocp__next": "ocp:next",
+  "ocp__prev": "ocp:prev",
+  "ocp__resume": "ocp:resume",
+  "ovos_common_play__stop": "ovos.common_play:stop",
+  "ask_knowledge": "meta:ask_knowledge",
+  "stop": "meta:stop",
+  "unsupported": "meta:unsupported",
+  "ignore": "meta:ignore"
+ }
+}

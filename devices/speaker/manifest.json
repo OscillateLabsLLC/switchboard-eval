@@ -1,0 +1,9172 @@
+{
+ "intents": [
+  {
+   "skill_id": "kiwix-mcp.oscillatelabsllc",
+   "intent_name": "search_kiwix",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "kiwix-mcp.oscillatelabsllc",
+   "intent_name": "tell_more",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+   "intent_name": "search_joke",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+   "intent_name": "joke",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos-skill-white-noise.andlo",
+   "intent_name": "set_noise",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos-skill-white-noise.andlo",
+   "intent_name": "start_noise",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos-skill-white-noise.andlo",
+   "intent_name": "stop_noise",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-about.neongeckocom",
+   "intent_name": "LicenseIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-about.neongeckocom",
+   "intent_name": "ListSkillsIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "list_alerts",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "quiet_hours_start",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "quiet_hours_end",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CancelAlert",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CreateAlarm",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CreateEvent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CreateReminder",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CreateReminderAlt",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "CreateTimer",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "ListAllAlerts",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "NextAlert",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-alerts.neongeckocom",
+   "intent_name": "TimerStatus",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-audio-recording.neongeckocom",
+   "intent_name": "start_recording",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-camera.neongeckocom",
+   "intent_name": "TakePicIntent",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-camera.neongeckocom",
+   "intent_name": "TakeVidIntent",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-camera.neongeckocom",
+   "intent_name": "ShowLastIntent",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-communication.neongeckocom",
+   "intent_name": "call",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-communication.neongeckocom",
+   "intent_name": "SendMessageIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-data_controls.neongeckocom",
+   "intent_name": "clear_data",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-date_time.neongeckocom",
+   "intent_name": "what.dow.is.it",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-date_time.neongeckocom",
+   "intent_name": "what.day.is.it",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-date_time.neongeckocom",
+   "intent_name": "what.time.is.it",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-demo.neongeckocom",
+   "intent_name": "show_demo",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "exit",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "restart",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "shutdown",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "ChangeWakeWordIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "ConfirmListeningIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "ExitShutdownIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "ShowDebugIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "SkipWWIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "SoloModeIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "StopSoloModeIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-device_controls.neongeckocom",
+   "intent_name": "UseWWIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "law_of_robotics",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "adult_mode_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "arnold_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "bender_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "bill_and_ted_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "conan_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "duke_nukem_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "glados_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "grandma_mode_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "hal_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "languages_you_speak_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "malibu_stacey_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "pod_bay_doors_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "portal_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "rock_paper_scissors_lizard_spock_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "sing_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-easter-eggs.openvoiceos",
+   "intent_name": "stardate_intent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-fallback_llm.neongeckocom",
+   "intent_name": "chat_with_llm",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-fallback_llm.neongeckocom",
+   "intent_name": "email_chat_history",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-fallback_llm.neongeckocom",
+   "intent_name": "ask_llm",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-fallback_llm.neongeckocom",
+   "intent_name": "disable_fallback",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-fallback_llm.neongeckocom",
+   "intent_name": "enable_fallback",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-fallback_wolfram_alpha.neongeckocom",
+   "intent_name": "AskWolfram",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-fallback_wolfram_alpha.neongeckocom",
+   "intent_name": "WolframSource",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.set.color",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "disable",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.get.brightness",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "sensor",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "assist",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "enable",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.decrease.brightness",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "turn.on",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "stop",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "turn.off",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.get.color",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.set.brightness",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "lights.increase.brightness",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-homeassistant.oscillatelabsllc",
+   "intent_name": "get.all.devices",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ip_address.neongeckocom",
+   "intent_name": "IPIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-launcher.neongeckocom",
+   "intent_name": "launch_program",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-launcher.neongeckocom",
+   "intent_name": "BrowseWebsiteIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-meal-plan.oscillatelabsllc",
+   "intent_name": "plan.meal",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-meal-plan.oscillatelabsllc",
+   "intent_name": "list.meal",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-meal-plan.oscillatelabsllc",
+   "intent_name": "remove.meal",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-meal-plan.oscillatelabsllc",
+   "intent_name": "add.meal",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-messaging.neongeckocom",
+   "intent_name": "DraftEmailIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-monster-scanner.oscillatelabsllc",
+   "intent_name": "MonsterScannerIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "play_track",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "pause",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "play_playlist",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "play_radio",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "volume",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "previous",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "play_album",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "play_artist",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-musicassistant.oscillatelabsllc",
+   "intent_name": "next",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-ddg.openvoiceos",
+   "intent_name": "search_duck",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-ddg.openvoiceos",
+   "intent_name": "DuckMore",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "roll-multiple-dice",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "roll-single-die",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "flip-a-coin",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "pick-a-number",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "make-a-choice",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-ovos-randomness.openvoiceos",
+   "intent_name": "fortune-teller",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhereAreYou",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhenWereYouBorn",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhoMadeYou",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhereWereYouBorn",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhoAreYou",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhatIsYourEmail",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhatAreYou",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "HowAreYou",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-personal.neongeckocom",
+   "intent_name": "WhatIsYourName",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-speak.neongeckocom",
+   "intent_name": "speak",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-speed_test.neongeckocom",
+   "intent_name": "run_speed_test",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-spelling.neongeckocom",
+   "intent_name": "SpellIntent",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-support_helper.neongeckocom",
+   "intent_name": "contact_support",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-translation.neongeckocom",
+   "intent_name": "translate_phrase",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "when_is_my_birthday",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "where_am_i",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "language_settings",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "language_tts",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "who_am_i",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "language_stt",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "ChangeDate",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "ChangeDialog",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "ChangeLocationTimezone",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "ChangeTime",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "ChangeUnits",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "MyNameIs",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "NoSecondaryLanguage",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SayMyBirthday",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SayMyEmail",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SayMyLanguageSettings",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SayMyLocation",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SayMyName",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetHesitation",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetMyBirthday",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetMyEmail",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetMyLanguage",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetMyName",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetSTTLanguage",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SetTTSLanguage",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "SpeakSpeed",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-user_settings.neongeckocom",
+   "intent_name": "Transcription",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "do-i-need-an-umbrella",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleCurrentTemperature",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleCurrentWeather",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleDailyTemperature",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleHighTemperature",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleHourlyTemperature",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleHowHotCold",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleHowWindy",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleHumidity",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleIsItHot",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleIsItWindy",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleLikeOutside",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleLowTemperature",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleNextPrecipitation",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleNumberDaysForecast",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleOneDayForecast",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleQueryCondition",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleSunriseSunset",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleWeatherAtTime",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleWeatherLater",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleWeekWeather",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "skill-weather.neongeckocom",
+   "intent_name": "HandleWeekendForecast",
+   "lang": "en-us",
+   "method": "adapt"
+  },
+  {
+   "skill_id": "ocp",
+   "intent_name": "play",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ocp",
+   "intent_name": "pause",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ocp",
+   "intent_name": "next",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ocp",
+   "intent_name": "prev",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ocp",
+   "intent_name": "resume",
+   "lang": "en-us",
+   "method": "template"
+  },
+  {
+   "skill_id": "ovos.common_play",
+   "intent_name": "stop",
+   "lang": "en-us",
+   "method": "template"
+  }
+ ],
+ "definitions": {
+  "kiwix-mcp.oscillatelabsllc": [
+   {
+    "skill_id": "kiwix-mcp.oscillatelabsllc",
+    "intent_name": "search_kiwix",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "look up {query} in kiwix",
+      "search kiwix for {query}",
+      "search the offline library for {query}",
+      "ask kiwix about {query}",
+      "kiwix {query}",
+      "what does kiwix say about {query}",
+      "look up {query} offline"
+     ]
+    }
+   },
+   {
+    "skill_id": "kiwix-mcp.oscillatelabsllc",
+    "intent_name": "tell_more",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "tell me more",
+      "go on",
+      "continue",
+      "what else"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-icanhazdadjokes.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "intent_name": "search_joke",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "can you tell jokes about {query}",
+      "can you tell {query} jokes",
+      "do you know any jokes about {query}",
+      "do you know any {query} jokes",
+      "joke about {query}",
+      "say a joke about {query}",
+      "say a {query} joke",
+      "tell me a joke about {query}",
+      "tell me a {query} joke"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "intent_name": "joke",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "can you tell jokes",
+      "do you know any jokes",
+      "make me laugh",
+      "say a joke",
+      "tell me a joke"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-white-noise.andlo": [
+   {
+    "skill_id": "ovos-skill-white-noise.andlo",
+    "intent_name": "set_noise",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play {noise} noise",
+      "start {noise} noise",
+      "play some {noise} noise"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-white-noise.andlo",
+    "intent_name": "start_noise",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play some noise",
+      "play ambient noise",
+      "start some background noise"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-white-noise.andlo",
+    "intent_name": "stop_noise",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "stop the noise",
+      "stop the ambient sound",
+      "stop the background noise"
+     ]
+    }
+   }
+  ],
+  "skill-about.neongeckocom": [
+   {
+    "skill_id": "skill-about.neongeckocom",
+    "intent_name": "LicenseIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell"
+       ]
+      ],
+      [
+       "require",
+       [
+        "license"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "long"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my license",
+      "tell me your license",
+      "tell me the license",
+      "list my license",
+      "list your license",
+      "what is my license"
+     ],
+     "vocab": {
+      "license": [
+       "license"
+      ],
+      "long": [
+       "extended",
+       "long",
+       "complete",
+       "full"
+      ],
+      "tell": [
+       "tell me my",
+       "tell me your",
+       "tell me the",
+       "list my",
+       "list your",
+       "what is my",
+       "what is your",
+       "what is the"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-about.neongeckocom",
+    "intent_name": "ListSkillsIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "tell"
+       ]
+      ],
+      [
+       "require",
+       [
+        "skills"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "skills",
+      "what you can do",
+      "what can you do"
+     ],
+     "vocab": {
+      "skills": [
+       "skills",
+       "what you can do",
+       "what can you do"
+      ],
+      "tell": [
+       "tell me my",
+       "tell me your",
+       "tell me the",
+       "list my",
+       "list your",
+       "what is my",
+       "what is your",
+       "what is the"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-alerts.neongeckocom": [
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "list_alerts",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(what are|tell me|list) (my|the|) (alerts|alarms|timers|reminders|events)",
+      "(are there|do i have)( any|)( upcoming| pending|) (alerts|alarms|timers|reminders|events)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "quiet_hours_start",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "go to sleep(( for| until) {end_condition}|)",
+      "(start|enable|enter) quiet hours(( for| until) {end_condition}|)",
+      "nap time(( for| until) {end_condition}|)",
+      "do not disturb me(( for| until) {end_condition}|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "quiet_hours_end",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "wake up",
+      "(did i|) miss anything",
+      "(have i|) missed anything",
+      "what did i miss",
+      "what have i missed",
+      "(end|exit|leave|stop|disable) quiet hours"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CancelAlert",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "cancel"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "all"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "alarm",
+        "timer",
+        "reminder",
+        "event",
+        "alert"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "cancel alarm",
+      "cancel alarms",
+      "cancel wake me up",
+      "cancel timer",
+      "cancel timers",
+      "cancel time",
+      "cancel reminder",
+      "cancel reminders",
+      "cancel appointment",
+      "cancel event",
+      "cancel events",
+      "cancel alert",
+      "cancel alerts",
+      "remove alarm",
+      "remove alarms",
+      "remove wake me up",
+      "remove timer",
+      "remove timers",
+      "remove time",
+      "remove reminder",
+      "remove reminders",
+      "remove appointment",
+      "remove event",
+      "remove events",
+      "remove alert",
+      "remove alerts",
+      "delete alarm",
+      "delete alarms",
+      "delete wake me up",
+      "delete timer",
+      "delete timers",
+      "delete time",
+      "delete reminder",
+      "delete reminders",
+      "delete appointment",
+      "delete event",
+      "delete events",
+      "delete alert",
+      "delete alerts",
+      "discard alarm"
+     ],
+     "vocab": {
+      "alarm": [
+       "alarm",
+       "alarms",
+       "wake me up"
+      ],
+      "alert": [
+       "alert",
+       "alerts"
+      ],
+      "all": [
+       "all",
+       "upcoming",
+       "pending"
+      ],
+      "cancel": [
+       "cancel",
+       "remove",
+       "delete",
+       "discard",
+       "clear",
+       "stop"
+      ],
+      "event": [
+       "appointment",
+       "event",
+       "events",
+       "appointments"
+      ],
+      "reminder": [
+       "reminder",
+       "reminders"
+      ],
+      "timer": [
+       "timer",
+       "timers",
+       "time"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CreateAlarm",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "set"
+       ]
+      ],
+      [
+       "require",
+       [
+        "alarm"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "playable"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekdays"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekends"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "everyday"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "repeat"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "until"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "script"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "priority"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "set alarm",
+      "set alarms",
+      "set wake me up",
+      "create alarm",
+      "create alarms",
+      "create wake me up",
+      "add alarm",
+      "add alarms",
+      "add wake me up",
+      "make alarm",
+      "make alarms",
+      "make wake me up",
+      "start alarm",
+      "start alarms",
+      "start wake me up",
+      "i have alarm",
+      "i have alarms",
+      "i have wake me up"
+     ],
+     "vocab": {
+      "alarm": [
+       "alarm",
+       "alarms",
+       "wake me up"
+      ],
+      "everyday": [
+       "everyday",
+       "every day",
+       "daily",
+       "nightly",
+       "every morning",
+       "every afternoon",
+       "every evening",
+       "every night"
+      ],
+      "playable": [
+       "playable",
+       "playback",
+       "audible",
+       "audio",
+       "speakable",
+       "voice",
+       "recording",
+       "recorded",
+       "replay"
+      ],
+      "priority": [
+       "priority",
+       "priority level"
+      ],
+      "repeat": [
+       "every",
+       "repeating"
+      ],
+      "script": [
+       "script",
+       "skill file",
+       "file"
+      ],
+      "set": [
+       "set",
+       "create",
+       "add",
+       "make",
+       "start",
+       "i have"
+      ],
+      "until": [
+       "until",
+       "for the next",
+       "till"
+      ],
+      "weekdays": [
+       "weekday",
+       "weekdays",
+       "week day",
+       "week days"
+      ],
+      "weekends": [
+       "weekend",
+       "weekends",
+       "week end",
+       "week ends"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CreateEvent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "set"
+       ]
+      ],
+      [
+       "require",
+       [
+        "event"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "playable"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekdays"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekends"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "everyday"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "repeat"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "until"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "script"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "priority"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "set appointment",
+      "set event",
+      "set events",
+      "set appointments",
+      "create appointment",
+      "create event",
+      "create events",
+      "create appointments",
+      "add appointment",
+      "add event",
+      "add events",
+      "add appointments",
+      "make appointment",
+      "make event",
+      "make events",
+      "make appointments",
+      "start appointment",
+      "start event",
+      "start events",
+      "start appointments",
+      "i have appointment",
+      "i have event",
+      "i have events",
+      "i have appointments"
+     ],
+     "vocab": {
+      "event": [
+       "appointment",
+       "event",
+       "events",
+       "appointments"
+      ],
+      "everyday": [
+       "everyday",
+       "every day",
+       "daily",
+       "nightly",
+       "every morning",
+       "every afternoon",
+       "every evening",
+       "every night"
+      ],
+      "playable": [
+       "playable",
+       "playback",
+       "audible",
+       "audio",
+       "speakable",
+       "voice",
+       "recording",
+       "recorded",
+       "replay"
+      ],
+      "priority": [
+       "priority",
+       "priority level"
+      ],
+      "repeat": [
+       "every",
+       "repeating"
+      ],
+      "script": [
+       "script",
+       "skill file",
+       "file"
+      ],
+      "set": [
+       "set",
+       "create",
+       "add",
+       "make",
+       "start",
+       "i have"
+      ],
+      "until": [
+       "until",
+       "for the next",
+       "till"
+      ],
+      "weekdays": [
+       "weekday",
+       "weekdays",
+       "week day",
+       "week days"
+      ],
+      "weekends": [
+       "weekend",
+       "weekends",
+       "week end",
+       "week ends"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CreateReminder",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "set"
+       ]
+      ],
+      [
+       "require",
+       [
+        "reminder"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "playable"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekdays"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekends"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "everyday"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "repeat"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "until"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "script"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "priority"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "set reminder",
+      "set reminders",
+      "create reminder",
+      "create reminders",
+      "add reminder",
+      "add reminders",
+      "make reminder",
+      "make reminders",
+      "start reminder",
+      "start reminders",
+      "i have reminder",
+      "i have reminders"
+     ],
+     "vocab": {
+      "everyday": [
+       "everyday",
+       "every day",
+       "daily",
+       "nightly",
+       "every morning",
+       "every afternoon",
+       "every evening",
+       "every night"
+      ],
+      "playable": [
+       "playable",
+       "playback",
+       "audible",
+       "audio",
+       "speakable",
+       "voice",
+       "recording",
+       "recorded",
+       "replay"
+      ],
+      "priority": [
+       "priority",
+       "priority level"
+      ],
+      "reminder": [
+       "reminder",
+       "reminders"
+      ],
+      "repeat": [
+       "every",
+       "repeating"
+      ],
+      "script": [
+       "script",
+       "skill file",
+       "file"
+      ],
+      "set": [
+       "set",
+       "create",
+       "add",
+       "make",
+       "start",
+       "i have"
+      ],
+      "until": [
+       "until",
+       "for the next",
+       "till"
+      ],
+      "weekdays": [
+       "weekday",
+       "weekdays",
+       "week day",
+       "week days"
+      ],
+      "weekends": [
+       "weekend",
+       "weekends",
+       "week end",
+       "week ends"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CreateReminderAlt",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "remind_me"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekdays"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "weekends"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "everyday"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "repeat"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "until"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "remind me",
+      "tell me to"
+     ],
+     "vocab": {
+      "everyday": [
+       "everyday",
+       "every day",
+       "daily",
+       "nightly",
+       "every morning",
+       "every afternoon",
+       "every evening",
+       "every night"
+      ],
+      "remindme": [
+       "remind me",
+       "tell me to"
+      ],
+      "repeat": [
+       "every",
+       "repeating"
+      ],
+      "until": [
+       "until",
+       "for the next",
+       "till"
+      ],
+      "weekdays": [
+       "weekday",
+       "weekdays",
+       "week day",
+       "week days"
+      ],
+      "weekends": [
+       "weekend",
+       "weekends",
+       "week end",
+       "week ends"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "CreateTimer",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "set"
+       ]
+      ],
+      [
+       "require",
+       [
+        "timer"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "set timer",
+      "set timers",
+      "set time",
+      "create timer",
+      "create timers",
+      "create time",
+      "add timer",
+      "add timers",
+      "add time",
+      "make timer",
+      "make timers",
+      "make time",
+      "start timer",
+      "start timers",
+      "start time",
+      "i have timer",
+      "i have timers",
+      "i have time"
+     ],
+     "vocab": {
+      "set": [
+       "set",
+       "create",
+       "add",
+       "make",
+       "start",
+       "i have"
+      ],
+      "timer": [
+       "timer",
+       "timers",
+       "time"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "ListAllAlerts",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "all"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "alarm",
+        "timer",
+        "reminder",
+        "event",
+        "alert"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "what all alarm",
+      "what all alarms",
+      "what all wake me up",
+      "what all timer",
+      "what all timers",
+      "what all time",
+      "what all reminder",
+      "what all reminders",
+      "what all appointment",
+      "what all event",
+      "what all events",
+      "what all alert",
+      "what all alerts",
+      "what upcoming alarm",
+      "what upcoming alarms",
+      "what upcoming wake me up",
+      "what upcoming timer",
+      "what upcoming timers",
+      "what upcoming time",
+      "what upcoming reminder",
+      "what upcoming reminders",
+      "what upcoming appointment",
+      "what upcoming event",
+      "what upcoming events",
+      "what upcoming alert",
+      "what upcoming alerts",
+      "what pending alarm",
+      "what pending alarms",
+      "what pending wake me up",
+      "what pending timer",
+      "what pending timers",
+      "what pending time",
+      "what pending reminder",
+      "what pending reminders",
+      "what pending appointment",
+      "what pending event",
+      "what pending events",
+      "what pending alert",
+      "what pending alerts",
+      "when all alarm"
+     ],
+     "vocab": {
+      "alarm": [
+       "alarm",
+       "alarms",
+       "wake me up"
+      ],
+      "alert": [
+       "alert",
+       "alerts"
+      ],
+      "all": [
+       "all",
+       "upcoming",
+       "pending"
+      ],
+      "event": [
+       "appointment",
+       "event",
+       "events",
+       "appointments"
+      ],
+      "query": [
+       "what",
+       "when",
+       "tell me",
+       "read",
+       "show",
+       "list"
+      ],
+      "reminder": [
+       "reminder",
+       "reminders"
+      ],
+      "timer": [
+       "timer",
+       "timers",
+       "time"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "NextAlert",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "next"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "alarm",
+        "timer",
+        "reminder",
+        "event",
+        "alert"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "what next alarm",
+      "what next alarms",
+      "what next wake me up",
+      "what next timer",
+      "what next timers",
+      "what next time",
+      "what next reminder",
+      "what next reminders",
+      "what next appointment",
+      "what next event",
+      "what next events",
+      "what next alert",
+      "what next alerts",
+      "when next alarm",
+      "when next alarms",
+      "when next wake me up",
+      "when next timer",
+      "when next timers",
+      "when next time",
+      "when next reminder",
+      "when next reminders",
+      "when next appointment",
+      "when next event",
+      "when next events",
+      "when next alert",
+      "when next alerts",
+      "tell me next alarm",
+      "tell me next alarms",
+      "tell me next wake me up",
+      "tell me next timer",
+      "tell me next timers",
+      "tell me next time",
+      "tell me next reminder",
+      "tell me next reminders",
+      "tell me next appointment",
+      "tell me next event",
+      "tell me next events",
+      "tell me next alert",
+      "tell me next alerts",
+      "read next alarm"
+     ],
+     "vocab": {
+      "alarm": [
+       "alarm",
+       "alarms",
+       "wake me up"
+      ],
+      "alert": [
+       "alert",
+       "alerts"
+      ],
+      "event": [
+       "appointment",
+       "event",
+       "events",
+       "appointments"
+      ],
+      "next": [
+       "next"
+      ],
+      "query": [
+       "what",
+       "when",
+       "tell me",
+       "read",
+       "show",
+       "list"
+      ],
+      "reminder": [
+       "reminder",
+       "reminders"
+      ],
+      "timer": [
+       "timer",
+       "timers",
+       "time"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-alerts.neongeckocom",
+    "intent_name": "TimerStatus",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "timer_time_remaining"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how much time is left",
+      "timer status",
+      "how long"
+     ],
+     "vocab": {
+      "timertimeremaining": [
+       "how much time is left",
+       "timer status",
+       "how long"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-audio-recording.neongeckocom": [
+   {
+    "skill_id": "skill-audio-recording.neongeckocom",
+    "intent_name": "start_recording",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "activate audio recording",
+      "activate audio recording as {name}",
+      "activate audio recording named {name}",
+      "activate audio recording under the title {name}",
+      "begin audio capture",
+      "begin audio capture as {name}",
+      "begin audio capture named {name}",
+      "begin audio capture titled {name}",
+      "begin audio recording",
+      "begin audio recording named {name}",
+      "begin audio recording {name}",
+      "begin recording",
+      "begin recording named {name}",
+      "begin recording session",
+      "begin recording {name}",
+      "commence audio recording titled {name}",
+      "commence audio recording with the name {name}",
+      "commence recording",
+      "commence recording session called {name}",
+      "commence recording with the name {name}",
+      "establish recording named {name}",
+      "initialize recording",
+      "initialize recording titled {name}",
+      "initiate a new recording",
+      "initiate an audio recording called {name}",
+      "initiate an audio recording named {name}",
+      "initiate audio recording",
+      "initiate audio recording named {name}",
+      "initiate audio recording operation named {name}",
+      "initiate audio recording {name}",
+      "initiate recording",
+      "initiate recording named {name}",
+      "initiate recording under the name {name}",
+      "initiate recording {name}",
+      "new recording",
+      "new recording named {name}",
+      "proceed with recording",
+      "record a new audio file",
+      "record a new audio file named {name}",
+      "record audio",
+      "record audio as {name}",
+      "record audio named {name}",
+      "record audio now",
+      "record audio now with the name {name}",
+      "set up a new recording named {name}",
+      "start a new audio recording",
+      "start a new audio recording called {name}",
+      "start a new audio recording named {name}",
+      "start a new recording",
+      "start a new recording called {name}",
+      "start a new recording named {name}",
+      "start a new recording with the title {name}",
+      "start a recording",
+      "start a recording called {name}",
+      "start a recording named {name}",
+      "start an audio recording",
+      "start an audio recording called {name}",
+      "start an audio recording named {name}",
+      "start audio recording now",
+      "start audio recording now as {name}",
+      "start audio recording now named {name}",
+      "start audio recording operation",
+      "start audio recording operation as {name}",
+      "start audio recording operation named {name}",
+      "start audio recording please",
+      "start audio recording please as {name}",
+      "start audio recording please named {name}",
+      "start recording",
+      "start recording immediately as {name}",
+      "start recording now",
+      "start recording now as {name}",
+      "start recording now named {name}",
+      "start recording please",
+      "start recording please as {name}",
+      "start recording please named {name}",
+      "start recording right away"
+     ]
+    }
+   }
+  ],
+  "skill-camera.neongeckocom": [
+   {
+    "skill_id": "skill-camera.neongeckocom",
+    "intent_name": "TakePicIntent",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "take (my user |)picture",
+      "take (my user |)photo",
+      "take a picture",
+      "camera capture",
+      "webcam capture"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-camera.neongeckocom",
+    "intent_name": "TakeVidIntent",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(neon |)record (my user |){duration} video",
+      "(neon |)video (my user |){duration}",
+      "(neon |)take (my user |){duration} recording",
+      "(neon |)take (my user |){duration} video",
+      "(neon |)record for {duration}",
+      "(neon |)video record for {duration}",
+      "(neon |)take a video"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-camera.neongeckocom",
+    "intent_name": "ShowLastIntent",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "display last picture",
+      "display last photo",
+      "display latest picture",
+      "display latest photo",
+      "display (my user |) last picture",
+      "display my last photo",
+      "display my latest picture",
+      "display my latest photo",
+      "show the last picture",
+      "show the last photo",
+      "show the last pic",
+      "show the last pick",
+      "show latest picture",
+      "show latest photo",
+      "show latest pic",
+      "show latest pick",
+      "show me my last picture",
+      "show me my latest picture",
+      "show me my latest photo",
+      "show me my latest pic",
+      "show me my latest pick",
+      "display last video",
+      "display latest video",
+      "display my last video",
+      "display my latest video",
+      "show the last video",
+      "show latest video",
+      "show me my the last video",
+      "show me my latest video",
+      "playback my last video",
+      "play back (my user |) last video",
+      "show my user photo",
+      "show my user picture",
+      "show my user video"
+     ]
+    }
+   }
+  ],
+  "skill-communication.neongeckocom": [
+   {
+    "skill_id": "skill-communication.neongeckocom",
+    "intent_name": "call",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "Call {{contact}}",
+      "Place a call to {{contact}}",
+      "Phone {{contact}}",
+      "Neon call {{contact}}",
+      "Neon place a call to {{contact}}",
+      "Neon phone {{contact}}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-communication.neongeckocom",
+    "intent_name": "SendMessageIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "neon"
+       ]
+      ],
+      [
+       "require",
+       [
+        "draft"
+       ]
+      ],
+      [
+       "require",
+       [
+        "message"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "send message",
+      "send shout",
+      "send text",
+      "draft message",
+      "draft shout",
+      "draft text",
+      "start message",
+      "start shout",
+      "start text",
+      "create message",
+      "create shout",
+      "create text"
+     ],
+     "vocab": {
+      "draft": [
+       "send",
+       "draft",
+       "start",
+       "create"
+      ],
+      "message": [
+       "message",
+       "shout",
+       "text"
+      ],
+      "neon": [
+       "neon",
+       "leon",
+       "nyan"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-data_controls.neongeckocom": [
+   {
+    "skill_id": "skill-data_controls.neongeckocom",
+    "intent_name": "clear_data",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(clear|erase|delete|reset|remove) all (of |)(the |my |){dataset}",
+      "(i want (you |)to |)(clear|erase|delete|reset|remove) (all of |)(the|my) {dataset}"
+     ]
+    }
+   }
+  ],
+  "skill-date_time.neongeckocom": [
+   {
+    "skill_id": "skill-date_time.neongeckocom",
+    "intent_name": "what.dow.is.it",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(what is|tell me|i want to know|i need to know) the day of the week( (at|in) {location}|)",
+      "(tell me |)what day of the week (is it|it is)( (at|in|for) {location}|)",
+      "what is the day of the week( (at|in|for) {location}|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-date_time.neongeckocom",
+    "intent_name": "what.day.is.it",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "do you (know|have) the date( (at|in|for) {location}|)",
+      "(what is|tell me|i want to know|i need to know) the date( (at|in|for) {location}|)",
+      "what day is it( (at|in|for) {location}|)( today|)",
+      "what is the (day|date)( (at|in|for) {location}|)( today|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-date_time.neongeckocom",
+    "intent_name": "what.time.is.it",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what time is it",
+      "what time is it (at|in|for) {location}",
+      "do you (know|have) the time( (at|in|for) {location}|)",
+      "(what is|(can you |will you |)tell me|i want to know|i need to know) the (current |)time( (at|in|for) {location}|)"
+     ]
+    }
+   }
+  ],
+  "skill-demo.neongeckocom": [
+   {
+    "skill_id": "skill-demo.neongeckocom",
+    "intent_name": "show_demo",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "i want to see the demo",
+      "show me the demo",
+      ":0 i want to see the demo",
+      ":0 show me the demo"
+     ]
+    }
+   }
+  ],
+  "skill-device_controls.neongeckocom": [
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "exit",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "exit"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "restart",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "restart",
+      "reboot"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "shutdown",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "shutdown",
+      "shut down",
+      "turn off",
+      "power (down|off)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "ChangeWakeWordIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "ww"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "rx_wakeword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change wake word",
+      "change wake words",
+      "change awake words",
+      "change weight words",
+      "change wakeword",
+      "change wakewords",
+      "update wake word",
+      "update wake words",
+      "update awake words",
+      "update weight words",
+      "update wakeword",
+      "update wakewords",
+      "modify wake word",
+      "modify wake words",
+      "modify awake words",
+      "modify weight words",
+      "modify wakeword",
+      "modify wakewords",
+      "set wake word",
+      "set wake words",
+      "set awake words",
+      "set weight words",
+      "set wakeword",
+      "set wakewords",
+      "make wake word",
+      "make wake words",
+      "make awake words",
+      "make weight words",
+      "make wakeword",
+      "make wakewords"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "update",
+       "modify",
+       "set",
+       "make"
+      ],
+      "ww": [
+       "wake word",
+       "wake words",
+       "awake words",
+       "weight words",
+       "wakeword",
+       "wakewords",
+       "awakewords",
+       "weightwords",
+       "weward",
+       "wakeward",
+       "wekeward"
+      ]
+     },
+     "regex": {
+      "rxwakeword": [
+       "(as|to) (?P<rx_wakeword>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "ConfirmListeningIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "enable",
+        "disable"
+       ]
+      ],
+      [
+       "require",
+       [
+        "listening"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "listening confirmation enable",
+      "listening confirmation turn on",
+      "listening confirmation disable",
+      "listening confirmation turn off",
+      "listening confirmation exit",
+      "recording confirmation enable",
+      "recording confirmation turn on",
+      "recording confirmation disable",
+      "recording confirmation turn off",
+      "recording confirmation exit",
+      "listening confirmations enable",
+      "listening confirmations turn on",
+      "listening confirmations disable",
+      "listening confirmations turn off",
+      "listening confirmations exit",
+      "recording confirmations enable",
+      "recording confirmations turn on",
+      "recording confirmations disable",
+      "recording confirmations turn off",
+      "recording confirmations exit",
+      "listening sound enable",
+      "listening sound turn on",
+      "listening sound disable",
+      "listening sound turn off",
+      "listening sound exit",
+      "recording sound enable",
+      "recording sound turn on",
+      "recording sound disable",
+      "recording sound turn off",
+      "recording sound exit"
+     ],
+     "vocab": {
+      "disable": [
+       "disable",
+       "turn off",
+       "exit"
+      ],
+      "enable": [
+       "enable",
+       "turn on"
+      ],
+      "listening": [
+       "listening confirmation",
+       "recording confirmation",
+       "listening confirmations",
+       "recording confirmations",
+       "listening sound",
+       "recording sound",
+       "confirmation sound",
+       "listening sounds",
+       "recording sounds",
+       "confirmation sounds"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "ExitShutdownIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "request"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "exit",
+        "shutdown",
+        "restart"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "i want you to exit",
+      "i want you to shutdown",
+      "i want you to shut down",
+      "i want you to restart",
+      "i want you to reboot",
+      "i need you to exit",
+      "i need you to shutdown",
+      "i need you to shut down",
+      "i need you to restart",
+      "i need you to reboot",
+      "you need to exit",
+      "you need to shutdown",
+      "you need to shut down",
+      "you need to restart",
+      "you need to reboot",
+      "please exit",
+      "please shutdown",
+      "please shut down",
+      "please restart",
+      "please reboot"
+     ],
+     "vocab": {
+      "exit": [
+       "exit"
+      ],
+      "request": [
+       "i want you to",
+       "i need you to",
+       "you need to",
+       "please"
+      ],
+      "restart": [
+       "restart",
+       "reboot"
+      ],
+      "shutdown": [
+       "shutdown",
+       "shut down"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "ShowDebugIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "enable",
+        "disable"
+       ]
+      ],
+      [
+       "require",
+       [
+        "debug"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "neon brain enable",
+      "neon brain turn on",
+      "neon brain disable",
+      "neon brain turn off",
+      "neon brain exit",
+      "debug window enable",
+      "debug window turn on",
+      "debug window disable",
+      "debug window turn off",
+      "debug window exit",
+      "debugging window enable",
+      "debugging window turn on",
+      "debugging window disable",
+      "debugging window turn off",
+      "debugging window exit",
+      "debug view enable",
+      "debug view turn on",
+      "debug view disable",
+      "debug view turn off",
+      "debug view exit",
+      "debugging view enable",
+      "debugging view turn on",
+      "debugging view disable",
+      "debugging view turn off",
+      "debugging view exit",
+      "debug display enable",
+      "debug display turn on",
+      "debug display disable",
+      "debug display turn off",
+      "debug display exit"
+     ],
+     "vocab": {
+      "debug": [
+       "neon brain",
+       "debug window",
+       "debugging window",
+       "debug view",
+       "debugging view",
+       "debug display",
+       "debugging display"
+      ],
+      "disable": [
+       "disable",
+       "turn off",
+       "exit"
+      ],
+      "enable": [
+       "enable",
+       "turn on"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "SkipWWIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "ww"
+       ]
+      ],
+      [
+       "require",
+       [
+        "start_sww"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "wake word skip",
+      "wake word begin skipping",
+      "wake word allow skipping",
+      "wake word start skipping",
+      "wake words skip",
+      "wake words begin skipping",
+      "wake words allow skipping",
+      "wake words start skipping",
+      "awake words skip",
+      "awake words begin skipping",
+      "awake words allow skipping",
+      "awake words start skipping",
+      "weight words skip",
+      "weight words begin skipping",
+      "weight words allow skipping",
+      "weight words start skipping",
+      "wakeword skip",
+      "wakeword begin skipping",
+      "wakeword allow skipping",
+      "wakeword start skipping",
+      "wakewords skip",
+      "wakewords begin skipping",
+      "wakewords allow skipping",
+      "wakewords start skipping"
+     ],
+     "vocab": {
+      "startsww": [
+       "skip",
+       "begin skipping",
+       "allow skipping",
+       "start skipping"
+      ],
+      "ww": [
+       "wake word",
+       "wake words",
+       "awake words",
+       "weight words",
+       "wakeword",
+       "wakewords",
+       "awakewords",
+       "weightwords",
+       "weward",
+       "wakeward",
+       "wekeward"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "SoloModeIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "start",
+        "enable"
+       ]
+      ],
+      [
+       "require",
+       [
+        "solo"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "solo mode start",
+      "solo mode begin",
+      "solo mode allow",
+      "solo mode enable",
+      "solo mode turn on"
+     ],
+     "vocab": {
+      "enable": [
+       "enable",
+       "turn on"
+      ],
+      "solo": [
+       "solo mode"
+      ],
+      "start": [
+       "start",
+       "begin",
+       "allow",
+       "enter"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "StopSoloModeIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "stop",
+        "disable"
+       ]
+      ],
+      [
+       "require",
+       [
+        "solo"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "solo mode stop",
+      "solo mode end",
+      "solo mode quit",
+      "solo mode disable",
+      "solo mode turn off",
+      "solo mode exit"
+     ],
+     "vocab": {
+      "disable": [
+       "disable",
+       "turn off",
+       "exit"
+      ],
+      "solo": [
+       "solo mode"
+      ],
+      "stop": [
+       "stop",
+       "end",
+       "quit",
+       "deny"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-device_controls.neongeckocom",
+    "intent_name": "UseWWIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "ww"
+       ]
+      ],
+      [
+       "require",
+       [
+        "stop_sww"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "wake word stop skipping",
+      "wake word quit skipping",
+      "wake word deny skipping",
+      "wake word end skipping",
+      "wake word require",
+      "wake word use",
+      "wake words stop skipping",
+      "wake words quit skipping",
+      "wake words deny skipping",
+      "wake words end skipping",
+      "wake words require",
+      "wake words use",
+      "awake words stop skipping",
+      "awake words quit skipping",
+      "awake words deny skipping",
+      "awake words end skipping",
+      "awake words require",
+      "awake words use",
+      "weight words stop skipping",
+      "weight words quit skipping",
+      "weight words deny skipping",
+      "weight words end skipping",
+      "weight words require",
+      "weight words use",
+      "wakeword stop skipping",
+      "wakeword quit skipping",
+      "wakeword deny skipping",
+      "wakeword end skipping",
+      "wakeword require",
+      "wakeword use",
+      "wakewords stop skipping",
+      "wakewords quit skipping",
+      "wakewords deny skipping",
+      "wakewords end skipping",
+      "wakewords require",
+      "wakewords use"
+     ],
+     "vocab": {
+      "stopsww": [
+       "stop skipping",
+       "quit skipping",
+       "deny skipping",
+       "end skipping",
+       "require",
+       "use",
+       "start using",
+       "begin requiring"
+      ],
+      "ww": [
+       "wake word",
+       "wake words",
+       "awake words",
+       "weight words",
+       "wakeword",
+       "wakewords",
+       "awakewords",
+       "weightwords",
+       "weward",
+       "wakeward",
+       "wekeward"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-easter-eggs.openvoiceos": [
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "law_of_robotics",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what are the laws of robotics",
+      "tell me the laws of (robotic|robotics)",
+      "recite the laws of (robotic|robotics)",
+      "speak the laws of (robotic|robotics)",
+      "what is (the |){ordinal} law of (robotic|robotics)",
+      "tell me (the |){ordinal} law of (robotic|robotics)",
+      "recite (the |){ordinal} law of (robotic|robotics)",
+      "speak (the |){ordinal} law of (robotic|robotics)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "adult_mode_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "adult_mode_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "hurt me plenty"
+     ],
+     "vocab": {
+      "adultmodekeyword": [
+       "hurt me plenty"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "arnold_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "arnold_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "arnold say",
+      "terminator say",
+      "schwarzenegger say"
+     ],
+     "vocab": {
+      "arnoldkeyword": [
+       "arnold say",
+       "terminator say",
+       "schwarzenegger say"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "bender_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "bender_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "bender say"
+     ],
+     "vocab": {
+      "benderkeyword": [
+       "bender say"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "bill_and_ted_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "bill_and_ted_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "stallion",
+      "stallions",
+      "wild stallions",
+      "wild stallion"
+     ],
+     "vocab": {
+      "billandtedkeyword": [
+       "stallion",
+       "stallions",
+       "wild stallions",
+       "wild stallion"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "conan_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "conan_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "what is best in life"
+     ],
+     "vocab": {
+      "conankeyword": [
+       "what is best in life"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "duke_nukem_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "duke_nukem_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "duke nukem say",
+      "duke newcom say",
+      "duke newum say",
+      "duke newham say",
+      "duke newcomb say"
+     ],
+     "vocab": {
+      "dukenukemkeyword": [
+       "duke nukem say",
+       "duke newcom say",
+       "duke newum say",
+       "duke newham say",
+       "duke newcomb say"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "glados_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "glados_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "glados say",
+      "gladis say",
+      "gladdos say",
+      "gladys say"
+     ],
+     "vocab": {
+      "gladoskeyword": [
+       "glados say",
+       "gladis say",
+       "gladdos say",
+       "gladys say"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "grandma_mode_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "grandma_mode_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "too young to die"
+     ],
+     "vocab": {
+      "grandmamodekeyword": [
+       "too young to die"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "hal_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "hal_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "HAL say",
+      "HAL 9000 say",
+      "all say",
+      "all 9000 say",
+      "howl 9000 say",
+      "howl nine thousand say"
+     ],
+     "vocab": {
+      "halkeyword": [
+       "HAL say",
+       "HAL 9000 say",
+       "all say",
+       "all 9000 say",
+       "howl 9000 say",
+       "howl nine thousand say",
+       "how 9000 say",
+       "how nine thousand say"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "languages_you_speak_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "languages_you_speak_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "languages do you speak",
+      "languages can you speak"
+     ],
+     "vocab": {
+      "languagesyouspeakkeyword": [
+       "languages do you speak",
+       "languages can you speak"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "malibu_stacey_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "malibu_stacey_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "malibu stacy",
+      "malley boo stay see",
+      "malla boo stay see",
+      "what would malibu stacy do",
+      "what wood malley boo stay see do",
+      "what wood malla boo stay see do"
+     ],
+     "vocab": {
+      "malibustaceykeyword": [
+       "malibu stacy",
+       "malley boo stay see",
+       "malla boo stay see",
+       "what would malibu stacy do",
+       "what wood malley boo stay see do",
+       "what wood malla boo stay see do"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "pod_bay_doors_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "pod_bay_doors_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "open the pod bay doors",
+      "open pod bay doors"
+     ],
+     "vocab": {
+      "podbaydoorskeyword": [
+       "open the pod bay doors",
+       "open pod bay doors"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "portal_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "portal_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "sing portal",
+      "sing glados",
+      "glados sing",
+      "portal sing",
+      "song portal",
+      "song glados"
+     ],
+     "vocab": {
+      "portalkeyword": [
+       "sing portal",
+       "sing glados",
+       "glados sing",
+       "portal sing",
+       "song portal",
+       "song glados",
+       "glados song",
+       "portal song",
+       "like glados",
+       "like portal",
+       "forrtal song"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "rock_paper_scissors_lizard_spock_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "rock_paper_scissors_lizard_spock_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "rock paper scissors lizard spock"
+     ],
+     "vocab": {
+      "rockpaperscissorslizardspockkeyword": [
+       "rock paper scissors lizard spock"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "sing_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "sing_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "sing",
+      "sing me a song"
+     ],
+     "vocab": {
+      "singkeyword": [
+       "sing",
+       "sing me a song"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "stardate_intent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "stardate_keyword"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "stardate",
+      "star date",
+      "startdate",
+      "start date",
+      "start day",
+      "startday"
+     ],
+     "vocab": {
+      "stardatekeyword": [
+       "stardate",
+       "star date",
+       "startdate",
+       "start date",
+       "start day",
+       "startday",
+       "start eight",
+       "star eat"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-fallback_llm.neongeckocom": [
+   {
+    "skill_id": "skill-fallback_llm.neongeckocom",
+    "intent_name": "chat_with_llm",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(i want to |)(chat|talk|converse|start a conversation) (to|with) (chatgpt|chat gpt|chat g p t|chat gpg|chat gptc|jackgpt|jack gpt|jack chi pt|fast chat|fastchat|chat gbt|chatgbt|chat gpt4|chatgpt4|claude|anthropic|gemini|bard|a language model|an llm)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-fallback_llm.neongeckocom",
+    "intent_name": "email_chat_history",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(send|email) me (a copy of |a transcript of |)(the|my|your|our|that) (chat|conversation)( history|)",
+      "send me our conversation"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-fallback_llm.neongeckocom",
+    "intent_name": "ask_llm",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(ask|tell|task|half|sjet|asked|as) (chatgpt|chat gpt|chat g p t|chat gpg|chat gptc|jackgpt|jack gpt|jack chi pt|fast chat|fastchat|chat gbt|chatgbt|chat gpt4|chatgpt4|claude|anthropic|gemini|bard|a language model|an llm) {question}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-fallback_llm.neongeckocom",
+    "intent_name": "disable_fallback",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "disable (llm|chatgpt|chat gpt|chat g p t|chat gpg|chat gptc|jackgpt|jack gpt|jack chi pt|fast chat|fastchat|chat gbt|chatgbt|chat gpt4|chatgpt4|language model) (fallback|fall back)( skill|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-fallback_llm.neongeckocom",
+    "intent_name": "enable_fallback",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "enable (llm|chatgpt|chat gpt|chat g p t|chat gpg|chat gptc|jackgpt|jack gpt|jack chi pt|fast chat|fastchat|chat gbt|chatgbt|chat gpt4|chatgpt4|language model) (fallback|fall back)( skill|)"
+     ]
+    }
+   }
+  ],
+  "skill-fallback_wolfram_alpha.neongeckocom": [
+   {
+    "skill_id": "skill-fallback_wolfram_alpha.neongeckocom",
+    "intent_name": "AskWolfram",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "Request"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "ask wolfram",
+      "ask wolfram alpha",
+      "wolfram alpha",
+      "wolframalpha"
+     ],
+     "vocab": {
+      "request": [
+       "ask wolfram",
+       "ask wolfram alpha",
+       "wolfram alpha",
+       "wolframalpha"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-fallback_wolfram_alpha.neongeckocom",
+    "intent_name": "WolframSource",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "Give"
+       ]
+      ],
+      [
+       "require",
+       [
+        "Source"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell source",
+      "tell sources",
+      "tell detail",
+      "tell details",
+      "give source",
+      "give sources",
+      "give detail",
+      "give details",
+      "what source",
+      "what sources",
+      "what detail",
+      "what details",
+      "email source",
+      "email sources",
+      "email detail",
+      "email details",
+      "send source",
+      "send sources",
+      "send detail",
+      "send details"
+     ],
+     "vocab": {
+      "give": [
+       "tell",
+       "give",
+       "what",
+       "email",
+       "send"
+      ],
+      "source": [
+       "source",
+       "sources",
+       "detail",
+       "details"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-homeassistant.oscillatelabsllc": [
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.set.color",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(adjust|change|make) the {entity} color {color}",
+      "change (the|my|) {entity} color to {color}",
+      "(adjust|change) the light {entity} to {color}",
+      "make my light {entity} {color}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "disable",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "Disable Home Assistant",
+      "I don't use Home Assistant"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.get.brightness",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(get|query) the current brightness of (the|) {entity}",
+      "what is the brightness of (the|my|) {entity}",
+      "what's the current brightness of my {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "sensor",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what is the (temperature|value|state|status) of (the|my|) {entity}",
+      "(give me|tell me|get) the (temperature|state|status) of (the|) {entity}",
+      "what's the (temperature|status) of the {entity} please",
+      "is (the|my|) {entity} (on|off|high|low|cold|warm|hot|connected|disconnected|open|closed|dark|in motion|occupied|plugged in|secure|unsecure|charging|available)",
+      "has (the|my|) {entity} detected (moisture|energy|a problem|vibration|gas|sound)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "assist",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "tell home assistant to {command}",
+      "tell home assistant {command}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "enable",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "Enable Home Assistant",
+      "I want to use Home Assistant"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.decrease.brightness",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "decrease the brightness of (the|my|) {entity}",
+      "make (the|my|) {entity} dimmer",
+      "dim (the|my|) {entity}",
+      "dim down the {entity}",
+      "dim the brightness of (the|) {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "turn.on",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "turn on (the|my|) {entity}",
+      "turn (the|my|) {entity} on",
+      "(can|would) you turn on the {entity} please",
+      "(can|would) you turn the {entity} on please",
+      "I'd like to turn on (the|my|) {entity}",
+      "I would like the {entity} on"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "stop",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "stop (the|my|) {entity}",
+      "can you stop (the|) {entity} please",
+      "I'd like to stop the {entity}",
+      "I would like the {entity} stopped"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "turn.off",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "turn off (the|my|) {entity}",
+      "turn (the|my|) {entity} off",
+      "(can|would) you turn off the {entity} please",
+      "(can|would) you turn the {entity} off please",
+      "I'd like to turn off (the|my|) {entity}",
+      "I would like the {entity} off"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.get.color",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(get|query) the current color of (the|) {entity}",
+      "what is the color of (the|my|) {entity}",
+      "what's the current color of my {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.set.brightness",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "set the brightness of (the|my|) {entity} to {brightness} percent",
+      "(set|change) the brightness of (the|) {entity} to {brightness}",
+      "set (the|my|) {entity} brightness to {brightness} (percent|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.increase.brightness",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "increase the brightness of (the|my|) {entity}",
+      "make (the|my|) {entity} brighter",
+      "bump up the brightness of (the|) {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "get.all.devices",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "rebuild device list"
+     ]
+    }
+   }
+  ],
+  "skill-ip_address.neongeckocom": [
+   {
+    "skill_id": "skill-ip_address.neongeckocom",
+    "intent_name": "IPIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "IP"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "public"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how IP address",
+      "how IP",
+      "how i.p.",
+      "how i p",
+      "how i p address",
+      "how network address",
+      "what IP address",
+      "what IP",
+      "what i.p.",
+      "what i p",
+      "what i p address",
+      "what network address",
+      "tell IP address",
+      "tell IP",
+      "tell i.p.",
+      "tell i p",
+      "tell i p address",
+      "tell network address",
+      "show IP address",
+      "show IP",
+      "show i.p.",
+      "show i p",
+      "show i p address",
+      "show network address"
+     ],
+     "vocab": {
+      "ip": [
+       "IP address",
+       "IP",
+       "i.p.",
+       "i p",
+       "i p address",
+       "network address"
+      ],
+      "public": [
+       "public",
+       "external"
+      ],
+      "query": [
+       "how",
+       "what",
+       "tell",
+       "show"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-launcher.neongeckocom": [
+   {
+    "skill_id": "skill-launcher.neongeckocom",
+    "intent_name": "launch_program",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(launch|lunch|open) {program}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-launcher.neongeckocom",
+    "intent_name": "BrowseWebsiteIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "browse"
+       ]
+      ],
+      [
+       "require",
+       [
+        "website"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "go to website",
+      "navigate to website",
+      "browse to website"
+     ],
+     "vocab": {
+      "browse": [
+       "go to",
+       "navigate to",
+       "browse to"
+      ]
+     },
+     "regex": {
+      "website": [
+       "(go|navigate|browse) to (?P<website>.*)"
+      ]
+     }
+    }
+   }
+  ],
+  "skill-meal-plan.oscillatelabsllc": [
+   {
+    "skill_id": "skill-meal-plan.oscillatelabsllc",
+    "intent_name": "plan.meal",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what should i make for dinner?",
+      "what should i have for dinner?",
+      "what should i eat for dinner?",
+      "what should i eat?",
+      "what should i eat tonight?",
+      "i'm hungry",
+      "what's for dinner?"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-meal-plan.oscillatelabsllc",
+    "intent_name": "list.meal",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what are my food options?",
+      "what are my meal choices?",
+      "can you tell me all my meals?",
+      "what are all my meals?",
+      "list all my meals",
+      "read all my meals",
+      "tell me all my meals",
+      "list my meals",
+      "list meals"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-meal-plan.oscillatelabsllc",
+    "intent_name": "remove.meal",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "remove a meal",
+      "remove meal",
+      "get rid of a meal",
+      "delete a meal",
+      "delete meal"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-meal-plan.oscillatelabsllc",
+    "intent_name": "add.meal",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "add a meal",
+      "add meal",
+      "new dinner",
+      "save a meal",
+      "save meal"
+     ]
+    }
+   }
+  ],
+  "skill-messaging.neongeckocom": [
+   {
+    "skill_id": "skill-messaging.neongeckocom",
+    "intent_name": "DraftEmailIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "Neon"
+       ]
+      ],
+      [
+       "require",
+       [
+        "draft"
+       ]
+      ],
+      [
+       "require",
+       [
+        "email"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "message"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "send email",
+      "draft email",
+      "start email",
+      "create email"
+     ],
+     "vocab": {
+      "draft": [
+       "send",
+       "draft",
+       "start",
+       "create"
+      ],
+      "email": [
+       "email"
+      ],
+      "message": [
+       "message",
+       "shout"
+      ],
+      "neon": [
+       "neon",
+       "leon",
+       "nyan"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-monster-scanner.oscillatelabsllc": [
+   {
+    "skill_id": "skill-monster-scanner.oscillatelabsllc",
+    "intent_name": "MonsterScannerIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "monsters"
+       ]
+      ],
+      [
+       "require",
+       [
+        "bed"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "under"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "search"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "monsters bed",
+      "boogeyman bed"
+     ],
+     "vocab": {
+      "bed": [
+       "bed"
+      ],
+      "monsters": [
+       "monsters",
+       "boogeyman"
+      ],
+      "search": [
+       "search",
+       "look",
+       "find"
+      ],
+      "under": [
+       "under"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-musicassistant.oscillatelabsllc": [
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "play_track",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play (the|) (track|song) {track}",
+      "listen to (the|) (track|song) {track}",
+      "play (the|) (track|song) {track} by (the|) (artist|band|group) {artist}",
+      "listen to (the|) (track|song) {track} by (the|) (artist|band|group) {artist}",
+      "play (the|) (track|song) {track} (in|on|using) (the|) {location}",
+      "listen to (the|) (track|song) {track} (in|on|using) (the|) {location}",
+      "play (the|) (track|song) {track} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "listen to (the|) (track|song) {track} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "pause",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "pause",
+      "pause (the|) (music|playback|player|audio)",
+      "pause (the|) (music|playback|player|audio) (in|on) (the|) {location}",
+      "unpause (the|) (music|playback|player|audio)",
+      "resume (the|) (music|playback|player|audio)",
+      "continue playing (the|) (music|playback|player|audio)",
+      "unpause (the|) (music|playback|player|audio) (in|on) (the|) {location}",
+      "resume (the|) (music|playback|player|audio) (in|on) (the|) {location}",
+      "continue playing (the|) (music|playback|player|audio) (in|on) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "play_playlist",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play (the|) playlist {playlist}",
+      "listen to (the|) playlist {playlist}",
+      "shuffle (the|) playlist {playlist}",
+      "play (the|) playlist {playlist} (in|on|using) (the|) {location}",
+      "listen to (the|) playlist {playlist} (in|on|using) (the|) {location}",
+      "shuffle (the|) playlist {playlist} (in|on|using) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "play_radio",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play (the|) (radio station|radio|station) {radio_station}",
+      "listen to (the|) (radio station|radio|station) {radio_station}",
+      "play (the|) (radio station|radio|station) {radio_station} (in|on|using) (the|) {location}",
+      "listen to (the|) (radio station|radio|station) {radio_station} (in|on|using) (the|) {location}",
+      "tune into {radio_station}",
+      "tune to {radio_station}",
+      "tune into {radio_station} (in|on|using) (the|) {location}",
+      "tune to {radio_station} (in|on|using) (the|) {location}",
+      "play {radio_station} radio",
+      "listen to {radio_station} radio",
+      "play {radio_station} radio (in|on|using) (the|) {location}",
+      "listen to {radio_station} radio (in|on|using) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "volume",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(|set )(the |)music volume to {volume_level}",
+      "turn music volume to {volume_level}",
+      "change music volume to {volume_level}",
+      "make music volume {volume_level}",
+      "set volume to {volume_level} (in|on) (the|) {location}",
+      "set (the|) volume to {volume_level} (in|on) (the|) {location}",
+      "volume {volume_level} (in|on) (the|) {location}",
+      "turn volume to {volume_level} (in|on) (the|) {location}",
+      "change volume to {volume_level} (in|on) (the|) {location}",
+      "make volume {volume_level} (in|on) (the|) {location}",
+      "mute",
+      "mute (the|) volume",
+      "mute (the|) music",
+      "unmute",
+      "unmute (the|) volume",
+      "unmute (the|) music",
+      "mute (in|on) (the|) {location}",
+      "mute (the|) volume (in|on) (the|) {location}",
+      "mute (the|) music (in|on) (the|) {location}",
+      "unmute (in|on) (the|) {location}",
+      "unmute (the|) volume (in|on) (the|) {location}",
+      "unmute (the|) music (in|on) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "previous",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "previous",
+      "rewind",
+      "(|go )back",
+      "previous (track|song|station|title)",
+      "last (track|song|station|title)",
+      "previous (track|song|station|title) (in|on) (the|) {location}",
+      "last (track|song|station|title) (in|on) (the|) {location}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "play_album",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play (the|) (album|ep|record|compilation|single) {album}",
+      "listen to (the|) (album|ep|record|compilation|single) {album}",
+      "shuffle (the|) (album|ep|record|compilation|single) {album}",
+      "play (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist}",
+      "listen to (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist}",
+      "shuffle (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist}",
+      "play (the|) (album|ep|record|compilation|single) {album} (in|on|using) (the|) {location}",
+      "listen to (the|) (album|ep|record|compilation|single) {album} (in|on|using) (the|) {location}",
+      "shuffle (the|) (album|ep|record|compilation|single) {album} (in|on|using) (the|) {location}",
+      "play (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "listen to (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "shuffle (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "play (the|) (album|ep|record|compilation|single) {album} (with|using) radio mode",
+      "listen to (the|) (album|ep|record|compilation|single) {album} (with|using) radio mode",
+      "play (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (with|using) radio mode",
+      "listen to (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (with|using) radio mode",
+      "play (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location} (with|using) radio mode",
+      "listen to (the|) (album|ep|record|compilation|single) {album} by (the|) (artist|band|group) {artist} (in|on|using) (the|) {location} (with|using) radio mode"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "play_artist",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "play (the|) (artist|band|group) {artist}",
+      "listen to (the|) (artist|band|group) {artist}",
+      "shuffle (the|) (artist|band|group) {artist}",
+      "play (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "listen to (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "shuffle (the|) (artist|band|group) {artist} (in|on|using) (the|) {location}",
+      "shuffle songs by {artist}",
+      "shuffle music by {artist}",
+      "play songs by {artist}",
+      "play music by {artist}",
+      "listen to songs by {artist}",
+      "listen to music by {artist}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-musicassistant.oscillatelabsllc",
+    "intent_name": "next",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "next",
+      "skip",
+      "(next|skip)(|this ) (track|song|station|title)",
+      "(next|skip) (track|song|station|title) (in|on) (the|) {location}"
+     ]
+    }
+   }
+  ],
+  "skill-ovos-ddg.openvoiceos": [
+   {
+    "skill_id": "skill-ovos-ddg.openvoiceos",
+    "intent_name": "search_duck",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "ask the duck duck about {keyword}",
+      "ask the duck duck go about {keyword}",
+      "search duck duck for {keyword}",
+      "search duck duck go for {keyword}",
+      "search the duck for {keyword}",
+      "what does duck duck go say about {keyword}",
+      "what does duck duck say about {keyword}",
+      "what does the duck say about {keyword}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-ddg.openvoiceos",
+    "intent_name": "DuckMore",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "More"
+       ]
+      ],
+      [
+       "require",
+       [
+        "DuckKnows"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "continue DuckKnows",
+      "know more DuckKnows",
+      "tell me more DuckKnows"
+     ],
+     "vocab": {
+      "more": [
+       "continue",
+       "know more",
+       "tell me more"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-ovos-randomness.openvoiceos": [
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "roll-multiple-dice",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "roll {number} d {faces}",
+      "roll {number} {faces} sided (dice|die)",
+      "roll {number} (dice|die)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "roll-single-die",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "roll a {faces} sided die",
+      "roll a {faces} sided dice",
+      "roll a dice",
+      "roll (a| ) die"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "flip-a-coin",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "flip a coin"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "pick-a-number",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(pick|select|choose) a number between {lower} and {upper}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "make-a-choice",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "help me (make a choice|decide something)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "fortune-teller",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "Tell me (the |a |my |)(future|fortune)"
+     ]
+    }
+   }
+  ],
+  "skill-personal.neongeckocom": [
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhereAreYou",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "where are you",
+      "(where|what) is your location"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhenWereYouBorn",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "when were you born",
+      "(what|when) is your (birthday|birth day|birth date)",
+      "(tell me|i want to know) your (birthday|birth day|birth date)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhoMadeYou",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "who (made|created) you",
+      "who is your (maker|creator)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhereWereYouBorn",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "where were you born",
+      "(where|what) is your (birthplace|birth place)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhoAreYou",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "who are you",
+      "(tell me|i want to know) who you are"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhatIsYourEmail",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(what is|tell me|i want to know) (what |)your email( address|)( is|)"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhatAreYou",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what are you",
+      "(tell me|i want to know) what you are"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "HowAreYou",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "how"
+       ]
+      ],
+      [
+       "require",
+       [
+        "are"
+       ]
+      ],
+      [
+       "require",
+       [
+        "you"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how are you",
+      "how are your"
+     ],
+     "vocab": {
+      "are": [
+       "are"
+      ],
+      "how": [
+       "how"
+      ],
+      "you": [
+       "you",
+       "your"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-personal.neongeckocom",
+    "intent_name": "WhatIsYourName",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "what"
+       ]
+      ],
+      [
+       "require",
+       [
+        "you"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "first",
+        "last",
+        "name"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "what you first name",
+      "what you last name",
+      "what you surname",
+      "what you name",
+      "what your first name",
+      "what your last name",
+      "what your surname",
+      "what your name"
+     ],
+     "vocab": {
+      "first": [
+       "first name"
+      ],
+      "last": [
+       "last name",
+       "surname"
+      ],
+      "name": [
+       "name"
+      ],
+      "what": [
+       "what"
+      ],
+      "you": [
+       "you",
+       "your"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-speak.neongeckocom": [
+   {
+    "skill_id": "skill-speak.neongeckocom",
+    "intent_name": "speak",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(say|repeat) {phrase}"
+     ]
+    }
+   }
+  ],
+  "skill-speed_test.neongeckocom": [
+   {
+    "skill_id": "skill-speed_test.neongeckocom",
+    "intent_name": "run_speed_test",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "how (fast|slow) is (my|your) (internet(| connection)|connection)",
+      "(check|test|benchmark|evaluate) (my|your) internet speed",
+      "(run |start |)(a |internet |an internet |)speed test",
+      "test (my|your) internet connection"
+     ]
+    }
+   }
+  ],
+  "skill-spelling.neongeckocom": [
+   {
+    "skill_id": "skill-spelling.neongeckocom",
+    "intent_name": "SpellIntent",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "Spell"
+       ]
+      ],
+      [
+       "require",
+       [
+        "Word"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "spell Word",
+      "spell word Word",
+      "spelling of Word",
+      "spelling of word Word"
+     ],
+     "vocab": {
+      "spell": [
+       "spell",
+       "spell word",
+       "spelling of",
+       "spelling of word"
+      ]
+     },
+     "regex": {
+      "word": [
+       "(spell the word|spell word|spelling of the word|spelling of(?! the)|spell(?! the)) (?P<Word>\\w+)"
+      ]
+     }
+    }
+   }
+  ],
+  "skill-support_helper.neongeckocom": [
+   {
+    "skill_id": "skill-support_helper.neongeckocom",
+    "intent_name": "contact_support",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(create|send|generate|i want|i need) (a |)(support|troubleshoot|troubleshooting|trouble|problem) (ticket|request|email|report|package)",
+      "troubleshoot my device",
+      "(contact|email) support",
+      "report (a|an) (issue|problem|bug)"
+     ]
+    }
+   }
+  ],
+  "skill-translation.neongeckocom": [
+   {
+    "skill_id": "skill-translation.neongeckocom",
+    "intent_name": "translate_phrase",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "how do (you|i) say {phrase} in {language}",
+      "translate {phrase} (to|into) {language}"
+     ]
+    }
+   }
+  ],
+  "skill-user_settings.neongeckocom": [
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "when_is_my_birthday",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "when is my birthday",
+      "do you know when my birthday is"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "where_am_i",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "where am I",
+      "what is my location",
+      "(tell me|do you know) where I am"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "language_settings",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "what is my language",
+      "what are my language settings"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "language_tts",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(talk|speak) to me in {request_language}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "who_am_i",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "who am i"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "language_stt",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "i speak {request_language}",
+      "i will speak to you in {request_language}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "ChangeDate",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "date"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "mdy",
+        "dmy",
+        "ymd"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change date month day year",
+      "change date day month year",
+      "change date year month day",
+      "switch date month day year",
+      "switch date day month year",
+      "switch date year month day",
+      "update date month day year",
+      "update date day month year",
+      "update date year month day",
+      "set date month day year",
+      "set date day month year",
+      "set date year month day",
+      "use date month day year",
+      "use date day month year",
+      "use date year month day",
+      "start using date month day year",
+      "start using date day month year",
+      "start using date year month day"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "date": [
+       "date"
+      ],
+      "dmy": [
+       "day month year"
+      ],
+      "mdy": [
+       "month day year"
+      ],
+      "ymd": [
+       "year month day"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "ChangeDialog",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "change",
+        "permit"
+       ]
+      ],
+      [
+       "require",
+       [
+        "dialog_mode"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "random",
+        "limited"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "dialog mode change random",
+      "dialog mode change normal",
+      "dialog mode change default",
+      "dialog mode change limited",
+      "dialog mode change primary",
+      "dialog mode switch random",
+      "dialog mode switch normal",
+      "dialog mode switch default",
+      "dialog mode switch limited",
+      "dialog mode switch primary",
+      "dialog mode update random",
+      "dialog mode update normal",
+      "dialog mode update default",
+      "dialog mode update limited",
+      "dialog mode update primary",
+      "dialog mode permit random",
+      "dialog mode permit normal",
+      "dialog mode permit default",
+      "dialog mode permit limited",
+      "dialog mode permit primary",
+      "dialog mode allow random",
+      "dialog mode allow normal",
+      "dialog mode allow default",
+      "dialog mode allow limited",
+      "dialog mode allow primary",
+      "dialog mode start random",
+      "dialog mode start normal",
+      "dialog mode start default",
+      "dialog mode start limited",
+      "dialog mode start primary",
+      "dialogue mode change random",
+      "dialogue mode change normal",
+      "dialogue mode change default",
+      "dialogue mode change limited",
+      "dialogue mode change primary",
+      "dialogue mode switch random",
+      "dialogue mode switch normal",
+      "dialogue mode switch default",
+      "dialogue mode switch limited",
+      "dialogue mode switch primary"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "dialogmode": [
+       "dialog mode",
+       "dialogue mode",
+       "responses"
+      ],
+      "limited": [
+       "limited",
+       "primary"
+      ],
+      "permit": [
+       "permit",
+       "allow",
+       "start",
+       "begin",
+       "enable",
+       "turn on"
+      ],
+      "random": [
+       "random",
+       "normal",
+       "default",
+       "standard"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "ChangeLocationTimezone",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "timezone",
+        "location"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_place"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change rx place timezone",
+      "change rx place time zone",
+      "change rx place location",
+      "switch rx place timezone",
+      "switch rx place time zone",
+      "switch rx place location",
+      "update rx place timezone",
+      "update rx place time zone",
+      "update rx place location",
+      "set rx place timezone",
+      "set rx place time zone",
+      "set rx place location",
+      "use rx place timezone",
+      "use rx place time zone",
+      "use rx place location",
+      "start using rx place timezone",
+      "start using rx place time zone",
+      "start using rx place location"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "location": [
+       "location"
+      ],
+      "timezone": [
+       "timezone",
+       "time zone"
+      ]
+     },
+     "regex": {
+      "rxplace": [
+       "(to) (?P<rx_place>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "ChangeTime",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "time"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "half",
+        "full"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change time 12",
+      "change time twelve",
+      "change time half",
+      "change time 24",
+      "change time twenty four",
+      "change time twenty-four",
+      "switch time 12",
+      "switch time twelve",
+      "switch time half",
+      "switch time 24",
+      "switch time twenty four",
+      "switch time twenty-four",
+      "update time 12",
+      "update time twelve",
+      "update time half",
+      "update time 24",
+      "update time twenty four",
+      "update time twenty-four",
+      "set time 12",
+      "set time twelve",
+      "set time half",
+      "set time 24",
+      "set time twenty four",
+      "set time twenty-four",
+      "use time 12",
+      "use time twelve",
+      "use time half",
+      "use time 24",
+      "use time twenty four",
+      "use time twenty-four",
+      "start using time 12",
+      "start using time twelve",
+      "start using time half",
+      "start using time 24",
+      "start using time twenty four",
+      "start using time twenty-four"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "full": [
+       "24",
+       "twenty four",
+       "twenty-four",
+       "full",
+       "military"
+      ],
+      "half": [
+       "12",
+       "twelve",
+       "half",
+       "half-time",
+       "12-hour"
+      ],
+      "time": [
+       "time"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "ChangeUnits",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "units"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "imperial",
+        "metric"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change units imperial",
+      "change units SAE",
+      "change units american",
+      "change units metric",
+      "change units SI",
+      "change measuring system imperial",
+      "change measuring system SAE",
+      "change measuring system american",
+      "change measuring system metric",
+      "change measuring system SI",
+      "change measurements imperial",
+      "change measurements SAE",
+      "change measurements american",
+      "change measurements metric",
+      "change measurements SI",
+      "change measurement system imperial",
+      "change measurement system SAE",
+      "change measurement system american",
+      "change measurement system metric",
+      "change measurement system SI",
+      "switch units imperial",
+      "switch units SAE",
+      "switch units american",
+      "switch units metric",
+      "switch units SI",
+      "switch measuring system imperial",
+      "switch measuring system SAE",
+      "switch measuring system american",
+      "switch measuring system metric",
+      "switch measuring system SI",
+      "switch measurements imperial",
+      "switch measurements SAE",
+      "switch measurements american",
+      "switch measurements metric",
+      "switch measurements SI",
+      "switch measurement system imperial",
+      "switch measurement system SAE",
+      "switch measurement system american",
+      "switch measurement system metric",
+      "switch measurement system SI"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "imperial": [
+       "imperial",
+       "SAE",
+       "american",
+       "british customary"
+      ],
+      "metric": [
+       "metric",
+       "SI"
+      ],
+      "units": [
+       "units",
+       "measuring system",
+       "measurements",
+       "measurement system"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "MyNameIs",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "my_name_is"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_name"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "my name is rx name",
+      "my user name is rx name",
+      "my username is rx name",
+      "call me rx name",
+      "refer to me as rx name"
+     ],
+     "vocab": {
+      "mynameis": [
+       "my name is",
+       "my user name is",
+       "my username is",
+       "call me",
+       "refer to me as"
+      ]
+     },
+     "regex": {
+      "rxname": [
+       "(is|me|as) (?P<rx_name>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "NoSecondaryLanguage",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "no_secondary_language"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "no secondary language",
+      "speak to me in one language",
+      "only in my primary language",
+      "primary language only",
+      "use primary language",
+      "only primary language"
+     ],
+     "vocab": {
+      "nosecondarylanguage": [
+       "no secondary language",
+       "speak to me in one language",
+       "only in my primary language",
+       "primary language only",
+       "use primary language",
+       "only primary language",
+       "use my primary language",
+       "only my primary language",
+       "stop replying in two languages",
+       "stop responding in two languages",
+       "stop talking in two languages"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SayMyBirthday",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell_me_my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "birthday"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my birthday",
+      "tell me my birth day",
+      "tell me my date of birth",
+      "tell me my born on",
+      "what is my birthday",
+      "what is my birth day",
+      "what is my date of birth",
+      "what is my born on",
+      "do you know my birthday",
+      "do you know my birth day",
+      "do you know my date of birth",
+      "do you know my born on",
+      "read back birthday",
+      "read back birth day",
+      "read back date of birth",
+      "read back born on"
+     ],
+     "vocab": {
+      "birthday": [
+       "birthday",
+       "birth day",
+       "date of birth",
+       "born on"
+      ],
+      "tellmemy": [
+       "tell me my",
+       "what is my",
+       "do you know my",
+       "read back"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SayMyEmail",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell_me_my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "email"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my email address",
+      "tell me my e-mail address",
+      "tell me my e mail address",
+      "tell me my email",
+      "tell me my e-mail",
+      "what is my email address",
+      "what is my e-mail address",
+      "what is my e mail address",
+      "what is my email",
+      "what is my e-mail",
+      "do you know my email address",
+      "do you know my e-mail address",
+      "do you know my e mail address",
+      "do you know my email",
+      "do you know my e-mail",
+      "read back email address",
+      "read back e-mail address",
+      "read back e mail address",
+      "read back email",
+      "read back e-mail"
+     ],
+     "vocab": {
+      "email": [
+       "email address",
+       "e-mail address",
+       "e mail address",
+       "email",
+       "e-mail"
+      ],
+      "tellmemy": [
+       "tell me my",
+       "what is my",
+       "do you know my",
+       "read back"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SayMyLanguageSettings",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell_me_my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language_settings"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my language settings",
+      "tell me my tts settings",
+      "tell me my text to speech settings",
+      "what is my language settings",
+      "what is my tts settings",
+      "what is my text to speech settings",
+      "do you know my language settings",
+      "do you know my tts settings",
+      "do you know my text to speech settings",
+      "read back language settings",
+      "read back tts settings",
+      "read back text to speech settings"
+     ],
+     "vocab": {
+      "languagesettings": [
+       "language settings",
+       "tts settings",
+       "text to speech settings"
+      ],
+      "tellmemy": [
+       "tell me my",
+       "what is my",
+       "do you know my",
+       "read back"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SayMyLocation",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell_me_my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my location",
+      "what is my location",
+      "do you know my location",
+      "read back location"
+     ],
+     "vocab": {
+      "location": [
+       "location"
+      ],
+      "tellmemy": [
+       "tell me my",
+       "what is my",
+       "do you know my",
+       "read back"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SayMyName",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "tell_me_my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "name"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tell me my name",
+      "tell me my username",
+      "what is my name",
+      "what is my username",
+      "do you know my name",
+      "do you know my username",
+      "read back name",
+      "read back username"
+     ],
+     "vocab": {
+      "name": [
+       "name",
+       "username"
+      ],
+      "tellmemy": [
+       "tell me my",
+       "what is my",
+       "do you know my",
+       "read back"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetHesitation",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "permit",
+        "deny"
+       ]
+      ],
+      [
+       "require",
+       [
+        "hesitation"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "hesitation permit",
+      "hesitation allow",
+      "hesitation start",
+      "hesitation deny",
+      "hesitation quit",
+      "hesitation end",
+      "lookup confirmation permit",
+      "lookup confirmation allow",
+      "lookup confirmation start",
+      "lookup confirmation deny",
+      "lookup confirmation quit",
+      "lookup confirmation end",
+      "lookup confirmations permit",
+      "lookup confirmations allow",
+      "lookup confirmations start",
+      "lookup confirmations deny",
+      "lookup confirmations quit",
+      "lookup confirmations end",
+      "look up confirmation permit",
+      "look up confirmation allow",
+      "look up confirmation start",
+      "look up confirmation deny",
+      "look up confirmation quit",
+      "look up confirmation end",
+      "look up confirmations permit",
+      "look up confirmations allow",
+      "look up confirmations start",
+      "look up confirmations deny",
+      "look up confirmations quit",
+      "look up confirmations end"
+     ],
+     "vocab": {
+      "deny": [
+       "deny",
+       "quit",
+       "end",
+       "disable",
+       "stop"
+      ],
+      "hesitation": [
+       "hesitation",
+       "lookup confirmation",
+       "lookup confirmations",
+       "look up confirmation",
+       "look up confirmations"
+      ],
+      "permit": [
+       "permit",
+       "allow",
+       "start",
+       "begin",
+       "enable",
+       "turn on"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetMyBirthday",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "birthday"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "my birthday",
+      "my birth day",
+      "my date of birth",
+      "my born on",
+      "i birthday",
+      "i birth day",
+      "i date of birth",
+      "i born on"
+     ],
+     "vocab": {
+      "birthday": [
+       "birthday",
+       "birth day",
+       "date of birth",
+       "born on"
+      ],
+      "my": [
+       "my",
+       "i"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetMyEmail",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "email"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_setting"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "my email address rx setting",
+      "my e-mail address rx setting",
+      "my e mail address rx setting",
+      "my email rx setting",
+      "my e-mail rx setting",
+      "i email address rx setting",
+      "i e-mail address rx setting",
+      "i e mail address rx setting",
+      "i email rx setting",
+      "i e-mail rx setting"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "email": [
+       "email address",
+       "e-mail address",
+       "e mail address",
+       "email",
+       "e-mail"
+      ],
+      "my": [
+       "my",
+       "i"
+      ]
+     },
+     "regex": {
+      "rxsetting": [
+       "(is|to) (?P<rx_setting>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetMyLanguage",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "my"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "preferred"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "second"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "rx_language"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "my language",
+      "i language"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "language": [
+       "language"
+      ],
+      "my": [
+       "my",
+       "i"
+      ],
+      "preferred": [
+       "preferred"
+      ],
+      "second": [
+       "second",
+       "secondary"
+      ]
+     },
+     "regex": {
+      "rxlanguage": [
+       "(speak|in|to|is) (?P<rx_language>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetMyName",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "change"
+       ]
+      ],
+      [
+       "require",
+       [
+        "my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "name"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_setting"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "my name rx setting",
+      "my username rx setting",
+      "i name rx setting",
+      "i username rx setting"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "my": [
+       "my",
+       "i"
+      ],
+      "name": [
+       "name",
+       "username"
+      ]
+     },
+     "regex": {
+      "rxsetting": [
+       "(is|to) (?P<rx_setting>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetSTTLanguage",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language_stt"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_language"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change stt language rx language",
+      "change speech to text language rx language",
+      "change input language rx language",
+      "change spoken language rx language",
+      "switch stt language rx language",
+      "switch speech to text language rx language",
+      "switch input language rx language",
+      "switch spoken language rx language",
+      "update stt language rx language",
+      "update speech to text language rx language",
+      "update input language rx language",
+      "update spoken language rx language",
+      "set stt language rx language",
+      "set speech to text language rx language",
+      "set input language rx language",
+      "set spoken language rx language",
+      "use stt language rx language",
+      "use speech to text language rx language",
+      "use input language rx language",
+      "use spoken language rx language",
+      "start using stt language rx language",
+      "start using speech to text language rx language",
+      "start using input language rx language",
+      "start using spoken language rx language"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "language": [
+       "language"
+      ],
+      "languagestt": [
+       "stt",
+       "speech to text",
+       "input",
+       "spoken"
+      ],
+      "my": [
+       "my",
+       "i"
+      ]
+     },
+     "regex": {
+      "rxlanguage": [
+       "(speak|in|to|is) (?P<rx_language>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SetTTSLanguage",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "change"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "my"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language_tts"
+       ]
+      ],
+      [
+       "require",
+       [
+        "language"
+       ]
+      ],
+      [
+       "require",
+       [
+        "rx_language"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "change tts language rx language",
+      "change text to speech language rx language",
+      "change response language rx language",
+      "change responses language rx language",
+      "change output language rx language",
+      "switch tts language rx language",
+      "switch text to speech language rx language",
+      "switch response language rx language",
+      "switch responses language rx language",
+      "switch output language rx language",
+      "update tts language rx language",
+      "update text to speech language rx language",
+      "update response language rx language",
+      "update responses language rx language",
+      "update output language rx language",
+      "set tts language rx language",
+      "set text to speech language rx language",
+      "set response language rx language",
+      "set responses language rx language",
+      "set output language rx language",
+      "use tts language rx language",
+      "use text to speech language rx language",
+      "use response language rx language",
+      "use responses language rx language",
+      "use output language rx language",
+      "start using tts language rx language",
+      "start using text to speech language rx language",
+      "start using response language rx language",
+      "start using responses language rx language",
+      "start using output language rx language"
+     ],
+     "vocab": {
+      "change": [
+       "change",
+       "switch",
+       "update",
+       "set",
+       "use",
+       "start using"
+      ],
+      "language": [
+       "language"
+      ],
+      "languagetts": [
+       "tts",
+       "text to speech",
+       "response",
+       "responses",
+       "output"
+      ],
+      "my": [
+       "my",
+       "i"
+      ]
+     },
+     "regex": {
+      "rxlanguage": [
+       "(speak|in|to|is) (?P<rx_language>.*)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "SpeakSpeed",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "speak_to_me"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "faster",
+        "slower",
+        "normally"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "talk to me faster",
+      "talk to me fast",
+      "talk to me quickly",
+      "talk to me slower",
+      "talk to me slow",
+      "talk to me slowly",
+      "talk to me normally",
+      "talk to me normal speed",
+      "talk to me default",
+      "speak to me faster",
+      "speak to me fast",
+      "speak to me quickly",
+      "speak to me slower",
+      "speak to me slow",
+      "speak to me slowly",
+      "speak to me normally",
+      "speak to me normal speed",
+      "speak to me default"
+     ],
+     "vocab": {
+      "faster": [
+       "faster",
+       "fast",
+       "quickly",
+       "quicker"
+      ],
+      "normally": [
+       "normally",
+       "normal speed",
+       "default",
+       "standard",
+       "regular",
+       "regularly"
+      ],
+      "slower": [
+       "slower",
+       "slow",
+       "slowly"
+      ],
+      "speaktome": [
+       "talk to me",
+       "speak to me"
+      ]
+     },
+     "regex": {}
+    }
+   },
+   {
+    "skill_id": "skill-user_settings.neongeckocom",
+    "intent_name": "Transcription",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "permit",
+        "deny"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "audio"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "text"
+       ]
+      ],
+      [
+       "require",
+       [
+        "retention"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "retention permit",
+      "retention allow",
+      "retention start",
+      "retention deny",
+      "retention quit",
+      "retention end",
+      "transcription permit",
+      "transcription allow",
+      "transcription start",
+      "transcription deny",
+      "transcription quit",
+      "transcription end",
+      "saving permit",
+      "saving allow",
+      "saving start",
+      "saving deny",
+      "saving quit",
+      "saving end",
+      "recording permit",
+      "recording allow",
+      "recording start",
+      "recording deny",
+      "recording quit",
+      "recording end",
+      "recordings permit",
+      "recordings allow",
+      "recordings start",
+      "recordings deny",
+      "recordings quit",
+      "recordings end",
+      "transcriptions permit",
+      "transcriptions allow",
+      "transcriptions start",
+      "transcriptions deny",
+      "transcriptions quit",
+      "transcriptions end"
+     ],
+     "vocab": {
+      "audio": [
+       "audio",
+       "voice",
+       "speech"
+      ],
+      "deny": [
+       "deny",
+       "quit",
+       "end",
+       "disable",
+       "stop"
+      ],
+      "permit": [
+       "permit",
+       "allow",
+       "start",
+       "begin",
+       "enable",
+       "turn on"
+      ],
+      "retention": [
+       "retention",
+       "transcription",
+       "saving",
+       "recording",
+       "recordings",
+       "transcriptions"
+      ],
+      "text": [
+       "text"
+      ]
+     },
+     "regex": {}
+    }
+   }
+  ],
+  "skill-weather.neongeckocom": [
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "do-i-need-an-umbrella",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "should I bring an umbrella",
+      "do I need an umbrella",
+      "should I bring a rain coat",
+      "do I need a rain jacket"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleCurrentTemperature",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "temperature"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "unit"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "now"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "temperature",
+      "temp"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "now": [
+       "current",
+       "now"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "temperature": [
+       "temperature",
+       "temp"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ],
+      "unit": [
+       "fahrenheit",
+       "celsius"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleCurrentWeather",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "weather",
+      "forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ],
+      "weather": [
+       "weather"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleDailyTemperature",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "temperature"
+       ]
+      ],
+      [
+       "require",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "unit"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "temperature tomorrow",
+      "temperature tomorrow's",
+      "temperature yesterday",
+      "temperature yesterday's",
+      "temperature monday",
+      "temperature on monday",
+      "temp tomorrow",
+      "temp tomorrow's",
+      "temp yesterday",
+      "temp yesterday's",
+      "temp monday",
+      "temp on monday"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "temperature": [
+       "temperature",
+       "temp"
+      ],
+      "unit": [
+       "fahrenheit",
+       "celsius"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleHighTemperature",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "high"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "temperature"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "unit"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "now"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "high",
+      "highest",
+      "max",
+      "maximum"
+     ],
+     "vocab": {
+      "high": [
+       "high",
+       "highest",
+       "max",
+       "maximum"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "now": [
+       "current",
+       "now"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "temperature": [
+       "temperature",
+       "temp"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ],
+      "unit": [
+       "fahrenheit",
+       "celsius"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleHourlyTemperature",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "temperature"
+       ]
+      ],
+      [
+       "require",
+       [
+        "relative-time"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "temperature morning",
+      "temperature afternoon",
+      "temperature evening",
+      "temperature night",
+      "temperature tonight",
+      "temperature overnight",
+      "temp morning",
+      "temp afternoon",
+      "temp evening",
+      "temp night",
+      "temp tonight",
+      "temp overnight"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "relativetime": [
+       "morning",
+       "afternoon",
+       "evening",
+       "night",
+       "tonight",
+       "overnight"
+      ],
+      "temperature": [
+       "temperature",
+       "temp"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleHowHotCold",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "hot",
+        "cold"
+       ]
+      ],
+      [
+       "require",
+       [
+        "confirm-query"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "is it warm",
+      "is it hot",
+      "is it cold",
+      "is it chilly",
+      "is it freezing",
+      "will it warm",
+      "will it hot",
+      "will it cold",
+      "will it chilly",
+      "will it freezing",
+      "is there warm",
+      "is there hot",
+      "is there cold",
+      "is there chilly",
+      "is there freezing",
+      "will there warm",
+      "will there hot",
+      "will there cold",
+      "will there chilly",
+      "will there freezing",
+      "gonna be warm",
+      "gonna be hot",
+      "gonna be cold",
+      "gonna be chilly",
+      "gonna be freezing",
+      "going to warm",
+      "going to hot",
+      "going to cold",
+      "going to chilly",
+      "going to freezing"
+     ],
+     "vocab": {
+      "cold": [
+       "cold",
+       "chilly",
+       "freezing",
+       "cool"
+      ],
+      "confirmquery": [
+       "is it",
+       "will it",
+       "is there",
+       "will there",
+       "gonna be",
+       "going to",
+       "will we",
+       "do they have"
+      ],
+      "hot": [
+       "warm",
+       "hot"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleHowWindy",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "how"
+       ]
+      ],
+      [
+       "require",
+       [
+        "windy"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "confirm-query"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how wind",
+      "how windy",
+      "how winds",
+      "how wind speed",
+      "how breezy",
+      "how gusting"
+     ],
+     "vocab": {
+      "confirmquery": [
+       "is it",
+       "will it",
+       "is there",
+       "will there",
+       "gonna be",
+       "going to",
+       "will we",
+       "do they have"
+      ],
+      "how": [
+       "how"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "windy": [
+       "wind",
+       "windy",
+       "winds",
+       "wind speed",
+       "breezy",
+       "gusting",
+       "blowing"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleHumidity",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "Query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "Humidity"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "RelativeDay"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "Location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how humid",
+      "how humidity",
+      "how steamy",
+      "what is humid",
+      "what is humidity",
+      "what is steamy",
+      "what's humid",
+      "what's humidity",
+      "what's steamy",
+      "what will humid",
+      "what will humidity",
+      "what will steamy",
+      "tell me about humid",
+      "tell me about humidity",
+      "tell me about steamy",
+      "tell me humid",
+      "tell me humidity",
+      "tell me steamy"
+     ],
+     "vocab": {
+      "humidity": [
+       "humid",
+       "humidity",
+       "steamy"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleIsItHot",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "confirm-query-current"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "hot",
+        "cold"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "is it warm",
+      "is it hot",
+      "is it cold",
+      "is it chilly",
+      "is it freezing",
+      "is there warm",
+      "is there hot",
+      "is there cold",
+      "is there chilly",
+      "is there freezing"
+     ],
+     "vocab": {
+      "cold": [
+       "cold",
+       "chilly",
+       "freezing",
+       "cool"
+      ],
+      "confirmquerycurrent": [
+       "is it",
+       "is there"
+      ],
+      "hot": [
+       "warm",
+       "hot"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleIsItWindy",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "confirm-query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "windy"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "is it wind",
+      "is it windy",
+      "is it winds",
+      "is it wind speed",
+      "is it breezy",
+      "is it gusting",
+      "will it wind",
+      "will it windy",
+      "will it winds",
+      "will it wind speed",
+      "will it breezy",
+      "will it gusting",
+      "is there wind",
+      "is there windy",
+      "is there winds",
+      "is there wind speed",
+      "is there breezy",
+      "is there gusting",
+      "will there wind",
+      "will there windy",
+      "will there winds",
+      "will there wind speed",
+      "will there breezy",
+      "will there gusting",
+      "gonna be wind",
+      "gonna be windy",
+      "gonna be winds",
+      "gonna be wind speed",
+      "gonna be breezy",
+      "gonna be gusting",
+      "going to wind",
+      "going to windy",
+      "going to winds",
+      "going to wind speed",
+      "going to breezy",
+      "going to gusting"
+     ],
+     "vocab": {
+      "confirmquery": [
+       "is it",
+       "will it",
+       "is there",
+       "will there",
+       "gonna be",
+       "going to",
+       "will we",
+       "do they have"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "windy": [
+       "wind",
+       "windy",
+       "winds",
+       "wind speed",
+       "breezy",
+       "gusting",
+       "blowing"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleLikeOutside",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "like"
+       ]
+      ],
+      [
+       "require",
+       [
+        "outside"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how like outside",
+      "how like out",
+      "what is like outside",
+      "what is like out",
+      "what's like outside",
+      "what's like out",
+      "what will like outside",
+      "what will like out",
+      "tell me about like outside",
+      "tell me about like out",
+      "tell me like outside",
+      "tell me like out"
+     ],
+     "vocab": {
+      "like": [
+       "like"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "outside": [
+       "outside",
+       "out"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleLowTemperature",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "low"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "temperature"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "unit"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "now"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "today"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "low",
+      "lowest",
+      "min",
+      "minimum"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "low": [
+       "low",
+       "lowest",
+       "min",
+       "minimum"
+      ],
+      "now": [
+       "current",
+       "now"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "temperature": [
+       "temperature",
+       "temp"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ],
+      "unit": [
+       "fahrenheit",
+       "celsius"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleNextPrecipitation",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "When"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "Next"
+       ]
+      ],
+      [
+       "require",
+       [
+        "Precipitation"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "Location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "when rain",
+      "when snow",
+      "when precipitation",
+      "when rainy",
+      "when snowy",
+      "when raining",
+      "when's rain",
+      "when's snow",
+      "when's precipitation",
+      "when's rainy",
+      "when's snowy",
+      "when's raining",
+      "when will rain",
+      "when will snow",
+      "when will precipitation",
+      "when will rainy",
+      "when will snowy",
+      "when will raining",
+      "when is rain",
+      "when is snow",
+      "when is precipitation",
+      "when is rainy",
+      "when is snowy",
+      "when is raining",
+      "what time rain",
+      "what time snow",
+      "what time precipitation",
+      "what time rainy",
+      "what time snowy",
+      "what time raining"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "next": [
+       "next",
+       "again"
+      ],
+      "precipitation": [
+       "rain",
+       "snow",
+       "precipitation",
+       "rainy",
+       "snowy",
+       "raining",
+       "snowing",
+       "drizzle"
+      ],
+      "when": [
+       "when",
+       "when's",
+       "when will",
+       "when is",
+       "what time"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleNumberDaysForecast",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "require",
+       [
+        "number-days"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "2-day weather",
+      "2-day forecast",
+      "two-day weather",
+      "two-day forecast",
+      "2 days weather",
+      "2 days forecast",
+      "2 day weather",
+      "2 day forecast",
+      "two days weather",
+      "two days forecast",
+      "two day weather",
+      "two day forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "numberdays": [
+       "2-day",
+       "two-day",
+       "2 days",
+       "2 day",
+       "two days",
+       "two day",
+       "next 2 days",
+       "next two days",
+       "next couple of days",
+       "next couple days",
+       "3-day",
+       "three-day",
+       "3 days",
+       "3 day",
+       "three days",
+       "three day",
+       "next 3 days",
+       "next three days",
+       "next few days",
+       "4-day",
+       "four-day",
+       "4 days",
+       "4 day",
+       "four days",
+       "four day",
+       "next 4 days",
+       "next four days",
+       "5-day",
+       "five-day",
+       "5 days",
+       "5 day",
+       "five days",
+       "five day",
+       "next 5 days",
+       "next five days",
+       "6-day",
+       "six-day",
+       "6 days",
+       "6 day",
+       "six days",
+       "six day",
+       "next 6 days",
+       "next six days"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "weather": [
+       "weather"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleOneDayForecast",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "require",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "tomorrow weather",
+      "tomorrow forecast",
+      "tomorrow's weather",
+      "tomorrow's forecast",
+      "yesterday weather",
+      "yesterday forecast",
+      "yesterday's weather",
+      "yesterday's forecast",
+      "monday weather",
+      "monday forecast",
+      "on monday weather",
+      "on monday forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "weather": [
+       "weather"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleQueryCondition",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "confirm-query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "snow",
+        "clear",
+        "clouds",
+        "fog",
+        "rain",
+        "thunderstorm"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "is it snow",
+      "is it snowing",
+      "is it sleet",
+      "is it clear",
+      "is it sunny",
+      "is it sun",
+      "is it cloudy",
+      "is it cloud",
+      "is it clouds",
+      "is it fog",
+      "is it foggy",
+      "is it mist",
+      "is it light rain",
+      "is it rain",
+      "is it raining",
+      "is it storm",
+      "is it stormy",
+      "is it storming",
+      "will it snow",
+      "will it snowing",
+      "will it sleet",
+      "will it clear",
+      "will it sunny",
+      "will it sun",
+      "will it cloudy",
+      "will it cloud",
+      "will it clouds",
+      "will it fog",
+      "will it foggy",
+      "will it mist",
+      "will it light rain",
+      "will it rain",
+      "will it raining",
+      "will it storm",
+      "will it stormy",
+      "will it storming",
+      "is there snow",
+      "is there snowing",
+      "is there sleet",
+      "is there clear"
+     ],
+     "vocab": {
+      "clear": [
+       "clear",
+       "sunny",
+       "sun",
+       "good weather",
+       "nice weather"
+      ],
+      "clouds": [
+       "cloudy",
+       "cloud",
+       "clouds",
+       "few clouds",
+       "scattered clouds"
+      ],
+      "confirmquery": [
+       "is it",
+       "will it",
+       "is there",
+       "will there",
+       "gonna be",
+       "going to",
+       "will we",
+       "do they have"
+      ],
+      "fog": [
+       "fog",
+       "foggy",
+       "mist",
+       "misty"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "rain": [
+       "light rain",
+       "rain",
+       "raining",
+       "rainy",
+       "drizzle",
+       "precipitation"
+      ],
+      "snow": [
+       "snow",
+       "snowing",
+       "sleet",
+       "sleeting"
+      ],
+      "thunderstorm": [
+       "storm",
+       "stormy",
+       "storming"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleSunriseSunset",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "one_of",
+       [
+        "Query",
+        "When"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "Location"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "sunrise",
+        "sunset"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "Today"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "RelativeDay"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how sunrise",
+      "how sun rise",
+      "how dawn",
+      "how sunset",
+      "how sun set",
+      "how dusk",
+      "what is sunrise",
+      "what is sun rise",
+      "what is dawn",
+      "what is sunset",
+      "what is sun set",
+      "what is dusk",
+      "what's sunrise",
+      "what's sun rise",
+      "what's dawn",
+      "what's sunset",
+      "what's sun set",
+      "what's dusk",
+      "when sunrise",
+      "when sun rise",
+      "when dawn",
+      "when sunset",
+      "when sun set",
+      "when dusk",
+      "when's sunrise",
+      "when's sun rise",
+      "when's dawn",
+      "when's sunset",
+      "when's sun set",
+      "when's dusk",
+      "when will sunrise",
+      "when will sun rise",
+      "when will dawn",
+      "when will sunset",
+      "when will sun set",
+      "when will dusk"
+     ],
+     "vocab": {
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "sunrise": [
+       "sunrise",
+       "sun rise",
+       "dawn",
+       "daybreak",
+       "day break"
+      ],
+      "sunset": [
+       "sunset",
+       "sun set",
+       "dusk"
+      ],
+      "today": [
+       "today",
+       "today's"
+      ],
+      "when": [
+       "when",
+       "when's",
+       "when will",
+       "when is",
+       "what time"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleWeatherAtTime",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "require",
+       [
+        "relative-time"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "relative-day"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "morning weather",
+      "morning forecast",
+      "afternoon weather",
+      "afternoon forecast",
+      "evening weather",
+      "evening forecast",
+      "night weather",
+      "night forecast",
+      "tonight weather",
+      "tonight forecast",
+      "overnight weather",
+      "overnight forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "relativeday": [
+       "tomorrow",
+       "tomorrow's",
+       "yesterday",
+       "yesterday's",
+       "monday",
+       "on monday",
+       "tuesday",
+       "on tuesday",
+       "wednesday",
+       "on wednesday",
+       "thursday",
+       "on thursday",
+       "friday",
+       "on friday",
+       "saturday",
+       "on saturday",
+       "sunday",
+       "on sunday",
+       "days"
+      ],
+      "relativetime": [
+       "morning",
+       "afternoon",
+       "evening",
+       "night",
+       "tonight",
+       "overnight"
+      ],
+      "weather": [
+       "weather"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleWeatherLater",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "require",
+       [
+        "weather"
+       ]
+      ],
+      [
+       "require",
+       [
+        "later"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how weather next hour",
+      "how weather next hours",
+      "how weather few hours",
+      "how weather next few hours",
+      "how weather couple of hours",
+      "how weather next couple of hours",
+      "what is weather next hour",
+      "what is weather next hours",
+      "what is weather few hours",
+      "what is weather next few hours",
+      "what is weather couple of hours",
+      "what is weather next couple of hours",
+      "what's weather next hour",
+      "what's weather next hours",
+      "what's weather few hours",
+      "what's weather next few hours",
+      "what's weather couple of hours",
+      "what's weather next couple of hours",
+      "what will weather next hour",
+      "what will weather next hours",
+      "what will weather few hours",
+      "what will weather next few hours",
+      "what will weather couple of hours",
+      "what will weather next couple of hours",
+      "tell me about weather next hour",
+      "tell me about weather next hours",
+      "tell me about weather few hours",
+      "tell me about weather next few hours",
+      "tell me about weather couple of hours",
+      "tell me about weather next couple of hours",
+      "tell me weather next hour",
+      "tell me weather next hours",
+      "tell me weather few hours",
+      "tell me weather next few hours",
+      "tell me weather couple of hours",
+      "tell me weather next couple of hours"
+     ],
+     "vocab": {
+      "later": [
+       "next hour",
+       "next hours",
+       "few hours",
+       "next few hours",
+       "couple of hours",
+       "next couple of hours",
+       "later"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "weather": [
+       "weather"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleWeekWeather",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "optionally",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "require",
+       [
+        "week"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "week weather",
+      "week forecast",
+      "weekly weather",
+      "weekly forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "weather": [
+       "weather"
+      ],
+      "week": [
+       "week",
+       "weekly"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   },
+   {
+    "skill_id": "skill-weather.neongeckocom",
+    "intent_name": "HandleWeekendForecast",
+    "lang": "en-us",
+    "method": "adapt",
+    "definition": {
+     "steps": [
+      [
+       "require",
+       [
+        "query"
+       ]
+      ],
+      [
+       "one_of",
+       [
+        "weather",
+        "forecast"
+       ]
+      ],
+      [
+       "require",
+       [
+        "weekend"
+       ]
+      ],
+      [
+       "optionally",
+       [
+        "location"
+       ]
+      ]
+     ],
+     "keyword_examples": [
+      "how weekend weather",
+      "how weekend forecast",
+      "what is weekend weather",
+      "what is weekend forecast",
+      "what's weekend weather",
+      "what's weekend forecast",
+      "what will weekend weather",
+      "what will weekend forecast",
+      "tell me about weekend weather",
+      "tell me about weekend forecast",
+      "tell me weekend weather",
+      "tell me weekend forecast"
+     ],
+     "vocab": {
+      "forecast": [
+       "forecast"
+      ],
+      "location": [
+       "Seattle",
+       "Los Angeles california|los angeles|la",
+       "Lawrence kansas",
+       "portland oregon|portland",
+       "spokane",
+       "chicago",
+       "houston",
+       "austin",
+       "san diego",
+       "san francisco",
+       "san jose",
+       "boston",
+       "kansas city",
+       "atlanta",
+       "berlin"
+      ],
+      "query": [
+       "how",
+       "what is",
+       "what's",
+       "what will",
+       "tell me about",
+       "tell me",
+       "tell us about",
+       "tell us",
+       "give me",
+       "what"
+      ],
+      "weather": [
+       "weather"
+      ],
+      "weekend": [
+       "weekend"
+      ]
+     },
+     "regex": {
+      "location": [
+       ".*\\b(at|in) (?P<Location>(?!\\bcelsius\\b|\\bfahrenheit\\b) *.+)"
+      ]
+     }
+    }
+   }
+  ],
+  "ocp": [
+   {
+    "skill_id": "ocp",
+    "intent_name": "play",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(play|start) {query}",
+      "search (common play|ocp|ovos common play|O C P) for {query}",
+      "search (ovos|open voice os) media for {query}",
+      "search {query} (in|on) (common play|ocp|ovos common play|O C P)",
+      "search {query} (in|on) (ovos|open voice os) media"
+     ]
+    }
+   },
+   {
+    "skill_id": "ocp",
+    "intent_name": "pause",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "pause",
+      "pause (music|song|track|video|media|playback)"
+     ]
+    }
+   },
+   {
+    "skill_id": "ocp",
+    "intent_name": "next",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(next|skip)",
+      "(next|skip) (music|song|track|video|media)",
+      "(play|go to) next (music|song|track|video|media)",
+      "next",
+      "next (song|track|music|movie|video|tune)",
+      "play next"
+     ]
+    }
+   },
+   {
+    "skill_id": "ocp",
+    "intent_name": "prev",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(play previous|go back one) (music|song|track|video|media)",
+      "(play previous|previous) (music|song|track|video|media)",
+      "(play previous|previous|go back)",
+      "previous",
+      "previous (song|track|music|movie|video|tune)"
+     ]
+    }
+   },
+   {
+    "skill_id": "ocp",
+    "intent_name": "resume",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "(unpause|resume)",
+      "(unpause|resume|continue|restart) (music|song|track|video|media|playback)",
+      "play"
+     ]
+    }
+   }
+  ],
+  "ovos.common_play": [
+   {
+    "skill_id": "ovos.common_play",
+    "intent_name": "stop",
+    "lang": "en-us",
+    "method": "template",
+    "definition": {
+     "samples": [
+      "stop",
+      "stop (playback|media|media playback|music|movie|movies|noise)",
+      "stop everything"
+     ]
+    }
+   }
+  ]
+ }
+}
