@@ -1,0 +1,272 @@
+{"id": "u0000", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0001", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {"location": "austin"}}
+{"id": "u0002", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.8871, "top3": ["weather.forecast", "weather.current", "__unmapped__:ovos-skill-weather.openvoiceos:next_rain"], "slots": {}}
+{"id": "u0003", "intent": "weather.current", "stage": "classifier", "confidence": 0.9189, "top3": ["weather.current", "date.current", "weather.forecast"], "slots": {}}
+{"id": "u0004", "intent": "time.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0006", "intent": "date.current", "stage": "classifier", "confidence": 0.6993, "top3": ["date.current", "easter_egg", "weather.current"], "slots": {}}
+{"id": "u0008", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "timer"}}
+{"id": "u0010", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "7 am tomorrow"}}
+{"id": "u0011", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0012", "intent": "volume.set", "stage": "classifier", "confidence": 0.7388, "top3": ["volume.set", "volume.query", "volume.up"], "slots": {"level": "five"}}
+{"id": "u0015", "intent": "volume.mute", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0017", "intent": "device.off", "stage": "llm", "confidence": 0.3545, "top3": ["device.off", "timer.cancel", "__decline__"], "slots": {"entity": "living room lights"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1120.7}
+{"id": "u0018", "intent": "lights.brightness", "stage": "exact", "confidence": 1.0, "slots": {"entity": "lights in the den to 30 percent"}}
+{"id": "u0019", "intent": "lights.color", "stage": "llm", "confidence": 0.3399, "top3": ["__decline__", "lights.brightness", "knowledge.ask"], "slots": {"color": "blue", "entity": "living room"}, "llm_tool": "homeassistant__lights_set_color", "p_addressed": 1.0, "llm_ms": 1178.8999999999999}
+{"id": "u0020", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0022", "intent": null, "stage": "llm", "confidence": 0.3072, "top3": ["__decline__", "easter_egg", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {"request": "unlock the front door"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1049.5}
+{"id": "u0024", "intent": null, "stage": "llm", "confidence": 0.1498, "top3": ["__decline__", "easter_egg", "device.status"], "slots": {"request": "open the garage"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 861.6}
+{"id": "u0029", "intent": "media.next", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0030", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.6252, "top3": ["knowledge.ask", "assistant.about", "__decline__"], "slots": {}}
+{"id": "u0031", "intent": "joke.tell", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0033", "intent": "reminder.set", "stage": "exact", "confidence": 1.0, "slots": {"task": "call mom", "time": "5"}}
+{"id": "u0035", "intent": "weather.current", "stage": "llm", "confidence": 0.4848, "top3": ["weather.current", "__decline__", "weather.forecast"], "slots": {}, "llm_tool": "weather__weather", "p_addressed": 1.0, "llm_ms": 904.4}
+{"id": "u0037", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {"location": "denver right now"}}
+{"id": "u0038", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.7215, "top3": ["weather.forecast", "weather.current", "__unmapped__:ovos-skill-date-time.openvoiceos:what_weekday_is_it"], "slots": {}}
+{"id": "u0039", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.778, "top3": ["weather.forecast", "weather.current", "__unmapped__:ovos-skill-date-time.openvoiceos:what_weekday_is_it"], "slots": {}}
+{"id": "u0041", "intent": "date.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0042", "intent": "timer.set", "stage": "llm", "confidence": 0.3613, "top3": ["timer.set", "volume.down", "__decline__"], "slots": {"duration": "90 seconds"}, "llm_tool": "alerts__create_timer", "p_addressed": 1.0, "llm_ms": 1042.9}
+{"id": "u0044", "intent": "timer.status", "stage": "llm", "confidence": 0.2709, "top3": ["timer.status", "__unmapped__:ovos-skill-boot-finished.openvoiceos:are_you_ready", "timer.set"], "slots": {"timerkind": "timer"}, "llm_tool": "alerts__timer_status", "p_addressed": 1.0, "llm_ms": 1127.1999999999998}
+{"id": "u0045", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "6:30"}}
+{"id": "u0046", "intent": "alarm.set", "stage": "llm", "confidence": 0.3498, "top3": ["__decline__", "weather.current", "timer.cancel"], "slots": {"time": "6:00"}, "llm_tool": "alerts__create_alarm", "p_addressed": 1.0, "llm_ms": 1193.1}
+{"id": "u0049", "intent": "__unmapped__:ovos-skill-parrot.openvoiceos:did_you_hear_me", "stage": "llm", "confidence": 0.3528, "top3": ["__unmapped__:ovos-skill-parrot.openvoiceos:did_you_hear_me", "__decline__", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_stt"], "slots": {}, "llm_tool": "parrot__did_you_hear_me", "p_addressed": 0.9997, "llm_ms": 878.5}
+{"id": "u0053", "intent": "device.off", "stage": "llm", "confidence": 0.2576, "top3": ["__decline__", "media.play", "knowledge.ask"], "slots": {"entity": "office lights"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1012.1}
+{"id": "u0055", "intent": "lights.brightness", "stage": "llm", "confidence": 0.2025, "top3": ["__decline__", "knowledge.ask", "lights.color"], "slots": {"entity": "porch"}, "llm_tool": "homeassistant__lights_increase_brightness", "p_addressed": 1.0, "llm_ms": 894.3}
+{"id": "u0056", "intent": "lights.brightness", "stage": "llm", "confidence": 0.2547, "top3": ["__decline__", "timer.cancel", "knowledge.ask"], "slots": {"level": "0", "entity": "lights"}, "llm_tool": "homeassistant__lights_set_brightness", "p_addressed": 1.0, "llm_ms": 1036.8}
+{"id": "u0057", "intent": "device.off", "stage": "llm", "confidence": 0.2226, "top3": ["__decline__", "knowledge.ask", "lights.color"], "slots": {"entity": "garage light"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 977.0}
+{"id": "u0061", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2052, "top3": ["__decline__", "media.previous", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_stt"], "slots": {"question": "did i lock the back door"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 987.5999999999999}
+{"id": "u0063", "intent": null, "stage": "llm", "confidence": 0.1772, "top3": ["__decline__", "volume.up", "easter_egg"], "slots": {"request": "raise the garage door"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 994.0}
+{"id": "u0064", "intent": null, "stage": "llm", "confidence": 0.2454, "top3": ["__decline__", "knowledge.ask", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {"request": "shut the garage"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 922.4000000000001}
+{"id": "u0065", "intent": "media.next", "stage": "llm", "confidence": 0.2784, "top3": ["__decline__", "media.previous", "news.play"], "slots": {}, "llm_tool": "ocp__next", "p_addressed": 1.0, "llm_ms": 899.3000000000001}
+{"id": "u0067", "intent": "media.resume", "stage": "classifier", "confidence": 0.8854, "top3": ["media.resume", "alarm.set", "media.play"], "slots": {}}
+{"id": "u0068", "intent": "media.next", "stage": "classifier", "confidence": 0.8397, "top3": ["media.next", "__decline__", "media.previous"], "slots": {}}
+{"id": "u0069", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0070", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2646, "top3": ["__unmapped__:ovos-skill-diagnostics.openvoiceos:query_uptime", "__decline__", "__unmapped__:ovos-skill-personal.openvoiceos:when_were_you_born"], "slots": {"question": "when did the alamo fall"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1166.6000000000001}
+{"id": "u0071", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.4501, "top3": ["__decline__", "__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "weather.current"], "slots": {"question": "how many tablespoons in a cup"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1163.2}
+{"id": "u0072", "intent": null, "stage": "llm", "confidence": 0.1619, "top3": ["knowledge.ask", "__decline__", "timer.status"], "slots": {"request": "how do i unlock my phone"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1041.1}
+{"id": "u0073", "intent": "joke.tell", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0075", "intent": "timer.cancel", "stage": "classifier", "confidence": 0.8565, "top3": ["timer.cancel", "stop", "__unmapped__:ovos-skill-dictation.openvoiceos:stop_dictation"], "slots": {}}
+{"id": "u0076", "intent": null, "stage": "llm", "confidence": 0.5184, "top3": ["__decline__", "reminder.set", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9241, "llm_ms": 995.1999999999999}
+{"id": "u0079", "intent": null, "stage": "llm", "confidence": 0.1937, "top3": ["__decline__", "weather.current", "device.status"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9993, "llm_ms": 827.3000000000001}
+{"id": "u0080", "intent": "lights.brightness", "stage": "classifier", "confidence": 0.6971, "top3": ["lights.brightness", "__decline__", "weather.forecast"], "slots": {}}
+{"id": "u0083", "intent": null, "stage": "llm_gate", "confidence": 0.3305, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0032, "llm_ms": 1038.3999999999999}
+{"id": "u0084", "intent": "volume.up", "stage": "llm", "confidence": 0.2376, "top3": ["volume.query", "__decline__", "easter_egg"], "slots": {}, "llm_tool": "volume__increase_volume", "p_addressed": 0.9959, "llm_ms": 1028.7}
+{"id": "u0089", "intent": "stop", "stage": "classifier", "confidence": 0.622, "top3": ["stop", "timer.set", "media.pause"], "slots": {}}
+{"id": "u0091", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "5:45 on weekdays"}}
+{"id": "u0092", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "6:30 alarm"}}
+{"id": "u0093", "intent": "volume.set", "stage": "exact", "confidence": 1.0, "slots": {"level": "40"}}
+{"id": "u0094", "intent": "lights.brightness", "stage": "exact", "confidence": 1.0, "slots": {"entity": "office", "level": "half"}}
+{"id": "u0095", "intent": "lights.color", "stage": "classifier", "confidence": 0.5175, "top3": ["lights.color", "__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {}}
+{"id": "u0097", "intent": null, "stage": "llm", "confidence": 0.2361, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "media.previous"], "slots": {"request": "unlock the back door for the dog walker"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1024.1}
+{"id": "u0099", "intent": null, "stage": "llm", "confidence": 0.3233, "top3": ["__decline__", "__unmapped__:ovos-skill-date-time.openvoiceos:weekday_matches_date", "knowledge.ask"], "slots": {"request": "put on a podcast about history"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1241.9}
+{"id": "u0102", "intent": "reminder.set", "stage": "exact", "confidence": 1.0, "slots": {"task": "take out the trash"}}
+{"id": "u0105", "intent": "device.on", "stage": "classifier", "confidence": 0.723, "top3": ["device.on", "__unmapped__:ovos-skill-boot-finished.openvoiceos:enable_ready_notification", "__decline__"], "slots": {"entity": "lights"}}
+{"id": "u0107", "intent": "timer.set", "stage": "classifier", "confidence": 0.6014, "top3": ["timer.set", "timer.cancel", "reminder.set"], "slots": {}}
+{"id": "u0108", "intent": "stop", "stage": "llm", "confidence": 0.1668, "top3": ["__unmapped__:ovos-skill-dictation.openvoiceos:stop_dictation", "stop", "__decline__"], "slots": {}, "llm_tool": "stop", "p_addressed": 0.9952, "llm_ms": 902.4}
+{"id": "u0112", "intent": "lights.color", "stage": "llm", "confidence": 0.723, "top3": ["__decline__", "knowledge.ask", "timer.cancel"], "slots": {"color": "not the kitchen", "entity": "dining room lights"}, "llm_tool": "homeassistant__lights_set_color", "p_addressed": 0.9998, "llm_ms": 1234.8000000000002}
+{"id": "u0113", "intent": "device.off", "stage": "llm", "confidence": 0.2916, "top3": ["__decline__", "device.off", "timer.cancel"], "slots": {"entity": "lights"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1422.3}
+{"id": "u0114", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "10 minutes and play some music"}}
+{"id": "u0115", "intent": "weather.current", "stage": "classifier", "confidence": 0.9352, "top3": ["weather.current", "time.current", "__unmapped__:ovos-skill-date-time.openvoiceos:what_time_will_it_be"], "slots": {}}
+{"id": "u0116", "intent": "media.pause", "stage": "classifier", "confidence": 0.7605, "top3": ["media.pause", "__decline__", "media.resume"], "slots": {}}
+{"id": "u0117", "intent": null, "stage": "llm", "confidence": 0.463, "top3": ["__decline__", "easter_egg", "time.current"], "slots": {"request": "lock the doors and close the garage"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 999.8000000000001}
+{"id": "u0118", "intent": null, "stage": "llm", "confidence": 0.2753, "top3": ["__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {"request": "set the table"}, "llm_tool": "unsupported", "p_addressed": 0.9999, "llm_ms": 1180.8999999999999}
+{"id": "u0122", "intent": null, "stage": "llm_gate", "confidence": 0.2996, "top3": ["__decline__", "weather.current", "stop"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0, "llm_ms": 991.4}
+{"id": "u0124", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "it by ear"}}
+{"id": "u0125", "intent": null, "stage": "llm_gate", "confidence": 0.3416, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "slots": {}, "llm_tool": "hello_world__how_are_you", "p_addressed": 0.7122, "llm_ms": 992.1}
+{"id": "u0127", "intent": "date.current", "stage": "classifier", "confidence": 0.8876, "top3": ["date.current", "weather.current", "__decline__"], "slots": {}}
+{"id": "u0131", "intent": null, "stage": "llm_gate", "confidence": 0.4119, "top3": ["__decline__", "knowledge.ask", "weather.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0268, "llm_ms": 902.1}
+{"id": "u0133", "intent": null, "stage": "llm", "confidence": 0.6501, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9526, "llm_ms": 827.2}
+{"id": "u0135", "intent": null, "stage": "llm", "confidence": 0.1913, "top3": ["__unmapped__:ovos-skill-diagnostics.openvoiceos:query_ovos_location", "__decline__", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 1.0, "llm_ms": 878.7}
+{"id": "u0136", "intent": null, "stage": "llm_gate", "confidence": 0.7333, "top3": ["__decline__", "stop", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0, "llm_ms": 893.4000000000001}
+{"id": "u0137", "intent": null, "stage": "llm", "confidence": 0.4048, "top3": ["__decline__", "weather.current", "media.resume"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9998, "llm_ms": 942.4}
+{"id": "u0138", "intent": null, "stage": "llm", "confidence": 0.5234, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {"request": "order a pizza"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1073.2}
+{"id": "u0139", "intent": null, "stage": "llm_gate", "confidence": 0.3966, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0, "llm_ms": 849.3}
+{"id": "u0140", "intent": null, "stage": "llm_gate", "confidence": 0.3595, "top3": ["__decline__", "volume.up", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0, "llm_ms": 1015.6}
+{"id": "u0142", "intent": null, "stage": "llm", "confidence": 0.7028, "top3": ["__decline__", "weather.current", "weather.forecast"], "slots": {"request": "book a flight to denver"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 989.4}
+{"id": "u0143", "intent": "device.off", "stage": "llm", "confidence": 0.2056, "top3": ["__decline__", "device.on", "knowledge.ask"], "slots": {"entity": "kitchen lights"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 1120.0}
+{"id": "u0144", "intent": "timer.set", "stage": "llm", "confidence": 0.2926, "top3": ["__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "__unmapped__:ovos-skill-date-time.openvoiceos:what_time_will_it_be", "timer.set"], "slots": {"duration": "ten minutes"}, "llm_tool": "alerts__create_timer", "p_addressed": 1.0, "llm_ms": 1246.8}
+{"id": "u0146", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "some jas"}}
+{"id": "u0148", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "lie its in the office"}}
+{"id": "u0149", "intent": "media.resume", "stage": "classifier", "confidence": 0.674, "top3": ["media.resume", "media.pause", "__decline__"], "slots": {}}
+{"id": "u0150", "intent": "reminder.set", "stage": "exact", "confidence": 1.0, "slots": {"task": "by milk"}}
+{"id": "u0151", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "six thirty a m"}}
+{"id": "u0155", "intent": "volume.set", "stage": "llm", "confidence": 0.2276, "top3": ["volume.up", "volume.down", "__decline__"], "slots": {"level": "fifteen"}, "llm_tool": "volume__change_volume", "p_addressed": 0.9942, "llm_ms": 1115.2}
+{"id": "u0156", "intent": null, "stage": "llm", "confidence": 0.3918, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:dav_sync", "weather.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9902, "llm_ms": 890.6}
+{"id": "u0157", "intent": null, "stage": "llm", "confidence": 0.8572, "top3": ["__decline__", "weather.forecast", "weather.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9876, "llm_ms": 886.7}
+{"id": "u0158", "intent": null, "stage": "llm", "confidence": 0.2585, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties"], "slots": {"request": "change my units to metric"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1136.4}
+{"id": "u0161", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "hello world"}}
+{"id": "u0164", "intent": "system.ip", "stage": "classifier", "confidence": 0.6029, "top3": ["system.ip", "__unmapped__:ovos-skill-ip.openvoiceos:public_ip", "__unmapped__:ovos-skill-ip.openvoiceos:last_ip_digits"], "slots": {}}
+{"id": "u0167", "intent": "stop", "stage": "llm", "confidence": 0.2266, "top3": ["volume.down", "__decline__", "timer.set"], "slots": {}, "llm_tool": "stop", "p_addressed": 1.0, "llm_ms": 915.0}
+{"id": "u0168", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "transcriptions"}}
+{"id": "u0169", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0170", "intent": "random.coin", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0172", "intent": "random.number", "stage": "exact", "confidence": 1.0, "slots": {"lower": "1", "upper": "100"}}
+{"id": "u0175", "intent": null, "stage": "llm", "confidence": 0.4314, "top3": ["settings.query", "__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {"request": "change my location to seattle"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1057.8}
+{"id": "u0176", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "to me in spanish"}}
+{"id": "u0181", "intent": "assistant.about", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0183", "intent": null, "stage": "llm", "confidence": 0.3794, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:change_until", "knowledge.ask"], "slots": {"request": "run updates"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 896.8000000000001}
+{"id": "u0185", "intent": "device.off", "stage": "llm", "confidence": 0.1097, "top3": ["stop", "device.off", "__unmapped__:ovos-skill-naptime.openvoiceos:naptime"], "slots": {"entity": "power"}, "llm_tool": "homeassistant__turn_off", "p_addressed": 1.0, "llm_ms": 937.3}
+{"id": "u0186", "intent": "__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "stage": "llm", "confidence": 0.6429, "top3": ["__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "__unmapped__:ovos-skill-alerts.openvoiceos:delete_list", "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties"], "slots": {"name": "erase my audio recordings"}, "llm_tool": "audio_recording__start_recording", "p_addressed": 1.0, "llm_ms": 1069.1}
+{"id": "u0190", "intent": null, "stage": "llm", "confidence": 0.3936, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 1.0, "llm_ms": 816.9}
+{"id": "u0191", "intent": "random.coin", "stage": "llm", "confidence": 0.2024, "top3": ["random.coin", "__decline__", "timer.set"], "slots": {}, "llm_tool": "randomness__flip_a_coin", "p_addressed": 1.0, "llm_ms": 1073.0}
+{"id": "u0192", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "a", "faces": "ie"}}
+{"id": "u0195", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "a", "faces": "20 with advantage"}}
+{"id": "u0197", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "eight", "faces": "6 fire damage"}}
+{"id": "u0198", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "the office on plex"}}
+{"id": "u0201", "intent": null, "stage": "llm_gate", "confidence": 0.1191, "top3": ["__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:query_list_entries", "timer.status"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0001, "llm_ms": 962.4}
+{"id": "u0203", "intent": null, "stage": "llm_gate", "confidence": 0.5176, "top3": ["__decline__", "__unmapped__:ovos-skill-wikipedia.openvoiceos:wikiroulette", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_tts"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.1294, "llm_ms": 859.3000000000001}
+{"id": "u0206", "intent": "stop", "stage": "llm", "confidence": 0.3342, "top3": ["media.resume", "__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {}, "llm_tool": "ovos_common_play__stop", "p_addressed": 1.0, "llm_ms": 1212.1000000000001}
+{"id": "u0207", "intent": "timer.set", "stage": "llm", "confidence": 0.2897, "top3": ["__decline__", "weather.current", "weather.forecast"], "slots": {"duration": "5 minutes"}, "llm_tool": "alerts__create_timer", "p_addressed": 0.9998, "llm_ms": 1056.4}
+{"id": "u0208", "intent": "random.dice", "stage": "llm", "confidence": 0.5423, "top3": ["__decline__", "easter_egg", "random.dice"], "slots": {"faces": "20"}, "llm_tool": "randomness__roll_single_die", "p_addressed": 0.9703, "llm_ms": 1081.2}
+{"id": "u0209", "intent": "random.coin", "stage": "classifier", "confidence": 0.7091, "top3": ["random.coin", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0210", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "to", "faces": "six"}}
+{"id": "u0211", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.3687, "top3": ["__decline__", "weather.current", "weather.forecast"], "slots": {"question": "what should i make for dinner"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1143.6}
+{"id": "u0214", "intent": null, "stage": "llm", "confidence": 0.1777, "top3": ["__decline__", "easter_egg", "__unmapped__:ovos-skill-local-media.openvoiceos:open.file.browser"], "slots": {"request": "open safari"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 876.8000000000001}
+{"id": "u0216", "intent": "media.previous", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0217", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2885, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {"question": "i'm hungry"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9523, "llm_ms": 1059.1}
+{"id": "u0218", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.1325, "top3": ["weather.current", "__decline__", "knowledge.ask"], "slots": {"question": "what's for dinner"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 957.4000000000001}
+{"id": "u0220", "intent": null, "stage": "llm", "confidence": 0.3385, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {"request": "navigate to google.com"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 983.0}
+{"id": "u0222", "intent": "weather.current", "stage": "llm", "confidence": 0.2816, "top3": ["__decline__", "media.next", "easter_egg"], "slots": {"location": "kexp", "unit": "fahrenheit"}, "llm_tool": "weather__weather", "p_addressed": 1.0, "llm_ms": 1007.6999999999999}
+{"id": "u0225", "intent": "volume.up", "stage": "llm", "confidence": 0.4817, "top3": ["volume.up", "__decline__", "volume.down"], "slots": {}, "llm_tool": "volume__increase_volume", "p_addressed": 1.0, "llm_ms": 913.4}
+{"id": "u0230", "intent": null, "stage": "llm_gate", "confidence": 0.2611, "top3": ["__decline__", "knowledge.ask", "weather.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.8359, "llm_ms": 879.8}
+{"id": "u0231", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.1847, "top3": ["__decline__", "knowledge.ask", "__unmapped__:ovos-skill-dictation.openvoiceos:stop_dictation"], "slots": {"question": "that's an open question"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9927, "llm_ms": 978.1}
+{"id": "u0234", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"faces": "20"}}
+{"id": "u0235", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "3", "faces": "6"}}
+{"id": "u0236", "intent": "random.choice", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0238", "intent": "volume.set", "stage": "classifier", "confidence": 0.6358, "top3": ["volume.set", "volume.query", "volume.up"], "slots": {}}
+{"id": "u0239", "intent": "volume.unmute", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0240", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:create_list", "stage": "llm", "confidence": 0.4007, "top3": ["__decline__", "shopping.add", "__unmapped__:ovos-skill-alerts.openvoiceos:create_list"], "slots": {"list_name": "meal"}, "llm_tool": "alerts__create_list", "p_addressed": 0.9988, "llm_ms": 1056.2}
+{"id": "u0241", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:query_list_names", "stage": "llm", "confidence": 0.4959, "top3": ["alerts.list", "__decline__", "__unmapped__:ovos-skill-alerts.openvoiceos:query_list_names"], "slots": {}, "llm_tool": "alerts__query_list_names", "p_addressed": 1.0, "llm_ms": 1021.6999999999999}
+{"id": "u0243", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.6827, "top3": ["knowledge.ask", "speak.repeat", "easter_egg"], "slots": {}}
+{"id": "u0244", "intent": "device.status", "stage": "classifier", "confidence": 0.5776, "top3": ["device.status", "weather.current", "__decline__"], "slots": {}}
+{"id": "u0246", "intent": "random.choice", "stage": "classifier", "confidence": 0.9057, "top3": ["random.choice", "__decline__", "media.resume"], "slots": {}}
+{"id": "u0248", "intent": "volume.query", "stage": "llm", "confidence": 0.2904, "top3": ["__unmapped__:ovos-skill-hello-world.openvoiceos:how_are_you", "weather.forecast", "assistant.about"], "slots": {}, "llm_tool": "volume__current_volume", "p_addressed": 1.0, "llm_ms": 890.9000000000001}
+{"id": "u0250", "intent": "device.status", "stage": "exact", "confidence": 1.0, "slots": {"entity": "garage light"}}
+{"id": "u0252", "intent": "stop", "stage": "classifier", "confidence": 0.7217, "top3": ["stop", "__decline__", "__unmapped__:ovos-skill-dictation.openvoiceos:stop_dictation"], "slots": {}}
+{"id": "u0253", "intent": "stop", "stage": "llm", "confidence": 0.364, "top3": ["media.resume", "stop", "media.pause"], "slots": {}, "llm_tool": "ovos_common_play__stop", "p_addressed": 1.0, "llm_ms": 902.5999999999999}
+{"id": "u0254", "intent": "joke.tell", "stage": "exact", "confidence": 1.0, "slots": {"topic": "dragons"}}
+{"id": "u0255", "intent": "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "stage": "llm", "confidence": 0.9366, "top3": ["__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "__decline__", "__unmapped__:ovos-skill-wikipedia.openvoiceos:wikiroulette"], "slots": {"query": "the alamo"}, "llm_tool": "wikipedia__wiki", "p_addressed": 1.0, "llm_ms": 1057.4}
+{"id": "u0257", "intent": "volume.set", "stage": "classifier", "confidence": 0.7736, "top3": ["volume.set", "volume.query", "volume.up"], "slots": {"level": "30"}}
+{"id": "u0258", "intent": "ha.assist", "stage": "exact", "confidence": 1.0, "slots": {"command": "unlock the front door"}}
+{"id": "u0259", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2418, "top3": ["knowledge.ask", "__decline__", "device.status"], "slots": {"question": "what is the mean airspeed velocity of an unladen swallow"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1093.2}
+{"id": "u0260", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0262", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "rale and ding dong"}}
+{"id": "u0264", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "something like glados"}}
+{"id": "u0265", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0266", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "bedtime"}}
+{"id": "u0270", "intent": "weather.current", "stage": "classifier", "confidence": 0.8599, "top3": ["weather.current", "__decline__", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_stt"], "slots": {}}
+{"id": "u0272", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0275", "intent": "alerts.list", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0280", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0281", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "1 minute"}}
+{"id": "u0283", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "7:15 pm"}}
+{"id": "u0289", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "20 seconds"}}
+{"id": "u0292", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "tom sawyer by rush"}}
+{"id": "u0293", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0296", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2409, "top3": ["__decline__", "knowledge.ask", "assistant.about"], "slots": {"question": "who was elvis presley"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1163.8999999999999}
+{"id": "u0300", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "40 seconds"}}
+{"id": "u0301", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "10 second"}}
+{"id": "u0303", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.578, "top3": ["__unmapped__:ovos-skill-date-time.openvoiceos:time_until", "knowledge.ask", "__decline__"], "slots": {"question": "how far is the moon from earth"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1227.4}
+{"id": "u0304", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "thank you"}}
+{"id": "u0305", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "see you next time"}}
+{"id": "u0306", "intent": "random.number", "stage": "exact", "confidence": 1.0, "slots": {"lower": "one", "upper": "six thousand"}}
+{"id": "u0308", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8486, "top3": ["easter_egg", "__decline__", "speak.repeat"], "slots": {}}
+{"id": "u0309", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7846, "top3": ["easter_egg", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0311", "intent": "assistant.about", "stage": "llm", "confidence": 0.8597, "top3": ["__decline__", "ha.admin", "settings.query"], "slots": {}, "llm_tool": "personal__who_are_you", "p_addressed": 0.9989, "llm_ms": 1003.4}
+{"id": "u0312", "intent": "spelling.spell", "stage": "exact", "confidence": 1.0, "slots": {"word": "banana"}}
+{"id": "u0314", "intent": "volume.query", "stage": "llm", "confidence": 0.2538, "top3": ["volume.query", "alerts.list", "volume.set"], "slots": {}, "llm_tool": "volume__current_volume", "p_addressed": 1.0, "llm_ms": 826.5999999999999}
+{"id": "u0318", "intent": "easter_egg", "stage": "classifier", "confidence": 0.774, "top3": ["easter_egg", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0319", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "master closet light"}}
+{"id": "u0320", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0321", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "good night graie"}}
+{"id": "u0323", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9753, "top3": ["easter_egg", "__decline__", "__unmapped__:ovos-skill-hello-world.openvoiceos:hello_world_intent"], "slots": {}}
+{"id": "u0324", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0327", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0328", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0332", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "something like lados"}}
+{"id": "u0336", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7038, "top3": ["easter_egg", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0338", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8098, "top3": ["easter_egg", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0342", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "90 seconds"}}
+{"id": "u0344", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "timers"}}
+{"id": "u0345", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "my timers"}}
+{"id": "u0346", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0347", "intent": "timer.set", "stage": "llm", "confidence": 0.4645, "top3": ["__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert", "timer.set", "timer.status"], "slots": {"duration": "10 minutes"}, "llm_tool": "alerts__create_timer", "p_addressed": 1.0, "llm_ms": 1131.3}
+{"id": "u0348", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "3 minutes"}}
+{"id": "u0350", "intent": "reminder.set", "stage": "exact", "confidence": 1.0, "slots": {"task": "stretch", "time": "11 pm"}}
+{"id": "u0355", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "moonlight sonata"}}
+{"id": "u0360", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"number": "a", "faces": "ice"}}
+{"id": "u0362", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.202, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {"question": "who is michael jackson"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1183.8999999999999}
+{"id": "u0363", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "samoa fm"}}
+{"id": "u0364", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0366", "intent": "__unmapped__:ovos-skill-date-time.openvoiceos:what_weekday_is_it", "stage": "llm", "confidence": 0.3821, "top3": ["weather.current", "date.current", "__unmapped__:ovos-skill-date-time.openvoiceos:what_weekday_is_it"], "slots": {}, "llm_tool": "date_time__what_weekday_is_it", "p_addressed": 1.0, "llm_ms": 1045.2}
+{"id": "u0367", "intent": "easter_egg", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0368", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "groove salad"}}
+{"id": "u0369", "intent": "joke.tell", "stage": "classifier", "confidence": 0.6944, "top3": ["joke.tell", "knowledge.ask", "__decline__"], "slots": {}}
+{"id": "u0370", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "good night , gracie"}}
+{"id": "u0371", "intent": "timer.set", "stage": "exact", "confidence": 1.0, "slots": {"duration": "30 second"}}
+{"id": "u0372", "intent": "timer.cancel", "stage": "llm", "confidence": 0.2604, "top3": ["timer.cancel", "__unmapped__:ovos-skill-alerts.openvoiceos:missed_alerts", "alerts.list"], "slots": {"alertkind": "timer", "timer_name": "all"}, "llm_tool": "alerts__cancel_alert", "p_addressed": 1.0, "llm_ms": 1101.0}
+{"id": "u0373", "intent": "weather.current", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0374", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "7am"}}
+{"id": "u0376", "intent": "alarm.set", "stage": "exact", "confidence": 1.0, "slots": {"time": "10am"}}
+{"id": "u0378", "intent": "random.dice", "stage": "exact", "confidence": 1.0, "slots": {"faces": "six-"}}
+{"id": "u0379", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0, "slots": {"timer_name": "alarms"}}
+{"id": "u0382", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.7819, "top3": ["knowledge.ask", "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki_more", "weather.current"], "slots": {}}
+{"id": "u0387", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "kitchen light"}}
+{"id": "u0388", "intent": "assistant.about", "stage": "classifier", "confidence": 0.5133, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0390", "intent": null, "stage": "llm", "confidence": 0.1647, "top3": ["__decline__", "time.current", "knowledge.ask"], "slots": {"request": "launch the clock app"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 1018.5}
+{"id": "u0391", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.3062, "top3": ["__decline__", "assistant.about", "knowledge.ask"], "slots": {"question": "who does number two work for"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1198.2}
+{"id": "u0392", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "gas clamp"}}
+{"id": "u0393", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.2882, "top3": ["__decline__", "device.on", "knowledge.ask"], "slots": {}, "llm_tool": "hello_world__greetings", "p_addressed": 0.9998, "llm_ms": 979.0}
+{"id": "u0403", "intent": "__unmapped__:ovos-skill-hello-world.openvoiceos:how_are_you", "stage": "exact", "confidence": 1.0, "slots": {}}
+{"id": "u0405", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk lamp"}}
+{"id": "u0406", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "living room fan"}}
+{"id": "u0407", "intent": null, "stage": "llm_gate", "confidence": 0.5335, "top3": ["__decline__", "knowledge.ask", "__unmapped__:ovos-skill-alerts.openvoiceos:reschedule_alert"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.3965, "llm_ms": 1061.4}
+{"id": "u0408", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk land"}}
+{"id": "u0415", "intent": "volume.down", "stage": "llm", "confidence": 0.2814, "top3": ["volume.down", "__decline__", "joke.tell"], "slots": {}, "llm_tool": "volume__less_volume", "p_addressed": 0.9967, "llm_ms": 1006.5}
+{"id": "u0416", "intent": "stop", "stage": "classifier", "confidence": 0.5048, "top3": ["stop", "__decline__", "volume.mute"], "slots": {}}
+{"id": "u0419", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "3d printer"}}
+{"id": "u0420", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "living room light"}}
+{"id": "u0428", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "jake bedroom light"}}
+{"id": "u0429", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "guest bedroom light"}}
+{"id": "u0430", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "john bedroom light"}}
+{"id": "u0432", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk lamps"}}
+{"id": "u0433", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk glamour"}}
+{"id": "u0434", "intent": "lights.brightness", "stage": "classifier", "confidence": 0.6666, "top3": ["lights.brightness", "__decline__", "device.status"], "slots": {}}
+{"id": "u0438", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "the artist carbon leaf on office speaker"}}
+{"id": "u0439", "intent": "media.pause", "stage": "classifier", "confidence": 0.7114, "top3": ["media.pause", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0440", "intent": null, "stage": "llm_gate", "confidence": 0.3968, "top3": ["__decline__", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_stt", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0487, "llm_ms": 885.7}
+{"id": "u0450", "intent": "__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "stage": "llm", "confidence": 0.3087, "top3": ["__unmapped__:ovos-skill-audio-recording.openvoiceos:start_recording", "__decline__", "knowledge.ask"], "slots": {}, "llm_tool": "audio_recording__start_recording", "p_addressed": 1.0, "llm_ms": 886.3}
+{"id": "u0451", "intent": null, "stage": "llm", "confidence": 0.2983, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {"request": "launch camera app"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 964.1999999999999}
+{"id": "u0453", "intent": null, "stage": "echo"}
+{"id": "u0455", "intent": null, "stage": "llm", "confidence": 0.2303, "top3": ["__decline__", "easter_egg", "device.status"], "slots": {"request": "open camera"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 962.8}
+{"id": "u0463", "intent": null, "stage": "llm_gate", "confidence": 0.3618, "top3": ["joke.tell", "__decline__", "easter_egg"], "slots": {}, "llm_tool": "icanhazdadjokes__joke", "p_addressed": 0.8654, "llm_ms": 1045.1000000000001}
+{"id": "u0464", "intent": null, "stage": "llm_gate", "confidence": 0.1522, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0005, "llm_ms": 1027.5}
+{"id": "u0468", "intent": null, "stage": "llm", "confidence": 0.3887, "top3": ["__decline__", "stop", "weather.current"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9946, "llm_ms": 856.8000000000001}
+{"id": "u0469", "intent": null, "stage": "llm_gate", "confidence": 0.5958, "top3": ["__decline__", "weather.current", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0474, "llm_ms": 997.1}
+{"id": "u0471", "intent": null, "stage": "llm_gate", "confidence": 0.3404, "top3": ["__decline__", "media.resume", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.6791, "llm_ms": 902.1}
+{"id": "u0472", "intent": null, "stage": "llm", "confidence": 0.9282, "top3": ["__decline__", "easter_egg", "__unmapped__:ovos-skill-dictation.openvoiceos:start_dictation"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9627, "llm_ms": 893.6}
+{"id": "u0473", "intent": "media.play", "stage": "exact", "confidence": 1.0, "slots": {"query": "white noise"}}
+{"id": "u0476", "intent": "assistant.about", "stage": "llm", "confidence": 0.4734, "top3": ["assistant.about", "easter_egg", "__unmapped__:ovos-skill-parrot.openvoiceos:repeat_tts"], "slots": {}, "llm_tool": "personal__what_are_you", "p_addressed": 1.0, "llm_ms": 1103.1000000000001}
+{"id": "u0478", "intent": "assistant.about", "stage": "classifier", "confidence": 0.6886, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0479", "intent": "assistant.about", "stage": "classifier", "confidence": 0.6391, "top3": ["assistant.about", "__decline__", "knowledge.ask"], "slots": {}}
+{"id": "u0480", "intent": null, "stage": "llm_gate", "confidence": 0.1738, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0026, "llm_ms": 946.7}
+{"id": "u0483", "intent": null, "stage": "llm_gate", "confidence": 0.1156, "top3": ["stop", "__decline__", "timer.cancel"], "slots": {}, "llm_tool": "homeassistant__turn_off", "p_addressed": 0.839, "llm_ms": 1026.7}
+{"id": "u0485", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.3716, "top3": ["__decline__", "knowledge.ask", "weather.current"], "slots": {"question": "what is neon gecko dot com"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9999, "llm_ms": 1148.5}
+{"id": "u0488", "intent": null, "stage": "llm_gate", "confidence": 0.9341, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0023, "llm_ms": 983.4}
+{"id": "u0489", "intent": null, "stage": "llm", "confidence": 0.4403, "top3": ["__decline__", "timer.cancel", "stop"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.9942, "llm_ms": 705.0}
+{"id": "u0490", "intent": null, "stage": "llm_gate", "confidence": 0.9151, "top3": ["__decline__", "stop", "__unmapped__:ovos-skill-hello-world.openvoiceos:how_are_you"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0174, "llm_ms": 861.3000000000001}
+{"id": "u0491", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.4695, "top3": ["__unmapped__:ovos-skill-personal.openvoiceos:when_were_you_born", "__decline__", "device.status"], "slots": {"question": "how old is steven amount"}, "llm_tool": "ask_knowledge", "p_addressed": 0.9948, "llm_ms": 983.3}
+{"id": "u0492", "intent": null, "stage": "llm_gate", "confidence": 0.1468, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0052, "llm_ms": 984.1}
+{"id": "u0493", "intent": null, "stage": "llm", "confidence": 0.1881, "top3": ["__decline__", "__unmapped__:ovos-skill-local-media.openvoiceos:open.file.browser", "easter_egg"], "slots": {"request": "open the camera app"}, "llm_tool": "unsupported", "p_addressed": 1.0, "llm_ms": 812.2}
+{"id": "u0495", "intent": null, "stage": "llm_gate", "confidence": 0.4572, "top3": ["__decline__", "knowledge.ask", "weather.forecast"], "slots": {}, "llm_tool": "ask_knowledge", "p_addressed": 0.5892, "llm_ms": 1068.8000000000002}
+{"id": "u0496", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0, "slots": {"text": "hey neon"}}
+{"id": "u0497", "intent": null, "stage": "llm_gate", "confidence": 0.2358, "top3": ["__decline__", "__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki_more", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0014, "llm_ms": 983.3000000000001}
+{"id": "u0498", "intent": null, "stage": "llm_gate", "confidence": 0.4011, "top3": ["__decline__", "stop", "knowledge.ask"], "slots": {}, "llm_tool": "ignore", "p_addressed": 0.0019, "llm_ms": 1046.8}
+{"id": "u0499", "intent": "weather.current", "stage": "classifier", "confidence": 0.9574, "top3": ["weather.current", "__decline__", "weather.forecast"], "slots": {}}
+{"id": "u0502", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "kitchen light"}}
+{"id": "u0503", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "garage light"}}
+{"id": "u0504", "intent": "knowledge.ask", "stage": "llm", "confidence": 0.336, "top3": ["__decline__", "easter_egg", "device.status"], "slots": {"question": "is john candy still alive"}, "llm_tool": "ask_knowledge", "p_addressed": 1.0, "llm_ms": 1168.9}
+{"id": "u0513", "intent": "device.on", "stage": "exact", "confidence": 1.0, "slots": {"entity": "desk liam"}}
+{"id": "u0514", "intent": "joke.tell", "stage": "llm", "confidence": 0.815, "top3": ["__decline__", "alerts.list", "joke.tell"], "slots": {}, "llm_tool": "icanhazdadjokes__joke", "p_addressed": 0.9659, "llm_ms": 1088.4}
+{"id": "u0516", "intent": "lights.brightness", "stage": "classifier", "confidence": 0.6434, "top3": ["lights.brightness", "__decline__", "device.status"], "slots": {}}
+{"id": "u0517", "intent": "device.off", "stage": "exact", "confidence": 1.0, "slots": {"entity": "living room fans"}}
+{"id": "u0520", "intent": "device.status", "stage": "exact", "confidence": 1.0, "slots": {"entity": "office light"}}

@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+# cloned skill repos (switchboard_eval/inputs/fetch_skills.sh)
+skills/repos/
+# DailyDialog and other raw corpora, rebuilt locally (switchboard_eval/inputs/build_ext_negatives.py)
+data/external/

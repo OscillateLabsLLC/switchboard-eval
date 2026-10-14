@@ -1,0 +1,38 @@
+# Hand-written dataset commands -> Home Assistant DEMO integration entities (ha_demo_registry.json, from HA's
+# own demo source). The "other house": checks the resolver isn't fitted to one home. Gold by Claude's
+# judgment from the entity names (documented in BENCH.md). NONE = no such device in the demo house.
+# Columns: spoken<TAB>intent<TAB>gold_entity_id<TAB># note
+kitchen lights	device.on	light.kitchen_lights
+living room lights	device.off	light.living_room_rgbww_lights
+living room lights	lights.color	light.living_room_rgbww_lights
+lights in the den	lights.brightness	NONE	# no den
+front door	lock.lock	lock.front_door
+front door	lock.unlock	lock.front_door
+front door	lock.status	lock.front_door
+frond door	lock.lock	lock.front_door	# ASR
+garage	cover.open	cover.garage_door
+garage door	cover.close	cover.garage_door
+garage door	cover.open	cover.garage_door
+garage	cover.close	cover.garage_door
+office	device.on	light.office_rgbw_lights
+office	lights.brightness	light.office_rgbw_lights
+office light	lights.color	light.office_rgbw_lights
+lie its in the office	device.on	light.office_rgbw_lights	# ASR "lights in the office"
+lamp in the bedroom	device.on	light.bed_light
+bedroom	lights.brightness	light.bed_light	# only bedroom LIGHT
+porch	device.on	NONE	# no porch
+lights	device.off	NONE	# all lights: not a single entity
+garage light	device.off	NONE	# demo garage is a cover, no garage light
+garage light	device.status	NONE
+back door	lock.status	NONE	# demo has front + kitchen door
+back door	lock.unlock	NONE
+side door	lock.unlock	NONE
+everything	device.off	NONE
+dining room lights	device.on	NONE
+dining room	device.on	NONE
+kitchen lights	device.off	light.kitchen_lights
+kitchen speaker	media.play	media_player.kitchen
+kitchen speaker	volume.up	media_player.kitchen
+living room speaker	media.pause	media_player.living_room
+living room	device.status	NONE	# asked for temperature; no living room sensor in the demo
+vacuum	device.stop	NONE	# no vacuum in the demo

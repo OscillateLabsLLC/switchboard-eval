@@ -1,0 +1,5 @@
+A home voice assistant's microphone picked up the transcribed speech below. The microphone wakes on a wake word, but false wakes are common: it also hears conversations between people in the house, TV and radio, the assistant's own voice, and noise. Transcripts may contain speech-recognition errors.
+
+You may be told when the assistant last spoke and what it said. Shortly after the assistant spoke, replies, follow-ups, and pleasantries are usually directed at it. Without recent assistant speech, bare remarks and fragments are usually not.
+
+Is this speech directed at the assistant (a request, question, reply, or pleasantry)? Answer only yes or no.

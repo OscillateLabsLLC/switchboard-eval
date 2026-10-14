@@ -1,0 +1,4002 @@
+{
+ "definitions": {
+  "ovos-skill-alerts.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "add_list_subitems",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "add_list_subitems",
+     "lang": "fr-fr",
+     "samples": [
+      "ajoute (des articles|des entrées|des choses) à la liste [{list_name}]",
+      "(crée|ajoute) des entrées de liste [{items}]",
+      "inscris du pain et du beurre sur la liste des courses",
+      "note encore un élément sur ma liste de tâches"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "calendar_list",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "calendar_list",
+     "lang": "fr-fr",
+     "samples": [
+      "(quels calendriers y a-t-il|quels calendriers sont disponibles)",
+      "(montre|lis) [moi] les choix de calendrier [disponibles]",
+      "quels sont les agendas disponibles sur mon compte en ligne",
+      "affiche les différents calendriers que je peux utiliser"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "cancel_alert",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "cancel_alert",
+     "lang": "fr-fr",
+     "samples": [
+      "(annule|annuler|supprime|supprimer|efface|effacer|retire|retirer) {alertkind}",
+      "(annule|annuler|supprime|supprimer|efface|effacer) (le|la|les) {alertkind}",
+      "(annule|annuler|supprime|supprimer|efface|effacer) (tous|toutes) (les|mes) {alertkind}",
+      "(annule|annuler|supprime|supprimer|efface|effacer) (mon|ma|mes) {alertkind}",
+      "(annule|annuler|supprime|supprimer) (le|la) (prochain|prochaine) {alertkind}",
+      "(annule|annuler|supprime|supprimer|efface|effacer) (mon|ma|mes) {alertkind} pour {name}",
+      "arrête et supprime le minuteur que j'ai lancé tout à l'heure",
+      "je n'ai plus besoin de mon réveil de demain matin, enlève-le"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "change_media_properties",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "change_media_properties",
+     "lang": "fr-fr",
+     "samples": [
+      "change mon {schedkind} pour qu'il soit audible",
+      "ajuste le prochain {schedkind} pour qu'il joue {mediakind}",
+      "fais jouer {mediaform} par le {schedkind}",
+      "change le son de mon {schedkind} en {mediakind}",
+      "change l'alerte du {schedkind} en {mediaform}",
+      "je veux que mon prochain {schedkind} joue ma {mediakind}",
+      "au lieu de sonner mon réveil doit lire de la musique",
+      "fais jouer un enregistrement par mon alarme quand elle se déclenche"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "change_priority",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "change_priority",
+     "lang": "fr-fr",
+     "samples": [
+      "change la priorité de mon {schedkind} à {number:priority}",
+      "augmente la priorité du {schedkind} au niveau {number:priority}",
+      "ajuste la priorité de mon prochain {schedkind}",
+      "mets le {schedkind} en priorité {number:priority}",
+      "baisse la priorité de mon {schedkind}",
+      "change le niveau de priorité du {schedkind} à {number:priority}",
+      "donne une importance plus élevée à mon prochain rappel",
+      "mon rappel de demain est moins urgent que les autres"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "change_repeat",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "change_repeat",
+     "lang": "fr-fr",
+     "samples": [
+      "change la récurrence de mon {schedkind} à chaque {repeat}",
+      "fais répéter mon {schedkind} chaque {repeat}",
+      "ajuste la fréquence du {schedkind} à {repeat}",
+      "change mon prochain {schedkind} pour qu'il se répète {repeat}",
+      "je veux que le {schedkind} se répète chaque {repeat}",
+      "change la répétition de mon {schedkind} à chaque {repeat}",
+      "fais revenir mon alarme chaque jour de la semaine",
+      "je veux que ce rappel se répète tous les lundis"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "change_until",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "change_until",
+     "lang": "fr-fr",
+     "samples": [
+      "change la durée de mon {schedkind} à {duration:duration}",
+      "prolonge mon {schedkind} jusqu'à {duration:duration}",
+      "ajuste la longueur du prochain {schedkind} à {duration:duration}",
+      "fais durer le {schedkind} pendant {duration:duration}",
+      "change mon {schedkind} pour qu'il dure jusqu'à {duration:duration}",
+      "raccourcis la durée de mon {schedkind} à {duration:duration}",
+      "je veux que la sonnerie de mon réveil dure plus longtemps",
+      "laisse sonner mon alarme pendant trois minutes au lieu d'une"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "create_alarm",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "create_alarm",
+     "lang": "fr-fr",
+     "samples": [
+      "(mets|crée|ajoute|programme) une alarme [pour {date:time}]",
+      "nouvelle alarme [pour {date:time}]",
+      "nouveau alarmes",
+      "j'ai alarme",
+      "créer alarme",
+      "réveille(-moi|-nous) [à {date:time}]",
+      "(peux-tu|pourrais-tu) me réveiller [à {date:time}]",
+      "réveille-moi avec {mediakind} à {date:time}",
+      "réveille-moi dans {duration:duration}",
+      "réveille-moi chaque {days} à {date:time}",
+      "réveille-moi demain matin à six heures et demie",
+      "programme un réveil pour sept heures demain"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "create_event",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "create_event",
+     "lang": "fr-fr",
+     "samples": [
+      "(crée|ajoute|programme) (un événement|un rendez-vous) [{event}]",
+      "nouvel événement [{event}]",
+      "j'ai (un événement|un rendez-vous) [{event}]",
+      "inscris un rendez-vous chez le dentiste dans mon agenda",
+      "ajoute une réunion de travail à mon calendrier jeudi"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "create_list",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "create_list",
+     "lang": "fr-fr",
+     "samples": [
+      "(crée|fais|ajoute) une [nouvelle] liste [appelée {list_name}]",
+      "nouvelle liste [{list_name}]",
+      "ouvre une nouvelle liste pour les courses de la semaine",
+      "prépare-moi une liste vierge que je remplirai plus tard"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "create_reminder",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "create_reminder",
+     "lang": "fr-fr",
+     "samples": [
+      "(crée|ajoute|mets) un [nouveau] rappel [pour {reminder}] [à {date:time}]",
+      "nouveau rappel [{reminder}]",
+      "créer rappels",
+      "nouveau rappels",
+      "rappelle(-moi|-nous) [de {reminder}] [à {date:time}]",
+      "dis-moi de {reminder} [à {date:time}]",
+      "n'oublie pas de me prévenir d'appeler le plombier cet après-midi",
+      "pense à me dire de prendre mes clés avant de sortir",
+      "rappelle-moi d'aller au travail chaque matin de semaine à 8 heures",
+      "rappelle-moi chaque matin de la semaine de prendre mon médicament à 8 heures",
+      "rappelle-moi de promener le chien chaque matin de semaine à 7 heures",
+      "rappelle-moi de vérifier mes mails chaque matin de semaine à 9 heures",
+      "rappelle-moi chaque soir de semaine d'appeler ma mère à 6 heures",
+      "rappelle-moi d'arroser les plantes chaque matin de week-end à 8 heures",
+      "chaque matin de la semaine préviens-moi de prendre mes vitamines",
+      "tous les dimanches soir rappelle-moi de sortir le bac de recyclage"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "create_timer",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "create_timer",
+     "lang": "fr-fr",
+     "samples": [
+      "(mets|lance|crée) (une minuterie|un minuteur) [de {duration:duration}]",
+      "nouvelle minuterie [de {duration:duration}]",
+      "nouveau chronomètres",
+      "j'ai minuterie",
+      "créer minuterie",
+      "compte cinq minutes à partir de maintenant pour les pâtes",
+      "déclenche une minuterie d'un quart d'heure pour le gâteau"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "dav_sync",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "dav_sync",
+     "lang": "fr-fr",
+     "samples": [
+      "peux-tu synchroniser le {davkind}",
+      "synchronise mon {davkind} maintenant",
+      "télécharge le {davkind}",
+      "charge mon {davkind}",
+      "synchronise tous mes {davkind}",
+      "synchronise le {davkind} et le {davkind2}",
+      "synchronise mon agenda avec le serveur en ligne",
+      "récupère les nouveautés de mon calendrier sur internet"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "delete_list",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "delete_list",
+     "lang": "fr-fr",
+     "samples": [
+      "(supprime|efface) (ma|la) liste [{list_name}]",
+      "(supprime|efface) [toutes] [mes] listes",
+      "supprime définitivement la liste des courses de l'appareil",
+      "je ne me sers plus de la liste des cadeaux, efface-la complètement"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "delete_list_entries",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "delete_list_entries",
+     "lang": "fr-fr",
+     "samples": [
+      "(supprime|efface|enlève) les (articles|entrées) de (ma|la) liste [{list_name}]",
+      "(supprime|efface) tout de (ma|la) liste [{list_name}]",
+      "(supprime|efface) tout de ma liste {list_name}",
+      "retire tous les éléments de la liste des courses sans la supprimer",
+      "nettoie le contenu de ma liste de tâches et garde la liste"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "list_alerts",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "list_alerts",
+     "lang": "fr-fr",
+     "samples": [
+      "(quels|quelles) {alertkind} ai-je",
+      "(quels|quelles) sont mes {alertkind}",
+      "(liste|montre|montrez|lis|dis) (moi|nous) mes {alertkind}",
+      "(liste|montre|montrez|lis|montre-moi|montrez-moi|dis-moi|lis-moi) mes {alertkind}",
+      "ai-je (un|une|des) {alertkind}",
+      "(y a-t-il|est-ce qu'il y a) (un|une|des) {alertkind}",
+      "y a-t-il (des|un|une) {alertkind} (enregistré|enregistrée|enregistrés|prévu|prévus)",
+      "(quand|quel) est mon (prochain|prochaine) {alertkind}",
+      "(qu'est-ce que|ce que) j'ai (de prévu|d'enregistré|de noté)",
+      "est-ce que tu as des réveils de prévus pour demain matin",
+      "énumère tous les rappels qui sont programmés cette semaine"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "missed_alerts",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "missed_alerts",
+     "lang": "fr-fr",
+     "samples": [
+      "ai-je manqué des alarmes ?",
+      "ai-je manqué des alertes ?",
+      "ai-je manqué des minuteries ?",
+      "ai-je manqué des minuteurs ?",
+      "ai-je manqué des rappels ?",
+      "ai-je manqué des événements ?",
+      "ai-je manqué un minuteur ?",
+      "ai-je manqué un rappel ?",
+      "ai-je manqué un événement ?",
+      "ai-je manqué une alarme ?",
+      "ai-je manqué une alerte ?",
+      "ai-je manqué une minuterie ?",
+      "ai-je oublié des rappels ?",
+      "ai-je oublié un rappel ?",
+      "ai-je raté des alarmes ?",
+      "ai-je raté des alertes ?",
+      "ai-je raté des minuteurs ?",
+      "ai-je raté des rappels ?",
+      "ai-je raté des événements ?",
+      "ai-je raté un minuteur ?",
+      "ai-je raté un rappel ?",
+      "ai-je raté un événement ?",
+      "ai-je raté une alarme ?",
+      "ai-je raté une alerte ?",
+      "alarme manquée",
+      "alarmes manquées",
+      "alerte manquée",
+      "alertes manquées",
+      "minuterie manquée",
+      "minuteries manquées",
+      "minuteur manqué",
+      "minuteurs manqués",
+      "quel minuteur ai-je manqué ?",
+      "quel rappel ai-je manqué ?",
+      "quel événement ai-je manqué ?",
+      "quelle alarme ai-je manquée ?",
+      "quelle alerte ai-je manquée ?",
+      "quelle minuterie ai-je manquée ?",
+      "quelles alarmes ai-je manquées ?",
+      "quelles alertes ai-je manquées ?",
+      "quelles minuteries ai-je manquées ?",
+      "quels minuteurs ai-je manqués ?",
+      "quels rappels ai-je manqués ?",
+      "quels événements ai-je manqués ?",
+      "rappel manqué",
+      "rappels manqués",
+      "événement manqué",
+      "événements manqués",
+      "quelque chose a sonné pendant que j'étais sorti faire les courses",
+      "est-ce que j'ai loupé une sonnerie pendant la journée"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "query_list_entries",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "query_list_entries",
+     "lang": "fr-fr",
+     "samples": [
+      "(quels articles|quelles entrées) (sont|y a-t-il) (sur|dans) (ma|la) liste [{list_name}]",
+      "(lis|montre) [moi] les entrées de (ma|la) liste [{list_name}]",
+      "qu'y a-t-il (sur|dans) (ma|la) liste {list_name}",
+      "(qu'y a-t-il|qu'est-ce qu'il y a) (sur|dans) ma liste {list_name}",
+      "(lis|montre) [moi] mes (notes|tâches) [à faire]",
+      "qu'est-ce que j'ai à faire",
+      "qu'est-ce qui est inscrit sur la liste des courses",
+      "lis à voix haute le contenu de ma liste de tâches"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "query_list_names",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "query_list_names",
+     "lang": "fr-fr",
+     "samples": [
+      "(quelles listes ai-je|quelles listes y a-t-il)",
+      "(lis|montre) [moi] [toutes] mes listes [sauvegardées]",
+      "dis-moi mes listes",
+      "quel est le nom de chacune des listes enregistrées",
+      "donne-moi les titres de toutes les listes que tu gardes"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "reschedule_alert",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "reschedule_alert",
+     "lang": "fr-fr",
+     "samples": [
+      "(déplace|change|reporte|repousse) (mon|ma) {schedkind} (à|pour) {date:time}",
+      "(déplace|change|reporte|repousse) (mon|ma) {schedkind} de {date:old} (à|pour) {date:time}",
+      "(déplace|change|reporte|repousse) (le|la) {schedkind} (pour|de) {name} (à|pour) {date:time}",
+      "(avance|retarde) (mon|ma) (prochain|prochaine) {schedkind}",
+      "(prolonge|raccourcis) (mon|ma) {schedkind}",
+      "(repousse|retarde) (mon|ma) (prochain|prochaine) {schedkind} de {duration:duration}",
+      "(mon|ma) {schedkind} (déplace|change) (le|la) (à|pour) {date:time}",
+      "(règle|mets) (mon|ma) (prochain|prochaine) {schedkind} (plus tôt|plus tard)",
+      "déplace le rendez-vous de demain à quinze heures",
+      "je veux que mon réveil sonne une demi-heure plus tard"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-alerts.openvoiceos",
+    "intent_name": "timer_status",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-alerts.openvoiceos",
+     "intent_name": "timer_status",
+     "lang": "fr-fr",
+     "samples": [
+      "combien de temps reste-t-il (sur|pour) (mon|le) {timerkind}",
+      "combien de temps reste-t-il (sur|pour) (le|mon) {timerkind} (appelé|nommé) {name}",
+      "combien de temps (avant|jusqu'à ce) que (mon|le) {timerkind} (se termine|soit fini)",
+      "est-ce que (mon|le) {timerkind} est (fini|terminé|prêt)",
+      "(dis|donne) moi le temps restant (sur|pour) (mon|le) {timerkind}",
+      "quel est (le statut|l'état) (de mon|du) {timerkind}",
+      "(statut|état) (du|de mon) {timerkind}",
+      "quand (mon|le) {timerkind} (se termine|sera fini)",
+      "combien de minutes il reste avant la fin du minuteur",
+      "où en est le compte à rebours que j'ai lancé"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-application-launcher.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-application-launcher.openvoiceos",
+    "intent_name": "close",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-application-launcher.openvoiceos",
+     "intent_name": "close",
+     "lang": "fr-fr",
+     "samples": [
+      "ferme l'application {application}",
+      "ferme {application}",
+      "quitte l'application {application}",
+      "quitte {application}"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-application-launcher.openvoiceos",
+    "intent_name": "launch",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-application-launcher.openvoiceos",
+     "intent_name": "launch",
+     "lang": "fr-fr",
+     "samples": [
+      "demarre {application}",
+      "lance {application}",
+      "ouvre {application}"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-audio-recording.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-audio-recording.openvoiceos",
+    "intent_name": "start_recording",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-audio-recording.openvoiceos",
+     "intent_name": "start_recording",
+     "lang": "fr-fr",
+     "samples": [
+      "commence l'enregistrement",
+      "commence l'enregistrement {name}",
+      "commence un enregistrement audio",
+      "commence un enregistrement nommé {name}",
+      "commence à enregistrer",
+      "crée un enregistrement nommé {name}",
+      "crée un nouvel enregistrement",
+      "démarre l'enregistrement",
+      "démarre l'enregistrement {name}",
+      "démarre un enregistrement",
+      "démarre un enregistrement appelé {name}",
+      "démarre un enregistrement audio",
+      "démarre un enregistrement audio nommé {name}",
+      "démarre un enregistrement nommé {name}",
+      "démarre un nouvel enregistrement",
+      "démarre un nouvel enregistrement audio nommé {name}",
+      "démarre un nouvel enregistrement nommé {name}",
+      "enregistre maintenant",
+      "enregistre un fichier audio",
+      "enregistre un fichier audio nommé {name}",
+      "lance l'enregistrement",
+      "lance un enregistrement appelé {name}",
+      "lance un enregistrement audio",
+      "lance un enregistrement nommé {name}",
+      "mets l'enregistreur en marche",
+      "j'aimerais enregistrer (un audio|ma voix)",
+      "peux-tu enregistrer du son",
+      "je voudrais enregistrer (du son|ma voix)"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-boot-finished.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-boot-finished.openvoiceos",
+    "intent_name": "are_you_ready",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-boot-finished.openvoiceos",
+     "intent_name": "are_you_ready",
+     "lang": "fr-fr",
+     "samples": [
+      "Est-ce qu'Open Voice OS a bien démarré",
+      "Est-ce qu'Open Voice OS est prêt",
+      "Est-ce que le système a fini de démarrer",
+      "Est-ce que le système est prêt",
+      "Est-ce que tous les services sont prêts",
+      "Le démarrage est-il terminé",
+      "Le système a-t-il fini de démarrer"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-boot-finished.openvoiceos",
+    "intent_name": "disable_ready_notification",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-boot-finished.openvoiceos",
+     "intent_name": "disable_ready_notification",
+     "lang": "fr-fr",
+     "samples": [
+      "(désactive|désactiver|éteins|éteindre|arrête|arrêter) (la notification|les notifications|l'alerte|les alertes|notification|notifications|alerte|alertes) de (démarrage|redémarrage)"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-boot-finished.openvoiceos",
+    "intent_name": "enable_ready_notification",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-boot-finished.openvoiceos",
+     "intent_name": "enable_ready_notification",
+     "lang": "fr-fr",
+     "samples": [
+      "(active|activer|allume|allumer|réactive|réactiver) (la notification|les notifications|l'alerte|les alertes|notification|notifications|alerte|alertes) de (démarrage|redémarrage)"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-count.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-count.openvoiceos",
+    "intent_name": "count_to_n",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-count.openvoiceos",
+     "intent_name": "count_to_n",
+     "lang": "fr-fr",
+     "samples": [
+      "compte jusqu'à {number}",
+      "compte à l'infini",
+      "compte indéfiniment",
+      "compte jusqu'à {number} en échelle longue",
+      "compte jusqu'à {number} en échelle courte",
+      "compte jusqu'à {number} avec les nombres cardinaux",
+      "compte jusqu'à {number} avec les nombres ordinaux",
+      "compte à l'infini avec les nombres cardinaux",
+      "compte à l'infini avec les nombres ordinaux"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-date-time.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "date_future_weekend",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "date_future_weekend",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi les dates du week-end prochain",
+      "peux-tu me dire quand est le prochain week-end",
+      "quand est le prochain week-end",
+      "quand est le week-end prochain",
+      "quelles sont les dates de ce week-end",
+      "quelles sont les dates du prochain week-end",
+      "quelles sont les dates du week-end prochain",
+      "quelles sont les dates du week-end à venir"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "date_last_weekend",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "date_last_weekend",
+     "lang": "fr-fr",
+     "samples": [
+      "c'était quand le week-end dernier",
+      "dis-moi les dates du week-end dernier",
+      "peux-tu me dire quand était le week-end dernier",
+      "quand était le week-end dernier",
+      "quelle était la date du week-end dernier",
+      "quelles étaient les dates du week-end dernier"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "is_leap_year",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "is_leap_year",
+     "lang": "fr-fr",
+     "samples": [
+      "cette année est-elle bissextile",
+      "cette année est-elle bissextile ou l'an prochain",
+      "cette année est-elle bissextile ou l'année prochaine",
+      "cette année est-elle bissextile ou la prochaine",
+      "est-ce que cette année est bissextile",
+      "est-ce que cette année est bissextile ou l'an prochain",
+      "est-ce que cette année est bissextile ou l'année prochaine",
+      "est-ce que cette année est bissextile ou la prochaine",
+      "est-ce que l'an prochain est bissextile",
+      "est-ce que l'année prochaine est bissextile",
+      "l'an prochain est-il bissextile",
+      "l'année prochaine est-elle bissextile",
+      "cette année est bissextile"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "next_leap_year",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "next_leap_year",
+     "lang": "fr-fr",
+     "samples": [
+      "c'est quand la prochaine année bissextile",
+      "en quelle année aura lieu le prochain 29 février",
+      "en quelle année tombe la prochaine année bissextile",
+      "quand aura lieu le prochain 29 février",
+      "quand aura-t-on une année bissextile de nouveau",
+      "quand aurons-nous de nouveau un 29 février",
+      "quand aurons-nous de nouveau une année bissextile",
+      "quand est la prochaine année bissextile",
+      "quel est le prochain 29 février",
+      "quelle est la prochaine année avec 366 jours",
+      "quelle est la prochaine année avec un 29 février",
+      "quelle est la prochaine année avec un jour de plus en février",
+      "quelle est la prochaine année bissextile",
+      "quelle sera la prochaine année bissextile"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "time_until",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "time_until",
+     "lang": "fr-fr",
+     "samples": [
+      "c'était il y a combien de temps {date}",
+      "combien d'heures avant {date}",
+      "combien d'heures reste-t-il avant {date}",
+      "combien de jours avant {date}",
+      "combien de jours jusqu'à {date}",
+      "combien de jours reste-t-il avant {date}",
+      "combien de semaines avant {date}",
+      "combien de semaines reste-t-il avant {date}",
+      "combien de temps avant {date}",
+      "combien de temps reste-t-il avant {date}",
+      "combien de temps reste-t-il jusqu'à {date}",
+      "dans combien de temps est {date}",
+      "dans combien de temps sera {date}",
+      "il y a combien de jours c'était {date}",
+      "il y a combien de temps c'était {date}",
+      "combien de jours y a-t-il entre {start} et {end}",
+      "combien de jours entre {start} et {end}",
+      "compte les jours entre {start} et {end}",
+      "combien de jours séparent {start} de {end}",
+      "calcule le nombre de jours du {start} au {end}"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "weekday_for_date",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "weekday_for_date",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi quel jour de la semaine était {date}",
+      "dis-moi quel jour tombe {date}",
+      "le {date} tombe quel jour",
+      "peux-tu me dire quel jour de la semaine est {date}",
+      "peux-tu me dire quel jour tombe {date}",
+      "quel est le jour de la semaine du {date}",
+      "quel jour de la semaine est {date}",
+      "quel jour de la semaine tombe {date}",
+      "quel jour de la semaine était {date}",
+      "quel jour est {date}",
+      "quel jour tombe {date}",
+      "quel jour était {date}",
+      "{date} c'était quel jour",
+      "{date} tombe quel jour"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "weekday_matches_date",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "weekday_matches_date",
+     "lang": "fr-fr",
+     "samples": [
+      "est-ce que {date} tombe un {weekday}",
+      "le {date} tombe-t-il un {weekday}",
+      "le {date} tombait-il un {weekday}",
+      "le {date} tombera-t-il un {weekday}"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_day_is_it",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_day_is_it",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi le jour du mois",
+      "dis-moi le quantième",
+      "donne-moi le jour du mois",
+      "nous sommes le combien",
+      "on est le combien",
+      "on est le combien au {location}",
+      "on est le combien aujourd'hui",
+      "on est le combien aux {location}",
+      "on est le combien dans {location}",
+      "on est le combien en {location}",
+      "on est le combien à {location}",
+      "quantième du mois",
+      "quel est le jour du mois",
+      "quel est le jour du mois au {location}",
+      "quel est le jour du mois aujourd'hui",
+      "quel est le jour du mois aux {location}",
+      "quel est le jour du mois dans {location}",
+      "quel est le jour du mois en {location}",
+      "quel est le jour du mois à {location}",
+      "quel est le quantième du mois",
+      "quel jour du mois est-ce",
+      "quel jour du mois sommes-nous",
+      "quel numéro du jour du mois sommes-nous",
+      "quel quantième sommes-nous",
+      "dis-moi la date",
+      "dis-moi la date au {location}",
+      "dis-moi la date aux {location}",
+      "dis-moi la date complète",
+      "dis-moi la date d'aujourd'hui",
+      "dis-moi la date dans {location}",
+      "dis-moi la date du jour",
+      "dis-moi la date en {location}",
+      "dis-moi la date à {location}",
+      "dis-moi le jour, le mois et l'année",
+      "donne-moi la date",
+      "donne-moi la date au {location}",
+      "donne-moi la date aux {location}",
+      "donne-moi la date complète",
+      "donne-moi la date d'aujourd'hui",
+      "donne-moi la date dans {location}",
+      "donne-moi la date du jour",
+      "donne-moi la date en {location}",
+      "donne-moi la date à {location}",
+      "nous sommes quelle date",
+      "on est quelle date",
+      "peux-tu me dire la date",
+      "peux-tu me dire la date du jour",
+      "peux-tu me donner la date d'aujourd'hui",
+      "quelle date sommes-nous",
+      "quelle est la date",
+      "quelle est la date au {location}",
+      "quelle est la date aujourd'hui",
+      "quelle est la date aux {location}",
+      "quelle est la date complète",
+      "quelle est la date complète au {location}",
+      "quelle est la date complète aujourd'hui",
+      "quelle est la date complète aux {location}",
+      "quelle est la date complète dans {location}",
+      "quelle est la date complète en {location}",
+      "quelle est la date complète à {location}",
+      "quelle est la date d'aujourd'hui au {location}",
+      "quelle est la date d'aujourd'hui aux {location}",
+      "quelle est la date d'aujourd'hui dans {location}",
+      "quelle est la date d'aujourd'hui en {location}",
+      "quelle est la date d'aujourd'hui à {location}",
+      "quelle est la date dans {location}",
+      "quelle est la date du calendrier",
+      "quelle est la date du calendrier au {location}",
+      "quelle est la date du calendrier aux {location}",
+      "quelle est la date du calendrier dans {location}",
+      "quelle est la date du calendrier en {location}",
+      "quelle est la date du calendrier à {location}",
+      "quelle est la date du jour",
+      "quelle est la date en {location}",
+      "quelle est la date à {location}",
+      "quelle date sommes-nous aujourd'hui"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_month_is_it",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_month_is_it",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi quel mois on est",
+      "donne-moi le mois actuel",
+      "est-on en août",
+      "est-on en avril",
+      "est-on en décembre",
+      "est-on en février",
+      "est-on en janvier",
+      "est-on en juillet",
+      "est-on en juin",
+      "est-on en mai",
+      "est-on en mars",
+      "est-on en novembre",
+      "est-on en octobre",
+      "est-on en septembre",
+      "nous sommes en quel mois",
+      "on est en quel mois",
+      "quel est le mois actuel",
+      "quel est le mois en cours",
+      "quel mois est-ce",
+      "quel mois sommes-nous",
+      "sommes-nous en août",
+      "sommes-nous en avril",
+      "sommes-nous en décembre",
+      "sommes-nous en février",
+      "sommes-nous en janvier",
+      "sommes-nous en juillet",
+      "sommes-nous en juin",
+      "sommes-nous en mai",
+      "sommes-nous en mars",
+      "sommes-nous en novembre",
+      "sommes-nous en octobre",
+      "sommes-nous en septembre"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_time_is_it",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_time_is_it",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi l'heure",
+      "dis-moi l'heure au {location}",
+      "dis-moi l'heure aux {location}",
+      "dis-moi l'heure dans {location}",
+      "dis-moi l'heure en {location}",
+      "dis-moi l'heure à {location}",
+      "donne-moi l'heure",
+      "donne-moi l'heure au {location}",
+      "donne-moi l'heure aux {location}",
+      "donne-moi l'heure dans {location}",
+      "donne-moi l'heure en {location}",
+      "donne-moi l'heure à {location}",
+      "il est quelle heure",
+      "il est quelle heure au {location}",
+      "il est quelle heure aux {location}",
+      "il est quelle heure dans {location}",
+      "il est quelle heure en {location}",
+      "il est quelle heure à {location}",
+      "j'ai besoin de l'heure",
+      "j'ai besoin de l'heure au {location}",
+      "j'ai besoin de l'heure aux {location}",
+      "j'ai besoin de l'heure dans {location}",
+      "j'ai besoin de l'heure en {location}",
+      "j'ai besoin de l'heure à {location}",
+      "l'heure actuelle",
+      "l'heure actuelle au {location}",
+      "l'heure actuelle aux {location}",
+      "l'heure actuelle dans {location}",
+      "l'heure actuelle en {location}",
+      "l'heure actuelle à {location}",
+      "l'heure du moment",
+      "l'heure du moment au {location}",
+      "l'heure du moment aux {location}",
+      "l'heure du moment dans {location}",
+      "l'heure du moment en {location}",
+      "l'heure du moment à {location}",
+      "peux-tu me dire l'heure",
+      "peux-tu me dire l'heure au {location}",
+      "peux-tu me dire l'heure aux {location}",
+      "peux-tu me dire l'heure dans {location}",
+      "peux-tu me dire l'heure en {location}",
+      "peux-tu me dire l'heure à {location}",
+      "peux-tu me donner l'heure",
+      "peux-tu me donner l'heure au {location}",
+      "peux-tu me donner l'heure aux {location}",
+      "peux-tu me donner l'heure dans {location}",
+      "peux-tu me donner l'heure en {location}",
+      "peux-tu me donner l'heure à {location}",
+      "quelle heure est-il",
+      "quelle heure est-il actuellement",
+      "quelle heure est-il actuellement au {location}",
+      "quelle heure est-il actuellement aux {location}",
+      "quelle heure est-il actuellement dans {location}",
+      "quelle heure est-il actuellement en {location}",
+      "quelle heure est-il actuellement à {location}",
+      "quelle heure est-il au {location}",
+      "quelle heure est-il aux {location}",
+      "quelle heure est-il dans {location}",
+      "quelle heure est-il en ce moment",
+      "quelle heure est-il en ce moment au {location}",
+      "quelle heure est-il en ce moment aux {location}",
+      "quelle heure est-il en ce moment dans {location}",
+      "quelle heure est-il en ce moment en {location}",
+      "quelle heure est-il en ce moment à {location}",
+      "quelle heure est-il en {location}",
+      "quelle heure est-il maintenant",
+      "quelle heure est-il maintenant au {location}",
+      "quelle heure est-il maintenant aux {location}",
+      "quelle heure est-il maintenant dans {location}",
+      "quelle heure est-il maintenant en {location}",
+      "quelle heure est-il maintenant à {location}",
+      "quelle heure est-il à {location}",
+      "tu as l'heure",
+      "tu as l'heure au {location}",
+      "tu as l'heure aux {location}",
+      "tu as l'heure dans {location}",
+      "tu as l'heure en {location}",
+      "tu as l'heure à {location}",
+      "Montre-moi l'heure"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_time_will_it_be",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_time_will_it_be",
+     "lang": "fr-fr",
+     "samples": [
+      "après {number:offset} heure quelle heure sera-t-il",
+      "après {number:offset} heure quelle heure sera-t-il au {location}",
+      "après {number:offset} heure quelle heure sera-t-il aux {location}",
+      "après {number:offset} heure quelle heure sera-t-il dans {location}",
+      "après {number:offset} heure quelle heure sera-t-il en {location}",
+      "après {number:offset} heure quelle heure sera-t-il à {location}",
+      "après {number:offset} heures quelle heure sera-t-il",
+      "après {number:offset} heures quelle heure sera-t-il au {location}",
+      "après {number:offset} heures quelle heure sera-t-il aux {location}",
+      "après {number:offset} heures quelle heure sera-t-il dans {location}",
+      "après {number:offset} heures quelle heure sera-t-il en {location}",
+      "après {number:offset} heures quelle heure sera-t-il à {location}",
+      "après {number:offset} minute quelle heure sera-t-il",
+      "après {number:offset} minute quelle heure sera-t-il au {location}",
+      "après {number:offset} minute quelle heure sera-t-il aux {location}",
+      "après {number:offset} minute quelle heure sera-t-il dans {location}",
+      "après {number:offset} minute quelle heure sera-t-il en {location}",
+      "après {number:offset} minute quelle heure sera-t-il à {location}",
+      "après {number:offset} minutes quelle heure sera-t-il",
+      "après {number:offset} minutes quelle heure sera-t-il au {location}",
+      "après {number:offset} minutes quelle heure sera-t-il aux {location}",
+      "après {number:offset} minutes quelle heure sera-t-il dans {location}",
+      "après {number:offset} minutes quelle heure sera-t-il en {location}",
+      "après {number:offset} minutes quelle heure sera-t-il à {location}",
+      "après {number:offset} seconde quelle heure sera-t-il",
+      "après {number:offset} seconde quelle heure sera-t-il au {location}",
+      "après {number:offset} seconde quelle heure sera-t-il aux {location}",
+      "après {number:offset} seconde quelle heure sera-t-il dans {location}",
+      "après {number:offset} seconde quelle heure sera-t-il en {location}",
+      "après {number:offset} seconde quelle heure sera-t-il à {location}",
+      "après {number:offset} secondes quelle heure sera-t-il",
+      "après {number:offset} secondes quelle heure sera-t-il au {location}",
+      "après {number:offset} secondes quelle heure sera-t-il aux {location}",
+      "après {number:offset} secondes quelle heure sera-t-il dans {location}",
+      "après {number:offset} secondes quelle heure sera-t-il en {location}",
+      "après {number:offset} secondes quelle heure sera-t-il à {location}",
+      "dans {number:offset} heure quelle heure sera-t-il",
+      "dans {number:offset} heure quelle heure sera-t-il au {location}",
+      "dans {number:offset} heure quelle heure sera-t-il aux {location}",
+      "dans {number:offset} heure quelle heure sera-t-il dans {location}",
+      "dans {number:offset} heure quelle heure sera-t-il en {location}",
+      "dans {number:offset} heure quelle heure sera-t-il à {location}",
+      "dans {number:offset} heures quelle heure sera-t-il",
+      "dans {number:offset} heures quelle heure sera-t-il au {location}",
+      "dans {number:offset} heures quelle heure sera-t-il aux {location}",
+      "dans {number:offset} heures quelle heure sera-t-il dans {location}",
+      "dans {number:offset} heures quelle heure sera-t-il en {location}",
+      "dans {number:offset} heures quelle heure sera-t-il à {location}",
+      "dans {number:offset} minute quelle heure sera-t-il",
+      "dans {number:offset} minute quelle heure sera-t-il au {location}",
+      "dans {number:offset} minute quelle heure sera-t-il aux {location}",
+      "dans {number:offset} minute quelle heure sera-t-il dans {location}",
+      "dans {number:offset} minute quelle heure sera-t-il en {location}",
+      "dans {number:offset} minute quelle heure sera-t-il à {location}",
+      "dans {number:offset} minutes quelle heure sera-t-il",
+      "dans {number:offset} minutes quelle heure sera-t-il au {location}",
+      "dans {number:offset} minutes quelle heure sera-t-il aux {location}",
+      "dans {number:offset} minutes quelle heure sera-t-il dans {location}",
+      "dans {number:offset} minutes quelle heure sera-t-il en {location}",
+      "dans {number:offset} minutes quelle heure sera-t-il à {location}",
+      "dans {number:offset} seconde quelle heure sera-t-il",
+      "dans {number:offset} seconde quelle heure sera-t-il au {location}",
+      "dans {number:offset} seconde quelle heure sera-t-il aux {location}",
+      "dans {number:offset} seconde quelle heure sera-t-il dans {location}",
+      "dans {number:offset} seconde quelle heure sera-t-il en {location}",
+      "dans {number:offset} seconde quelle heure sera-t-il à {location}",
+      "dans {number:offset} secondes quelle heure sera-t-il",
+      "dans {number:offset} secondes quelle heure sera-t-il au {location}",
+      "dans {number:offset} secondes quelle heure sera-t-il aux {location}",
+      "dans {number:offset} secondes quelle heure sera-t-il dans {location}",
+      "dans {number:offset} secondes quelle heure sera-t-il en {location}",
+      "dans {number:offset} secondes quelle heure sera-t-il à {location}",
+      "si j'attends {number:offset} heures quelle heure sera-t-il",
+      "si j'attends {number:offset} heures quelle heure sera-t-il au {location}",
+      "si j'attends {number:offset} heures quelle heure sera-t-il aux {location}",
+      "si j'attends {number:offset} heures quelle heure sera-t-il dans {location}",
+      "si j'attends {number:offset} heures quelle heure sera-t-il en {location}",
+      "si j'attends {number:offset} heures quelle heure sera-t-il à {location}",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il au {location}",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il aux {location}",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il dans {location}",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il en {location}",
+      "si j'attends {number:offset} minutes quelle heure sera-t-il à {location}",
+      "dans {number:offset} (heure|heures|minutes) quelle heure sera-t-il",
+      "dans {number:offset} (heures|minutes) il sera quelle heure",
+      "quelle heure sera-t-il dans {number:offset} (heure|heures|minutes) (en|à|au) {location}",
+      "tu peux me dire quelle heure il sera dans {number:offset} heures",
+      "quelle heure sera-t-il dans deux heures",
+      "dans trois heures il sera quelle heure à {location}",
+      "quelle heure il sera dans dix minutes"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_weekday_is_it",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_weekday_is_it",
+     "lang": "fr-fr",
+     "samples": [
+      "c'est quel jour aujourd'hui",
+      "dis-moi le jour de la semaine",
+      "donne-moi le jour de la semaine",
+      "est-ce dimanche aujourd'hui",
+      "est-ce jeudi aujourd'hui",
+      "est-ce lundi aujourd'hui",
+      "est-ce mardi aujourd'hui",
+      "est-ce mercredi aujourd'hui",
+      "est-ce samedi aujourd'hui",
+      "est-ce vendredi aujourd'hui",
+      "nous sommes quel jour",
+      "on est quel jour",
+      "quel jour de la semaine est-on",
+      "quel jour de la semaine sommes-nous",
+      "quel jour on est",
+      "quel jour sommes-nous aujourd'hui",
+      "sommes-nous dimanche",
+      "sommes-nous jeudi",
+      "sommes-nous lundi",
+      "sommes-nous mardi",
+      "sommes-nous mercredi",
+      "sommes-nous samedi",
+      "sommes-nous vendredi",
+      "aujourd'hui c'est quel jour"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-date-time.openvoiceos",
+    "intent_name": "what_year_is_it",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-date-time.openvoiceos",
+     "intent_name": "what_year_is_it",
+     "lang": "fr-fr",
+     "samples": [
+      "année actuelle",
+      "année en cours",
+      "c'est quelle année",
+      "dis-moi l'année actuelle",
+      "donne-moi l'année actuelle",
+      "en quelle année est-on",
+      "nous sommes en quelle année",
+      "on est en quelle année",
+      "quelle année sommes-nous",
+      "quelle est l'année actuelle",
+      "quelle est l'année en cours"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-ddg.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-ddg.openvoiceos",
+    "intent_name": "search_duck",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ddg.openvoiceos",
+     "intent_name": "search_duck",
+     "lang": "fr-fr",
+     "samples": [
+      "duckduckgo {query}",
+      "recherche sur DuckDuckGo {query}",
+      "cherche {query} sur DuckDuckGo",
+      "demande à DuckDuckGo {query}",
+      "trouve {query} sur DuckDuckGo"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-diagnostics.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_core_version",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_core_version",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle version d'ovos utilises-tu",
+      "quelle version d'ovos fais-tu tourner",
+      "quelle version du core as-tu",
+      "donne-moi ta version du core",
+      "quelle version d'ovos est installée",
+      "version du core ovos",
+      "c'est quelle version d'ovos",
+      "tu tournes sur quelle version d'ovos"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_cpu_usage",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_cpu_usage",
+     "lang": "fr-fr",
+     "samples": [
+      "diagnostic processeur",
+      "quelle est ton utilisation du processeur",
+      "quelle est la charge du processeur",
+      "combien de processeur utilises-tu",
+      "donne-moi ton utilisation CPU",
+      "le processeur est-il chargé",
+      "utilises-tu beaucoup de processeur",
+      "utilisation actuelle du processeur"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_disk_space",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_disk_space",
+     "lang": "fr-fr",
+     "samples": [
+      "combien d'espace (disque|de stockage) me reste-t-il",
+      "combien d'espace disque libre y a-t-il",
+      "quel est mon espace disque libre",
+      "suis-je à court d'espace disque",
+      "diagnostic du disque",
+      "combien de place reste-t-il sur le disque",
+      "donne-moi mon utilisation du disque",
+      "ai-je assez d'espace disque"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_extra_langs",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_extra_langs",
+     "lang": "fr-fr",
+     "samples": [
+      "as-tu des langues secondaires",
+      "quelles autres langues parles-tu",
+      "quelles langues supplémentaires as-tu",
+      "donne-moi tes langues supplémentaires",
+      "parles-tu d'autres langues",
+      "quelles langues secondaires connais-tu",
+      "liste tes langues supplémentaires",
+      "connais-tu plus d'une langue"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_gpu",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_gpu",
+     "lang": "fr-fr",
+     "samples": [
+      "as-tu un GPU",
+      "utilises-tu un GPU",
+      "est-ce que ton système a un GPU",
+      "y a-t-il un GPU dans ton système",
+      "diagnostic GPU",
+      "dis-moi si tu as une carte graphique",
+      "as-tu une carte graphique",
+      "y a-t-il une carte graphique installée"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_kernel_version",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_kernel_version",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est ta version du noyau",
+      "donne-moi ta version du noyau",
+      "quel noyau utilises-tu",
+      "quelle version du noyau utilises-tu",
+      "diagnostic du noyau",
+      "parle-moi de ton noyau",
+      "quel noyau est installé",
+      "donne-moi la version du noyau"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_langs",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_langs",
+     "lang": "fr-fr",
+     "samples": [
+      "quelles langues peux-tu parler",
+      "quelles langues peux-tu comprendre",
+      "liste tes langues",
+      "quelles langues sont disponibles",
+      "quelles langues connais-tu",
+      "donne-moi les langues que tu parles",
+      "combien de langues parles-tu",
+      "langues disponibles"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_memory_usage",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_memory_usage",
+     "lang": "fr-fr",
+     "samples": [
+      "diagnostic mémoire",
+      "quelle est ton utilisation mémoire",
+      "combien de RAM utilises-tu",
+      "quel est ton état mémoire",
+      "quelle mémoire reste-t-il",
+      "combien de mémoire est libre",
+      "manques-tu de mémoire",
+      "utilisation actuelle de la mémoire"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_ovos_location",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_ovos_location",
+     "lang": "fr-fr",
+     "samples": [
+      "où es-tu",
+      "quelle est ta position",
+      "donne-moi ta localisation",
+      "où te trouves-tu",
+      "dans quelle ville es-tu",
+      "dis-moi où tu es",
+      "sais-tu où tu es",
+      "quelle est la localisation de cet appareil"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_primary_lang",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_primary_lang",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est ta langue principale",
+      "quelle est ta langue par défaut",
+      "quelle langue utilises-tu",
+      "quelle est ta langue système",
+      "quelle langue parles-tu par défaut",
+      "donne-moi ta langue système",
+      "dans quelle langue es-tu configuré",
+      "dis-moi ta langue principale"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_uptime",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_uptime",
+     "lang": "fr-fr",
+     "samples": [
+      "depuis combien de temps (fonctionnes|marches)-tu",
+      "depuis combien de temps es-tu allumé",
+      "quand as-tu démarré pour la dernière fois",
+      "quand t'es-tu allumé pour la dernière fois",
+      "depuis combien de temps le système est-il en marche",
+      "donne-moi ton temps de fonctionnement",
+      "ça fait combien de temps que tu as démarré",
+      "depuis quand tournes-tu"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_user_lang",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_user_lang",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle langue est-ce que je parle",
+      "quelle langue utilisons-nous",
+      "dans quelle langue sommes-nous en train de parler",
+      "en quelle langue est-ce que je parle",
+      "dis-moi la langue que nous parlons",
+      "quelle langue est-ce que j'utilise",
+      "dans quelle langue je m'exprime",
+      "quelle langue entends-tu de moi"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-diagnostics.openvoiceos",
+    "intent_name": "query_user_location",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-diagnostics.openvoiceos",
+     "intent_name": "query_user_location",
+     "lang": "fr-fr",
+     "samples": [
+      "où suis-je",
+      "quelle est ma position",
+      "donne-moi ma localisation",
+      "où est-ce que je me trouve",
+      "dans quelle ville suis-je",
+      "dis-moi où je suis",
+      "sais-tu où je suis",
+      "quelle est ma ville actuelle"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-dictation.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-dictation.openvoiceos",
+    "intent_name": "start_dictation",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-dictation.openvoiceos",
+     "intent_name": "start_dictation",
+     "lang": "fr-fr",
+     "samples": [
+      "active la dictée",
+      "active la dictée sous le nom {name}",
+      "active la transcription",
+      "commence la dictée",
+      "commence la dictée sous le nom {name}",
+      "commence à prendre des notes",
+      "commence à prendre des notes sous le nom {name}",
+      "démarre la dictée",
+      "démarre la dictée nommée {name}",
+      "démarre la transcription",
+      "enregistre ce que je dicte",
+      "lance la dictée",
+      "lance la dictée sous le nom {name}",
+      "prends des notes",
+      "prends des notes sous le nom {name}",
+      "écris (tout|) ce que je (dicte|vais dire)",
+      "je (voudrais|souhaite) dicter (quelque chose|un texte)",
+      "note tout ce que je dis",
+      "(transcris|note) ce que je (vais dire|raconte)",
+      "mets-toi à écrire ce que je dis",
+      "écris (tout|) ce que je (te dis|vais te dire)"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-dictation.openvoiceos",
+    "intent_name": "stop_dictation",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-dictation.openvoiceos",
+     "intent_name": "stop_dictation",
+     "lang": "fr-fr",
+     "samples": [
+      "arrête la dictée",
+      "arrête la transcription",
+      "termine la dictée",
+      "termine la transcription",
+      "désactive la dictée",
+      "désactive la transcription",
+      "arrête de prendre des notes",
+      "cesse la dictée",
+      "stoppe la dictée",
+      "stoppe la transcription",
+      "j'ai (terminé|fini) (la dictée|ma dictée)",
+      "arrête de (transcrire|noter) ce que je dis",
+      "c'est fini pour la dictée",
+      "n'écris plus rien",
+      "j'ai terminé de dicter",
+      "tu peux arrêter (d'écrire|la dictée)",
+      "plus besoin de (dictée|noter)"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-hello-world.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-hello-world.openvoiceos",
+    "intent_name": "greetings",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-hello-world.openvoiceos",
+     "intent_name": "greetings",
+     "lang": "fr-fr",
+     "samples": [
+      "bonjour le monde",
+      "bonsoir le monde",
+      "coucou le monde",
+      "salut le monde",
+      "bonjour",
+      "salut",
+      "coucou",
+      "bonsoir",
+      "rebonjour",
+      "bonjour à toi",
+      "salut à toi",
+      "content de te voir",
+      "ça fait longtemps",
+      "quoi de neuf",
+      "hé salut",
+      "bien le bonjour",
+      "bonne journée à toi",
+      "salut mon ami",
+      "je suis content de te revoir",
+      "bonjour tout le monde",
+      "salutations",
+      "hé ho",
+      "bonjour l'ami"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-hello-world.openvoiceos",
+    "intent_name": "hello_world_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-hello-world.openvoiceos",
+     "intent_name": "hello_world_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "salutations",
+      "bonjour le monde",
+      "dis bonjour le monde",
+      "peux-tu dire bonjour le monde",
+      "bonjour le monde s'il te plaît",
+      "fais-moi un bonjour le monde",
+      "fais l'exemple bonjour le monde",
+      "salue le monde",
+      "dis salut au monde"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-hello-world.openvoiceos",
+    "intent_name": "how_are_you",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-hello-world.openvoiceos",
+     "intent_name": "how_are_you",
+     "lang": "fr-fr",
+     "samples": [
+      "bonjour le monde, comment vas-tu",
+      "bonjour le monde, comment ça va",
+      "hello world, comment vas-tu",
+      "hello world, comment ça va",
+      "comment vas-tu",
+      "comment ça va",
+      "comment vas-tu aujourd'hui",
+      "comment te sens-tu",
+      "est-ce que tu vas bien",
+      "comment s'est passée ta journée",
+      "comment se passe ta journée",
+      "tu vas bien",
+      "quoi de neuf chez toi"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-hello-world.openvoiceos",
+    "intent_name": "thank_you_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-hello-world.openvoiceos",
+     "intent_name": "thank_you_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "merci",
+      "merci beaucoup",
+      "merci bien",
+      "merci infiniment",
+      "je te remercie",
+      "merci du fond du cœur",
+      "mille mercis",
+      "c'est gentil merci",
+      "merci pour tout"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-icanhazdadjokes.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "intent_name": "joke",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+     "intent_name": "joke",
+     "lang": "fr-fr",
+     "samples": [
+      "connais-tu des blagues",
+      "dit une blague",
+      "fais moi rire",
+      "peux-tu raconter des blagues",
+      "raconte-moi une blague"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+    "intent_name": "search_joke",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-icanhazdadjokes.openvoiceos",
+     "intent_name": "search_joke",
+     "lang": "fr-fr",
+     "samples": [
+      "Connais-tu des blagues sur {query}",
+      "blague sur {query}",
+      "dis une blague sur {query}",
+      "peux-tu raconter des blagues sur {query}",
+      "raconte-moi une blague sur {query}"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-ip.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-ip.openvoiceos",
+    "intent_name": "ip",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ip.openvoiceos",
+     "intent_name": "ip",
+     "lang": "fr-fr",
+     "samples": [
+      "(quelle est|dis-moi|montre-moi) mon adresse (IP|réseau)",
+      "quelle est mon IP",
+      "quelle est mon IP sur le réseau local",
+      "quelle IP as-tu sur le réseau"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-ip.openvoiceos",
+    "intent_name": "last_ip_digits",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ip.openvoiceos",
+     "intent_name": "last_ip_digits",
+     "lang": "fr-fr",
+     "samples": [
+      "(quels sont|dis-moi) les derniers (chiffres|nombres) de mon [adresse] IP",
+      "la partie finale de mon [adresse] IP",
+      "par quoi (se termine|finit) mon [adresse] IP",
+      "quelle est la fin de mon [adresse] IP",
+      "quelle est la dernière partie de mon IP"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-ip.openvoiceos",
+    "intent_name": "public_ip",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ip.openvoiceos",
+     "intent_name": "public_ip",
+     "lang": "fr-fr",
+     "samples": [
+      "(quelle est|dis-moi|montre-moi) mon (adresse IP|IP) (publique|externe)",
+      "IP (publique|externe)",
+      "quelle est mon adresse IP publique",
+      "dis-moi mon IP externe",
+      "quelle est mon adresse IP vue depuis l'extérieur sur internet",
+      "quelle IP les autres voient-ils sur internet",
+      "dis-moi mon adresse IP externe visible depuis internet",
+      "quelle est mon IP publique sur internet"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-ip.openvoiceos",
+    "intent_name": "what_ssid",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ip.openvoiceos",
+     "intent_name": "what_ssid",
+     "lang": "fr-fr",
+     "samples": [
+      "quel (réseau|ssid|wifi) utilises-tu",
+      "sur quel (réseau|wifi) es-tu",
+      "à quel (réseau|ssid|wifi) es-tu connecté"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-ip.openvoiceos",
+    "intent_name": "wifi_signal",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-ip.openvoiceos",
+     "intent_name": "wifi_signal",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est la force de mon signal wifi",
+      "comment est ma connexion wifi",
+      "mon wifi est-il bon"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-local-media.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-local-media.openvoiceos",
+    "intent_name": "open.file.browser",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-local-media.openvoiceos",
+     "intent_name": "open.file.browser",
+     "lang": "fr-fr",
+     "samples": [
+      "affiche l'explorateur de fichiers",
+      "affiche le navigateur USB",
+      "affiche ma clé USB",
+      "affiche mon explorateur de fichiers",
+      "lance l'explorateur de fichiers",
+      "lance le navigateur USB",
+      "ouvre l'explorateur de fichiers",
+      "ouvre le navigateur USB",
+      "ouvre ma clé USB",
+      "ouvre mon explorateur de fichiers"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-local-media.openvoiceos",
+    "intent_name": "open.file.browser",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-local-media.openvoiceos",
+     "intent_name": "open.file.browser",
+     "lang": "fr-fr",
+     "samples": [
+      "ouvre l'explorateur de fichiers",
+      "affiche l'explorateur de fichiers",
+      "lance l'explorateur de fichiers",
+      "ouvre mon explorateur de fichiers",
+      "affiche mon explorateur de fichiers",
+      "ouvre le navigateur USB",
+      "affiche le navigateur USB",
+      "lance le navigateur USB",
+      "ouvre ma clé USB",
+      "affiche ma clé USB"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-naptime.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-naptime.openvoiceos",
+    "intent_name": "naptime",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-naptime.openvoiceos",
+     "intent_name": "naptime",
+     "lang": "fr-fr",
+     "samples": [
+      "va te coucher",
+      "mode veille",
+      "fais une sieste",
+      "mets-toi en veille",
+      "va dormir",
+      "il est temps de dormir",
+      "c'est l'heure de la sieste"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-naptime.openvoiceos",
+    "intent_name": "wake_up",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-naptime.openvoiceos",
+     "intent_name": "wake_up",
+     "lang": "fr-fr",
+     "samples": [
+      "(réveille-toi|réveille toi)",
+      "debout",
+      "lève-toi",
+      "écoute-moi à nouveau",
+      "recommence à écouter",
+      "c'est l'heure de se réveiller",
+      "arrête de dormir"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-news.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-news.openvoiceos",
+    "intent_name": "news",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-news.openvoiceos",
+     "intent_name": "news",
+     "lang": "fr-fr",
+     "samples": [
+      "je veux écouter les actualités",
+      "je veux écouter les dernières actualités",
+      "je veux écouter les actualités locales",
+      "je veux écouter les actualités régionales",
+      "donne-moi les actualités",
+      "donne-moi les dernières actualités",
+      "donne-moi les actualités locales",
+      "donne-moi les actualités régionales",
+      "joue les actualités",
+      "joue les dernières actualités",
+      "joue les actualités locales",
+      "joue les actualités régionales",
+      "quelles sont les actualités",
+      "quelles sont les dernières actualités",
+      "quelles sont les actualités locales",
+      "quelles sont les actualités régionales",
+      "donne-moi les actualités internationales",
+      "donne-moi les actualités mondiales",
+      "je veux les actualités mondiales",
+      "je veux les actualités internationales",
+      "joue les actualités mondiales",
+      "joue les actualités internationales",
+      "quelles sont les nouvelles du monde",
+      "quelles sont les actualités mondiales",
+      "y a-t-il de grandes nouvelles dans le monde"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-parrot.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "did_you_hear_me",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "did_you_hear_me",
+     "lang": "fr-fr",
+     "samples": [
+      "est-ce que tu m'entends",
+      "est-ce que tu as entendu",
+      "tu m'entends",
+      "tu as entendu",
+      "tu as bien entendu",
+      "tu m'as bien entendu",
+      "est-ce que ça t'est parvenu",
+      "tu écoutais"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "repeat_stt",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "repeat_stt",
+     "lang": "fr-fr",
+     "samples": [
+      "qu'est-ce que je viens de dire",
+      "dis-moi ce que je viens de dire",
+      "qu'est-ce que je t'ai dit",
+      "qu'est-ce que tu m'as entendu dire",
+      "répète ce que je viens de dire",
+      "dis-moi mes derniers mots",
+      "qu'est-ce que tu as entendu",
+      "redis-moi ma phrase"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "repeat_tts",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "repeat_tts",
+     "lang": "fr-fr",
+     "samples": [
+      "peux-tu répéter",
+      "répète ça",
+      "répète ce que tu viens de dire",
+      "qu'est-ce que tu viens de dire",
+      "qu'est-ce que tu as dit",
+      "répète s'il te plaît",
+      "redis-le",
+      "tu peux répéter s'il te plaît",
+      "je n'ai pas compris répète",
+      "redis ça une fois de plus",
+      "comment",
+      "redis-moi ça",
+      "qu'est-ce que tu viens de me dire",
+      "pardon, qu'est-ce que tu as dit",
+      "t'as dit quoi",
+      "tu disais quoi",
+      "redis ce que tu viens de dire"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "speak",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "speak",
+     "lang": "fr-fr",
+     "samples": [
+      "dis {sentence}",
+      "répète {sentence}",
+      "répète {sentence} après moi",
+      "dis {sentence} après moi",
+      "répète après moi {sentence}",
+      "dis après moi {sentence}",
+      "prononce {sentence}",
+      "prononce {sentence} après moi",
+      "dis bonsoir",
+      "répète après moi le chat est sur la table",
+      "dis bonne année",
+      "dis j'ai sommeil",
+      "répète à plus tard",
+      "dis après moi un deux trois quatre",
+      "dis comment ça va aujourd'hui",
+      "dis il fait très froid",
+      "répète j'aime le chocolat",
+      "dis aujourd'hui c'est lundi",
+      "dis bon appétit",
+      "répète bon week-end"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "start_parrot",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "start_parrot",
+     "lang": "fr-fr",
+     "samples": [
+      "active le mode perroquet",
+      "démarre le mode perroquet",
+      "commence à répéter",
+      "répète tout",
+      "mode perroquet",
+      "répète tout ce que tu entends",
+      "copie tout ce que je dis",
+      "active le perroquet"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-parrot.openvoiceos",
+    "intent_name": "stop_parrot",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-parrot.openvoiceos",
+     "intent_name": "stop_parrot",
+     "lang": "fr-fr",
+     "samples": [
+      "arrête le mode perroquet",
+      "désactive le mode perroquet",
+      "arrête de répéter",
+      "stoppe le perroquet",
+      "coupe le mode perroquet",
+      "arrête de me copier",
+      "arrête de tout répéter",
+      "perroquet arrêt",
+      "sors du mode perroquet",
+      "désactive le perroquet",
+      "quitte le perroquet",
+      "sors du perroquet"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-personal.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-personal.openvoiceos",
+    "intent_name": "what_are_you",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-personal.openvoiceos",
+     "intent_name": "what_are_you",
+     "lang": "fr-fr",
+     "samples": [
+      "comment pourrais-tu te définir",
+      "comment te définirais-tu",
+      "de quelle nature es-tu",
+      "décris ce que tu es",
+      "décris-moi ce que tu es",
+      "peux-tu te décrire",
+      "qu'es-tu exactement",
+      "qu'est-ce que tu es",
+      "quel genre d'assistant es-tu",
+      "quel type d'assistant es-tu",
+      "quel type de logiciel es-tu",
+      "quel type de programme es-tu",
+      "quelle est ta classification",
+      "quelle est ta nature",
+      "quelle sorte d'assistant es-tu",
+      "tu appartiens à quelle catégorie",
+      "tu es quoi exactement",
+      "tu te classes dans quelle catégorie"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-personal.openvoiceos",
+    "intent_name": "when_were_you_born",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-personal.openvoiceos",
+     "intent_name": "when_were_you_born",
+     "lang": "fr-fr",
+     "samples": [
+      "depuis quand existes-tu",
+      "en quelle année es-tu né",
+      "quand a commencé ton histoire",
+      "quand as-tu été conçu",
+      "quand as-tu été créé",
+      "quand as-tu été lancé",
+      "quand as-tu été publié pour la première fois",
+      "quand es-tu né",
+      "quand es-tu apparu",
+      "quand ta première version est-elle sortie",
+      "quelle est ta date de naissance",
+      "quelle est ton année de naissance",
+      "tu existes depuis quand"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-personal.openvoiceos",
+    "intent_name": "where_were_you_born",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-personal.openvoiceos",
+     "intent_name": "where_were_you_born",
+     "lang": "fr-fr",
+     "samples": [
+      "dans quel endroit as-tu été créé",
+      "dans quel lieu es-tu né",
+      "d'où es-tu originaire",
+      "d'où viens-tu",
+      "où a commencé ton histoire",
+      "où as-tu été créé",
+      "où as-tu été développé",
+      "où es-tu né",
+      "où est née ta première version",
+      "où ta première version est-elle sortie",
+      "quelle est ta ville d'origine",
+      "quelle est ton origine"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-personal.openvoiceos",
+    "intent_name": "who_are_you",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-personal.openvoiceos",
+     "intent_name": "who_are_you",
+     "lang": "fr-fr",
+     "samples": [
+      "comment t'appelles-tu",
+      "comment te présentes-tu",
+      "donne-moi ton nom",
+      "peux-tu te présenter",
+      "présente-toi",
+      "quel est ton nom",
+      "qui es-tu"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-personal.openvoiceos",
+    "intent_name": "who_made_you",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-personal.openvoiceos",
+     "intent_name": "who_made_you",
+     "lang": "fr-fr",
+     "samples": [
+      "par qui as-tu été conçu",
+      "par qui as-tu été créé",
+      "par qui as-tu été développé",
+      "par qui as-tu été fabriqué",
+      "par qui as-tu été inventé",
+      "par qui as-tu été programmé",
+      "quelle communauté t'a créé",
+      "quelle communauté t'a développé",
+      "quelle équipe s'occupe de toi",
+      "quelle équipe t'a conçu",
+      "quelle équipe t'a créé",
+      "qui a contribué à ta création",
+      "qui a créé ta première version",
+      "qui a développé ta première version",
+      "qui a inventé ta première version",
+      "qui a participé à ta création",
+      "qui a programmé ta première version",
+      "qui est derrière ta création",
+      "qui est responsable de ta création",
+      "qui est ton concepteur",
+      "qui est ton créateur",
+      "qui est ton développeur",
+      "qui est à l'origine de ta création",
+      "qui s'occupe de ton développement",
+      "qui sont tes créateurs",
+      "qui t'a conçu",
+      "qui t'a créé",
+      "qui t'a développé",
+      "qui t'a fabriqué",
+      "qui t'a inventé",
+      "qui t'a mis au point",
+      "qui t'a programmé",
+      "qui t'a réalisé"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-speedtest.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-speedtest.openvoiceos",
+    "intent_name": "speedtest_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-speedtest.openvoiceos",
+     "intent_name": "speedtest_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "(lance|exécute|démarre) (un|le|) test de (débit|vitesse)",
+      "test de (débit|vitesse) [internet]",
+      "quelle est la vitesse de ma connexion [internet]"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-volume.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "change_volume",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "change_volume",
+     "lang": "fr-fr",
+     "samples": [
+      "(change|mets|règle) le volume (à|sur) {amount}",
+      "volume à {amount} pour cent",
+      "mets le volume à cinquante",
+      "mets le volume à {amount} pour cent",
+      "volume {amount}",
+      "peux-tu mettre le volume à {amount}",
+      "je veux le volume à {amount}",
+      "règle le volume sur {amount} pour cent"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "current_volume",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "current_volume",
+     "lang": "fr-fr",
+     "samples": [
+      "quel est le volume actuel",
+      "volume",
+      "quel est le niveau du volume",
+      "c'est à combien le volume",
+      "à quel volume on est",
+      "dis-moi le volume",
+      "le son est à combien",
+      "vérifie le volume"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "increase_volume",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "increase_volume",
+     "lang": "fr-fr",
+     "samples": [
+      "volume plus fort",
+      "plus de volume",
+      "mets le volume plus fort",
+      "monte le son",
+      "monte le volume",
+      "mets plus fort",
+      "monte le son un peu",
+      "plus fort s'il te plaît",
+      "augmente le son",
+      "augmente un petit peu le volume",
+      "monte le volume un peu"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "less_volume",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "less_volume",
+     "lang": "fr-fr",
+     "samples": [
+      "réduis le volume",
+      "volume plus bas",
+      "moins de volume",
+      "mets le volume moins fort",
+      "baisse le son",
+      "diminue le volume",
+      "mets moins fort",
+      "baisse le son un peu",
+      "moins fort s'il te plaît",
+      "diminue le son"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_level",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_level",
+     "lang": "fr-fr",
+     "samples": [
+      "mets le volume à <level>",
+      "niveau de volume <level>",
+      "remets le volume <level>",
+      "<level> le volume",
+      "volume <level>",
+      "mets le volume <level>",
+      "mets le volume au <level>",
+      "règle le volume au <level>",
+      "volume au <level>",
+      "règle le volume sur <level>",
+      "passe le volume à <level>",
+      "remets-le à <level>"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_max_boost",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_max_boost",
+     "lang": "fr-fr",
+     "samples": [
+      "monte le volume au maximum",
+      "mets le volume à fond",
+      "monte le son à fond",
+      "mets le son au maximum",
+      "volume à fond",
+      "pousse le volume au maximum",
+      "mets le son le plus fort possible",
+      "le plus fort possible",
+      "monte le volume le plus fort possible"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_mute",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_mute",
+     "lang": "fr-fr",
+     "samples": [
+      "coupe l'audio",
+      "coupe le son",
+      "mets en sourdine",
+      "(mute|coupe le son|coupe le volume)",
+      "sois silencieux",
+      "plus de son",
+      "éteins le son",
+      "coupe tout le son"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_mute_toggle",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_mute_toggle",
+     "lang": "fr-fr",
+     "samples": [
+      "active ou coupe la sourdine",
+      "bascule la sourdine",
+      "(active le mode muet|mute le son)",
+      "active (l'audio|le son|le volume)",
+      "inverse la sourdine",
+      "active ou désactive le son",
+      "change l'état de la sourdine",
+      "mets ou enlève la sourdine",
+      "bascule le son",
+      "bascule-le"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_reset",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_reset",
+     "lang": "fr-fr",
+     "samples": [
+      "rétablis le volume",
+      "remets le volume par défaut",
+      "réinitialise le volume",
+      "remets le volume normal",
+      "remets le son par défaut",
+      "remets le volume comme avant",
+      "volume par défaut s'il te plaît",
+      "rétablis le niveau habituel du son",
+      "remets le volume au réglage par défaut",
+      "remets le niveau du volume par défaut"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-volume.openvoiceos",
+    "intent_name": "volume_unmute",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-volume.openvoiceos",
+     "intent_name": "volume_unmute",
+     "lang": "fr-fr",
+     "samples": [
+      "enlève la sourdine",
+      "remets le son",
+      "rétablis le son",
+      "(réactive le son|démute|unmute)",
+      "remets le son s'il te plaît",
+      "redonne-moi le son",
+      "arrête la sourdine",
+      "je veux entendre à nouveau",
+      "réactive l'audio",
+      "je veux entendre le son à nouveau",
+      "je veux réentendre",
+      "remets l'audio"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-weather.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "humidity",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "humidity",
+     "lang": "fr-fr",
+     "samples": [
+      "quel est le taux d'humidité",
+      "quelle est l'humidité",
+      "l'air est-il humide",
+      "y a-t-il beaucoup d'humidité à {location}",
+      "y a-t-il beaucoup d'humidité en {location}",
+      "y a-t-il beaucoup d'humidité au {location}",
+      "y a-t-il beaucoup d'humidité aux {location}",
+      "y a-t-il beaucoup d'humidité dans {location}",
+      "quel est le taux d'humidité [à {location}]",
+      "l'air est-il humide [à {location}]",
+      "combien d'humidité y a-t-il [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "is_wind",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "is_wind",
+     "lang": "fr-fr",
+     "samples": [
+      "y a-t-il du vent",
+      "quel vent fait-il",
+      "est-ce venteux à {location}",
+      "est-ce venteux en {location}",
+      "est-ce venteux au {location}",
+      "est-ce venteux aux {location}",
+      "est-ce venteux dans {location}",
+      "y aura-t-il du vent",
+      "y aura-t-il du vent à {location}",
+      "y aura-t-il du vent aujourd'hui",
+      "y aura-t-il du vent aujourd'hui à {location}",
+      "y aura-t-il du vent demain",
+      "y aura-t-il du vent demain à {location}",
+      "quelle force fait le vent",
+      "quelle force fait le vent à {location}",
+      "quelle force fait le vent aujourd'hui",
+      "quelle force fait le vent aujourd'hui à {location}",
+      "quelle force fait le vent demain",
+      "quelle force fait le vent demain à {location}",
+      "(y aura-t-il|est-ce qu'il y aura) (des rafales|du vent fort) (demain|ce soir|cet après-midi)",
+      "le vent souffle-t-il fort [à {location}]",
+      "y aura-t-il des rafales (aujourd'hui|demain) [à {location}]",
+      "quelle est la vitesse du vent [à {location}]",
+      "y a-t-il beaucoup de vent [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "next_rain",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "next_rain",
+     "lang": "fr-fr",
+     "samples": [
+      "quand pleuvra-t-il",
+      "quand va-t-il pleuvoir à nouveau",
+      "à quelle heure commencera la pluie",
+      "quand est la prochaine pluie à {location}",
+      "quand est la prochaine pluie en {location}",
+      "quand est la prochaine pluie au {location}",
+      "quand est la prochaine pluie aux {location}",
+      "quand est la prochaine pluie dans {location}",
+      "quand est-ce qu'il (pleuvra|va se mettre à pleuvoir)",
+      "quand va-t-il pleuvoir [à {location}]",
+      "quand la pluie va-t-elle arriver [à {location}]",
+      "dans combien de temps va-t-il pleuvoir [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "sunrise",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "sunrise",
+     "lang": "fr-fr",
+     "samples": [
+      "à quelle heure est le lever du soleil",
+      "quand le soleil se lève-t-il",
+      "quelle est l'heure du lever du soleil à {location}",
+      "quelle est l'heure du lever du soleil en {location}",
+      "quelle est l'heure du lever du soleil au {location}",
+      "quelle est l'heure du lever du soleil aux {location}",
+      "quelle est l'heure du lever du soleil dans {location}",
+      "donne-moi l'heure du lever du soleil",
+      "donne-moi l'heure du lever du soleil à {location}",
+      "donne-moi l'heure du lever du soleil aujourd'hui",
+      "donne-moi l'heure du lever du soleil aujourd'hui à {location}",
+      "donne-moi l'heure du lever du soleil demain",
+      "donne-moi l'heure du lever du soleil demain à {location}",
+      "dans combien de temps le soleil se lève",
+      "dans combien de temps le soleil se lève à {location}",
+      "dans combien de temps le soleil se lève aujourd'hui",
+      "dans combien de temps le soleil se lève aujourd'hui à {location}",
+      "dans combien de temps le soleil se lève demain",
+      "dans combien de temps le soleil se lève demain à {location}",
+      "quand le soleil se lève-t-il [à {location}]",
+      "à quelle heure est le lever du soleil [à {location}]",
+      "quand fait-il jour [à {location}]",
+      "le lever du soleil est à quelle heure [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "sunset",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "sunset",
+     "lang": "fr-fr",
+     "samples": [
+      "à quelle heure est le coucher du soleil",
+      "quand le soleil se couche-t-il",
+      "quelle est l'heure du coucher du soleil à {location}",
+      "quelle est l'heure du coucher du soleil en {location}",
+      "quelle est l'heure du coucher du soleil au {location}",
+      "quelle est l'heure du coucher du soleil aux {location}",
+      "quelle est l'heure du coucher du soleil dans {location}",
+      "donne-moi l'heure du coucher du soleil",
+      "donne-moi l'heure du coucher du soleil à {location}",
+      "donne-moi l'heure du coucher du soleil aujourd'hui",
+      "donne-moi l'heure du coucher du soleil aujourd'hui à {location}",
+      "donne-moi l'heure du coucher du soleil demain",
+      "donne-moi l'heure du coucher du soleil demain à {location}",
+      "dans combien de temps le soleil se couche",
+      "dans combien de temps le soleil se couche à {location}",
+      "dans combien de temps le soleil se couche aujourd'hui",
+      "dans combien de temps le soleil se couche aujourd'hui à {location}",
+      "dans combien de temps le soleil se couche demain",
+      "dans combien de temps le soleil se couche demain à {location}",
+      "à quelle heure (fait-il|il fait) nuit (aujourd'hui|demain)",
+      "quand (fait-il|est-ce qu'il fait) nuit [ce soir]",
+      "quand le soleil se couche-t-il [à {location}]",
+      "à quelle heure est le coucher du soleil [à {location}]",
+      "quand fait-il nuit [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "temperature",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "temperature",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est la température",
+      "quelle est la température actuelle",
+      "quelle est la température dehors",
+      "quelle est la température à {location}",
+      "quelle est la température en {location}",
+      "quelle est la température au {location}",
+      "quelle est la température aux {location}",
+      "quelle est la température dans {location}",
+      "combien fait-il",
+      "combien fait-il à {location}",
+      "combien fait-il en {location}",
+      "combien fait-il au {location}",
+      "combien fait-il aux {location}",
+      "combien fait-il dans {location}",
+      "ai-je besoin d'un manteau",
+      "ai-je besoin d'une veste à {location}",
+      "ai-je besoin d'une veste en {location}",
+      "ai-je besoin d'une veste au {location}",
+      "ai-je besoin d'une veste aux {location}",
+      "ai-je besoin d'une veste dans {location}",
+      "quelle température fera-t-il dans une heure",
+      "quelle température est prévue cet après-midi",
+      "quelle température est prévue ce soir à {location}",
+      "quelle température est prévue ce soir en {location}",
+      "quelle température est prévue ce soir au {location}",
+      "quelle température est prévue ce soir aux {location}",
+      "quelle température est prévue ce soir dans {location}",
+      "quelle sera la température maximale",
+      "quelle sera la température maximale demain",
+      "quelle sera la température maximale à {location}",
+      "quelle sera la température maximale en {location}",
+      "quelle sera la température maximale au {location}",
+      "quelle sera la température maximale aux {location}",
+      "quelle sera la température maximale dans {location}",
+      "quel sera le maximum demain à {location}",
+      "quel sera le maximum demain en {location}",
+      "quel sera le maximum demain au {location}",
+      "quel sera le maximum demain aux {location}",
+      "quel sera le maximum demain dans {location}",
+      "quelle sera la température minimale",
+      "quelle sera la température minimale demain",
+      "quel sera le minimum à {location}",
+      "quel sera le minimum en {location}",
+      "quel sera le minimum au {location}",
+      "quel sera le minimum aux {location}",
+      "quel sera le minimum dans {location}",
+      "fera-t-il froid cette nuit",
+      "combien de degrés (il fait|fait-il) (dehors|maintenant|aujourd'hui)",
+      "combien de degrés fait-il [à {location}]",
+      "quelle sera la température (maximale|minimale) [à {location}]",
+      "il fait combien [à {location}]",
+      "Va-t-il faire froid à {location}?",
+      "Fait-il froid à {location}?",
+      "Va-t-il faire froid aujourd'hui à {location}?",
+      "Va-t-il faire froid demain à {location}?",
+      "Quel froid va-t-il faire à {location}?",
+      "Y aura-t-il du gel à {location}?",
+      "Dois-je prendre une veste à {location}?",
+      "Fait-il frais dehors à {location}?",
+      "Va-t-il faire froid ce soir à {location}?",
+      "Va-t-il faire chaud à {location}?",
+      "Fait-il chaud à {location}?",
+      "Va-t-il faire chaud aujourd'hui à {location}?",
+      "Va-t-il faire chaud demain à {location}?",
+      "Quelle chaleur va-t-il faire à {location}?",
+      "Y aura-t-il une canicule à {location}?",
+      "Dois-je mettre de la crème solaire à {location}?",
+      "Fait-il chaud dehors à {location}?",
+      "Va-t-il faire chaud ce soir à {location}?",
+      "fera-t-il chaud",
+      "fera-t-il chaud à {location}",
+      "fera-t-il chaud aujourd'hui",
+      "fera-t-il chaud aujourd'hui à {location}",
+      "fera-t-il chaud demain",
+      "fera-t-il chaud demain à {location}",
+      "fait-il chaud",
+      "fait-il chaud à {location}",
+      "fait-il chaud aujourd'hui",
+      "fait-il chaud aujourd'hui à {location}",
+      "fait-il chaud demain",
+      "fait-il chaud demain à {location}",
+      "aura-t-on du chaud",
+      "aura-t-on du chaud à {location}",
+      "aura-t-on du chaud aujourd'hui",
+      "aura-t-on du chaud aujourd'hui à {location}",
+      "aura-t-on du chaud demain",
+      "aura-t-on du chaud demain à {location}",
+      "fera-t-il froid",
+      "fera-t-il froid à {location}",
+      "fera-t-il froid aujourd'hui",
+      "fera-t-il froid aujourd'hui à {location}",
+      "fera-t-il froid demain",
+      "fera-t-il froid demain à {location}",
+      "fait-il froid",
+      "fait-il froid à {location}",
+      "fait-il froid aujourd'hui",
+      "fait-il froid aujourd'hui à {location}",
+      "fait-il froid demain",
+      "fait-il froid demain à {location}",
+      "aura-t-on du froid",
+      "aura-t-on du froid à {location}",
+      "aura-t-on du froid aujourd'hui",
+      "aura-t-on du froid aujourd'hui à {location}",
+      "aura-t-on du froid demain",
+      "aura-t-on du froid demain à {location}",
+      "Fera-t-il chaud {day} à {location}?",
+      "Fera-t-il froid {day} à {location}?",
+      "(faut-il|est-ce qu'il faut) (prendre|mettre) (un manteau|une veste|un pull) [aujourd'hui|ce soir]",
+      "va-t-il faire (chaud|froid) (ce soir|demain après-midi|cet après-midi)",
+      "il fait (froid|chaud) dehors [à {location}]",
+      "va-t-il faire (froid|chaud) (demain|ce soir) [à {location}]",
+      "dois-je prendre un manteau",
+      "va-t-il faire froid [à {location}]",
+      "fait-il froid [à {location}]",
+      "fait-il froid en ce moment [à {location}]",
+      "il va faire froid [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "weather",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "weather",
+     "lang": "fr-fr",
+     "samples": [
+      "quel temps fait-il",
+      "quel temps fait-il en ce moment",
+      "quel temps fait-il à {location}",
+      "quel temps fait-il en {location}",
+      "quel temps fait-il au {location}",
+      "quel temps fait-il aux {location}",
+      "quel temps fait-il dans {location}",
+      "quelle est la météo actuelle",
+      "quelle est la météo en ce moment",
+      "donne-moi la météo",
+      "donne-moi la météo à {location}",
+      "donne-moi la météo en {location}",
+      "donne-moi la météo au {location}",
+      "donne-moi la météo aux {location}",
+      "donne-moi la météo dans {location}",
+      "quel temps fera-t-il demain",
+      "quel temps fera-t-il après-demain",
+      "quel temps fera-t-il lundi",
+      "quel temps fera-t-il mardi",
+      "quel temps fera-t-il mercredi",
+      "quel temps fera-t-il jeudi",
+      "quel temps fera-t-il vendredi",
+      "quel temps fera-t-il samedi",
+      "quel temps fera-t-il dimanche",
+      "quel temps fera-t-il demain à {location}",
+      "quel temps fera-t-il demain en {location}",
+      "quel temps fera-t-il demain au {location}",
+      "quel temps fera-t-il demain aux {location}",
+      "quel temps fera-t-il demain dans {location}",
+      "quel temps fera-t-il dans les prochaines heures",
+      "donne-moi la météo heure par heure",
+      "quelle est la prévision heure par heure",
+      "quel temps fera-t-il cet après-midi",
+      "quel temps fera-t-il ce soir",
+      "quel temps fera-t-il ce soir à {location}",
+      "quel temps fera-t-il ce soir en {location}",
+      "quel temps fera-t-il ce soir au {location}",
+      "quel temps fera-t-il ce soir aux {location}",
+      "quel temps fera-t-il ce soir dans {location}",
+      "quel temps fera-t-il ce week-end",
+      "quelle est la prévision pour ce week-end",
+      "quel temps fera-t-il ce week-end à {location}",
+      "quel temps fera-t-il ce week-end en {location}",
+      "quel temps fera-t-il ce week-end au {location}",
+      "quel temps fera-t-il ce week-end aux {location}",
+      "quel temps fera-t-il ce week-end dans {location}",
+      "est-ce qu'il va pleuvoir ce week-end",
+      "quel temps fera-t-il pendant les 2 prochains jours",
+      "quel temps fera-t-il pendant les 3 prochains jours",
+      "quel temps fera-t-il pendant les 4 prochains jours",
+      "quel temps fera-t-il pendant les 5 prochains jours",
+      "quel temps fera-t-il pendant les 6 prochains jours",
+      "quel temps fera-t-il pendant les 7 prochains jours",
+      "quelle est la météo cette semaine",
+      "montre-moi la prévision sur 7 jours",
+      "quel temps fera-t-il cette semaine à {location}",
+      "quel temps fera-t-il cette semaine en {location}",
+      "quel temps fera-t-il cette semaine au {location}",
+      "quel temps fera-t-il cette semaine aux {location}",
+      "quel temps fera-t-il cette semaine dans {location}",
+      "Quel temps fera-t-il à {location}?",
+      "Quelle est la météo à {location}?",
+      "Quel temps fera-t-il aujourd'hui à {location}?",
+      "Quel temps fera-t-il demain à {location}?",
+      "Dis-moi la météo à {location}",
+      "Donne-moi les prévisions météo pour {location}",
+      "Météo à {location}",
+      "Prévisions météo pour {location}",
+      "quel temps fait-il en {unit}",
+      "quelle est la météo en {unit} à {location}",
+      "il fera quel temps (demain|ce week-end|aujourd'hui)",
+      "quel temps il va faire (demain|ce week-end)",
+      "quel temps fera-t-il (demain|ce week-end|cette semaine) [à {location}]",
+      "donne-moi la météo [à {location}]",
+      "c'est quoi la météo [à {location}]",
+      "quel temps fait-il (maintenant|en ce moment|dehors) [à {location}]",
+      "dis-moi le temps qu'il fait [à {location}]",
+      "quelle est la météo en ce moment [à {location}]",
+      "il fait beau dehors [à {location}]"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-weather.openvoiceos",
+    "intent_name": "weather_condition",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-weather.openvoiceos",
+     "intent_name": "weather_condition",
+     "lang": "fr-fr",
+     "samples": [
+      "est-ce que le ciel est dégagé",
+      "y a-t-il du soleil",
+      "est-ce nuageux",
+      "est-ce couvert à {location}",
+      "est-ce couvert en {location}",
+      "est-ce couvert au {location}",
+      "est-ce couvert aux {location}",
+      "est-ce couvert dans {location}",
+      "est-ce nuageux à {location}",
+      "est-ce nuageux aujourd'hui",
+      "est-ce nuageux aujourd'hui à {location}",
+      "est-ce nuageux demain",
+      "est-ce nuageux demain à {location}",
+      "est-ce que c'est nuageux",
+      "est-ce que c'est nuageux à {location}",
+      "est-ce que c'est nuageux aujourd'hui",
+      "est-ce que c'est nuageux aujourd'hui à {location}",
+      "est-ce que c'est nuageux demain",
+      "est-ce que c'est nuageux demain à {location}",
+      "est-ce que ce sera nuageux",
+      "est-ce que ce sera nuageux à {location}",
+      "est-ce que ce sera nuageux aujourd'hui",
+      "est-ce que ce sera nuageux aujourd'hui à {location}",
+      "est-ce que ce sera nuageux demain",
+      "est-ce que ce sera nuageux demain à {location}",
+      "y a-t-il des nuages",
+      "y a-t-il des nuages à {location}",
+      "y a-t-il des nuages aujourd'hui",
+      "y a-t-il des nuages aujourd'hui à {location}",
+      "y a-t-il des nuages demain",
+      "y a-t-il des nuages demain à {location}",
+      "y aura-t-il des nuages",
+      "y aura-t-il des nuages à {location}",
+      "y aura-t-il des nuages aujourd'hui",
+      "y aura-t-il des nuages aujourd'hui à {location}",
+      "y aura-t-il des nuages demain",
+      "y aura-t-il des nuages demain à {location}",
+      "y a-t-il du brouillard",
+      "est-ce brumeux",
+      "le brouillard est-il prévu à {location}",
+      "le brouillard est-il prévu en {location}",
+      "le brouillard est-il prévu au {location}",
+      "le brouillard est-il prévu aux {location}",
+      "le brouillard est-il prévu dans {location}",
+      "va-t-il pleuvoir",
+      "est-ce qu'il pleut",
+      "dois-je prendre un parapluie",
+      "y a-t-il de la pluie prévue à {location}",
+      "y a-t-il de la pluie prévue en {location}",
+      "y a-t-il de la pluie prévue au {location}",
+      "y a-t-il de la pluie prévue aux {location}",
+      "y a-t-il de la pluie prévue dans {location}",
+      "va-t-il neiger",
+      "est-ce qu'il neige",
+      "y a-t-il de la neige prévue à {location}",
+      "y a-t-il de la neige prévue en {location}",
+      "y a-t-il de la neige prévue au {location}",
+      "y a-t-il de la neige prévue aux {location}",
+      "y a-t-il de la neige prévue dans {location}",
+      "y a-t-il de l'orage",
+      "un orage est-il prévu",
+      "y a-t-il des alertes météo à {location}",
+      "y a-t-il des alertes météo en {location}",
+      "y a-t-il des alertes météo au {location}",
+      "y a-t-il des alertes météo aux {location}",
+      "y a-t-il des alertes météo dans {location}",
+      "est-ce qu'il pleut à {location}",
+      "est-ce qu'il pleut aujourd'hui",
+      "est-ce qu'il pleut aujourd'hui à {location}",
+      "est-ce qu'il pleut demain",
+      "est-ce qu'il pleut demain à {location}",
+      "va-t-il pleuvoir à {location}",
+      "va-t-il pleuvoir aujourd'hui",
+      "va-t-il pleuvoir aujourd'hui à {location}",
+      "va-t-il pleuvoir demain",
+      "va-t-il pleuvoir demain à {location}",
+      "y a-t-il de la pluie",
+      "y a-t-il de la pluie à {location}",
+      "y a-t-il de la pluie aujourd'hui",
+      "y a-t-il de la pluie aujourd'hui à {location}",
+      "y a-t-il de la pluie demain",
+      "y a-t-il de la pluie demain à {location}",
+      "y aura-t-il de la pluie",
+      "y aura-t-il de la pluie à {location}",
+      "y aura-t-il de la pluie aujourd'hui",
+      "y aura-t-il de la pluie aujourd'hui à {location}",
+      "y aura-t-il de la pluie demain",
+      "y aura-t-il de la pluie demain à {location}",
+      "la pluie est-elle prévue",
+      "la pluie est-elle prévue à {location}",
+      "la pluie est-elle prévue aujourd'hui",
+      "la pluie est-elle prévue aujourd'hui à {location}",
+      "la pluie est-elle prévue demain",
+      "la pluie est-elle prévue demain à {location}",
+      "dois-je prendre un parapluie à {location}",
+      "dois-je prendre un parapluie aujourd'hui",
+      "dois-je prendre un parapluie aujourd'hui à {location}",
+      "dois-je prendre un parapluie demain",
+      "dois-je prendre un parapluie demain à {location}",
+      "est-ce qu'on aura de la pluie",
+      "est-ce qu'on aura de la pluie à {location}",
+      "est-ce qu'on aura de la pluie aujourd'hui",
+      "est-ce qu'on aura de la pluie aujourd'hui à {location}",
+      "est-ce qu'on aura de la pluie demain",
+      "est-ce qu'on aura de la pluie demain à {location}",
+      "la pluie arrive-t-elle",
+      "la pluie arrive-t-elle à {location}",
+      "la pluie arrive-t-elle aujourd'hui",
+      "la pluie arrive-t-elle aujourd'hui à {location}",
+      "la pluie arrive-t-elle demain",
+      "la pluie arrive-t-elle demain à {location}",
+      "est-ce qu'il neige à {location}",
+      "est-ce qu'il neige aujourd'hui",
+      "est-ce qu'il neige aujourd'hui à {location}",
+      "est-ce qu'il neige demain",
+      "est-ce qu'il neige demain à {location}",
+      "va-t-il neiger à {location}",
+      "va-t-il neiger aujourd'hui",
+      "va-t-il neiger aujourd'hui à {location}",
+      "va-t-il neiger demain",
+      "va-t-il neiger demain à {location}",
+      "y a-t-il de la neige",
+      "y a-t-il de la neige à {location}",
+      "y a-t-il de la neige aujourd'hui",
+      "y a-t-il de la neige aujourd'hui à {location}",
+      "y a-t-il de la neige demain",
+      "y a-t-il de la neige demain à {location}",
+      "y aura-t-il de la neige",
+      "y aura-t-il de la neige à {location}",
+      "y aura-t-il de la neige aujourd'hui",
+      "y aura-t-il de la neige aujourd'hui à {location}",
+      "y aura-t-il de la neige demain",
+      "y aura-t-il de la neige demain à {location}",
+      "la neige est-elle prévue",
+      "la neige est-elle prévue à {location}",
+      "la neige est-elle prévue aujourd'hui",
+      "la neige est-elle prévue aujourd'hui à {location}",
+      "la neige est-elle prévue demain",
+      "la neige est-elle prévue demain à {location}",
+      "est-ce qu'on aura de la neige",
+      "est-ce qu'on aura de la neige à {location}",
+      "est-ce qu'on aura de la neige aujourd'hui",
+      "est-ce qu'on aura de la neige aujourd'hui à {location}",
+      "est-ce qu'on aura de la neige demain",
+      "est-ce qu'on aura de la neige demain à {location}",
+      "la neige arrive-t-elle",
+      "la neige arrive-t-elle à {location}",
+      "la neige arrive-t-elle aujourd'hui",
+      "la neige arrive-t-elle aujourd'hui à {location}",
+      "la neige arrive-t-elle demain",
+      "la neige arrive-t-elle demain à {location}",
+      "est-ce que ça va neiger",
+      "est-ce que ça va neiger à {location}",
+      "est-ce que ça va neiger aujourd'hui",
+      "est-ce que ça va neiger aujourd'hui à {location}",
+      "est-ce que ça va neiger demain",
+      "est-ce que ça va neiger demain à {location}",
+      "y a-t-il du soleil à {location}",
+      "y a-t-il du soleil aujourd'hui",
+      "y a-t-il du soleil aujourd'hui à {location}",
+      "y a-t-il du soleil demain",
+      "y a-t-il du soleil demain à {location}",
+      "y aura-t-il du soleil",
+      "y aura-t-il du soleil à {location}",
+      "y aura-t-il du soleil aujourd'hui",
+      "y aura-t-il du soleil aujourd'hui à {location}",
+      "y aura-t-il du soleil demain",
+      "y aura-t-il du soleil demain à {location}",
+      "est-ce que le ciel est dégagé à {location}",
+      "est-ce que le ciel est dégagé aujourd'hui",
+      "est-ce que le ciel est dégagé aujourd'hui à {location}",
+      "est-ce que le ciel est dégagé demain",
+      "est-ce que le ciel est dégagé demain à {location}",
+      "le ciel sera-t-il dégagé",
+      "le ciel sera-t-il dégagé à {location}",
+      "le ciel sera-t-il dégagé aujourd'hui",
+      "le ciel sera-t-il dégagé aujourd'hui à {location}",
+      "le ciel sera-t-il dégagé demain",
+      "le ciel sera-t-il dégagé demain à {location}",
+      "fait-il soleil",
+      "fait-il soleil à {location}",
+      "fait-il soleil aujourd'hui",
+      "fait-il soleil aujourd'hui à {location}",
+      "fait-il soleil demain",
+      "fait-il soleil demain à {location}",
+      "est-ce qu'on aura du soleil",
+      "est-ce qu'on aura du soleil à {location}",
+      "est-ce qu'on aura du soleil aujourd'hui",
+      "est-ce qu'on aura du soleil aujourd'hui à {location}",
+      "est-ce qu'on aura du soleil demain",
+      "est-ce qu'on aura du soleil demain à {location}",
+      "le soleil est-il prévu",
+      "le soleil est-il prévu à {location}",
+      "le soleil est-il prévu aujourd'hui",
+      "le soleil est-il prévu aujourd'hui à {location}",
+      "le soleil est-il prévu demain",
+      "le soleil est-il prévu demain à {location}",
+      "est-ce dégagé",
+      "est-ce dégagé à {location}",
+      "est-ce dégagé aujourd'hui",
+      "est-ce dégagé aujourd'hui à {location}",
+      "est-ce dégagé demain",
+      "est-ce dégagé demain à {location}",
+      "est-ce qu'on aura des nuages",
+      "est-ce qu'on aura des nuages à {location}",
+      "est-ce qu'on aura des nuages aujourd'hui",
+      "est-ce qu'on aura des nuages aujourd'hui à {location}",
+      "est-ce qu'on aura des nuages demain",
+      "est-ce qu'on aura des nuages demain à {location}",
+      "fait-il très nuageux",
+      "fait-il très nuageux à {location}",
+      "fait-il très nuageux aujourd'hui",
+      "fait-il très nuageux aujourd'hui à {location}",
+      "fait-il très nuageux demain",
+      "fait-il très nuageux demain à {location}",
+      "y a-t-il beaucoup de nuages",
+      "y a-t-il beaucoup de nuages à {location}",
+      "y a-t-il beaucoup de nuages aujourd'hui",
+      "y a-t-il beaucoup de nuages aujourd'hui à {location}",
+      "y a-t-il beaucoup de nuages demain",
+      "y a-t-il beaucoup de nuages demain à {location}",
+      "y a-t-il du brouillard à {location}",
+      "y a-t-il du brouillard aujourd'hui",
+      "y a-t-il du brouillard aujourd'hui à {location}",
+      "y a-t-il du brouillard demain",
+      "y a-t-il du brouillard demain à {location}",
+      "y aura-t-il du brouillard",
+      "y aura-t-il du brouillard à {location}",
+      "y aura-t-il du brouillard aujourd'hui",
+      "y aura-t-il du brouillard aujourd'hui à {location}",
+      "y aura-t-il du brouillard demain",
+      "y aura-t-il du brouillard demain à {location}",
+      "le brouillard est-il prévu",
+      "le brouillard est-il prévu aujourd'hui",
+      "le brouillard est-il prévu aujourd'hui à {location}",
+      "le brouillard est-il prévu demain",
+      "le brouillard est-il prévu demain à {location}",
+      "est-ce brumeux à {location}",
+      "est-ce brumeux aujourd'hui",
+      "est-ce brumeux aujourd'hui à {location}",
+      "est-ce brumeux demain",
+      "est-ce brumeux demain à {location}",
+      "sera-t-il brumeux",
+      "sera-t-il brumeux à {location}",
+      "sera-t-il brumeux aujourd'hui",
+      "sera-t-il brumeux aujourd'hui à {location}",
+      "sera-t-il brumeux demain",
+      "sera-t-il brumeux demain à {location}",
+      "est-ce qu'on aura du brouillard",
+      "est-ce qu'on aura du brouillard à {location}",
+      "est-ce qu'on aura du brouillard aujourd'hui",
+      "est-ce qu'on aura du brouillard aujourd'hui à {location}",
+      "est-ce qu'on aura du brouillard demain",
+      "est-ce qu'on aura du brouillard demain à {location}",
+      "le brouillard arrive-t-il",
+      "le brouillard arrive-t-il à {location}",
+      "le brouillard arrive-t-il aujourd'hui",
+      "le brouillard arrive-t-il aujourd'hui à {location}",
+      "le brouillard arrive-t-il demain",
+      "le brouillard arrive-t-il demain à {location}",
+      "fait-il brumeux",
+      "fait-il brumeux à {location}",
+      "fait-il brumeux aujourd'hui",
+      "fait-il brumeux aujourd'hui à {location}",
+      "fait-il brumeux demain",
+      "fait-il brumeux demain à {location}",
+      "y a-t-il de l'orage à {location}",
+      "y a-t-il de l'orage aujourd'hui",
+      "y a-t-il de l'orage aujourd'hui à {location}",
+      "y a-t-il de l'orage demain",
+      "y a-t-il de l'orage demain à {location}",
+      "y aura-t-il de l'orage",
+      "y aura-t-il de l'orage à {location}",
+      "y aura-t-il de l'orage aujourd'hui",
+      "y aura-t-il de l'orage aujourd'hui à {location}",
+      "y aura-t-il de l'orage demain",
+      "y aura-t-il de l'orage demain à {location}",
+      "un orage est-il prévu à {location}",
+      "un orage est-il prévu aujourd'hui",
+      "un orage est-il prévu aujourd'hui à {location}",
+      "un orage est-il prévu demain",
+      "un orage est-il prévu demain à {location}",
+      "est-ce qu'on aura de l'orage",
+      "est-ce qu'on aura de l'orage à {location}",
+      "est-ce qu'on aura de l'orage aujourd'hui",
+      "est-ce qu'on aura de l'orage aujourd'hui à {location}",
+      "est-ce qu'on aura de l'orage demain",
+      "est-ce qu'on aura de l'orage demain à {location}",
+      "l'orage arrive-t-il",
+      "l'orage arrive-t-il à {location}",
+      "l'orage arrive-t-il aujourd'hui",
+      "l'orage arrive-t-il aujourd'hui à {location}",
+      "l'orage arrive-t-il demain",
+      "l'orage arrive-t-il demain à {location}",
+      "y a-t-il des alertes météo",
+      "y a-t-il des alertes météo aujourd'hui",
+      "y a-t-il des alertes météo aujourd'hui à {location}",
+      "y a-t-il des alertes météo demain",
+      "y a-t-il des alertes météo demain à {location}",
+      "y aura-t-il des alertes météo",
+      "y aura-t-il des alertes météo à {location}",
+      "y aura-t-il des alertes météo aujourd'hui",
+      "y aura-t-il des alertes météo aujourd'hui à {location}",
+      "y aura-t-il des alertes météo demain",
+      "y aura-t-il des alertes météo demain à {location}",
+      "un orage est-il annoncé",
+      "un orage est-il annoncé à {location}",
+      "un orage est-il annoncé aujourd'hui",
+      "un orage est-il annoncé aujourd'hui à {location}",
+      "un orage est-il annoncé demain",
+      "un orage est-il annoncé demain à {location}",
+      "Ai-je besoin d'un imperméable demain",
+      "Ai-je besoin d'un parapluie demain",
+      "Ai-je besoin d'un parapluie pour mes déplacements",
+      "Dois-je apporter mes bottes de pluie",
+      "Dois-je apporter mon parapluie aujourd'hui",
+      "Dois-je apporter un parapluie au parc",
+      "Dois-je apporter un parapluie à l'événement",
+      "Dois-je m'habiller pour le temps pluvieux",
+      "Dois-je me préparer à une tempête de pluie",
+      "Dois-je prévoir un imperméable pour le voyage",
+      "Dois-je prévoir un plan de secours en cas de pluie",
+      "Dois-je prévoir une veste de pluie",
+      "La pluie est attendue plus tard",
+      "La pluie est-elle probable aujourd'hui",
+      "La pluie est-elle prévue dans les prévisions météorologiques",
+      "Le temps sera-t-il pluvieux à l'extérieur",
+      "Y a-t-il de la pluie dans les prévisions",
+      "Y a-t-il un risque de pluie aujourd'hui",
+      "Y a-t-il une possibilité de pluie demain",
+      "Y aura-t-il des averses aujourd'hui",
+      "des pluies sont attendues dans la soirée",
+      "dois-je apporter un chapeau de pluie",
+      "dois-je emporter un parapluie",
+      "dois-je emporter un parapluie dans mon sac",
+      "dois-je faire attention aux averses",
+      "dois-je faire attention aux averses de pluie",
+      "dois-je m'inquiéter de la pluie",
+      "dois-je me protéger de la pluie",
+      "dois-je me préparer à la pluie",
+      "dois-je prendre des précautions en cas de pluie",
+      "la pluie sera-t-elle abondante",
+      "le temps sera-t-il pluvieux",
+      "pleuvra-t-il aujourd'hui",
+      "pleuvra-t-il demain",
+      "pleuvra-t-il pendant le week-end",
+      "sera-t-il un jour de pluie",
+      "est-ce qu'il pleut [à {location}]",
+      "il y a des nuages [à {location}]",
+      "va-t-il neiger [à {location}]",
+      "faut-il prendre un parapluie",
+      "est-ce que le ciel est (dégagé|nuageux) [à {location}]"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-wikihow.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-wikihow.openvoiceos",
+    "intent_name": "howto",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-wikihow.openvoiceos",
+     "intent_name": "howto",
+     "lang": "fr-fr",
+     "samples": [
+      "explique-moi étape par étape {query}",
+      "comment faire {query}",
+      "comment puis-je {query}",
+      "comment faire pour {query}",
+      "étapes pour {query}"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-wikihow.openvoiceos",
+    "intent_name": "wikihow",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-wikihow.openvoiceos",
+     "intent_name": "wikihow",
+     "lang": "fr-fr",
+     "samples": [
+      "cherche {query} sur WikiHow",
+      "cherche sur WikiHow {query}",
+      "que dit l'article WikiHow sur {query}",
+      "montre-moi l'article WikiHow sur {query}"
+     ]
+    }
+   }
+  ],
+  "ovos-skill-wikipedia.openvoiceos": [
+   {
+    "skill_id": "ovos-skill-wikipedia.openvoiceos",
+    "intent_name": "wiki",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-wikipedia.openvoiceos",
+     "intent_name": "wiki",
+     "lang": "fr-fr",
+     "samples": [
+      "article wikipédia sur {query}",
+      "cherche sur wikipédia {query}",
+      "cherche {query} sur wikipédia",
+      "parle-moi de {query} sur wikipédia",
+      "que dit l'article wikipédia sur {query}",
+      "que dit wikipédia sur {query}",
+      "recherche {query} sur wikipédia",
+      "vérifie sur wikipédia {query}"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-wikipedia.openvoiceos",
+    "intent_name": "wiki_more",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-wikipedia.openvoiceos",
+     "intent_name": "wiki_more",
+     "lang": "fr-fr",
+     "samples": [
+      "continue",
+      "dis-m'en plus",
+      "raconte-moi la suite",
+      "plus",
+      "quoi d'autre",
+      "y a-t-il plus",
+      "continue à raconter"
+     ]
+    }
+   },
+   {
+    "skill_id": "ovos-skill-wikipedia.openvoiceos",
+    "intent_name": "wikiroulette",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "ovos-skill-wikipedia.openvoiceos",
+     "intent_name": "wikiroulette",
+     "lang": "fr-fr",
+     "samples": [
+      "affiche un article wikipédia au hasard",
+      "affiche une page wikipédia au hasard",
+      "article wikipédia au hasard",
+      "joue à la roulette wikipédia",
+      "lance la roulette wikipédia",
+      "montre une page wikipédia au hasard",
+      "ouvre un article wikipédia au hasard",
+      "ouvre une page wikipédia au hasard",
+      "page wikipédia au hasard",
+      "roulette wikipédia",
+      "wikipédia roulette"
+     ]
+    }
+   }
+  ],
+  "skill-easter-eggs.openvoiceos": [
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "adult_mode_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "adult_mode_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "fais-moi vraiment mal (s'il te plaît|)",
+      "sois dur avec moi",
+      "je peux encaisser des coups",
+      "mets la difficulté sur difficile",
+      "ne sois pas tendre avec moi"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "arnold_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "arnold_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "dis quelque chose comme arnold (s'il te plaît|)",
+      "parle comme le terminator",
+      "fais ta voix de schwarzenegger",
+      "imite arnold",
+      "dis ça à la manière d'arnold"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "bender_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "bender_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "dis quelque chose comme bender (s'il te plaît|)",
+      "parle comme bender",
+      "fais ta voix de bender",
+      "imite bender"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "bill_and_ted_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "bill_and_ted_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "des étalons sauvages (s'il te plaît|)",
+      "comme des étalons sauvages",
+      "nous sommes des étalons sauvages",
+      "les étalons galopent en liberté"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "conan_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "conan_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "qu'est-ce qui est le meilleur dans la vie (s'il te plaît|)",
+      "quel est le sens de la vie selon conan",
+      "dis-moi ce qui compte le plus dans la vie",
+      "quelle est la meilleure chose dans la vie"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "duke_nukem_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "duke_nukem_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "dis quelque chose comme duke nukem (s'il te plaît|)",
+      "parle comme duke nukem",
+      "fais ta voix de duke nukem",
+      "imite duke nukem"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "glados_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "glados_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "dis quelque chose comme glados (s'il te plaît|)",
+      "parle comme glados",
+      "fais ta voix de glados",
+      "imite glados"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "grandma_mode_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "grandma_mode_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "je suis trop jeune pour mourir (s'il te plaît|)",
+      "épargne-moi je suis trop jeune",
+      "mets ça en facile je suis trop jeune pour mourir",
+      "mets la difficulté sur facile je suis trop jeune"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "hal_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "hal_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "dis quelque chose comme hal (s'il te plaît|)",
+      "parle comme hal 9000",
+      "fais ta voix de hal",
+      "imite hal"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "languages_you_speak_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "languages_you_speak_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "quelles langues parles-tu (s'il te plaît|)",
+      "quelles langues connais-tu",
+      "quelles langues sais-tu parler"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "law_of_robotics",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "law_of_robotics",
+     "lang": "fr-fr",
+     "samples": [
+      "quelles sont les lois de la robotique",
+      "dis-moi les lois de la robotique",
+      "récite les lois de la robotique",
+      "énonce les lois de la robotique",
+      "quelle est la {ordinal} loi de la robotique",
+      "dis-moi la {ordinal} loi de la robotique",
+      "récite la {ordinal} loi de la robotique",
+      "énonce la {ordinal} loi de la robotique"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "malibu_stacey_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "malibu_stacey_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "que ferait malibu stacy (s'il te plaît|)",
+      "malibu stacy",
+      "que dirait malibu stacy"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "pod_bay_doors_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "pod_bay_doors_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "ouvre les portes du sas (s'il te plaît|)",
+      "ouvre les portes du pod bay",
+      "déverrouille les portes du sas"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "portal_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "portal_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "chante la chanson de portal (s'il te plaît|)",
+      "chante la chanson de glados",
+      "glados chante pour moi",
+      "chante comme glados"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "rock_paper_scissors_lizard_spock_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "rock_paper_scissors_lizard_spock_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "pierre feuille ciseaux lézard spock (s'il te plaît|)",
+      "jouons à pierre feuille ciseaux lézard spock"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "sing_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "sing_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "chante pour moi (s'il te plaît|)",
+      "chante-moi une chanson",
+      "peux-tu chanter"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-easter-eggs.openvoiceos",
+    "intent_name": "stardate_intent",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-easter-eggs.openvoiceos",
+     "intent_name": "stardate_intent",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est la date stellaire (s'il te plaît|)",
+      "date stellaire actuelle",
+      "quelle est la date stellaire en ce moment"
+     ]
+    }
+   }
+  ],
+  "skill-homeassistant.oscillatelabsllc": [
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "assist",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "assist",
+     "lang": "fr-fr",
+     "samples": [
+      "dis à home assistant {command}",
+      "dis à home assistant de {command}",
+      "demande à home assistant de {command}",
+      "transmets à home assistant {command}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "disable",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "disable",
+     "lang": "fr-fr",
+     "samples": [
+      "désactive home assistant",
+      "désactive le contrôle home assistant",
+      "arrête le contrôle home assistant",
+      "je n'utilise plus home assistant"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "enable",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "enable",
+     "lang": "fr-fr",
+     "samples": [
+      "active home assistant",
+      "active le contrôle home assistant",
+      "utilise home assistant",
+      "je veux utiliser home assistant"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "get.all.devices",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "get.all.devices",
+     "lang": "fr-fr",
+     "samples": [
+      "reconstruis la liste des appareils",
+      "rafraîchis la liste des appareils",
+      "actualise la liste des appareils",
+      "mets à jour la liste des appareils",
+      "recharge la liste des appareils"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.decrease.brightness",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.decrease.brightness",
+     "lang": "fr-fr",
+     "samples": [
+      "réduis la luminosité de {entity}",
+      "baisse la luminosité de {entity}",
+      "diminue la luminosité de {entity}",
+      "tamise {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.get.brightness",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.get.brightness",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est la luminosité de {entity}",
+      "donne-moi la luminosité actuelle de {entity}",
+      "à combien est réglée la luminosité de {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.get.color",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.get.color",
+     "lang": "fr-fr",
+     "samples": [
+      "quelle est la couleur de {entity}",
+      "donne-moi la couleur actuelle de {entity}",
+      "de quelle couleur est {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.increase.brightness",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.increase.brightness",
+     "lang": "fr-fr",
+     "samples": [
+      "augmente la luminosité de {entity}",
+      "monte la luminosité de {entity}",
+      "augmente l'éclairage de {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.set.brightness",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.set.brightness",
+     "lang": "fr-fr",
+     "samples": [
+      "règle la luminosité de {entity} à {brightness} pour cent",
+      "mets la luminosité de {entity} à {brightness} pour cent",
+      "fixe la luminosité de {entity} à {brightness} pour cent"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "lights.set.color",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "lights.set.color",
+     "lang": "fr-fr",
+     "samples": [
+      "change la couleur de {entity} en {color}",
+      "mets {entity} en {color}",
+      "règle la couleur de {entity} sur {color}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "sensor",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "sensor",
+     "lang": "fr-fr",
+     "samples": [
+      "quel est l'état de {entity}",
+      "donne-moi la valeur de {entity}",
+      "donne-moi l'état de {entity}",
+      "quelle est la valeur de {entity}",
+      "quelle est la température de {entity}",
+      "quelle est la teinte de {entity}",
+      "est-ce que {entity} est allumé",
+      "est-ce que {entity} est allumée",
+      "est-ce que {entity} est éteint",
+      "est-ce que {entity} est éteinte",
+      "est-ce que {entity} est ouvert",
+      "est-ce que {entity} est ouverte",
+      "est-ce que {entity} est fermé",
+      "est-ce que {entity} est fermée",
+      "est-ce que {entity} est connecté",
+      "est-ce que {entity} est connectée",
+      "est-ce que {entity} est déconnecté",
+      "est-ce que {entity} est déconnectée",
+      "est-ce que {entity} est en mouvement",
+      "est-ce que {entity} est occupé",
+      "est-ce que {entity} est occupée",
+      "est-ce que {entity} est en charge",
+      "est-ce que {entity} est disponible",
+      "est-ce que {entity} est sécurisé",
+      "est-ce que {entity} n'est pas sécurisé",
+      "est-ce que {entity} est chaud",
+      "est-ce que {entity} est chaude",
+      "est-ce que {entity} est froid",
+      "est-ce que {entity} est froide",
+      "est-ce que {entity} a détecté de l'humidité",
+      "est-ce que {entity} a détecté du gaz",
+      "est-ce que {entity} a détecté un problème",
+      "est-ce que {entity} a détecté des vibrations",
+      "est-ce que {entity} a détecté du bruit"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "stop",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "stop",
+     "lang": "fr-fr",
+     "samples": [
+      "arrête l'appareil {entity}",
+      "mets {entity} à l'arrêt",
+      "peux-tu arrêter l'appareil {entity}",
+      "je veux arrêter l'appareil {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "turn.off",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "turn.off",
+     "lang": "fr-fr",
+     "samples": [
+      "éteins {entity}",
+      "peux-tu éteindre {entity}",
+      "je veux éteindre {entity}",
+      "j'aimerais éteindre {entity}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-homeassistant.oscillatelabsllc",
+    "intent_name": "turn.on",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-homeassistant.oscillatelabsllc",
+     "intent_name": "turn.on",
+     "lang": "fr-fr",
+     "samples": [
+      "allume {entity}",
+      "mets en marche {entity}",
+      "peux-tu allumer {entity}",
+      "je veux allumer {entity}",
+      "j'aimerais allumer {entity}"
+     ]
+    }
+   }
+  ],
+  "skill-ovos-randomness.openvoiceos": [
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "flip_a_coin",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "flip_a_coin",
+     "lang": "fr-fr",
+     "samples": [
+      "pile ou face",
+      "fais pile ou face",
+      "tire à pile ou face",
+      "lance une pièce"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "fortune_teller",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "fortune_teller",
+     "lang": "fr-fr",
+     "samples": [
+      "dis-moi la bonne aventure",
+      "dis-moi ma bonne aventure",
+      "raconte-moi la bonne aventure"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "make_a_choice",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "make_a_choice",
+     "lang": "fr-fr",
+     "samples": [
+      "aide-moi à choisir",
+      "aide-moi à décider"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "pick_a_number",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "pick_a_number",
+     "lang": "fr-fr",
+     "samples": [
+      "choisis un nombre entre {lower} et {upper}",
+      "prends un nombre entre {lower} et {upper}"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "roll_multiple_dice",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "roll_multiple_dice",
+     "lang": "fr-fr",
+     "samples": [
+      "lance {number} dés",
+      "lance {number} dés à {faces} faces"
+     ]
+    }
+   },
+   {
+    "skill_id": "skill-ovos-randomness.openvoiceos",
+    "intent_name": "roll_single_die",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-randomness.openvoiceos",
+     "intent_name": "roll_single_die",
+     "lang": "fr-fr",
+     "samples": [
+      "lance un dé",
+      "lance un dé à {faces} faces"
+     ]
+    }
+   }
+  ],
+  "skill-ovos-spelling.openvoiceos": [
+   {
+    "skill_id": "skill-ovos-spelling.openvoiceos",
+    "intent_name": "spell",
+    "lang": "fr-fr",
+    "method": "template",
+    "definition": {
+     "skill_id": "skill-ovos-spelling.openvoiceos",
+     "intent_name": "spell",
+     "lang": "fr-fr",
+     "samples": [
+      "épelle {word}",
+      "épelle le mot {word}",
+      "peux-tu épeler {word}",
+      "peux-tu épeler le mot {word}",
+      "donne-moi l'orthographe de {word}",
+      "quelle est l'orthographe de {word}",
+      "comment s'écrit {word}",
+      "comment épelle-t-on {word}",
+      "orthographe de {word}"
+     ]
+    }
+   }
+  ]
+ }
+}

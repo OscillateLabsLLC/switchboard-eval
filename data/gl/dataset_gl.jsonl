@@ -1,0 +1,62 @@
+{"id": "g001", "utterance": "que hora é?", "intent": "time.current", "category": "canonical"}
+{"id": "g002", "utterance": "dime que hora é, por favor", "intent": "time.current", "category": "paraphrase"}
+{"id": "g003", "utterance": "sabes que hora temos?", "intent": "time.current", "category": "paraphrase"}
+{"id": "g004", "utterance": "que tempo fai hoxe?", "intent": "weather.current", "category": "canonical"}
+{"id": "g005", "utterance": "hai moita humidade agora?", "intent": "weather.current", "category": "paraphrase"}
+{"id": "g006", "utterance": "vai chover mañá?", "intent": "weather.forecast", "category": "paraphrase"}
+{"id": "g007", "utterance": "vai facer frío esta noite?", "intent": "weather.forecast", "category": "paraphrase"}
+{"id": "g008", "utterance": "a que hora se pon o sol hoxe?", "intent": "weather.current", "category": "paraphrase"}
+{"id": "g009", "utterance": "cóntame algo gracioso", "intent": "joke.tell", "category": "paraphrase"}
+{"id": "g010", "utterance": "ti sabes contar chistes?", "intent": "joke.tell", "category": "paraphrase"}
+{"id": "g011", "utterance": "anímame cun chiste", "intent": "joke.tell", "category": "paraphrase"}
+{"id": "g012", "utterance": "pon un temporizador de cinco minutos", "intent": "timer.set", "category": "canonical"}
+{"id": "g013", "utterance": "avísame dentro de dez minutos", "intent": "timer.set", "category": "paraphrase"}
+{"id": "g014", "utterance": "necesito un temporizador para os ovos", "intent": "timer.set", "category": "paraphrase", "uncertain": true}
+{"id": "g015", "utterance": "canto lle falta ao temporizador?", "intent": "timer.status", "category": "paraphrase"}
+{"id": "g016", "utterance": "cancela o temporizador", "intent": "timer.cancel", "category": "canonical"}
+{"id": "g017", "utterance": "espértame ás sete da mañá", "intent": "alarm.set", "category": "paraphrase"}
+{"id": "g018", "utterance": "pon unha alarma para as seis e media", "intent": "alarm.set", "category": "canonical"}
+{"id": "g019", "utterance": "lémbrame de mercar leite mañá", "intent": "reminder.set", "category": "paraphrase"}
+{"id": "g020", "utterance": "sube un pouco o son", "intent": "volume.up", "category": "paraphrase"}
+{"id": "g021", "utterance": "non te oio ben, fala máis alto", "intent": "volume.up", "category": "implicit"}
+{"id": "g022", "utterance": "baixa o volume", "intent": "volume.down", "category": "canonical"}
+{"id": "g023", "utterance": "estás falando moi alto", "intent": "volume.down", "category": "implicit"}
+{"id": "g024", "utterance": "silencia o son", "intent": "volume.mute", "category": "paraphrase"}
+{"id": "g025", "utterance": "pon o volume ao cincuenta por cento", "intent": "volume.set", "category": "slot_heavy"}
+{"id": "g026", "utterance": "que volume tes agora?", "intent": "volume.query", "category": "paraphrase"}
+{"id": "g027", "utterance": "que hai de novo nas noticias?", "intent": "news.play", "category": "paraphrase"}
+{"id": "g028", "utterance": "pon as novas", "intent": "news.play", "category": "paraphrase"}
+{"id": "g029", "utterance": "bota unha moeda ao aire", "intent": "random.coin", "category": "paraphrase"}
+{"id": "g030", "utterance": "tira un dado", "intent": "random.dice", "category": "paraphrase"}
+{"id": "g031", "utterance": "dime un número entre un e cen", "intent": "random.number", "category": "slot_heavy"}
+{"id": "g032", "utterance": "axúdame a escoller entre pizza e pasta", "intent": "random.choice", "category": "slot_heavy"}
+{"id": "g033", "utterance": "quen te fixo?", "intent": "assistant.about", "category": "paraphrase"}
+{"id": "g034", "utterance": "que es ti?", "intent": "assistant.about", "category": "canonical"}
+{"id": "g035", "utterance": "que día é hoxe?", "intent": "date.current", "category": "canonical"}
+{"id": "g036", "utterance": "a cantos estamos hoxe?", "intent": "date.current", "category": "paraphrase", "uncertain": true}
+{"id": "g037", "utterance": "que día da semana cae o vinte e cinco?", "intent": "date.current", "category": "slot_heavy", "uncertain": true}
+{"id": "g038", "utterance": "deletréame a palabra casa", "intent": "spelling.spell", "category": "paraphrase"}
+{"id": "g039", "utterance": "cal é o meu enderezo IP?", "intent": "system.ip", "category": "canonical"}
+{"id": "g040", "utterance": "onde estou agora mesmo?", "intent": "settings.query", "category": "paraphrase"}
+{"id": "g041", "utterance": "engade leite á lista da compra", "intent": "shopping.add", "category": "slot_heavy"}
+{"id": "g042", "utterance": "repite despois de min: bo día a todos", "intent": "speak.repeat", "category": "slot_heavy", "uncertain": true}
+{"id": "g043", "utterance": "moitas grazas, moi amable", "intent": "knowledge.ask", "category": "paraphrase"}
+{"id": "g044", "utterance": "ola, bos días", "intent": "knowledge.ask", "category": "paraphrase"}
+{"id": "g045", "utterance": "quen escribiu Cantares gallegos?", "intent": "knowledge.ask", "category": "paraphrase"}
+{"id": "g046", "utterance": "dime algo sobre a catedral de Santiago", "intent": "knowledge.ask", "category": "paraphrase"}
+{"id": "g047", "utterance": "abre as portas do módulo, HAL", "intent": "easter_egg", "category": "paraphrase", "uncertain": true}
+{"id": "g048", "utterance": "que calor fai hoxe fóra?", "intent": "weather.current", "category": "implicit"}
+{"id": "n001", "utterance": "onte fomos ao cine e foi xenial", "intent": null, "category": "ood"}
+{"id": "n002", "utterance": "pásame o sal, por favor", "intent": null, "category": "ood"}
+{"id": "n003", "utterance": "a que hora chega o teu irmán?", "intent": null, "category": "near_miss"}
+{"id": "n004", "utterance": "o temporizador do forno está estragado", "intent": null, "category": "near_miss"}
+{"id": "n005", "utterance": "non sei se vai chover, colle o paraugas por se acaso", "intent": null, "category": "near_miss"}
+{"id": "n006", "utterance": "mamá, que hai para cear?", "intent": null, "category": "ood"}
+{"id": "n007", "utterance": "isto non é o que eu pedín", "intent": null, "category": "ood"}
+{"id": "n008", "utterance": "xa che dixen que non", "intent": null, "category": "ood"}
+{"id": "n009", "utterance": "vou poñer a lavadora", "intent": null, "category": "ood"}
+{"id": "n010", "utterance": "o partido comeza ás nove", "intent": null, "category": "near_miss"}
+{"id": "n011", "utterance": "o meu teléfono non ten batería", "intent": null, "category": "ood"}
+{"id": "n012", "utterance": "quen deixou a porta aberta?", "intent": null, "category": "ood"}
+{"id": "n013", "utterance": "a miña avoa sempre conta o mesmo chiste", "intent": null, "category": "near_miss"}
+{"id": "n014", "utterance": "baixa ti, que eu xa baixei onte", "intent": null, "category": "near_miss", "uncertain": true}
