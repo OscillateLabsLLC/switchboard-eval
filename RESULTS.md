@@ -368,8 +368,10 @@ Every system here ran live (`data/baselines/ovos_gold_full/`); Switchboard 1.1.1
   dataset uses (the pinned version needs NumPy 2).
 - Paired against OVOS's default on the 927 answerable rows: Switchboard without an LLM gets 45 rows right that OVOS
   gets wrong and 11 the other way (p = 5e-6); with the 14B, 48 and 2 (p = 2e-12).
-- The newer alerts skill adds a `timer_status` intent that OVOS's Padatious sends weather and wallpaper questions to;
-  Switchboard's exact step keeps them with the skill whose phrase they match.
+- OVOS's default scored 96.4% on the 899 rows answerable before the upgrade and 94.2% after; most of the rows it
+  lost now go to alerts' new `timer_status`. Each install retrains Padatious, and retraining alone moves it (two
+  retrains of identical skills disagreed on 40% of rows; BENCH.md, criterion 2), so one run per install can't
+  separate the new skill from a different draw. Switchboard's exact step decides by rule and doesn't move.
 
 ```sh
 python -m switchboard_eval.experiments.exp_ovos_gold_full

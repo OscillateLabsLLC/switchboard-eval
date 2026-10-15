@@ -1580,5 +1580,7 @@ system rerun (data/baselines/ovos_gold_full/ replaced). 927 answerable rows (913
 | Switchboard, no LLM | 97.8 | 98.9 | 28.6 |
 | Switchboard + 14B | 99.1 | 99.5 | 78.6 |
 Paired against OVOS default: no LLM 45 vs 11, p = 5.4e-6; 14B 48 vs 2, p = 2.3e-12.
-OVOS default lost 22 rows it had right before: the new alerts registers timer_status, which Padatious now picks for
-weather (8) and wallpaper (5) questions; weekday_matches_date -> weekday_for_date (3); create_alarm -> play (2).
+OVOS default lost 22 rows it had right before: timer_status (new in the upgraded alerts) now gets weather (8) and
+wallpaper (5) questions; weekday_matches_date -> weekday_for_date (3); create_alarm -> play (2). Not attributable to
+the upgrade alone: both runs retrained Padatious, and retraining identical skills already flips 40% of rows
+(criterion 2 above). One run per install can't separate the new intent from a different draw.
