@@ -145,7 +145,7 @@ def main():
                 unmapped[label] = unmapped.get(label, 0) + 1
                 canon = f"__unmapped__:{label}"
             slots = {ren.get(k, k): v for k, v in slots.items()}
-            f.write(json.dumps({"id": row["id"], "intent": canon, "slots": slots,
+            f.write(json.dumps({"id": row["id"], "intent": canon, "label": label, "slots": slots,
                                 "confidence": conf, "latency_ms": round(ms, 1),
                                 "stage": stage}) + "\n")
     bus.close()

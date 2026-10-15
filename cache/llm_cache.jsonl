@@ -1401,3 +1401,13 @@
 {"key": "f105877c067cd8a59c3c9ddcb38edf9061ce74a13224022ca954824d4f8d16b2", "tool": "ignore", "args": {}, "ms": 855.0, "prompt_tokens": 1751, "n_tools": 16}
 {"key": "35521f0e931468c3147e70ac482c0c6ec8a3242eda1dbca9de0deac6e45199d8", "tool": "ignore", "args": {}, "ms": 842.5, "prompt_tokens": 1725, "n_tools": 16}
 {"key": "0d2d268966fd7aa3addf757701a18d5a89cbdec1adb7daf607d6f187c50d33e8", "tool": "ask_knowledge", "args": {"question": "There's one firm that had about nine buses taken off the road for trying to cut corners as well. Can you provide more information about this?"}, "ms": 1354.9, "prompt_tokens": 1754, "n_tools": 16}
+{"key": "e9e03537b7fc6614827e934b066fdc320a230c19ae80f89d7b13b903a3738dd7", "tool": "alerts__change_repeat", "args": {"repeat": "every weekend", "schedkind": "alarm"}, "ms": 1318.6, "prompt_tokens": 2154, "n_tools": 16}
+{"key": "6d8b0fa36cb7fede927fedec1e98639456650df616b15cc1e51d132986c81942", "p_yes": 0.9999999622937397, "ms": 30.1, "prompt_tokens": 108}
+{"key": "75562c41b2da77d43aefef68d9625bb0bdc2e3aaa08c22c6c7244931ab9c6b0e", "tool": "alerts__change_media_properties", "args": {"mediaform": "play", "mediakind": "audio", "schedkind": "timer"}, "ms": 1231.3, "prompt_tokens": 2082, "n_tools": 16}
+{"key": "7109f7c6505e679f96699a37e46c2df3cb0ba1f84436eb186942c5e02a73f008", "p_yes": 0.9999992893245628, "ms": 30.5, "prompt_tokens": 108}
+{"key": "ab19d1133bdd60b9909ac85691f53b16859982b960c3076466650903784c0f76", "tool": "parrot__speak", "args": {"sentence": "hello world"}, "ms": 857.6, "prompt_tokens": 1631, "n_tools": 16}
+{"key": "85048b73a2bf6c4ac8833d14e507de290c2f54b74e9dff87d7c3a73b81abf82c", "p_yes": 0.999903291360251, "ms": 34.9, "prompt_tokens": 105}
+{"key": "5f93fc1662b8c6056e15f6c026d372de8b37cfb64909e28255870c5fbe5fe949", "tool": "weather__next_rain", "args": {}, "ms": 922.6, "prompt_tokens": 1921, "n_tools": 16}
+{"key": "c0bfe51092f8f35406649ecb5ee3edef92ab65299d3d47fbf9dcf821dac376d8", "p_yes": 0.9999999547349729, "ms": 110.5, "prompt_tokens": 108}
+{"key": "3a4a36eb0c23f966fce4e5d21e2a3b6a12bfa0be16bed02b16902e9f77f5b1ee", "tool": "weather__is_wind", "args": {}, "ms": 811.4, "prompt_tokens": 1691, "n_tools": 16}
+{"key": "581d70b77a1713bc55bce6dbd8010436db235f3f751429fcf42335be8ab1535c", "p_yes": 0.9999814440279499, "ms": 33.7, "prompt_tokens": 105}

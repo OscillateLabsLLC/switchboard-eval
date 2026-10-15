@@ -16,7 +16,7 @@ dependencies = [
     "numpy",
     "scikit-learn",
     "pyyaml",
-    "ovos-switchboard-pipeline-plugin>=1.0.0",
+    "ovos-switchboard-pipeline-plugin>=1.1.0",
 ]
 
 [project.optional-dependencies]

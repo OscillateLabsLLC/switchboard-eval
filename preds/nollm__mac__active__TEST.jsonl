@@ -7,7 +7,7 @@
 {"id": "u0008", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0}
 {"id": "u0010", "intent": "alarm.set", "stage": "exact", "confidence": 1.0}
 {"id": "u0011", "intent": "timer.cancel", "stage": "exact", "confidence": 1.0}
-{"id": "u0012", "intent": "volume.set", "stage": "classifier", "confidence": 0.7481, "top3": ["volume.set", "volume.query", "volume.up"]}
+{"id": "u0012", "intent": "volume.set", "stage": "exact", "confidence": 1.0}
 {"id": "u0015", "intent": "volume.mute", "stage": "exact", "confidence": 1.0}
 {"id": "u0017", "intent": null, "stage": "classifier", "confidence": 0.3542, "top3": ["device.off", "timer.cancel", "__decline__"]}
 {"id": "u0018", "intent": "lights.brightness", "stage": "exact", "confidence": 1.0}
@@ -145,7 +145,7 @@
 {"id": "u0253", "intent": null, "stage": "classifier", "confidence": 0.3708, "top3": ["media.resume", "stop", "media.pause"]}
 {"id": "u0254", "intent": "joke.tell", "stage": "exact", "confidence": 1.0}
 {"id": "u0255", "intent": null, "stage": "classifier", "confidence": 0.9361, "top3": ["__unmapped__:ovos-skill-wikipedia.openvoiceos:wiki", "__decline__", "__unmapped__:ovos-skill-wikipedia.openvoiceos:wikiroulette"]}
-{"id": "u0257", "intent": "volume.set", "stage": "classifier", "confidence": 0.7832, "top3": ["volume.set", "volume.query", "volume.up"]}
+{"id": "u0257", "intent": "volume.set", "stage": "exact", "confidence": 1.0}
 {"id": "u0258", "intent": "ha.assist", "stage": "exact", "confidence": 1.0}
 {"id": "u0259", "intent": null, "stage": "classifier", "confidence": 0.2456, "top3": ["__decline__", "knowledge.ask", "device.status"], "decline_class": true}
 {"id": "u0260", "intent": "weather.current", "stage": "exact", "confidence": 1.0}

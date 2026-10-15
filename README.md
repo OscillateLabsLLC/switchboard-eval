@@ -12,6 +12,9 @@ matching. Every number in Switchboard's docs was measured here, and you can reru
   household's Neon smart speaker and OVOS desktop.
 - `data/negatives_ext.jsonl`: 400 sentences from public corpora that were never addressed to an assistant, to
   measure how often it acts on overheard speech.
+- `data/ovos_gold/`: the OVOS skills' own test phrases in English, Catalan, Galician and French, from
+  [OpenVoiceOS/ovos-intents](https://huggingface.co/datasets/OpenVoiceOS/ovos-intents). Each phrase is labeled with
+  the exact skill intent it should reach.
 - `devices/`: what each device has installed: its skills' intents and phrases, and the LLM tools made from them.
 - `schema/intents.yaml`: the shared list of intents that every device's skills map onto, with risk levels.
 - `switchboard_eval/`: the scoring code (`harness/`), the experiments (`experiments/`), and the scripts that
@@ -48,4 +51,5 @@ Each experiment's docstring says what it measures and how to run it. Experiments
 ## License
 
 Code: Apache-2.0. The sentences from the AMI Meeting Corpus and the MAGPIE idiom corpus in `negatives_ext.jsonl`
-keep their CC BY 4.0 licenses.
+keep their CC BY 4.0 licenses. `data/ovos_gold/` comes from OpenVoiceOS/ovos-intents (v6.1, Apache-2.0); its README
+has the attribution.
