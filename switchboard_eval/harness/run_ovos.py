@@ -21,8 +21,13 @@ Verified against ovos-core 3.7.4a1 source (IntentService.handle_get_intent):
 --stock runs the probe on ovos-config's shipped default pipeline via a named
 session, instead of whatever pipeline the device is configured with. The live
 config is not touched. Use it to measure "out of the box" OVOS.
+--without a,b drops every stock entry whose id starts with one of those plugin
+ids (implies --stock): per-matcher ablations, e.g. Padatious alone is
+--without ovos-adapt-pipeline-plugin,ovos-m2v-pipeline. The dropped matchers'
+plugins must be loaded (not blacklisted) for the ones that remain to answer.
 
 Usage: run_ovos.py data/dataset.jsonl schema/intents.yaml preds_ovos.jsonl [--host H] [--debug] [--stock]
+                   [--without plugin,plugin]
 Requires: pip install ovos-bus-client pyyaml
 """
 import json, sys, time, yaml
@@ -102,14 +107,18 @@ def stock_pipeline():
 
 def main():
     from ovos_bus_client import MessageBusClient  # lazy: build_map is reused from the bench venv
-    args =[a for a in sys.argv[1:] if not a.startswith("--")]
+    args = [a for i, a in enumerate(sys.argv[1:], 1) if not a.startswith("--")
+            and sys.argv[i - 1] not in ("--host", "--without")]
     host = sys.argv[sys.argv.index("--host") + 1] if "--host" in sys.argv else "127.0.0.1"
     debug = "--debug" in sys.argv
     context = {}
-    if "--stock" in sys.argv:
-        context = {"session": {"session_id": "intent-eval-stock", "lang": "en-us",
-                               "pipeline": stock_pipeline()}}
-        print("stock pipeline:", context["session"]["pipeline"])
+    if "--stock" in sys.argv or "--without" in sys.argv:
+        pipeline = stock_pipeline()
+        if "--without" in sys.argv:  # ablation: the stock pipeline minus every entry from these plugins
+            drop = sys.argv[sys.argv.index("--without") + 1].split(",")
+            pipeline = [p for p in pipeline if not any(p.startswith(d) for d in drop)]
+        context = {"session": {"session_id": "intent-eval-stock", "lang": "en-us", "pipeline": pipeline}}
+        print("pipeline:", context["session"]["pipeline"])
     dataset, schema, out = args[:3]
     mapping = build_map(schema)
     if not mapping:

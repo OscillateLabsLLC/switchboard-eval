@@ -1470,3 +1470,33 @@ Criterion 6 (non-LLM p95 < 300 ms on a mini PC): **PASS**, ~30x margin. Pan is ~
 utterance; exact and classifier split the time evenly; the p99 tail is the classifier. Build and peak RSS are the
 harness's in-process build (the OVOS runtime trains in a child process, once, then loads the cached model).
 Raspberry Pi not measured.
+
+## Per matcher: Padatious, Adapt and Model2Vec on their own (2026-10-14)
+
+Asked by an OVOS maintainer: the headline compares Switchboard with OVOS's default pipeline as a whole, not with
+each matcher. Method: ovos-config's shipped pipeline with the other matchers removed (`run_ovos.py --without`, new),
+so stop, converse, OCP and the fallbacks are identical in every variant; the live desktop's intent query path; the
+three matchers un-blacklisted for the run and blacklisted again afterwards. Instrument check: the fresh full stock
+run matched the published baseline on 516/522 rows; the 6 that differ are hello-world thank_you/greetings, which
+the schema has since mapped to knowledge.ask (same routing, newer labels). The fresh run scores test 42.2 / 71.4,
+as published. Files: data/baselines/matchers/ (scored with the stock device's serves rule: names start "stock").
+
+Test (dev in brackets), real requests right, declared phrases, non-commands acted on:
+| pipeline | speaker | desktop | declared | non-commands |
+|---|---|---|---|---|
+| default (Adapt + Padatious + Model2Vec) | 42.2 (49.3) | 71.4 (75.4) | 96.1 (93.1) | 100 (90.9) |
+| Padatious alone | 42.2 (52.1) | 65.1 (69.2) | 96.1 (92.2) | 100 (90.9) |
+| Padatious + Adapt | 42.2 (50.7) | 65.1 (69.2) | 96.1 (92.2) | 100 (90.9) |
+| Model2Vec alone (high tier, as shipped) | 18.8 (23.9) | 46.0 (43.1) | 32.0 (32.4) | 100 (84.8) |
+| Adapt alone | 18.8 (25.4) | 14.3 (16.9) | 7.8 (9.8) | 100 (84.8) |
+| Switchboard, no LLM | 76.6 (76.1) | 79.4 (81.5) | 95.1-97.1 | 7.5-10.0 |
+| Switchboard, 14B | 84.4 (81.7) | 88.9 (87.7) | 98.1-100 | 12.5 |
+Against Padatious alone (test): no LLM p = 2.7e-5 speaker, 0.012 desktop; 14B p = 4.6e-7, 2.8e-4.
+Padatious carries the default pipeline; Adapt adds nothing on top of it here; Model2Vec adds desktop rows.
+
+Latency, live desktop query path (median / p95 ms): default 16.3 / 37.0, Padatious alone 19.3 / 35.9, Padatious +
+Adapt 19.6 / 35.5, Model2Vec alone 11.3 / 15.6, Adapt alone 11.8 / 18.7; the desktop's live Switchboard pipeline:
+rows decided by exact or classifier (406 of 522) 6.7 / 21.3, rows decided by the 14B 1,043 / 1,240.
+The live Switchboard run's accuracy isn't comparable (every query is cold, so "not for me" rows the harness sends
+to the LLM with real warm context are declined; and the query path scores a Hangup decline as an action unless
+mapped to none: then non-commands 12.5%, matching the harness).
