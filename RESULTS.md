@@ -359,25 +359,28 @@ gold fr-FR (clean)        n=  59  classifier:  74.6% right 15.3% wrong 10.2% non
 
 ### All 1,007 English phrases, with every skill the set uses installed
 
-The same phrases, all of them, after installing the 18 skills the desktop lacked at the commits the dataset pins.
+The same phrases, all of them, after installing the 18 skills the desktop lacked at the commits the dataset pins
+(and upgrading alerts, volume and naptime to them).
 Every system here ran live (`data/baselines/ovos_gold_full/`); Switchboard 1.1.1 with and without its 14B LLM.
 
-- 108 rows no system on this desktop can answer, so they're not scored: mark1-ctrl only loads on a Mark 1, the
-  application launcher registers nothing on macOS, and the desktop's alerts, volume, date-time and naptime are
-  older than the intent names the dataset uses.
-- Paired against OVOS's default on the 899 answerable rows: Switchboard without an LLM gets 23 rows right that OVOS
-  gets wrong and 11 the other way (p = 0.058); with the 14B, 26 and 5 (p = 0.0002).
+- 80 rows no system on this desktop can answer, so they're not scored: mark1-ctrl only loads on a Mark 1, the
+  application launcher registers nothing on macOS, and the desktop's date-time is older than the intent names the
+  dataset uses (the pinned version needs NumPy 2).
+- Paired against OVOS's default on the 927 answerable rows: Switchboard without an LLM gets 45 rows right that OVOS
+  gets wrong and 11 the other way (p = 5e-6); with the 14B, 48 and 2 (p = 2e-12).
+- The newer alerts skill adds a `timer_status` intent that OVOS's Padatious sends weather and wallpaper questions to;
+  Switchboard's exact step keeps them with the skill whose phrase they match.
 
 ```sh
 python -m switchboard_eval.experiments.exp_ovos_gold_full
 ```
 ```
-1007 gold rows; 899 have their intent registered on the desktop (885 match one of their intent's templates, 14 don't); not answerable: {'intent not registered': 45, 'skill not loaded': 63}
-stock                      all  96.4% right,  3.6% wrong,  0.0% none (n=899) | template  97.5% right,  2.5% wrong,  0.0% none (n=885) | unseen  28.6% right, 71.4% wrong,  0.0% none (n=14)
-stock_padatious_only       all  96.2% right,  3.8% wrong,  0.0% none (n=899) | template  97.5% right,  2.5% wrong,  0.0% none (n=885) | unseen  14.3% right, 85.7% wrong,  0.0% none (n=14)
-stock_padatious_adapt      all  96.2% right,  3.8% wrong,  0.0% none (n=899) | template  97.5% right,  2.5% wrong,  0.0% none (n=885) | unseen  14.3% right, 85.7% wrong,  0.0% none (n=14)
-stock_m2v_only             all  50.5% right, 49.5% wrong,  0.0% none (n=899) | template  50.5% right, 49.5% wrong,  0.0% none (n=885) | unseen  50.0% right, 50.0% wrong,  0.0% none (n=14)
-stock_adapt_only           all   0.0% right, 98.8% wrong,  1.2% none (n=899) | template   0.0% right, 98.9% wrong,  1.1% none (n=885) | unseen   0.0% right, 92.9% wrong,  7.1% none (n=14)
-switchboard_nollm          all  97.8% right,  2.2% wrong,  0.0% none (n=899) | template  98.9% right,  1.1% wrong,  0.0% none (n=885) | unseen  28.6% right, 71.4% wrong,  0.0% none (n=14)
-switchboard_llm            all  98.8% right,  1.2% wrong,  0.0% none (n=899) | template  99.1% right,  0.9% wrong,  0.0% none (n=885) | unseen  78.6% right, 21.4% wrong,  0.0% none (n=14)
+1007 gold rows; 927 have their intent registered on the desktop (913 match one of their intent's templates, 14 don't); not answerable: {'skill not loaded': 63, 'intent not registered': 17}
+stock                      all  94.2% right,  5.8% wrong,  0.0% none (n=927) | template  95.2% right,  4.8% wrong,  0.0% none (n=913) | unseen  28.6% right, 71.4% wrong,  0.0% none (n=14)
+stock_padatious_only       all  93.6% right,  6.4% wrong,  0.0% none (n=927) | template  94.9% right,  5.1% wrong,  0.0% none (n=913) | unseen  14.3% right, 85.7% wrong,  0.0% none (n=14)
+stock_padatious_adapt      all  93.6% right,  6.4% wrong,  0.0% none (n=927) | template  94.9% right,  5.1% wrong,  0.0% none (n=913) | unseen  14.3% right, 85.7% wrong,  0.0% none (n=14)
+stock_m2v_only             all  49.5% right, 50.4% wrong,  0.1% none (n=927) | template  49.5% right, 50.4% wrong,  0.1% none (n=913) | unseen  50.0% right, 50.0% wrong,  0.0% none (n=14)
+stock_adapt_only           all   0.0% right, 99.2% wrong,  0.8% none (n=927) | template   0.0% right, 99.2% wrong,  0.8% none (n=913) | unseen   0.0% right, 100.0% wrong,  0.0% none (n=14)
+switchboard_nollm          all  97.8% right,  2.2% wrong,  0.0% none (n=927) | template  98.9% right,  1.1% wrong,  0.0% none (n=913) | unseen  28.6% right, 71.4% wrong,  0.0% none (n=14)
+switchboard_llm            all  99.1% right,  0.9% wrong,  0.0% none (n=927) | template  99.5% right,  0.5% wrong,  0.0% none (n=913) | unseen  78.6% right, 21.4% wrong,  0.0% none (n=14)
 ```

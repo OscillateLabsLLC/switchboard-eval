@@ -11,7 +11,7 @@
     {
       "skill_id": "ovos-skill-ddg.openvoiceos",
       "intent_name": "search_duck",
-      "lang": "en-US",
+      "lang": "uk-UA",
       "method": "template",
       "enabled": true,
       "session_id": "default"
@@ -19,22 +19,6 @@
     {
       "skill_id": "ovos-skill-ddg.openvoiceos",
       "intent_name": "search_duck",
-      "lang": "uk-UA",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-parrot.openvoiceos",
-      "intent_name": "speak",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-parrot.openvoiceos",
-      "intent_name": "stop_parrot",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -43,6 +27,14 @@
     {
       "skill_id": "ovos-skill-parrot.openvoiceos",
       "intent_name": "start_parrot",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-parrot.openvoiceos",
+      "intent_name": "stop_parrot",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -59,6 +51,14 @@
     {
       "skill_id": "ovos-skill-parrot.openvoiceos",
       "intent_name": "did_you_hear_me",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-parrot.openvoiceos",
+      "intent_name": "speak",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -90,23 +90,7 @@
     },
     {
       "skill_id": "ovos-skill-number-facts.openvoiceos",
-      "intent_name": "number_trivia",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-number-facts.openvoiceos",
       "intent_name": "math_trivia",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-number-facts.openvoiceos",
-      "intent_name": "year_trivia",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -121,8 +105,16 @@
       "session_id": "default"
     },
     {
-      "skill_id": "skill-ovos-wallpapers.openvoiceos",
-      "intent_name": "picture_random",
+      "skill_id": "ovos-skill-number-facts.openvoiceos",
+      "intent_name": "number_trivia",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-number-facts.openvoiceos",
+      "intent_name": "year_trivia",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -130,15 +122,7 @@
     },
     {
       "skill_id": "skill-ovos-wallpapers.openvoiceos",
-      "intent_name": "previous_picture",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-ovos-wallpapers.openvoiceos",
-      "intent_name": "picture_about",
+      "intent_name": "make_wallpaper",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -162,7 +146,15 @@
     },
     {
       "skill_id": "skill-ovos-wallpapers.openvoiceos",
-      "intent_name": "make_wallpaper",
+      "intent_name": "picture_about",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-ovos-wallpapers.openvoiceos",
+      "intent_name": "picture_random",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -171,6 +163,14 @@
     {
       "skill_id": "skill-ovos-wallpapers.openvoiceos",
       "intent_name": "next_picture",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-ovos-wallpapers.openvoiceos",
+      "intent_name": "previous_picture",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -186,7 +186,7 @@
     },
     {
       "skill_id": "ovos-skill-pokepedia.openvoiceos",
-      "intent_name": "get_pokemon_type",
+      "intent_name": "get_pokemon_moves",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -194,7 +194,7 @@
     },
     {
       "skill_id": "ovos-skill-pokepedia.openvoiceos",
-      "intent_name": "get_pokemon_moves",
+      "intent_name": "get_pokemon_type",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -210,14 +210,6 @@
     },
     {
       "skill_id": "ovos-skill-cmd.openvoiceos",
-      "intent_name": "RunScriptCommandIntent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-cmd.openvoiceos",
       "intent_name": "list_scripts",
       "lang": "en-US",
       "method": "template",
@@ -225,64 +217,8 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "what_weekday_is_it",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "date_last_weekend",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "is_leap_year",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "weekday_for_date",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "date_future_weekend",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "what_month_is_it",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "what_day_is_it",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "next_leap_year",
+      "skill_id": "ovos-skill-cmd.openvoiceos",
+      "intent_name": "RunScriptCommandIntent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -298,7 +234,7 @@
     },
     {
       "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "what_time_is_it",
+      "intent_name": "what_day_is_it",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -306,7 +242,7 @@
     },
     {
       "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "what_year_is_it",
+      "intent_name": "weekday_matches_date",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -322,7 +258,71 @@
     },
     {
       "skill_id": "ovos-skill-date-time.openvoiceos",
-      "intent_name": "weekday_matches_date",
+      "intent_name": "what_weekday_is_it",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "date_future_weekend",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "date_last_weekend",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "what_year_is_it",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "what_month_is_it",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "next_leap_year",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "weekday_for_date",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "is_leap_year",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-date-time.openvoiceos",
+      "intent_name": "what_time_is_it",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -354,39 +354,7 @@
     },
     {
       "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_user_location",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_primary_lang",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_kernel_version",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_core_version",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_cpu_usage",
+      "intent_name": "query_memory_usage",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -402,31 +370,7 @@
     },
     {
       "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_memory_usage",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
       "intent_name": "query_ovos_location",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_gpu",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-diagnostics.openvoiceos",
-      "intent_name": "query_uptime",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -442,6 +386,38 @@
     },
     {
       "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_gpu",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_cpu_usage",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_uptime",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_primary_lang",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
       "intent_name": "query_extra_langs",
       "lang": "en-US",
       "method": "template",
@@ -449,8 +425,24 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-weather.openvoiceos",
-      "intent_name": "humidity",
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_core_version",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_user_location",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-diagnostics.openvoiceos",
+      "intent_name": "query_kernel_version",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -466,7 +458,23 @@
     },
     {
       "skill_id": "ovos-skill-weather.openvoiceos",
-      "intent_name": "is_wind",
+      "intent_name": "sunset",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-weather.openvoiceos",
+      "intent_name": "humidity",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-weather.openvoiceos",
+      "intent_name": "next_rain",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -482,15 +490,7 @@
     },
     {
       "skill_id": "ovos-skill-weather.openvoiceos",
-      "intent_name": "weather",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-weather.openvoiceos",
-      "intent_name": "sunset",
+      "intent_name": "is_wind",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -506,7 +506,7 @@
     },
     {
       "skill_id": "ovos-skill-weather.openvoiceos",
-      "intent_name": "next_rain",
+      "intent_name": "weather",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -515,174 +515,6 @@
     {
       "skill_id": "ovos-skill-count.openvoiceos",
       "intent_name": "count_to_n",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "change_repeat",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "list_alerts",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "reschedule_alert",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "create_timer",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "change_priority",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "delete_list_entries",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "create_reminder",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "change_media_properties",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "create_alarm",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "query_list_entries",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "timer_status",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "query_list_names",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "delete_list",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "cancel_alert",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "calendar_list",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "dav_sync",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "create_list",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "change_until",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "add_list_subitems",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "create_event",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-alerts.openvoiceos",
-      "intent_name": "missed_alerts",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -722,39 +554,15 @@
     },
     {
       "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "lights.set.color",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "lights.get.color",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "lights.decrease.brightness",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "assist",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-homeassistant.oscillatelabsllc",
       "intent_name": "disable",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-homeassistant.oscillatelabsllc",
+      "intent_name": "sensor",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -778,6 +586,14 @@
     },
     {
       "skill_id": "skill-homeassistant.oscillatelabsllc",
+      "intent_name": "enable",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-homeassistant.oscillatelabsllc",
       "intent_name": "get.all.devices",
       "lang": "en-US",
       "method": "template",
@@ -786,15 +602,7 @@
     },
     {
       "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "sensor",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "lights.increase.brightness",
+      "intent_name": "assist",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -810,7 +618,7 @@
     },
     {
       "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "turn.on",
+      "intent_name": "lights.set.color",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -818,7 +626,31 @@
     },
     {
       "skill_id": "skill-homeassistant.oscillatelabsllc",
-      "intent_name": "enable",
+      "intent_name": "lights.increase.brightness",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-homeassistant.oscillatelabsllc",
+      "intent_name": "lights.get.color",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-homeassistant.oscillatelabsllc",
+      "intent_name": "lights.decrease.brightness",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-homeassistant.oscillatelabsllc",
+      "intent_name": "turn.on",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -826,7 +658,7 @@
     },
     {
       "skill_id": "ovos-skill-laugh.openvoiceos",
-      "intent_name": "haunted",
+      "intent_name": "Laugh",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -842,33 +674,17 @@
     },
     {
       "skill_id": "ovos-skill-laugh.openvoiceos",
-      "intent_name": "StopLaughing",
+      "intent_name": "haunted",
       "lang": "en-US",
-      "method": "keyword",
+      "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
       "skill_id": "ovos-skill-laugh.openvoiceos",
-      "intent_name": "Laugh",
+      "intent_name": "StopLaughing",
       "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-personal.openvoiceos",
-      "intent_name": "who_made_you",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-personal.openvoiceos",
-      "intent_name": "what_are_you",
-      "lang": "en-US",
-      "method": "template",
+      "method": "keyword",
       "enabled": true,
       "session_id": "default"
     },
@@ -897,8 +713,24 @@
       "session_id": "default"
     },
     {
+      "skill_id": "ovos-skill-personal.openvoiceos",
+      "intent_name": "who_made_you",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-personal.openvoiceos",
+      "intent_name": "what_are_you",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
       "skill_id": "ovos-skill-hello-world.openvoiceos",
-      "intent_name": "thank_you_intent",
+      "intent_name": "how_are_you",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -914,7 +746,7 @@
     },
     {
       "skill_id": "ovos-skill-hello-world.openvoiceos",
-      "intent_name": "greetings",
+      "intent_name": "thank_you_intent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -922,15 +754,191 @@
     },
     {
       "skill_id": "ovos-skill-hello-world.openvoiceos",
-      "intent_name": "how_are_you",
+      "intent_name": "greetings",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
-      "skill_id": "skill-ovos-randomness.openvoiceos",
-      "intent_name": "make_a_choice",
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_timer",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "query_list_entries",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "dav_sync",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "change_repeat",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "change_priority",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "cancel_alert",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "change_until",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "delete_list",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "delete_list_entries",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "calendar_list",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_reminder",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_reminder_recurring",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "change_media_properties",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_list",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "list_alerts",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_alarm",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_alarm_alt",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "missed_alerts",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "query_list_names",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "reschedule_alert",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "add_list_subitems",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "create_event",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-alerts.openvoiceos",
+      "intent_name": "timer_status",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -962,6 +970,14 @@
     },
     {
       "skill_id": "skill-ovos-randomness.openvoiceos",
+      "intent_name": "make_a_choice",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-ovos-randomness.openvoiceos",
       "intent_name": "fortune_teller",
       "lang": "en-US",
       "method": "template",
@@ -971,14 +987,6 @@
     {
       "skill_id": "skill-ovos-randomness.openvoiceos",
       "intent_name": "roll_multiple_dice",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-confucius-quotes.openvoiceos",
-      "intent_name": "who",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1001,6 +1009,22 @@
       "session_id": "default"
     },
     {
+      "skill_id": "ovos-skill-confucius-quotes.openvoiceos",
+      "intent_name": "who",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-word-of-the-day.openvoiceos",
+      "intent_name": "word_of_the_day",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
       "skill_id": "ovos-skill-word-of-the-day.openvoiceos",
       "intent_name": "spell_wod",
       "lang": "en-US",
@@ -1017,14 +1041,6 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-word-of-the-day.openvoiceos",
-      "intent_name": "word_of_the_day",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
       "skill_id": "ovos-skill-wolfie.openvoiceos",
       "intent_name": "search_wolfie",
       "lang": "en-US",
@@ -1034,15 +1050,7 @@
     },
     {
       "skill_id": "ovos-skill-iss-location.openvoiceos",
-      "intent_name": "when_iss",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-iss-location.openvoiceos",
-      "intent_name": "who_iss",
+      "intent_name": "where_iss",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1058,15 +1066,15 @@
     },
     {
       "skill_id": "ovos-skill-iss-location.openvoiceos",
-      "intent_name": "where_iss",
+      "intent_name": "who_iss",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-fuster-quotes.openvoiceos",
-      "intent_name": "who",
+      "skill_id": "ovos-skill-iss-location.openvoiceos",
+      "intent_name": "when_iss",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1083,6 +1091,14 @@
     {
       "skill_id": "ovos-skill-fuster-quotes.openvoiceos",
       "intent_name": "fuster_quotes",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-fuster-quotes.openvoiceos",
+      "intent_name": "who",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1113,22 +1129,6 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-naptime.openvoiceos",
-      "intent_name": "naptime",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-naptime.openvoiceos",
-      "intent_name": "wake_up",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
       "skill_id": "ovos-skill-local-media.openvoiceos",
       "intent_name": "open.file.browser",
       "lang": "en-US",
@@ -1145,80 +1145,16 @@
       "session_id": "default"
     },
     {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "portal_intent",
+      "skill_id": "ovos-skill-naptime.openvoiceos",
+      "intent_name": "naptime",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "glados_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "languages_you_speak_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "stardate_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "pod_bay_doors_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "conan_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "malibu_stacey_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "grandma_mode_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "arnold_intent",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "law_of_robotics",
+      "skill_id": "ovos-skill-naptime.openvoiceos",
+      "intent_name": "WakeUp",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1234,7 +1170,31 @@
     },
     {
       "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "rock_paper_scissors_lizard_spock_intent",
+      "intent_name": "pod_bay_doors_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "hal_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "arnold_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "glados_intent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1250,7 +1210,39 @@
     },
     {
       "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "hal_intent",
+      "intent_name": "malibu_stacey_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "rock_paper_scissors_lizard_spock_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "conan_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "adult_mode_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "stardate_intent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1274,15 +1266,31 @@
     },
     {
       "skill_id": "skill-easter-eggs.openvoiceos",
-      "intent_name": "adult_mode_intent",
+      "intent_name": "grandma_mode_intent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-wikipedia.openvoiceos",
-      "intent_name": "wiki_more",
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "law_of_robotics",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "languages_you_speak_intent",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "skill-easter-eggs.openvoiceos",
+      "intent_name": "portal_intent",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1298,15 +1306,15 @@
     },
     {
       "skill_id": "ovos-skill-wikipedia.openvoiceos",
-      "intent_name": "wikiroulette",
+      "intent_name": "wiki_more",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-ip.openvoiceos",
-      "intent_name": "public_ip",
+      "skill_id": "ovos-skill-wikipedia.openvoiceos",
+      "intent_name": "wikiroulette",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1329,8 +1337,8 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-boot-finished.openvoiceos",
-      "intent_name": "are_you_ready",
+      "skill_id": "ovos-skill-ip.openvoiceos",
+      "intent_name": "public_ip",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1353,8 +1361,96 @@
       "session_id": "default"
     },
     {
+      "skill_id": "ovos-skill-boot-finished.openvoiceos",
+      "intent_name": "are_you_ready",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
       "skill_id": "ovos-skill-wikihow.openvoiceos",
       "intent_name": "wikihow",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume.mute.toggle",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "change_volume",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume.mute",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume.reset",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "current_volume",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "less_volume",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "increase_volume",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume.unmute",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume_level",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-volume.openvoiceos",
+      "intent_name": "volume.max.boost",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1385,88 +1481,8 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_max_boost",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "less_volume",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_level",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "increase_volume",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_mute",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "change_volume",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_reset",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_unmute",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "volume_mute_toggle",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-volume.openvoiceos",
-      "intent_name": "current_volume",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
       "skill_id": "ovos-skill-days-in-history.openvoiceos",
-      "intent_name": "births_in_history",
+      "intent_name": "today_in_history",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1482,7 +1498,7 @@
     },
     {
       "skill_id": "ovos-skill-days-in-history.openvoiceos",
-      "intent_name": "today_in_history",
+      "intent_name": "births_in_history",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1498,14 +1514,6 @@
     },
     {
       "skill_id": "ovos-skill-moviemaster.openvoiceos",
-      "intent_name": "movie_cast",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-moviemaster.openvoiceos",
       "intent_name": "movie_recommendations",
       "lang": "en-US",
       "method": "template",
@@ -1514,7 +1522,7 @@
     },
     {
       "skill_id": "ovos-skill-moviemaster.openvoiceos",
-      "intent_name": "movie_genre_search",
+      "intent_name": "movie_top",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1530,14 +1538,6 @@
     },
     {
       "skill_id": "ovos-skill-moviemaster.openvoiceos",
-      "intent_name": "genre_tv_search",
-      "lang": "en-US",
-      "method": "template",
-      "enabled": true,
-      "session_id": "default"
-    },
-    {
-      "skill_id": "ovos-skill-moviemaster.openvoiceos",
       "intent_name": "movie_runtime",
       "lang": "en-US",
       "method": "template",
@@ -1546,7 +1546,7 @@
     },
     {
       "skill_id": "ovos-skill-moviemaster.openvoiceos",
-      "intent_name": "movie_description",
+      "intent_name": "movie_cast",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1554,7 +1554,7 @@
     },
     {
       "skill_id": "ovos-skill-moviemaster.openvoiceos",
-      "intent_name": "movie_top",
+      "intent_name": "movie_genre_search",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1577,8 +1577,16 @@
       "session_id": "default"
     },
     {
-      "skill_id": "ovos-skill-color-picker.krisgesling",
-      "intent_name": "request-color-by-rgb",
+      "skill_id": "ovos-skill-moviemaster.openvoiceos",
+      "intent_name": "movie_description",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-moviemaster.openvoiceos",
+      "intent_name": "genre_tv_search",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1586,7 +1594,7 @@
     },
     {
       "skill_id": "ovos-skill-color-picker.krisgesling",
-      "intent_name": "request-color",
+      "intent_name": "request-color-by-hex",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1602,7 +1610,15 @@
     },
     {
       "skill_id": "ovos-skill-color-picker.krisgesling",
-      "intent_name": "request-color-by-hex",
+      "intent_name": "request-color",
+      "lang": "en-US",
+      "method": "template",
+      "enabled": true,
+      "session_id": "default"
+    },
+    {
+      "skill_id": "ovos-skill-color-picker.krisgesling",
+      "intent_name": "request-color-by-rgb",
       "lang": "en-US",
       "method": "template",
       "enabled": true,
@@ -1689,10 +1705,7 @@
             "(cancel|delete|remove|clear|discard) my {name} (alarm|timer|countdown|reminder|event|appointment|alert)",
             "please (cancel|delete|remove|clear|discard|turn off) (my|the|all|all my) {alertkind}",
             "(cancel|delete|remove|clear|discard) the {alertkind} (for|at|about|on) {name}",
-            "(cancel|delete|clear|remove) my (whole|entire) {alertkind} list",
-            "(scrap|drop|kill) (my|the|that) (alarm|timer|reminder|event)",
-            "i (no longer|do not) need (my|the|that) (alarm|timer|reminder|event)",
-            "throw (that|the) (timer|alarm) away"
+            "(cancel|delete|clear|remove) my (whole|entire) {alertkind} list"
           ],
           "blacklist": [],
           "slot_blacklist": {
@@ -1742,8 +1755,7 @@
             "(change|set|adjust|make) (my|the|my next|the next) {schedkind} play {mediaform}",
             "(change|set|adjust) (my|the|my next|the next) {schedkind} sound to {mediakind}",
             "(change|set|adjust) (my|the|my next|the next) {schedkind} sound to {mediaform}",
-            "(change|set|adjust) (my|the|my next|the next) {schedkind} alert to {mediaform}",
-            "read (my|the) (reminder|alarm) (aloud|out loud) when it (fires|rings|goes off)"
+            "(change|set|adjust) (my|the|my next|the next) {schedkind} alert to {mediaform}"
           ],
           "blacklist": [
             "priority"
@@ -1777,17 +1789,12 @@
             "(change|set|adjust|raise|lower) the priority level of (my|the) {schedkind}",
             "(change|set|adjust|raise|lower) (my|the) {schedkind} priority",
             "the {schedkind} priority (change|set|adjust) it (to|to level) {priority}",
-            "the {schedkind} priority (change|set|adjust|raise|lower) it",
-            "(raise|lower) the importance of (my|the) (alarm|reminder|event)",
-            "(prioritize|deprioritize) (my|the|that) (reminder|alarm|event)"
+            "the {schedkind} priority (change|set|adjust|raise|lower) it"
           ],
           "blacklist": [],
           "slot_blacklist": {},
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "priority": "number"
-          }
+          "excludes_context": []
         }
       },
       {
@@ -1814,8 +1821,7 @@
             "(change|set|adjust) (my|the) {schedkind} (frequency|repetition|recurrance|repeat) every {repeat}",
             "(change|set|adjust|make|reschedule) (my|the) {schedkind} to every {repeat}",
             "(change|set|adjust|make|reschedule) (my|the) wake {schedkind} to every {repeat}",
-            "(change|adjust) how often (my|the) {schedkind} (repeats|recurs)",
-            "(have|let) (my|the) alarm repeat (on weekdays|on weekends|every day) (instead|from now on)"
+            "(change|adjust) how often (my|the) {schedkind} (repeats|recurs)"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -1846,10 +1852,7 @@
           "blacklist": [],
           "slot_blacklist": {},
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "duration": "duration"
-          }
+          "excludes_context": []
         }
       },
       {
@@ -1906,42 +1909,7 @@
             "new alarm playing {mediakind} (at|for) {time}",
             "new alarm with {mediakind}",
             "new alarm that plays {mediakind}",
-            "new alarm playing {mediakind}",
-            "please set an alarm for {time}",
-            "can you set an alarm for {time}",
-            "could you set an alarm for {time}",
-            "would you create an alarm for {time}",
-            "i need an alarm for {time}",
-            "i need an alarm set for {time}",
-            "i want an alarm for {time}",
-            "let's set an alarm for {time}",
-            "put an alarm on for {time}",
-            "give me an alarm for {time}",
-            "turn on an alarm for {time}",
-            "set my alarm for {time}",
-            "set the alarm for {time}",
-            "i'd like an alarm set for {time}",
-            "wake (me|us) [up] [at {time}]",
-            "(could|would|can) you wake (me|us) [up] [at {time}]",
-            "wake (me|us) [up] in {duration}",
-            "wake (me|us) [up] every {days} at {time}",
-            "wake (the kids|everyone) [up] [at {time}]",
-            "wake up (the kids|everyone) [at {time}]",
-            "wake (the kids|everyone) [up] every {days} at {time}",
-            "wake (me|us|the kids|everyone) up (with|to|playing) (a|an|my|the) {mediakind} (at|for) {time}",
-            "(could|would|can) you wake (me|us|the kids|everyone) up (with|to|playing) {mediakind} (at|for) {time}",
-            "wake (me|us|the kids|everyone) up (with|to|playing) (a|an|my|the) {mediakind}",
-            "wake (me|us|the kids|everyone) (with|to|playing) (a|an|my|the) {mediakind}",
-            "(could|would|can) you wake (me|us|the kids|everyone) up (with|to|playing) {mediakind}",
-            "wake (me|us|the kids|everyone) up (with|to|playing) {mediakind} (at|for) {time}",
-            "wake (me|us|the kids|everyone) (with|to|playing) {mediakind} (at|for) {time}",
-            "wake up (the kids|everyone) (with|to|playing) {mediakind} (at|for) {time}",
-            "wake (me|us|the kids|everyone) up (with|to|playing) {mediakind}",
-            "wake (me|us|the kids|everyone) (with|to|playing) {mediakind}",
-            "wake up (the kids|everyone) (with|to|playing) {mediakind}",
-            "(use|play) (some music|the news|the radio) to wake me (tomorrow|in the morning)",
-            "(the news|the radio|some music) should wake (me|us) (tomorrow|in the morning)",
-            "(use|play) music to (wake|get) (me|the kids|us) (up|out of bed)"
+            "new alarm playing {mediakind}"
           ],
           "blacklist": [],
           "slot_blacklist": {
@@ -1963,11 +1931,60 @@
             ]
           },
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "time": "date",
-            "duration": "duration"
-          }
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-alerts.openvoiceos",
+        "intent_name": "create_alarm_alt",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-alerts.openvoiceos",
+          "intent_name": "create_alarm_alt",
+          "lang": "en-US",
+          "samples": [
+            "wake (me|us) [up] [at {time}]",
+            "(could|would|can) you wake (me|us) [up] [at {time}]",
+            "wake (me|us) [up] in {duration}",
+            "wake (me|us) [up] every {days} at {time}",
+            "wake (the kids|everyone) [up] [at {time}]",
+            "wake up (the kids|everyone) [at {time}]",
+            "wake (the kids|everyone) [up] every {days} at {time}",
+            "wake (me|us|the kids|everyone) up (with|to|playing) (a|an|my|the) {mediakind} (at|for) {time}",
+            "(could|would|can) you wake (me|us|the kids|everyone) up (with|to|playing) {mediakind} (at|for) {time}",
+            "wake (me|us|the kids|everyone) up (with|to|playing) (a|an|my|the) {mediakind}",
+            "wake (me|us|the kids|everyone) (with|to|playing) (a|an|my|the) {mediakind}",
+            "(could|would|can) you wake (me|us|the kids|everyone) up (with|to|playing) {mediakind}",
+            "wake (me|us|the kids|everyone) up (with|to|playing) {mediakind} (at|for) {time}",
+            "wake (me|us|the kids|everyone) (with|to|playing) {mediakind} (at|for) {time}",
+            "wake up (the kids|everyone) (with|to|playing) {mediakind} (at|for) {time}",
+            "wake (me|us|the kids|everyone) up (with|to|playing) {mediakind}",
+            "wake (me|us|the kids|everyone) (with|to|playing) {mediakind}",
+            "wake up (the kids|everyone) (with|to|playing) {mediakind}"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {
+            "time": [
+              "be spoken",
+              "be recorded",
+              "be audible",
+              "be playable",
+              "playback a file",
+              "playback the file",
+              "play a file",
+              "play the file",
+              "play music",
+              "play the news",
+              "play radio",
+              "play a podcast",
+              "be a recording",
+              "play a recording"
+            ]
+          },
+          "requires_context": [],
+          "excludes_context": []
         }
       },
       {
@@ -1983,31 +2000,7 @@
           "samples": [
             "(create|add|schedule) (an|a) (event|appointment) [{event}]",
             "new (event|appointment) [{event}]",
-            "i have (an|a) [work] (event|appointment) [{event}]",
-            "create an event for {event}",
-            "schedule an appointment for {event}",
-            "please schedule an appointment for {event}",
-            "can you create an event for {event}",
-            "can you schedule an appointment",
-            "could you add an event for {event}",
-            "would you set up an appointment for {event}",
-            "i need to schedule an appointment for {event}",
-            "i need to create an event for {event}",
-            "i want to add an appointment for {event}",
-            "let's create an event for {event}",
-            "put an event on my calendar for {event}",
-            "put an appointment on the calendar for {event}",
-            "add an event to my calendar for {event}",
-            "add an appointment for {event}",
-            "make an appointment for {event}",
-            "make an event for {event}",
-            "give me an event for {event}",
-            "set up an event for {event}",
-            "set up an appointment for {event}",
-            "book an appointment for {event}",
-            "i'd like to schedule an appointment for {event}",
-            "new appointment for {event}",
-            "i have a new appointment for {event}"
+            "i have (an|a) [work] (event|appointment) [{event}]"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -2065,44 +2058,7 @@
             "new reminder [{reminder}]",
             "remind (me|us) [to {reminder}] [at {time}]",
             "tell me to {reminder} [at {time}]",
-            "remind me in {duration} [to {reminder}]",
-            "set a reminder for me",
-            "please set a reminder to {reminder}",
-            "can you set a reminder to {reminder}",
-            "can you remind me to {reminder}",
-            "could you remind me to {reminder}",
-            "would you remind me to {reminder} at {time}",
-            "i need a reminder to {reminder}",
-            "i need to be reminded to {reminder}",
-            "i want a reminder to {reminder}",
-            "let's set a reminder to {reminder}",
-            "put a reminder on to {reminder}",
-            "make a reminder for {reminder}",
-            "give me a reminder to {reminder}",
-            "i'd like a reminder to {reminder}",
-            "remind me about {reminder}",
-            "remind me tomorrow to {reminder}",
-            "remind me later to {reminder}",
-            "set me a reminder to {reminder}",
-            "set up a reminder to {reminder}",
-            "start a reminder to {reminder}",
-            "don't let me forget to {reminder}",
-            "remind me to go to work weekday mornings at 8",
-            "remind me to take my medicine every weekday morning at 8",
-            "remind me to walk the dog weekday mornings at 7",
-            "remind me to check email weekday mornings at 9",
-            "remind me to go to the gym weekday mornings at 6",
-            "remind me to stretch weekend mornings at 8",
-            "remind me to call mom every weekday evening at 6",
-            "remind me to water the plants weekday mornings at 7",
-            "remind me to take out the trash weekday mornings at 8",
-            "remind me to feed the cat every weekday morning at 7",
-            "remind me to leave for work weekday mornings at 8",
-            "remind me to take a break weekday afternoons at 3",
-            "remind me to water the plants every monday and friday at 8 am",
-            "remind me to pay the rent every tuesday at 10 30",
-            "remind me to go to the gym every monday wednesday and friday at 6 am",
-            "set a recurring reminder to feed the fish every wednesday at 9 pm"
+            "remind me in {duration} [to {reminder}]"
           ],
           "blacklist": [],
           "slot_blacklist": {
@@ -2124,11 +2080,41 @@
             ]
           },
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "time": "date",
-            "duration": "duration"
-          }
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-alerts.openvoiceos",
+        "intent_name": "create_reminder_recurring",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-alerts.openvoiceos",
+          "intent_name": "create_reminder_recurring",
+          "lang": "en-US",
+          "samples": [
+            "remind me to go to work weekday mornings at 8",
+            "remind me to take my medicine every weekday morning at 8",
+            "remind me to walk the dog weekday mornings at 7",
+            "remind me to check email weekday mornings at 9",
+            "remind me to go to the gym weekday mornings at 6",
+            "remind me to stretch weekend mornings at 8",
+            "remind me to call mom every weekday evening at 6",
+            "remind me to water the plants weekday mornings at 7",
+            "remind me to take out the trash weekday mornings at 8",
+            "remind me to feed the cat every weekday morning at 7",
+            "remind me to leave for work weekday mornings at 8",
+            "remind me to take a break weekday afternoons at 3",
+            "remind me to water the plants every monday and friday at 8 am",
+            "remind me to pay the rent every tuesday at 10 30",
+            "remind me to go to the gym every monday wednesday and friday at 6 am",
+            "set a recurring reminder to feed the fish every wednesday at 9 pm"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
         }
       },
       {
@@ -2147,39 +2133,12 @@
             "(set|start|make) a {duration} timer",
             "(set|put) timer [for] {duration}",
             "timer [for] {duration}",
-            "in {duration} let me know",
-            "please start a timer for {duration}",
-            "i need a timer for {duration}",
-            "i need a timer",
-            "can you start a timer for {duration}",
-            "can you set a timer for {duration}",
-            "could you set a timer for me",
-            "would you start a timer for {duration}",
-            "let's start a timer for {duration}",
-            "let's set a timer",
-            "set me a timer for {duration}",
-            "set a timer for {duration} please",
-            "put a {duration} timer on",
-            "put on a timer for {duration}",
-            "start a {duration} countdown",
-            "start counting down from {duration}",
-            "i want to set a timer",
-            "i want a timer for {duration}",
-            "give me a timer for {duration}",
-            "make me a timer for {duration}",
-            "kick off a timer for {duration}",
-            "i'd like to set a timer for {duration}",
-            "start the timer now",
-            "(time|count down) (my|the) (cooking|workout|break|nap) (please|for me)",
-            "(run|start) a countdown (please|now)"
+            "in {duration} let me know"
           ],
           "blacklist": [],
           "slot_blacklist": {},
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "duration": "duration"
-          }
+          "excludes_context": []
         }
       },
       {
@@ -2205,11 +2164,7 @@
             "please (sync|synchronize|synchronise|download|load|upload) my {davkind}",
             "(sync|synchronize|synchronise|download|load|upload) {davkind}",
             "(sync|synchronize|synchronise|download|load|upload) the {davkind} and the {davkind2}",
-            "(sync|synchronize|synchronise|download|load|upload) my {davkind} and {davkind2}",
-            "(match|mirror) (my|the) (calendar|events|reminders) with the (server|cloud)",
-            "(refresh|update) (my|the) (calendar|events) (from|with) the (cloud|server) copy",
-            "(keep|make) (my|the) (reminders|events|calendar) (in sync|consistent) across (devices|my devices)",
-            "(download|pull) my (online|cloud) (events|calendar)"
+            "(sync|synchronize|synchronise|download|load|upload) my {davkind} and {davkind2}"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -2230,17 +2185,9 @@
           "samples": [
             "(delete|remove|erase) (my|the) list [{list_name}]",
             "(delete|remove) [all] [my] lists",
-            "(delete|remove|erase|drop) (my|the) {list_name} list",
-            "(trash|scrap|throw away) all (of my|the) lists",
-            "(delete|remove) my (todo|to do) list"
+            "(delete|remove|erase|drop) (my|the) {list_name} list"
           ],
-          "blacklist": [
-            "items",
-            "entries",
-            "everything from",
-            "everything on",
-            "keep it"
-          ],
+          "blacklist": [],
           "slot_blacklist": {
             "list_name": [
               "next",
@@ -2275,21 +2222,12 @@
             "(delete|remove) (everything|all [the] (items|entries)) (from|on) (my|the) list [{list_name}]",
             "(delete|remove|erase) [the] (items|entries|things) (from|on) (my|the) {list_name} list",
             "(delete|remove) (everything|all [the] (items|entries)) (from|on) (my|the) {list_name} list",
-            "(clear|empty) my {list_name} list",
-            "(delete|remove|clear) my (todo|to do) (items|entries)",
-            "(clear|empty) my (todo|to do) list",
+            "(delete|remove|clear) my {list_name} list",
+            "(delete|remove|clear) my (todo|to do) (list|items|entries)",
             "(delete|remove) (everything|all) (from|on) my {list_name} list",
-            "(delete|remove) (everything|all) (from|on) my (todo|to do) [list]",
-            "(empty|wipe) (my|the) (todo|shopping) list (but|and) keep it"
+            "(delete|remove) (everything|all) (from|on) my (todo|to do) [list]"
           ],
-          "blacklist": [
-            "lists",
-            "whole list",
-            "entire list",
-            "throw away",
-            "trash",
-            "scrap"
-          ],
+          "blacklist": [],
           "slot_blacklist": {
             "list_name": [
               "next",
@@ -2348,12 +2286,7 @@
             "(what|which|how many) {alertkind} (do|did) (i|we) have",
             "(what|which) {alertkind} and {alertkind2} (do|did) (i|we) have",
             "(when|what) is my (next|upcoming) {alertkind}",
-            "(are|is) there (any|some) {alertkind}",
-            "what is (on my schedule|coming up for me)",
-            "which (alarms|reminders|alerts) (will|are going to) (ring|go off) (soon|later)",
-            "when is the (next|upcoming) alarm going to ring",
-            "(summarize|recap) (my|the) (alarms|alerts|reminders) for (me|today)",
-            "(list|recap) everything i (have|set) (scheduled|pending)"
+            "(are|is) there (any|some) {alertkind}"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -2373,21 +2306,7 @@
           "lang": "en-US",
           "samples": [
             "[(did|have) (i|we)] (miss|missed) [(a|an|any|some)] (alarm|alarms|alert|alerts|event|events|reminder|reminders|timer|timers|anything|something)",
-            "(what|which) (alarm|alarms|alert|alerts|event|events|reminder|reminders|timer|timers|anything|something) (did|have) (i|we) (miss|missed)",
-            "did i miss my alarm",
-            "have i missed my reminder",
-            "did i miss anything",
-            "have i missed anything",
-            "tell me if i missed any alarms",
-            "tell me if i missed any reminders",
-            "let me know if i missed any alarms",
-            "was there anything i missed",
-            "were there any alerts i missed",
-            "did any alarms go off that i missed",
-            "did any reminders go off that i missed",
-            "was i supposed to hear an alarm i missed",
-            "what did i miss today",
-            "did (an|any|my) (alarm|reminder|timer) (ring|go off) while i was (out|away|asleep)"
+            "(what|which) (alarm|alarms|alert|alerts|event|events|reminder|reminders|timer|timers|anything|something) (did|have) (i|we) (miss|missed)"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -2414,10 +2333,7 @@
             "(what is|what's) (on|in) my {list_name} list",
             "(what is|what's) (on|in) my (todo|to do) [list]",
             "(read|show|list) [me] my (todo|to do) (items|entries|notes)",
-            "what do i have to do",
-            "(go over|walk me through) (my|the) (todo|shopping) list",
-            "(anything|something) (left|pending) on (my|the) todo list",
-            "(what|which) (tasks|things) (are|remain) (pending|unfinished) on (my|the) list"
+            "what do i have to do"
           ],
           "blacklist": [],
           "slot_blacklist": {
@@ -2453,8 +2369,7 @@
             "(what|which) lists (do i have|are there)",
             "(which|what) lists are (stored|saved)",
             "(list|read|show) [me] [all] (my|the) [saved|stored] lists",
-            "tell me my lists",
-            "how many lists (do i have|are saved|are there)"
+            "tell me my lists"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -2502,23 +2417,25 @@
             "(move|change|reschedule|shift|push) (my|the) {schedkind} (to|until|for) {time} instead",
             "(make|set|change) (my|the) {schedkind} (an all day event|all day|a whole day event|to an all day event|to all day)",
             "(move|change|reschedule|shift|push|postpone|adjust) (my|the) {schedkind} from {old} to {time}",
-            "from {old} to {time} (move|change|reschedule|shift|push|postpone) (my|the) {schedkind}",
-            "(lengthen|stretch) (my|the) timer by (five|ten|a few) minutes",
-            "(trim|shave) (five|ten|two) minutes (from|off) (my|the) timer",
-            "(turn|convert) (my|the) (event|appointment) into an all day (event|one)",
-            "(ring|wake me) (an hour|half an hour|a bit) earlier (tomorrow|than planned)",
-            "(top up|extend) the (timer|countdown) (a bit|by a few minutes)",
-            "(the|my) (timer|countdown) needs (more|extra) (time|minutes)",
-            "(bump|move) (my|the) alarm (up|forward) (a bit|an hour)"
+            "from {old} to {time} (move|change|reschedule|shift|push|postpone) (my|the) {schedkind}"
           ],
           "blacklist": [
-            "priority",
-            "duration",
-            "length",
-            "last for",
-            "how long"
+            "priority"
           ],
           "slot_blacklist": {
+            "name": [
+              "next",
+              "upcoming",
+              "pending",
+              "stored",
+              "saved",
+              "scheduled",
+              "all",
+              "every",
+              "any",
+              "whole",
+              "entire"
+            ],
             "time": [
               "be spoken",
               "be recorded",
@@ -2534,28 +2451,10 @@
               "play a podcast",
               "be a recording",
               "play a recording"
-            ],
-            "name": [
-              "next",
-              "upcoming",
-              "pending",
-              "stored",
-              "saved",
-              "scheduled",
-              "all",
-              "every",
-              "any",
-              "whole",
-              "entire"
             ]
           },
           "requires_context": [],
-          "excludes_context": [],
-          "slot_types": {
-            "old": "date",
-            "time": "date",
-            "duration": "duration"
-          }
+          "excludes_context": []
         }
       },
       {
@@ -2598,14 +2497,7 @@
             "(what is|what's|whats) (the|my) {timerkind} status",
             "how long (is|are) (my|the) {timerkind}",
             "how (much|much time) (remaining|left)",
-            "{timerkind} status",
-            "(minutes|seconds) (to go|remaining) (on|for) (my|the) (timer|countdown)",
-            "(check|look at) (my|the) (timer|countdown) for me",
-            "(timer|countdown) (progress|update) please",
-            "(minutes|seconds) left before the (timer|countdown) (beeps|rings)",
-            "how many minutes (until|till) (the|my) timer (is done|finishes)",
-            "how many (minutes|seconds) does (my|the) (timer|countdown) have (left|to go)",
-            "how many more minutes on (my|the) (timer|countdown)"
+            "{timerkind} status"
           ],
           "blacklist": [],
           "slot_blacklist": {
@@ -11410,6 +11302,30 @@
     "ovos-skill-naptime.openvoiceos": [
       {
         "skill_id": "ovos-skill-naptime.openvoiceos",
+        "intent_name": "WakeUp",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-naptime.openvoiceos",
+          "intent_name": "WakeUp",
+          "lang": "en-US",
+          "samples": [
+            "wake up",
+            "wake",
+            "start listening",
+            "stop (sleeping|napping)"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [
+            "sleeping_state"
+          ],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-naptime.openvoiceos",
         "intent_name": "naptime",
         "lang": "en-US",
         "method": "template",
@@ -11439,30 +11355,6 @@
           ],
           "slot_blacklist": {},
           "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-naptime.openvoiceos",
-        "intent_name": "wake_up",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-naptime.openvoiceos",
-          "intent_name": "wake_up",
-          "lang": "en-US",
-          "samples": [
-            "wake up",
-            "wake",
-            "start listening",
-            "stop (sleeping|napping)"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [
-            "sleeping_state"
-          ],
           "excludes_context": []
         }
       }
@@ -12180,12 +12072,7 @@
           "samples": [
             "(change|set|make) [the] volume [to] {amount}",
             "volume [to] {amount} percent",
-            "volume change [to {amount}]",
-            "set [the] volume to {amount} percent",
-            "put [the] volume at {amount}",
-            "adjust [the] volume to {amount}",
-            "can you (change|set) [the] volume to {amount}",
-            "i want [the] volume at {amount}"
+            "volume change [to {amount}]"
           ],
           "blacklist": [
             "maximum",
@@ -12230,11 +12117,7 @@
             "[what is the] [current] volume [level]",
             "how (loud|high) is the volume",
             "volume",
-            "volume current",
-            "tell me [the] volume",
-            "what volume is it at",
-            "how loud is it",
-            "check [the] volume [for me]"
+            "volume current"
           ],
           "blacklist": [],
           "slot_blacklist": {},
@@ -12301,6 +12184,107 @@
       },
       {
         "skill_id": "ovos-skill-volume.openvoiceos",
+        "intent_name": "volume.max.boost",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-volume.openvoiceos",
+          "intent_name": "volume.max.boost",
+          "lang": "en-US",
+          "samples": [
+            "crank [the] volume [up]",
+            "turn [the] volume all the way up"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-volume.openvoiceos",
+        "intent_name": "volume.mute",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-volume.openvoiceos",
+          "intent_name": "volume.mute",
+          "lang": "en-US",
+          "samples": [
+            "(mute|silence) [the] (volume|audio|sound)",
+            "mute",
+            "mute it [for a (second|bit|minute)]"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-volume.openvoiceos",
+        "intent_name": "volume.mute.toggle",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-volume.openvoiceos",
+          "intent_name": "volume.mute.toggle",
+          "lang": "en-US",
+          "samples": [
+            "toggle [the] (mute|muting|audio|sound|volume)"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-volume.openvoiceos",
+        "intent_name": "volume.reset",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-volume.openvoiceos",
+          "intent_name": "volume.reset",
+          "lang": "en-US",
+          "samples": [
+            "(reset|restore) the volume [to (default|medium|normal)]"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-volume.openvoiceos",
+        "intent_name": "volume.unmute",
+        "lang": "en-US",
+        "method": "template",
+        "session_id": "default",
+        "definition": {
+          "skill_id": "ovos-skill-volume.openvoiceos",
+          "intent_name": "volume.unmute",
+          "lang": "en-US",
+          "samples": [
+            "(unmute|un-mute) [the] (volume|audio|sound)",
+            "unmute",
+            "turn [the] (volume|audio|sound) back on",
+            "unmute it [now]"
+          ],
+          "blacklist": [],
+          "slot_blacklist": {},
+          "requires_context": [],
+          "excludes_context": []
+        }
+      },
+      {
+        "skill_id": "ovos-skill-volume.openvoiceos",
         "intent_name": "volume_level",
         "lang": "en-US",
         "method": "template",
@@ -12322,136 +12306,6 @@
             "(maximum|max|top|highest|full|loudest|high|loud|low|quiet|minimum|lowest|default|preset|standard|regular|reset|restore|medium|middle|normal|moderate) volume [please]",
             "volume to (maximum|max|top|highest|full|loudest|high|loud|low|quiet|minimum|lowest|default|preset|standard|regular|reset|restore|medium|middle|normal|moderate)",
             "put it back to (maximum|max|top|highest|full|loudest|high|loud|low|quiet|minimum|lowest|default|preset|standard|regular|reset|restore|medium|middle|normal|moderate)"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-volume.openvoiceos",
-        "intent_name": "volume_max_boost",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-volume.openvoiceos",
-          "intent_name": "volume_max_boost",
-          "lang": "en-US",
-          "samples": [
-            "crank [the] volume [up]",
-            "turn [the] volume all the way up",
-            "blast [the] volume",
-            "pump up [the] volume",
-            "turn it up as loud as it goes",
-            "make it as loud as possible",
-            "volume all the way up",
-            "full blast [please]"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-volume.openvoiceos",
-        "intent_name": "volume_mute",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-volume.openvoiceos",
-          "intent_name": "volume_mute",
-          "lang": "en-US",
-          "samples": [
-            "(mute|silence) [the] (volume|audio|sound)",
-            "mute",
-            "mute it [for a (second|bit|minute)]",
-            "be quiet [please]",
-            "silence please",
-            "turn the sound off",
-            "no sound [please]",
-            "cut the audio"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-volume.openvoiceos",
-        "intent_name": "volume_mute_toggle",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-volume.openvoiceos",
-          "intent_name": "volume_mute_toggle",
-          "lang": "en-US",
-          "samples": [
-            "toggle [the] (mute|muting|audio|sound|volume)",
-            "switch the mute (on|off)",
-            "flip the mute setting",
-            "mute or unmute [the sound]",
-            "toggle the sound on and off",
-            "switch muting on and off",
-            "invert the mute setting",
-            "toggle it"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-volume.openvoiceos",
-        "intent_name": "volume_reset",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-volume.openvoiceos",
-          "intent_name": "volume_reset",
-          "lang": "en-US",
-          "samples": [
-            "(reset|restore) the volume [to (default|medium|normal)]",
-            "put [the] volume back to normal",
-            "set [the] volume back to default",
-            "restore the default volume",
-            "return [the] volume to its usual level",
-            "volume back to normal [please]",
-            "put the sound back to normal",
-            "reset the sound level"
-          ],
-          "blacklist": [],
-          "slot_blacklist": {},
-          "requires_context": [],
-          "excludes_context": []
-        }
-      },
-      {
-        "skill_id": "ovos-skill-volume.openvoiceos",
-        "intent_name": "volume_unmute",
-        "lang": "en-US",
-        "method": "template",
-        "session_id": "default",
-        "definition": {
-          "skill_id": "ovos-skill-volume.openvoiceos",
-          "intent_name": "volume_unmute",
-          "lang": "en-US",
-          "samples": [
-            "(unmute|un-mute) [the] (volume|audio|sound)",
-            "unmute",
-            "turn [the] (volume|audio|sound) back on",
-            "unmute it [now]",
-            "sound back on [please]",
-            "give me the sound back",
-            "stop muting",
-            "let me hear it again"
           ],
           "blacklist": [],
           "slot_blacklist": {},

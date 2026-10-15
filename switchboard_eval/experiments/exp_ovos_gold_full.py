@@ -3,8 +3,9 @@
 
 exp_ovos_gold scores the 683 rows whose skill the desktop has. For this run the 18 missing skills were installed on
 the desktop at the commits OpenVoiceOS/ovos-intents v6.1 pins (ovos-m2v-pipeline train/sources.yaml at e0b2f4e);
-the application launcher was already installed. Skills the desktop already had stayed at their installed versions.
-Environment before the install: data/baselines/ovos_gold/mac_env_before.txt.
+the application launcher was already installed. alerts, volume and naptime were first upgraded to the same pins
+(and kept); date-time stayed at its installed version, because the pinned commit needs NumPy 2 and the desktop's
+OVOS runs on 1.26. Other skills the desktop already had stayed at their installed versions.
 
 Every system here is a live run through the intent query path (run_ovos.py), read from
 data/baselines/ovos_gold_full/: OVOS's default pipeline and each matcher alone (--stock / --without), and the
@@ -14,8 +15,7 @@ desktop with dump_introspection.py during the run).
 
 Headline: the rows whose intent the live install registers, which any system could answer. The rest are counted
 by reason and scored nowhere: mark1-ctrl refuses to load on anything but a Mark 1, the application launcher
-registers nothing on macOS, and the desktop's alerts / volume / date-time / naptime predate intent renames the
-dataset's labels use.
+registers nothing on macOS, and the desktop's date-time predates intent renames the dataset's labels use.
 Usage (from the repo root): python -m switchboard_eval.experiments.exp_ovos_gold_full
 """
 import collections
