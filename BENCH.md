@@ -1528,3 +1528,36 @@ shaped by a test row, so the harness test split isn't a clean confirmation of th
 in switchboard #29 (check_harness 8/8 identical with it on). Released in 1.1.0. check_harness compares
 intents: with specific on, 5 desktop rows (dev 3, test 2) keep their intent but are now decided by the exact step
 instead of the classifier (stage and confidence change in the v7/nollm mac preds).
+
+## All 1,007 OVOS golden utterances, live, with the set's skills installed (2026-10-14)
+
+exp_ovos_gold scored the 683 en-US rows whose skill the desktop had. Here the 18 missing skills were installed on
+the desktop at the ovos-intents v6.1 pins (ovos-m2v-pipeline train/sources.yaml at e0b2f4e; installed with the
+existing environment as constraints: 26 packages added, none changed; snapshot data/baselines/ovos_gold/
+mac_env_before.txt). The application launcher was already installed. Skills the desktop had kept their versions.
+Every system ran live through the query path; Switchboard 1.1.1, the desktop's pipeline with its 14B, and the same
+without the LLM step (route_decline_class never). Runs and the live manifest: data/baselines/ovos_gold_full/.
+Experiment: exp_ovos_gold_full.py. Afterwards: conf restored, the 26 packages removed (355 again), audio back.
+
+108 rows no system on this desktop can answer, scored nowhere: mark1-ctrl refuses to load off Mark 1 hardware (47),
+the application launcher registers nothing on macOS (16), and the desktop's alerts / volume / date-time / naptime
+predate the intent renames the labels use (45). Of the 899 answerable rows, 885 repeat one of their intent's
+templates; 14 don't.
+
+| system | answerable (899) | template (885) | unseen (14) |
+|---|---|---|---|
+| OVOS default | 96.4 | 97.5 | 28.6 |
+| Padatious alone | 96.2 | 97.5 | 14.3 |
+| Padatious + Adapt | 96.2 | 97.5 | 14.3 |
+| Model2Vec alone | 50.5 | 50.5 | 50.0 |
+| Adapt alone | 0.0 | 0.0 | 0.0 |
+| Switchboard, no LLM | 97.8 | 98.9 | 28.6 |
+| Switchboard + 14B | 98.8 | 99.1 | 78.6 |
+Paired against OVOS default: no LLM 23 vs 11 rows, p = 0.058; 14B 26 vs 5, p = 1.9e-4.
+
+Found on the way (switchboard #31, released in 1.1.1): installing ovos-skill-days-in-history (136,639 dialog lines)
+crashed classifier training. Its lines became decline rows (175k rows, 821k features), and 2 x 10 x features x
+classes = 2.7e9 overflowed SciPy L-BFGS-B's 32-bit work-array index (SIGBUS at the same address both times;
+reproduced outside OVOS on SciPy 1.17.1 and 1.18.1). Fix: dialog_negatives_exclude (default days-in-history) and at
+most 2,000 dialog lines per package. Also: Movie Master announces a missing TMDB key out loud on every load, so OVOS
+audio was off during the run.
