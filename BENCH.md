@@ -1561,3 +1561,26 @@ classes = 2.7e9 overflowed SciPy L-BFGS-B's 32-bit work-array index (SIGBUS at t
 reproduced outside OVOS on SciPy 1.17.1 and 1.18.1). Fix: dialog_negatives_exclude (default days-in-history) and at
 most 2,000 dialog lines per package. Also: Movie Master announces a missing TMDB key out loud on every load, so OVOS
 audio was off during the run.
+
+### Rerun with alerts, volume and naptime at the dataset's pins (2026-10-15)
+
+Upgraded on the desktop (kept): alerts, volume, naptime to the v6.1 pins (constraints: nothing else changed; alerts'
+settings and alarm data backed up locally first, alarms unchanged after). date-time not upgraded: its pin needs
+timezonefinder 9 -> NumPy 2, and the desktop's OVOS runs on NumPy 1.26. Then the same procedure as above, every
+system rerun (data/baselines/ovos_gold_full/ replaced). 927 answerable rows (913 template, 14 unseen); 80 not
+(63 skill not loaded, 17 date-time renames).
+
+| system | answerable (927) | template (913) | unseen (14) |
+|---|---|---|---|
+| OVOS default | 94.2 | 95.2 | 28.6 |
+| Padatious alone | 93.6 | 94.9 | 14.3 |
+| Padatious + Adapt | 93.6 | 94.9 | 14.3 |
+| Model2Vec alone | 49.5 | 49.5 | 50.0 |
+| Adapt alone | 0.0 | 0.0 | 0.0 |
+| Switchboard, no LLM | 97.8 | 98.9 | 28.6 |
+| Switchboard + 14B | 99.1 | 99.5 | 78.6 |
+Paired against OVOS default: no LLM 45 vs 11, p = 5.4e-6; 14B 48 vs 2, p = 2.3e-12.
+OVOS default lost 22 rows it had right before: timer_status (new in the upgraded alerts) now gets weather (8) and
+wallpaper (5) questions; weekday_matches_date -> weekday_for_date (3); create_alarm -> play (2). Not attributable to
+the upgrade alone: both runs retrained Padatious, and retraining identical skills already flips 40% of rows
+(criterion 2 above). One run per install can't separate the new intent from a different draw.
