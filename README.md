@@ -1,5 +1,7 @@
 # switchboard-eval
 
+[![Status: Active](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/OscillateLabsLLC/.github/blob/main/SUPPORT_STATUS.md)
+
 The test bench behind [Switchboard](https://github.com/OscillateLabsLLC/switchboard), a replacement for OVOS intent
 matching. Every number in Switchboard's docs was measured here, and you can rerun it.
 
