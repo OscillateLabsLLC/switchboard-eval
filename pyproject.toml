@@ -16,7 +16,7 @@ dependencies = [
     "numpy",
     "scikit-learn",
     "pyyaml",
-    "ovos-switchboard-pipeline-plugin @ git+https://github.com/OscillateLabsLLC/switchboard",
+    "ovos-switchboard-pipeline-plugin>=1.0.0",
 ]
 
 [project.optional-dependencies]
@@ -26,9 +26,6 @@ live = ["ovos-bus-client", "ovos-config"]
 bench = ["model2vec", "sentence-transformers"]
 # the decision-model experiment
 decider = ["torch", "huggingface_hub"]
-
-[tool.hatch.metadata]
-allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["switchboard_eval"]
