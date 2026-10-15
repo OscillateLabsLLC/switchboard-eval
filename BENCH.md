@@ -1500,3 +1500,31 @@ rows decided by exact or classifier (406 of 522) 6.7 / 21.3, rows decided by the
 The live Switchboard run's accuracy isn't comparable (every query is cold, so "not for me" rows the harness sends
 to the LLM with real warm context are declined; and the query path scores a Hangup decline as an action unless
 mapped to none: then non-commands 12.5%, matching the harness).
+
+## Collision resolution "specific": the template that matched more words literally wins (2026-10-14)
+
+Found by reading the 44 OVOS golden utterances (en-US) Switchboard left unanswered without an LLM: sibling intents
+of one skill whose templates both match ("change my {kind} to repeat {when}" vs "change my {kind} to {time}"). New
+ExactOptions.collision_resolution "specific" (default stays "classifier"): after skill_priority and
+collision_priority, the one owner whose matching template covers the most utterance words literally (words minus
+those slots captured) wins; a tie goes to the classifier. Experiment: exp_specific.py.
+Pre-registered: no bar criterion flips PASS -> FAIL; no significant loss on real rows; clean gold not worse;
+default only if clean gold also gains.
+
+OVOS golden utterances, skill-intent level, no LLM (right / wrong):
+| set | rows | classifier | specific |
+|---|---|---|---|
+| en-US (motivating), desktop router | 683 | 93.0 / 0.6 | 98.1 / 1.0 |
+| ca-ES (clean), ca-es manifest | 59 | 67.8 / 15.3 | 79.7 / 15.3 |
+| gl-ES (clean) | 60 | 68.3 / 16.7 | 80.0 / 16.7 |
+| fr-FR (clean) | 59 | 74.6 / 15.3 | 81.4 / 15.3 |
+Harness, both devices, dev and test, LLM off and on: zero changed predictions. check_harness 8/8 with the default.
+
+The first version counted the TEMPLATE's literal words (optional words counted zero) and sent "set the volume to
+five/30" (desktop test, magic rows) to alerts' change_media_properties: magic 100.0 -> 98.1 with the 14B. Counting
+the words each MATCH covers fixed it (volume covers "set the volume to", alerts "set the ... to"). That fix was
+shaped by a test row, so the harness test split isn't a clean confirmation of the final rule; ca/gl/fr are
+(results identical under both counts). All criteria pass, including the bar for default; made the default
+in switchboard #29 (check_harness 8/8 identical with it on). Released in 1.1.0. check_harness compares
+intents: with specific on, 5 desktop rows (dev 3, test 2) keep their intent but are now decided by the exact step
+instead of the classifier (stage and confidence change in the v7/nollm mac preds).

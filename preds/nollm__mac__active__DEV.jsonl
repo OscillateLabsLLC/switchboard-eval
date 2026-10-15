@@ -64,7 +64,7 @@
 {"id": "u0154", "intent": null, "stage": "classifier", "confidence": 0.4243, "top3": ["date.current", "weather.current", "assistant.about"]}
 {"id": "u0159", "intent": null, "stage": "classifier", "confidence": 0.1175, "top3": ["knowledge.ask", "settings.query", "weather.current"]}
 {"id": "u0160", "intent": "spelling.spell", "stage": "exact", "confidence": 1.0}
-{"id": "u0162", "intent": "news.play", "stage": "classifier", "confidence": 0.9939, "top3": ["news.play", "media.play", "alarm.set"]}
+{"id": "u0162", "intent": "news.play", "stage": "exact", "confidence": 1.0}
 {"id": "u0163", "intent": "assistant.about", "stage": "exact", "confidence": 1.0}
 {"id": "u0165", "intent": null, "stage": "classifier", "confidence": 0.458, "top3": ["__decline__", "timer.status", "date.current"], "decline_class": true}
 {"id": "u0166", "intent": "media.resume", "stage": "classifier", "confidence": 0.9728, "top3": ["media.resume", "__decline__", "easter_egg"]}
@@ -106,7 +106,7 @@
 {"id": "u0245", "intent": "ha.assist", "stage": "exact", "confidence": 1.0}
 {"id": "u0247", "intent": null, "stage": "classifier", "confidence": 0.3942, "top3": ["random.fortune", "__decline__", "weather.current"]}
 {"id": "u0249", "intent": "alerts.list", "stage": "classifier", "confidence": 0.9093, "top3": ["alerts.list", "alarm.set", "timer.cancel"]}
-{"id": "u0251", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9239, "top3": ["easter_egg", "device.on", "__decline__"]}
+{"id": "u0251", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0256", "intent": "__unmapped__:ovos-skill-alerts.openvoiceos:change_media_properties", "stage": "exact", "confidence": 1.0}
 {"id": "u0261", "intent": "timer.set", "stage": "classifier", "confidence": 0.5562, "top3": ["timer.set", "__unmapped__:ovos-skill-alerts.openvoiceos:missed_alerts", "timer.cancel"]}
 {"id": "u0263", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
@@ -145,7 +145,7 @@
 {"id": "u0326", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0329", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0330", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
-{"id": "u0331", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9915, "top3": ["easter_egg", "__decline__", "speak.repeat"]}
+{"id": "u0331", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0333", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0334", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
 {"id": "u0335", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9551, "top3": ["easter_egg", "__decline__", "speak.repeat"]}

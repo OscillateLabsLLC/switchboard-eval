@@ -317,3 +317,42 @@ switchboard_live_desktop                  517 rows   median     9.3 ms   p95  11
   decided by exact or classifier          401 rows   median     6.7 ms   p95    21.3 ms
   decided by the LLM step                  64 rows   median  1043.2 ms   p95  1239.5 ms
 ```
+
+## OVOS's own test phrases
+
+The OVOS skills' end-to-end test phrases ([OpenVoiceOS/ovos-intents](https://huggingface.co/datasets/OpenVoiceOS/ovos-intents)
+v6.1, test split; `data/ovos_gold/`), scored by exact skill intent: an answer is right only if it names the
+labeled `<skill_id>:<intent_name>`. Only rows whose skill is installed on the device count.
+
+- `template` rows repeat one of their intent's own phrase templates; `unseen` rows don't. Most rows are `template`
+  rows, so this set mostly tests whether a declared phrase reaches its intent.
+- The OVOS rows and `switchboard_live_desktop` are live runs on the OVOS desktop through the intent query path
+  (`data/baselines/ovos_gold/`). `switchboard_nollm` and `switchboard_llm` come from this harness, with the
+  desktop's router and every row cold (the assistant never just spoke). The live run used Switchboard 1.0.0,
+  before `collision_resolution: specific` existed; the harness rows use the current default.
+- Adapt alone scores 0% because the labels name `.intent` files, which Adapt doesn't register.
+- The second block compares the two settings of `collision_resolution`, without an LLM. The English set is the one
+  that suggested the `specific` rule. The Catalan, Galician and French sets weren't used to design it; each uses a
+  router built from that language's templates.
+
+```sh
+python -m switchboard_eval.experiments.exp_ovos_gold <switchboard>/scripts
+python -m switchboard_eval.experiments.exp_specific <switchboard>/scripts
+```
+```
+683 gold rows on the mac device: 677 match one of their intent's templates, 6 don't
+stock                      all  96.8% right,  3.2% wrong,  0.0% none (n=683) | template  97.3% right,  2.7% wrong,  0.0% none (n=677) | unseen  33.3% right, 66.7% wrong,  0.0% none (n=6)
+stock_padatious_only       all  96.5% right,  3.5% wrong,  0.0% none (n=683) | template  97.3% right,  2.7% wrong,  0.0% none (n=677) | unseen   0.0% right, 100.0% wrong,  0.0% none (n=6)
+stock_padatious_adapt      all  96.5% right,  3.5% wrong,  0.0% none (n=683) | template  97.3% right,  2.7% wrong,  0.0% none (n=677) | unseen   0.0% right, 100.0% wrong,  0.0% none (n=6)
+stock_m2v_only             all  46.9% right, 53.1% wrong,  0.0% none (n=683) | template  47.0% right, 53.0% wrong,  0.0% none (n=677) | unseen  33.3% right, 66.7% wrong,  0.0% none (n=6)
+stock_adapt_only           all   0.0% right, 100.0% wrong,  0.0% none (n=683) | template   0.0% right, 100.0% wrong,  0.0% none (n=677) | unseen   0.0% right, 100.0% wrong,  0.0% none (n=6)
+switchboard_live_desktop   all  98.2% right,  1.8% wrong,  0.0% none (n=683) | template  98.2% right,  1.8% wrong,  0.0% none (n=677) | unseen 100.0% right,  0.0% wrong,  0.0% none (n=6)
+switchboard_nollm          all  98.1% right,  1.0% wrong,  0.9% none (n=683) | template  98.4% right,  1.0% wrong,  0.6% none (n=677) | unseen  66.7% right,  0.0% wrong, 33.3% none (n=6)
+switchboard_llm            all  98.8% right,  1.0% wrong,  0.1% none (n=683) | template  98.8% right,  1.0% wrong,  0.1% none (n=677) | unseen 100.0% right,  0.0% wrong,  0.0% none (n=6)
+  1 rows where the LLM server returned no usable tool call (declined, as live)
+
+gold en-US (motivating)   n= 683  classifier:  93.0% right  0.6% wrong  6.4% none  |  specific:  98.1% right  1.0% wrong  0.9% none
+gold ca-ES (clean)        n=  59  classifier:  67.8% right 15.3% wrong 16.9% none  |  specific:  79.7% right 15.3% wrong  5.1% none
+gold gl-ES (clean)        n=  60  classifier:  68.3% right 16.7% wrong 15.0% none  |  specific:  80.0% right 16.7% wrong  3.3% none
+gold fr-FR (clean)        n=  59  classifier:  74.6% right 15.3% wrong 10.2% none  |  specific:  81.4% right 15.3% wrong  3.4% none
+```
