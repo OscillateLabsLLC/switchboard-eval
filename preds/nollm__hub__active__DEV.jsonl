@@ -1,0 +1,245 @@
+{"id": "u0005", "intent": "time.current", "stage": "exact", "confidence": 1.0}
+{"id": "u0007", "intent": "timer.set", "stage": "classifier", "confidence": 0.8814, "top3": ["timer.set", "timer.status", "__decline__"]}
+{"id": "u0009", "intent": "timer.status", "stage": "classifier", "confidence": 0.9986, "top3": ["timer.status", "timer.set", "time.current"]}
+{"id": "u0013", "intent": "volume.set", "stage": "classifier", "confidence": 0.9974, "top3": ["volume.set", "__decline__", "knowledge.ask"]}
+{"id": "u0014", "intent": "volume.set", "stage": "classifier", "confidence": 0.9818, "top3": ["volume.set", "system.shutdown", "__decline__"]}
+{"id": "u0016", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0021", "intent": null, "stage": "classifier", "confidence": 0.4305, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "decline_class": true}
+{"id": "u0023", "intent": null, "stage": "classifier", "confidence": 0.4821, "top3": ["__decline__", "device.status", "weather.current"], "decline_class": true}
+{"id": "u0025", "intent": null, "stage": "classifier", "confidence": 0.2243, "top3": ["__decline__", "web.browse", "easter_egg"], "decline_class": true}
+{"id": "u0026", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0027", "intent": "media.pause", "stage": "exact", "confidence": 1.0}
+{"id": "u0028", "intent": "media.resume", "stage": "exact", "confidence": 1.0}
+{"id": "u0032", "intent": null, "stage": "classifier", "confidence": 0.2451, "top3": ["__decline__", "meal.add", "alerts.list"], "decline_class": true}
+{"id": "u0034", "intent": "stop", "stage": "exact", "confidence": 1.0}
+{"id": "u0036", "intent": "weather.current", "stage": "classifier", "confidence": 0.7725, "top3": ["weather.current", "weather.forecast", "time.current"]}
+{"id": "u0040", "intent": "time.current", "stage": "classifier", "confidence": 0.8225, "top3": ["time.current", "timer.set", "timer.status"]}
+{"id": "u0043", "intent": "timer.cancel", "stage": "classifier", "confidence": 0.7133, "top3": ["timer.cancel", "alerts.list", "timer.set"]}
+{"id": "u0047", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0048", "intent": null, "stage": "classifier", "confidence": 0.178, "top3": ["__decline__", "knowledge.ask", "weather.forecast"], "decline_class": true}
+{"id": "u0050", "intent": "settings.change", "stage": "classifier", "confidence": 0.6296, "top3": ["settings.change", "__decline__", "knowledge.ask"]}
+{"id": "u0051", "intent": null, "stage": "classifier", "confidence": 0.4356, "top3": ["__decline__", "system.shutdown", "stop"], "decline_class": true}
+{"id": "u0052", "intent": "assistant.about", "stage": "classifier", "confidence": 0.8343, "top3": ["assistant.about", "volume.set", "__decline__"]}
+{"id": "u0054", "intent": null, "stage": "classifier", "confidence": 0.2745, "top3": ["app.launch", "media.play", "media.previous"]}
+{"id": "u0058", "intent": "lights.brightness", "stage": "exact", "confidence": 1.0}
+{"id": "u0059", "intent": null, "stage": "classifier", "confidence": 0.359, "top3": ["__decline__", "weather.current", "system.shutdown"], "decline_class": true}
+{"id": "u0060", "intent": null, "stage": "classifier", "confidence": 0.2207, "top3": ["knowledge.ask", "settings.change", "__decline__"]}
+{"id": "u0062", "intent": null, "stage": "classifier", "confidence": 0.187, "top3": ["__decline__", "easter_egg", "app.launch"], "decline_class": true}
+{"id": "u0066", "intent": "media.pause", "stage": "classifier", "confidence": 0.8469, "top3": ["media.pause", "__decline__", "knowledge.ask"]}
+{"id": "u0074", "intent": "joke.tell", "stage": "classifier", "confidence": 0.9302, "top3": ["joke.tell", "__decline__", "alerts.list"]}
+{"id": "u0077", "intent": null, "stage": "classifier", "confidence": 0.2034, "top3": ["weather.current", "__decline__", "knowledge.ask"]}
+{"id": "u0078", "intent": "system.shutdown", "stage": "classifier", "confidence": 0.928, "top3": ["system.shutdown", "knowledge.ask", "settings.change"]}
+{"id": "u0081", "intent": null, "stage": "classifier", "confidence": 0.2319, "top3": ["device.on", "device.stop", "weather.current"]}
+{"id": "u0082", "intent": "weather.current", "stage": "classifier", "confidence": 0.727, "top3": ["weather.current", "__decline__", "weather.forecast"]}
+{"id": "u0085", "intent": null, "stage": "classifier", "confidence": 0.2196, "top3": ["device.on", "media.resume", "stop"]}
+{"id": "u0086", "intent": "timer.set", "stage": "classifier", "confidence": 0.6786, "top3": ["timer.set", "alerts.list", "settings.change"]}
+{"id": "u0087", "intent": "weather.current", "stage": "classifier", "confidence": 0.9718, "top3": ["weather.current", "weather.forecast", "__decline__"]}
+{"id": "u0088", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0090", "intent": "timer.status", "stage": "classifier", "confidence": 0.9929, "top3": ["timer.status", "timer.set", "__decline__"]}
+{"id": "u0096", "intent": null, "stage": "classifier", "confidence": 0.6301, "top3": ["__decline__", "knowledge.ask", "settings.change"], "decline_class": true}
+{"id": "u0098", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0100", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0101", "intent": null, "stage": "classifier", "confidence": 0.5226, "top3": ["__decline__", "alerts.list", "knowledge.ask"], "decline_class": true}
+{"id": "u0103", "intent": "reminder.set", "stage": "classifier", "confidence": 0.5594, "top3": ["reminder.set", "timer.status", "__decline__"]}
+{"id": "u0104", "intent": null, "stage": "classifier", "confidence": 0.173, "top3": ["system.shutdown", "stop", "__decline__"]}
+{"id": "u0106", "intent": null, "stage": "classifier", "confidence": 0.6754, "top3": ["__decline__", "easter_egg", "timer.cancel"], "decline_class": true}
+{"id": "u0109", "intent": "app.launch", "stage": "classifier", "confidence": 0.5793, "top3": ["app.launch", "web.browse", "easter_egg"]}
+{"id": "u0110", "intent": null, "stage": "classifier", "confidence": 0.4876, "top3": ["weather.forecast", "weather.current", "__decline__"]}
+{"id": "u0111", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0119", "intent": null, "stage": "classifier", "confidence": 0.2872, "top3": ["alerts.list", "__decline__", "date.current"]}
+{"id": "u0120", "intent": null, "stage": "classifier", "confidence": 0.4496, "top3": ["date.current", "device.on", "device.stop"]}
+{"id": "u0121", "intent": null, "stage": "classifier", "confidence": 0.6634, "top3": ["__decline__", "joke.tell", "date.current"], "decline_class": true}
+{"id": "u0123", "intent": null, "stage": "classifier", "confidence": 0.3291, "top3": ["__decline__", "timer.status", "timer.set"], "decline_class": true}
+{"id": "u0126", "intent": null, "stage": "classifier", "confidence": 0.7232, "top3": ["__decline__", "device.status", "weather.forecast"], "decline_class": true}
+{"id": "u0128", "intent": null, "stage": "classifier", "confidence": 0.2044, "top3": ["time.current", "__decline__", "timer.set"]}
+{"id": "u0129", "intent": null, "stage": "classifier", "confidence": 0.3283, "top3": ["weather.current", "__decline__", "weather.forecast"]}
+{"id": "u0130", "intent": null, "stage": "classifier", "confidence": 0.1597, "top3": ["__decline__", "app.launch", "easter_egg"], "decline_class": true}
+{"id": "u0132", "intent": null, "stage": "classifier", "confidence": 0.1578, "top3": ["__decline__", "knowledge.ask", "web.browse"], "decline_class": true}
+{"id": "u0134", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.8928, "top3": ["knowledge.ask", "__decline__", "web.browse"]}
+{"id": "u0141", "intent": "__unmapped__:skill-communication.neongeckocom:call", "stage": "exact", "confidence": 1.0}
+{"id": "u0145", "intent": "weather.current", "stage": "classifier", "confidence": 0.8071, "top3": ["weather.current", "alerts.list", "weather.forecast"]}
+{"id": "u0147", "intent": null, "stage": "classifier", "confidence": 0.4099, "top3": ["__decline__", "easter_egg", "weather.current"], "decline_class": true}
+{"id": "u0152", "intent": "weather.current", "stage": "classifier", "confidence": 0.6973, "top3": ["weather.current", "time.current", "date.current"]}
+{"id": "u0153", "intent": null, "stage": "classifier", "confidence": 0.7181, "top3": ["__decline__", "easter_egg", "timer.cancel"], "decline_class": true}
+{"id": "u0154", "intent": null, "stage": "classifier", "confidence": 0.3476, "top3": ["date.current", "weather.current", "knowledge.ask"]}
+{"id": "u0159", "intent": "settings.query", "stage": "classifier", "confidence": 0.855, "top3": ["settings.query", "settings.change", "assistant.about"]}
+{"id": "u0160", "intent": null, "stage": "classifier", "confidence": 0.4498, "top3": ["spelling.spell", "__decline__", "knowledge.ask"]}
+{"id": "u0162", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0163", "intent": "assistant.about", "stage": "exact", "confidence": 1.0}
+{"id": "u0165", "intent": null, "stage": "classifier", "confidence": 0.2564, "top3": ["__decline__", "timer.status", "settings.change"], "decline_class": true}
+{"id": "u0166", "intent": "system.restart", "stage": "exact", "confidence": 1.0}
+{"id": "u0171", "intent": "random.dice", "stage": "classifier", "confidence": 0.9512, "top3": ["random.dice", "__decline__", "knowledge.ask"]}
+{"id": "u0173", "intent": "settings.change", "stage": "classifier", "confidence": 0.6699, "top3": ["settings.change", "time.current", "timer.set"]}
+{"id": "u0174", "intent": "settings.change", "stage": "classifier", "confidence": 0.8322, "top3": ["settings.change", "knowledge.ask", "__decline__"]}
+{"id": "u0177", "intent": "settings.query", "stage": "exact", "confidence": 1.0}
+{"id": "u0178", "intent": "spelling.spell", "stage": "classifier", "confidence": 0.867, "top3": ["spelling.spell", "__decline__", "knowledge.ask"]}
+{"id": "u0179", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0}
+{"id": "u0180", "intent": null, "stage": "classifier", "confidence": 0.3032, "top3": ["weather.current", "__decline__", "date.current"]}
+{"id": "u0182", "intent": "assistant.about", "stage": "classifier", "confidence": 0.928, "top3": ["assistant.about", "__decline__", "settings.query"]}
+{"id": "u0184", "intent": "system.restart", "stage": "classifier", "confidence": 0.5017, "top3": ["system.restart", "assistant.about", "system.shutdown"]}
+{"id": "u0187", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9362, "top3": ["easter_egg", "weather.current", "date.current"]}
+{"id": "u0188", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9667, "top3": ["easter_egg", "__decline__", "speak.repeat"]}
+{"id": "u0189", "intent": "easter_egg", "stage": "exact", "confidence": 1.0}
+{"id": "u0193", "intent": "random.number", "stage": "classifier", "confidence": 0.5991, "top3": ["random.number", "__decline__", "easter_egg"]}
+{"id": "u0194", "intent": "random.dice", "stage": "classifier", "confidence": 0.7628, "top3": ["random.dice", "__decline__", "knowledge.ask"]}
+{"id": "u0196", "intent": null, "stage": "classifier", "confidence": 0.3711, "top3": ["random.dice", "__decline__", "timer.cancel"]}
+{"id": "u0199", "intent": "settings.change", "stage": "classifier", "confidence": 0.5406, "top3": ["settings.change", "__decline__", "settings.query"]}
+{"id": "u0200", "intent": "random.dice", "stage": "classifier", "confidence": 0.9714, "top3": ["random.dice", "__decline__", "weather.current"]}
+{"id": "u0202", "intent": null, "stage": "classifier", "confidence": 0.0931, "top3": ["__decline__", "device.status", "weather.current"], "decline_class": true}
+{"id": "u0204", "intent": "spelling.spell", "stage": "classifier", "confidence": 0.7445, "top3": ["spelling.spell", "assistant.about", "__decline__"]}
+{"id": "u0205", "intent": "system.shutdown", "stage": "classifier", "confidence": 0.7974, "top3": ["system.shutdown", "__decline__", "easter_egg"]}
+{"id": "u0212", "intent": "monster.scan", "stage": "classifier", "confidence": 0.9955, "top3": ["monster.scan", "alerts.list", "weather.forecast"]}
+{"id": "u0213", "intent": "web.browse", "stage": "classifier", "confidence": 0.9327, "top3": ["web.browse", "__decline__", "settings.change"]}
+{"id": "u0215", "intent": null, "stage": "classifier", "confidence": 0.132, "top3": ["__decline__", "easter_egg", "settings.change"], "decline_class": true}
+{"id": "u0219", "intent": "monster.scan", "stage": "classifier", "confidence": 0.994, "top3": ["monster.scan", "device.status", "__decline__"]}
+{"id": "u0221", "intent": "app.launch", "stage": "classifier", "confidence": 0.7976, "top3": ["app.launch", "settings.change", "__decline__"]}
+{"id": "u0223", "intent": "media.previous", "stage": "classifier", "confidence": 0.9538, "top3": ["media.previous", "media.resume", "easter_egg"]}
+{"id": "u0224", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0226", "intent": "media.pause", "stage": "classifier", "confidence": 0.5934, "top3": ["media.pause", "__decline__", "settings.change"]}
+{"id": "u0227", "intent": null, "stage": "classifier", "confidence": 0.5028, "top3": ["__decline__", "meal.suggest", "meal.add"], "decline_class": true}
+{"id": "u0228", "intent": "monster.scan", "stage": "classifier", "confidence": 0.5995, "top3": ["monster.scan", "__decline__", "date.current"]}
+{"id": "u0229", "intent": null, "stage": "classifier", "confidence": 0.4194, "top3": ["__unmapped__:skill-communication.neongeckocom:call", "__decline__", "media.previous"]}
+{"id": "u0232", "intent": null, "stage": "classifier", "confidence": 0.4344, "top3": ["__unmapped__:skill-communication.neongeckocom:call", "__decline__", "stop"]}
+{"id": "u0233", "intent": null, "stage": "classifier", "confidence": 0.2308, "top3": ["__decline__", "settings.change", "stop"], "decline_class": true}
+{"id": "u0237", "intent": "random.fortune", "stage": "exact", "confidence": 1.0}
+{"id": "u0242", "intent": "alerts.list", "stage": "classifier", "confidence": 0.9755, "top3": ["alerts.list", "timer.set", "__decline__"]}
+{"id": "u0245", "intent": "ha.assist", "stage": "exact", "confidence": 1.0}
+{"id": "u0247", "intent": null, "stage": "classifier", "confidence": 0.4185, "top3": ["random.fortune", "__decline__", "weather.current"]}
+{"id": "u0249", "intent": "alerts.list", "stage": "classifier", "confidence": 0.8368, "top3": ["alerts.list", "alarm.set", "timer.cancel"]}
+{"id": "u0251", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0256", "intent": "volume.set", "stage": "exact", "confidence": 1.0}
+{"id": "u0261", "intent": "timer.set", "stage": "classifier", "confidence": 0.6024, "top3": ["timer.set", "timer.cancel", "timer.status"]}
+{"id": "u0263", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8689, "top3": ["easter_egg", "__decline__", "settings.change"]}
+{"id": "u0267", "intent": "alarm.set", "stage": "classifier", "confidence": 0.8105, "top3": ["alarm.set", "timer.cancel", "settings.change"]}
+{"id": "u0268", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0}
+{"id": "u0269", "intent": null, "stage": "classifier", "confidence": 0.3476, "top3": ["time.current", "weather.current", "__decline__"]}
+{"id": "u0271", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0273", "intent": "media.pause", "stage": "exact", "confidence": 1.0}
+{"id": "u0274", "intent": "timer.set", "stage": "classifier", "confidence": 0.9099, "top3": ["timer.set", "timer.status", "__decline__"]}
+{"id": "u0276", "intent": "weather.current", "stage": "classifier", "confidence": 0.9938, "top3": ["weather.current", "weather.forecast", "alerts.list"]}
+{"id": "u0277", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9514, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0278", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9505, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0279", "intent": "date.current", "stage": "exact", "confidence": 1.0}
+{"id": "u0282", "intent": "assistant.about", "stage": "classifier", "confidence": 0.504, "top3": ["assistant.about", "__decline__", "knowledge.ask"]}
+{"id": "u0284", "intent": "easter_egg", "stage": "classifier", "confidence": 0.6693, "top3": ["easter_egg", "__decline__", "translate.phrase"]}
+{"id": "u0285", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.8099, "top3": ["knowledge.ask", "__decline__", "assistant.about"]}
+{"id": "u0286", "intent": "timer.cancel", "stage": "classifier", "confidence": 0.9637, "top3": ["timer.cancel", "alarm.set", "stop"]}
+{"id": "u0287", "intent": "weather.current", "stage": "classifier", "confidence": 0.9959, "top3": ["weather.current", "weather.forecast", "alerts.list"]}
+{"id": "u0288", "intent": null, "stage": "classifier", "confidence": 0.5723, "top3": ["__decline__", "weather.current", "knowledge.ask"], "decline_class": true}
+{"id": "u0290", "intent": "timer.set", "stage": "classifier", "confidence": 0.8722, "top3": ["timer.set", "timer.status", "__decline__"]}
+{"id": "u0291", "intent": "time.current", "stage": "classifier", "confidence": 0.9899, "top3": ["time.current", "timer.set", "weather.current"]}
+{"id": "u0294", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0295", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9008, "top3": ["easter_egg", "device.status", "weather.current"]}
+{"id": "u0297", "intent": null, "stage": "classifier", "confidence": 0.2792, "top3": ["__decline__", "alarm.set", "knowledge.ask"], "decline_class": true}
+{"id": "u0298", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9726, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0299", "intent": "date.current", "stage": "classifier", "confidence": 0.9791, "top3": ["date.current", "weather.current", "easter_egg"]}
+{"id": "u0302", "intent": "alerts.list", "stage": "exact", "confidence": 1.0}
+{"id": "u0307", "intent": "speak.repeat", "stage": "classifier", "confidence": 0.6307, "top3": ["speak.repeat", "easter_egg", "__decline__"]}
+{"id": "u0310", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0313", "intent": "time.current", "stage": "classifier", "confidence": 0.9686, "top3": ["time.current", "assistant.about", "easter_egg"]}
+{"id": "u0315", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8866, "top3": ["easter_egg", "__decline__", "knowledge.ask"]}
+{"id": "u0316", "intent": "settings.query", "stage": "classifier", "confidence": 0.7145, "top3": ["settings.query", "easter_egg", "speak.repeat"]}
+{"id": "u0317", "intent": "easter_egg", "stage": "classifier", "confidence": 0.843, "top3": ["easter_egg", "speak.repeat", "__decline__"]}
+{"id": "u0322", "intent": "speak.repeat", "stage": "exact", "confidence": 1.0}
+{"id": "u0325", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7656, "top3": ["easter_egg", "__decline__", "settings.change"]}
+{"id": "u0326", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8886, "top3": ["easter_egg", "__decline__", "speak.repeat"]}
+{"id": "u0329", "intent": "easter_egg", "stage": "classifier", "confidence": 0.7656, "top3": ["easter_egg", "alerts.list", "weather.current"]}
+{"id": "u0330", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9372, "top3": ["easter_egg", "__decline__", "assistant.about"]}
+{"id": "u0331", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9905, "top3": ["easter_egg", "speak.repeat", "__decline__"]}
+{"id": "u0333", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9351, "top3": ["easter_egg", "__decline__", "assistant.about"]}
+{"id": "u0334", "intent": "easter_egg", "stage": "classifier", "confidence": 0.5261, "top3": ["easter_egg", "settings.query", "assistant.about"]}
+{"id": "u0335", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9588, "top3": ["easter_egg", "__decline__", "speak.repeat"]}
+{"id": "u0337", "intent": "easter_egg", "stage": "classifier", "confidence": 0.8668, "top3": ["easter_egg", "__decline__", "settings.change"]}
+{"id": "u0339", "intent": "easter_egg", "stage": "classifier", "confidence": 0.9215, "top3": ["easter_egg", "alerts.list", "settings.change"]}
+{"id": "u0340", "intent": "easter_egg", "stage": "classifier", "confidence": 0.674, "top3": ["easter_egg", "__decline__", "settings.change"]}
+{"id": "u0341", "intent": null, "stage": "classifier", "confidence": 0.2249, "top3": ["assistant.about", "__decline__", "knowledge.ask"]}
+{"id": "u0343", "intent": "timer.set", "stage": "classifier", "confidence": 0.9305, "top3": ["timer.set", "timer.status", "__decline__"]}
+{"id": "u0349", "intent": "reminder.set", "stage": "classifier", "confidence": 0.967, "top3": ["reminder.set", "__decline__", "settings.change"]}
+{"id": "u0351", "intent": "reminder.set", "stage": "classifier", "confidence": 0.7393, "top3": ["reminder.set", "time.current", "settings.change"]}
+{"id": "u0352", "intent": "timer.status", "stage": "classifier", "confidence": 0.9989, "top3": ["timer.status", "timer.set", "time.current"]}
+{"id": "u0353", "intent": "weather.forecast", "stage": "exact", "confidence": 1.0}
+{"id": "u0354", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0356", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0357", "intent": "media.play", "stage": "exact", "confidence": 1.0}
+{"id": "u0358", "intent": "media.next", "stage": "exact", "confidence": 1.0}
+{"id": "u0359", "intent": "stop", "stage": "classifier", "confidence": 0.6078, "top3": ["stop", "device.stop", "settings.change"]}
+{"id": "u0361", "intent": null, "stage": "classifier", "confidence": 0.3357, "top3": ["knowledge.ask", "__decline__", "assistant.about"]}
+{"id": "u0365", "intent": null, "stage": "classifier", "confidence": 0.4636, "top3": ["alarm.set", "__decline__", "alerts.list"]}
+{"id": "u0375", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9286, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0377", "intent": null, "stage": "classifier", "confidence": 0.4385, "top3": ["__decline__", "settings.change", "easter_egg"], "decline_class": true}
+{"id": "u0380", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9375, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0381", "intent": "system.ip", "stage": "classifier", "confidence": 0.9947, "top3": ["system.ip", "settings.query", "__decline__"]}
+{"id": "u0383", "intent": null, "stage": "classifier", "confidence": 0.2887, "top3": ["__decline__", "knowledge.ask", "weather.forecast"], "decline_class": true}
+{"id": "u0384", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9683, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0385", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9694, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0386", "intent": "alarm.set", "stage": "classifier", "confidence": 0.9514, "top3": ["alarm.set", "alerts.list", "__decline__"]}
+{"id": "u0389", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0394", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0395", "intent": null, "stage": "classifier", "confidence": 0.4457, "top3": ["__decline__", "meal.suggest", "easter_egg"], "decline_class": true}
+{"id": "u0396", "intent": null, "stage": "classifier", "confidence": 0.4, "top3": ["assistant.about", "__decline__", "easter_egg"]}
+{"id": "u0397", "intent": null, "stage": "classifier", "confidence": 0.6006, "top3": ["__decline__", "__unmapped__:skill-communication.neongeckocom:call", "weather.forecast"], "decline_class": true}
+{"id": "u0400", "intent": null, "stage": "classifier", "confidence": 0.7837, "top3": ["__decline__", "settings.change", "easter_egg"], "decline_class": true}
+{"id": "u0401", "intent": null, "stage": "classifier", "confidence": 0.3784, "top3": ["alerts.list", "assistant.about", "meal.suggest"]}
+{"id": "u0402", "intent": null, "stage": "classifier", "confidence": 0.4408, "top3": ["__decline__", "timer.cancel", "settings.change"], "decline_class": true}
+{"id": "u0404", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0409", "intent": null, "stage": "classifier", "confidence": 0.3573, "top3": ["easter_egg", "timer.cancel", "system.shutdown"]}
+{"id": "u0410", "intent": null, "stage": "classifier", "confidence": 0.9432, "top3": ["__decline__", "web.browse", "knowledge.ask"], "decline_class": true}
+{"id": "u0411", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0412", "intent": null, "stage": "classifier", "confidence": 0.1925, "top3": ["__decline__", "settings.change", "knowledge.ask"], "decline_class": true}
+{"id": "u0413", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0414", "intent": "weather.current", "stage": "classifier", "confidence": 0.8516, "top3": ["weather.current", "weather.forecast", "__decline__"]}
+{"id": "u0417", "intent": null, "stage": "classifier", "confidence": 0.4961, "top3": ["media.resume", "media.pause", "__decline__"]}
+{"id": "u0418", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0421", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0422", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0423", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0424", "intent": null, "stage": "classifier", "confidence": 0.1193, "top3": ["__decline__", "settings.change", "knowledge.ask"], "decline_class": true}
+{"id": "u0425", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0426", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0427", "intent": null, "stage": "classifier", "confidence": 0.163, "top3": ["device.stop", "device.off", "system.shutdown"]}
+{"id": "u0431", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0435", "intent": null, "stage": "classifier", "confidence": 0.4595, "top3": ["__decline__", "easter_egg", "assistant.about"], "decline_class": true}
+{"id": "u0436", "intent": null, "stage": "classifier", "confidence": 0.4821, "top3": ["__decline__", "knowledge.ask", "easter_egg"], "decline_class": true}
+{"id": "u0437", "intent": null, "stage": "classifier", "confidence": 0.2954, "top3": ["timer.status", "device.status", "__decline__"]}
+{"id": "u0441", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0442", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0443", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0444", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0445", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0446", "intent": "app.launch", "stage": "classifier", "confidence": 0.5481, "top3": ["app.launch", "__decline__", "knowledge.ask"]}
+{"id": "u0447", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0448", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0449", "intent": null, "stage": "classifier", "confidence": 0.3306, "top3": ["__decline__", "reminder.set", "timer.cancel"], "decline_class": true}
+{"id": "u0452", "intent": null, "stage": "classifier", "confidence": 0.8153, "top3": ["__decline__", "knowledge.ask", "web.browse"], "decline_class": true}
+{"id": "u0454", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0456", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0457", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0458", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0459", "intent": null, "stage": "classifier", "confidence": 0.1615, "top3": ["__decline__", "knowledge.ask", "web.browse"], "decline_class": true}
+{"id": "u0460", "intent": "assistant.about", "stage": "classifier", "confidence": 0.7536, "top3": ["assistant.about", "__decline__", "settings.query"]}
+{"id": "u0461", "intent": "assistant.about", "stage": "exact", "confidence": 1.0}
+{"id": "u0462", "intent": null, "stage": "classifier", "confidence": 0.2408, "top3": ["__decline__", "device.status", "knowledge.ask"], "decline_class": true}
+{"id": "u0465", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0466", "intent": null, "stage": "echo"}
+{"id": "u0467", "intent": "knowledge.ask", "stage": "classifier", "confidence": 0.5823, "top3": ["knowledge.ask", "__decline__", "web.browse"]}
+{"id": "u0470", "intent": null, "stage": "classifier", "confidence": 0.3218, "top3": ["__decline__", "media.previous", "easter_egg"], "decline_class": true}
+{"id": "u0474", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.9648, "top3": ["weather.forecast", "weather.current", "alerts.list"]}
+{"id": "u0475", "intent": "assistant.about", "stage": "exact", "confidence": 1.0}
+{"id": "u0477", "intent": null, "stage": "classifier", "confidence": 0.6408, "top3": ["__decline__", "settings.change", "knowledge.ask"], "decline_class": true}
+{"id": "u0481", "intent": null, "stage": "classifier", "confidence": 0.2939, "top3": ["__decline__", "easter_egg", "knowledge.ask"], "decline_class": true}
+{"id": "u0484", "intent": null, "stage": "classifier", "confidence": 0.1291, "top3": ["__decline__", "settings.change", "knowledge.ask"], "decline_class": true}
+{"id": "u0487", "intent": "time.current", "stage": "classifier", "confidence": 0.7979, "top3": ["time.current", "weather.current", "alerts.list"]}
+{"id": "u0494", "intent": "app.launch", "stage": "exact", "confidence": 1.0}
+{"id": "u0500", "intent": "weather.forecast", "stage": "classifier", "confidence": 0.5445, "top3": ["weather.forecast", "alerts.list", "weather.current"]}
+{"id": "u0505", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0506", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0507", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0508", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0509", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0510", "intent": null, "stage": "classifier", "confidence": 0.2388, "top3": ["__decline__", "knowledge.ask", "timer.set"], "decline_class": true}
+{"id": "u0511", "intent": null, "stage": "classifier", "confidence": 0.734, "top3": ["__decline__", "weather.forecast", "knowledge.ask"], "decline_class": true}
+{"id": "u0512", "intent": "device.off", "stage": "exact", "confidence": 1.0}
+{"id": "u0515", "intent": "device.on", "stage": "exact", "confidence": 1.0}
+{"id": "u0518", "intent": "joke.tell", "stage": "classifier", "confidence": 0.8484, "top3": ["joke.tell", "settings.change", "reminder.set"]}
+{"id": "u0519", "intent": null, "stage": "classifier", "confidence": 0.0951, "top3": ["settings.change", "reminder.set", "joke.tell"]}
+{"id": "u0521", "intent": "device.off", "stage": "exact", "confidence": 1.0}
